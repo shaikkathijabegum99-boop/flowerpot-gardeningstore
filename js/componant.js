@@ -387,7 +387,7 @@ function initSearchModal() {
     if (!modal) return;
     const input =
         modal.querySelector("input");
-    /* Open Search with "/" */
+    
     document.addEventListener("keydown", (e) => {
         if (
             e.key === "/" &&
@@ -400,7 +400,7 @@ function initSearchModal() {
             input?.focus();
         }
     });
-    /* Close by clicking outside */
+    
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             closeSearchModal();
@@ -423,7 +423,7 @@ function closeSearchModal() {
 function initEscapeKey() {
     document.addEventListener("keydown", (e) => {
         if (e.key !== "Escape") return;
-        /* Close Mobile Sidebar */
+        
         const sidebar =
             document.getElementById("mobileSidebar");
         const overlay =
@@ -431,7 +431,7 @@ function initEscapeKey() {
         sidebar?.classList.remove("active");
         overlay?.classList.remove("active");
         document.body.classList.remove("menu-open");
-        /* Close Search */
+        
         closeSearchModal();
     });
 }
@@ -445,7 +445,7 @@ function initAnnouncementBar() {
     const items =
         wrapper.querySelectorAll("p");
     if (items.length <= 1) return;
-    /* Mobile only */
+    
     if (window.innerWidth > 640) return;
     let index = 0;
     wrapper.style.transition =
@@ -607,7 +607,7 @@ function initResizeHandler() {
     window.addEventListener(
         "resize",
         () => {
-            /* Desktop */
+            
             if (window.innerWidth > 1024) {
                 const sidebar =
                     document.getElementById(

@@ -81,13 +81,13 @@
     min-width:170px;
     justify-content:center;
 }
-/* HERO IMAGE */
+
 .about-hero-image{
     position:relative;
 }
 .about-hero-image img{
     width:100%;
-    height:360px;
+    height:460px;
     object-fit:cover;
     border-radius:32px;
     box-shadow:
@@ -97,7 +97,7 @@
 .about-hero-image:hover img{
     transform:scale(1.03);
 }
-/* FLOATING EXPERIENCE CARD */
+
 .about-floating-card{
     position:absolute;
     left:-35px;
@@ -164,7 +164,7 @@
     font-size:16px;
     margin-bottom:20px;
 }
-/* STORY POINTS */
+
 .story-points{
     margin-top:35px;
     display:flex;
@@ -225,7 +225,7 @@
     background:#1b231c;
     border-color:#303830;
 }
-/* MISSION ICON */
+
 .mission-icon{
     width:75px;
     height:75px;
@@ -327,7 +327,7 @@
     align-items:center;
     gap:80px;
 }
-/* IMAGE */
+
 .why-image{
     position:relative;
 }
@@ -343,7 +343,7 @@
 .why-image:hover img{
     transform:scale(1.03);
 }
-/* CONTENT */
+
 .why-content h2{
     font-size:44px;
     line-height:1.25;
@@ -573,7 +573,7 @@ and (max-width:1023px){
     max-width:900px;
     margin:60px auto 0;
 }
-/* CENTER LINE */
+
 .timeline::before{
     content:"";
     position:absolute;
@@ -599,7 +599,7 @@ and (max-width:1023px){
 .timeline-item:nth-child(even){
     left:50%;
 }
-/* YEAR BADGE */
+
 .timeline-year{
     display:inline-flex;
     align-items:center;
@@ -613,7 +613,7 @@ and (max-width:1023px){
     font-weight:700;
     margin-bottom:18px;
 }
-/* CONTENT CARD */
+
 .timeline-content{
     padding:30px;
     background:#ffffff;
@@ -637,7 +637,7 @@ and (max-width:1023px){
     line-height:1.8;
     margin:0;
 }
-/* DOT */
+
 .timeline-item::after{
     content:"";
     position:absolute;
@@ -703,7 +703,7 @@ and (max-width:1023px){
     background:#1b231c;
     border-color:#303830;
 }
-/* TEAM IMAGE */
+
 .team-image{
     height:350px;
     overflow:hidden;
@@ -717,7 +717,7 @@ and (max-width:1023px){
 .team-card:hover .team-image img{
     transform:scale(1.08);
 }
-/* TEAM CONTENT */
+
 .team-content{
     padding:30px;
     text-align:center;
@@ -731,7 +731,7 @@ and (max-width:1023px){
     color:var(--primary);
     font-weight:600;
 }
-/* SOCIAL */
+
 .team-social{
     display:flex;
     justify-content:center;
@@ -927,7 +927,7 @@ and (max-width:1023px){
     repeat(3,1fr);
     gap:30px;
 }
-/* TESTIMONIAL CARD */
+
 .testimonial-card{
     padding:40px 30px;
     text-align:center;
@@ -947,7 +947,7 @@ and (max-width:1023px){
     background:#1b231c;
     border-color:#303830;
 }
-/* CUSTOMER IMAGE */
+
 .customer-image{
     width:90px;
     height:90px;
@@ -960,7 +960,7 @@ and (max-width:1023px){
     height:100%;
     object-fit:cover;
 }
-/* RATING */
+
 .rating{
     display:flex;
     justify-content:center;
@@ -1058,7 +1058,7 @@ and (max-width:1023px){
     background:#ffffff;
     color:var(--primary);
 }
-/* CTA IMAGE */
+
 .cta-image{
     position:relative;
     z-index:2;
@@ -1806,7 +1806,7 @@ and (max-width:1023px){
    ABOVE 1280px
 ========================================================== */
 @media (min-width:1280px){
-/* HERO */
+
 .about-hero{
     padding:120px 0 100px;
 }
@@ -1832,7 +1832,7 @@ and (max-width:1023px){
 .about-floating-card strong{
     font-size:26px;
 }
-/* STORY */
+
 .about-story{
     padding:100px 0;
 }
@@ -1853,7 +1853,7 @@ and (max-width:1023px){
 .story-point h3{
     font-size:18px;
 }
-/* MISSION */
+
 .mission-section{
     padding:100px 0;
 }
@@ -1871,7 +1871,7 @@ and (max-width:1023px){
 .mission-card p{
     font-size:15px;
 }
-/* STATS */
+
 .about-stats{
     padding:90px 0;
 }
@@ -1886,7 +1886,7 @@ and (max-width:1023px){
 .stat-card h3{
     font-size:32px;
 }
-/* WHY */
+
 .about-why{
     padding:100px 0;
 }
@@ -1910,7 +1910,7 @@ and (max-width:1023px){
 .why-item p{
     font-size:14px;
 }
-/* JOURNEY */
+
 .journey-section{
     padding:100px 0;
 }
@@ -1931,7 +1931,7 @@ and (max-width:1023px){
     height:80px;
     font-size:20px;
 }
-/* TEAM */
+
 .team-section{
     padding:100px 0;
 }
@@ -1949,7 +1949,7 @@ and (max-width:1023px){
 .team-content h3{
     font-size:20px;
 }
-/* TESTIMONIAL */
+
 .about-testimonial{
     padding:100px 0;
 }
@@ -1964,7 +1964,7 @@ and (max-width:1023px){
 .testimonial-card h3{
     font-size:18px;
 }
-/* CTA */
+
 .about-cta{
     padding:100px 0;
 }
@@ -1982,7 +1982,7 @@ and (max-width:1023px){
 .cta-image img{
     height:400px;
 }
-/* NEWSLETTER */
+
 .newsletter-section{
     padding:90px 0;
 }
@@ -1998,9 +1998,9 @@ and (max-width:1023px){
    1024px - 1279px
 ========================================================== */
 @media (min-width:1024px) and (max-width:1279px){
-/* HERO */
+
 .about-hero{
-    padding:90px 0;
+    padding:120px 0;
 }
 .about-hero-grid{
     gap:50px;
@@ -2014,7 +2014,7 @@ and (max-width:1023px){
 .about-hero-image img{
     height:520px;
 }
-/* STORY */
+
 .story-grid{
     gap:50px;
 }
@@ -2024,7 +2024,7 @@ and (max-width:1023px){
 .story-content h2{
     font-size:34px;
 }
-/* MISSION */
+
 .mission-card{
     padding:35px 25px;
 }
@@ -2034,7 +2034,7 @@ and (max-width:1023px){
 .mission-card p{
     font-size:14px;
 }
-/* STATS */
+
 .stats-grid{
     gap:20px;
 }
@@ -2047,7 +2047,7 @@ and (max-width:1023px){
 .stat-card p{
     font-size:13px;
 }
-/* WHY */
+
 .why-grid{
     gap:50px;
 }
@@ -2066,7 +2066,7 @@ and (max-width:1023px){
 .why-item p{
     font-size:13px;
 }
-/* JOURNEY */
+
 .timeline{
     max-width:800px;
 }
@@ -2084,7 +2084,7 @@ and (max-width:1023px){
     height:70px;
     font-size:18px;
 }
-/* TEAM */
+
 .team-image{
     height:280px;
 }
@@ -2094,14 +2094,14 @@ and (max-width:1023px){
 .team-content h3{
     font-size:18px;
 }
-/* TESTIMONIAL */
+
 .testimonial-card{
     padding:30px 20px;
 }
 .testimonial-card p{
     font-size:13px;
 }
-/* CTA */
+
 .cta-box{
     grid-template-columns:
     1fr 350px;
@@ -2113,7 +2113,7 @@ and (max-width:1023px){
 .cta-image img{
     height:330px;
 }
-/* NEWSLETTER */
+
 .newsletter-box h2{
     font-size:32px;
 }
@@ -2121,7 +2121,7 @@ and (max-width:1023px){
 /* ==========================================================
    ABOUT HERO IMAGE DESKTOP SIZE FIX
 ========================================================== */
-/* Desktop / Laptop */
+
 @media (min-width:1024px) and (max-width:1279px){
     .about-hero-grid{
         align-items:center;
@@ -2132,7 +2132,7 @@ and (max-width:1023px){
     }
     .about-hero-image img{
         width:100%;
-        height:360px;
+        height:420px;
         object-fit:cover;
         border-radius:28px;
     }
@@ -2141,7 +2141,7 @@ and (max-width:1023px){
         bottom:25px;
     }
 }
-/* Large Desktop */
+
 @media (min-width:1280px){
     .about-hero-grid{
         align-items:center;
@@ -2189,7 +2189,7 @@ and (max-width:1023px){
 .about-floating-card:hover{
     border-top-color:var(--secondary);
 }
-/* Dark Mode */
+
 .dark-mode .mission-card,
 .dark-mode .stat-card,
 .dark-mode .why-item,

@@ -416,7 +416,7 @@ body{
     padding:28px;
     border-radius:22px;
 }
-/* BRAND */
+
 .card-brand{
     margin-bottom:25px;
 }
@@ -431,7 +431,7 @@ body{
 .logo-text{
     font-size:1.7rem;
 }
-/* TOP */
+
 .card-topbar{
     margin-bottom:25px;
 }
@@ -442,7 +442,7 @@ body{
     width:36px;
     height:36px;
 }
-/* HEADINGS */
+
 .auth-heading{
     font-size:34px;
     margin-bottom:8px;
@@ -451,7 +451,7 @@ body{
     font-size:.85rem;
     margin-bottom:25px;
 }
-/* FORM */
+
 .fg{
     margin-bottom:15px;
 }
@@ -468,7 +468,7 @@ body{
     height:48px;
     font-size:.85rem;
 }
-/* SOCIAL */
+
 .auth-divider{
     margin:20px 0;
     font-size:.75rem;
@@ -481,12 +481,12 @@ body{
     width:16px;
     height:16px;
 }
-/* PASSWORD */
+
 .pw-eye svg{
     width:16px;
     height:16px;
 }
-/* LOGIN OPTIONS FIX */
+
 .login-options{
     display:flex;
     justify-content:space-between;
@@ -511,7 +511,7 @@ body{
     font-weight:700;
     white-space:nowrap;
 }
-/* STEP NAV */
+
 .step-nav{
     margin-top:20px;
 }
@@ -519,12 +519,12 @@ body{
     height:48px;
     font-size:.85rem;
 }
-/* PREFERENCES */
+
 .occ{
     padding:10px;
     font-size:.8rem;
 }
-/* SUCCESS */
+
 .success h2{
     font-size:28px;
 }
@@ -576,7 +576,7 @@ html[dir="ltr"] .input-wrap input{
 }/*==================================================
  SECONDARY COLOR ACCENTS
 ==================================================*/
-/* Links */
+
 .card-switch a,
 .auth-note a{
     color:var(--secondary);
@@ -585,50 +585,50 @@ html[dir="ltr"] .input-wrap input{
 .auth-note a:hover{
     color:var(--secondary-hover);
 }
-/* Icons */
+
 .icon-btn:hover{
     background:var(--secondary);
     color:#fff;
 }
-/* Logo Accent */
+
 .logo-text span{
     color:var(--secondary);
 }
-/* Section Tags */
+
 .sec-tag{
     color:var(--secondary);
 }
-/* Input Focus */
+
 .input-wrap input:focus,
 .input-wrap select:focus{
     border-color:var(--secondary);
     box-shadow:0 0 0 3px rgba(141,110,99,.15);
 }
-/* Primary Button Hover Enhancement */
+
 .auth-btn:hover{
     background:var(--secondary-hover);
 }
-/* Social Hover */
+
 .social-btn:hover{
     border-color:var(--secondary);
     color:var(--secondary);
 }
-/* Password Strength */
+
 .pw-fill{
     background:var(--secondary);
 }
-/* Occupation Selected */
+
 .occ.on{
     background:rgba(141,110,99,.12);
     border-color:var(--secondary);
     color:var(--secondary);
 }
-/* Success Icon */
+
 .success-ico{
     background:rgba(141,110,99,.12);
     color:var(--secondary);
 }
-/* Dark Mode Secondary Fix */
+
 .dark-mode .card-switch a,
 .dark-mode .auth-note a{
     color:#d7b7a5;
@@ -647,7 +647,7 @@ html[dir="ltr"] .input-wrap input{
 }/*==================================================
  BLOOMNEST AUTH CSS FIXES
 ==================================================*/
-/* REMOVE TOP ACCOUNT SWITCH STYLE */
+
 .card-topbar{
     display:flex;
     justify-content:flex-end;
@@ -810,15 +810,15 @@ body{
     max-height:calc(100svh - 40px);
     overflow-y:auto;
 }
-/* Hide scrollbar */
+
 .auth-card::-webkit-scrollbar{
     width:0;
 }
-/* Top bar */
+
 .card-topbar{
     margin-bottom:18px;
 }
-/* Logo */
+
 .card-brand{
     margin-bottom:18px;
 }
@@ -833,7 +833,7 @@ body{
 .logo-text{
     font-size:1.5rem;
 }
-/* Heading */
+
 .auth-heading{
     font-size:30px;
     margin-bottom:5px;
@@ -842,7 +842,7 @@ body{
     margin-bottom:20px;
     font-size:.82rem;
 }
-/* Form */
+
 .fg{
     margin-bottom:12px;
 }
@@ -852,19 +852,19 @@ body{
 .input-wrap input{
     height:44px;
 }
-/* Login options */
+
 .login-options{
     margin:10px 0 15px;
 }
-/* Button */
+
 .auth-btn{
     height:46px;
 }
-/* Divider */
+
 .auth-divider{
     margin:15px 0;
 }
-/* Social */
+
 .social-btns{
     gap:8px;
 }
@@ -876,12 +876,12 @@ body{
     width:16px;
     height:16px;
 }
-/* Controls */
+
 .icon-btn{
     width:34px;
     height:34px;
 }
-/* Desktop large */
+
 @media(min-width:1024px){
     body{
         padding:15px;
@@ -891,7 +891,7 @@ body{
         padding:22px;
     }
 }
-/* Mobile */
+
 @media(max-width:640px){
     body{
         padding:12px;
@@ -911,15 +911,15 @@ body{
 .auth-card{
     padding:18px;
 }
-/* Top Bar */
+
 .card-topbar{
     margin-bottom:14px;
 }
-/* Brand */
+
 .card-brand{
     margin-bottom:14px;
 }
-/* Logo */
+
 .logo{
     gap:8px;
 }
@@ -934,7 +934,7 @@ body{
 .logo-text{
     font-size:1.4rem;
 }
-/* Heading */
+
 .auth-heading{
     font-size:28px;
     margin-bottom:4px;
@@ -942,7 +942,7 @@ body{
 .auth-sub{
     margin-bottom:15px;
 }
-/* Form spacing */
+
 .fg{
     margin-bottom:10px;
 }
@@ -955,19 +955,19 @@ body{
     padding-left:12px;
     padding-right:40px;
 }
-/* Login options */
+
 .login-options{
     margin:8px 0 14px;
 }
-/* Main Button */
+
 .auth-btn{
     height:44px;
 }
-/* Divider */
+
 .auth-divider{
     margin:14px 0;
 }
-/* Social buttons */
+
 .social-btns{
     gap:7px;
 }
@@ -975,12 +975,12 @@ body{
     height:38px;
     font-size:.75rem;
 }
-/* Icons */
+
 .social-icon{
     width:15px;
     height:15px;
 }
-/* Controls */
+
 .icon-btn{
     width:32px;
     height:32px;
@@ -994,34 +994,34 @@ body{
 .auth-card{
     padding:18px 20px;
 }
-/* Top spacing */
+
 .card-topbar{
     margin-bottom:15px;
 }
-/* Brand spacing */
+
 .card-brand{
     margin-bottom:15px;
 }
-/* Heading spacing */
+
 .auth-sub{
     margin-bottom:15px;
 }
-/* Form spacing */
+
 .fg{
     margin-bottom:10px;
 }
-/* Button spacing */
+
 .auth-btn{
     height:42px;
 }
-/* Social section */
+
 .auth-divider{
     margin:14px 0;
 }
 .social-btn{
     height:36px;
 }
-/* Mobile */
+
 @media(max-width:640px){
     .auth-card{
         padding:16px;

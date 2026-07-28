@@ -769,7 +769,7 @@ function initReducedMotion(){
 document.addEventListener(
 "DOMContentLoaded",
 async ()=>{
-    /* LOAD COMPONENTS */
+    
     await Promise.all([
         loadComponent(
             "navbar",
@@ -780,9 +780,9 @@ async ()=>{
             "../components/footer.html"
         )
     ]);
-    /* ICONS */
+    
     refreshIcons();
-    /* CORE SYSTEM */
+    
     initTheme();
     initRTL();
     initStickyHeader();
@@ -792,14 +792,14 @@ async ()=>{
     initActiveMenu();
     initSearchModal();
     initEscapeClose();
-    /* UI EFFECTS */
+    
     initScrollTop();
     initSmoothScroll();
     initRevealAnimation();
     initCounter();
     initLazyImages();
     initCardHover();
-    /* SYSTEM */
+    
     initResizeHandler();
     initPageLoader();
     initPerformance();
@@ -931,7 +931,7 @@ themeBtn.innerHTML = isDark
 lucide.createIcons();
 });
 }
-/* LOAD SAVED THEME */
+
 const savedTheme =
 localStorage.getItem("theme");
 if(savedTheme==="dark"){
@@ -1015,3 +1015,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+

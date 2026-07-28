@@ -1088,22 +1088,22 @@ outline-offset:3px;
 /*==================================================
 RESPONSIVE
 ==================================================*/
-/* Large Desktop */
+
 @media(min-width:1281px){
 .container{max-width:1320px;}
 }
-/* Desktop */
+
 @media(max-width:1280px){
 .container{max-width:1140px;}
 }
-/* Tablet */
+
 @media(max-width:1024px){
 .container{padding:0 24px;}
 .grid-4{grid-template-columns:repeat(2,1fr);}
 .grid-3,.grid-2{grid-template-columns:1fr;}
 section{padding:80px 0;}
 }
-/* Mobile */
+
 @media(max-width:640px){
 html{font-size:15px;}
 .container{padding:0 18px;}
@@ -1513,13 +1513,13 @@ outline-offset:3px;
 /*==================================================
 RESPONSIVE
 ==================================================*/
-/* Large Desktop */
+
 @media (min-width:1281px){
 .container{
 max-width:1320px;
 }
 }
-/* Desktop */
+
 @media (max-width:1280px){
 .container{
 width:min(95%,1180px);
@@ -1534,7 +1534,7 @@ grid-template-columns:repeat(4,1fr);
 grid-template-columns:repeat(3,1fr);
 }
 }
-/* Tablet */
+
 @media (max-width:1024px){
 .container{
 width:94%;
@@ -1560,7 +1560,7 @@ h2{
 font-size:2.4rem;
 }
 }
-/* Mobile */
+
 @media (max-width:640px){
 html{
 font-size:15px;
@@ -1605,7 +1605,7 @@ display:none!important;
 display:block!important;
 }
 }
-/* Desktop Only */
+
 @media (min-width:641px){
 .show-mobile{
 display:none!important;
@@ -1911,7 +1911,7 @@ BloomNest Premium Gardening Store
    Desktop : 1024px - 1280px
    Large   : Above 1280px
 ========================================================== */
-/* Desktop Navbar */
+
 @media (min-width:1024px){
     .navbar{
         padding:12px 0;
@@ -1919,7 +1919,7 @@ BloomNest Premium Gardening Store
     .navbar .container{
         max-width:1200px;
     }
-    /* Logo */
+    
     .logo,
     .brand-logo{
         font-size:22px;
@@ -1929,7 +1929,7 @@ BloomNest Premium Gardening Store
         height:38px;
         width:auto;
     }
-    /* Navigation Links */
+    
     .navbar-nav,
     .nav-links{
         gap:22px;
@@ -1940,14 +1940,14 @@ BloomNest Premium Gardening Store
         font-weight:600;
         padding:8px 0;
     }
-    /* Header Buttons */
+    
     .navbar .btn,
     .header-actions .btn{
         padding:10px 20px;
         font-size:13px;
         border-radius:50px;
     }
-    /* Icons */
+    
     .theme-toggle,
     .rtl-toggle,
     .menu-toggle{
@@ -1990,7 +1990,7 @@ BloomNest Premium Gardening Store
    Desktop View
 ========================================================== */
 @media (min-width:1024px){
-/* Common Header Buttons */
+
 .navbar .btn,
 .header-actions .btn{
     height:38px;
@@ -2004,7 +2004,7 @@ BloomNest Premium Gardening Store
     border-radius:50px;
     transition:.3s ease;
 }
-/* Primary Button */
+
 .navbar .btn-primary,
 .header-actions .btn-primary{
     background:var(--primary);
@@ -2016,7 +2016,7 @@ BloomNest Premium Gardening Store
     background:var(--primary-hover);
     transform:translateY(-2px);
 }
-/* Secondary Button */
+
 .navbar .btn-secondary,
 .header-actions .btn-secondary{
     background:transparent;
@@ -2029,7 +2029,7 @@ BloomNest Premium Gardening Store
     color:#ffffff;
     transform:translateY(-2px);
 }
-/* Outline Secondary Alternative */
+
 .navbar .btn-outline,
 .header-actions .btn-outline{
     background:transparent;
@@ -2070,7 +2070,7 @@ GLOBAL HERO ANIMATION
         #fff8f3
     );
 }
-/* Dark Mode */
+
 .dark-mode .animated-hero{
     background:
     linear-gradient(
@@ -2080,7 +2080,7 @@ GLOBAL HERO ANIMATION
         #211a17
     );
 }
-/* Moving Background Glow */
+
 .animated-hero::before{
     content:"";
     position:absolute;
@@ -2117,14 +2117,14 @@ GLOBAL HERO ANIMATION
     heroGlow2 15s ease-in-out infinite alternate;
     z-index:-1;
 }
-/* Floating Leaves Container */
+
 .hero-animation{
     position:absolute;
     inset:0;
     pointer-events:none;
     z-index:-1;
 }
-/* Leaf Design */
+
 .leaf{
     position:absolute;
     width:45px;
@@ -2142,7 +2142,7 @@ GLOBAL HERO ANIMATION
     animation:
     leafFloat 12s linear infinite;
 }
-/* Leaf Positions */
+
 .leaf-1{
     left:10%;
     top:20%;
@@ -2177,7 +2177,7 @@ GLOBAL HERO ANIMATION
     height:45px;
     animation-duration:14s;
 }
-/* Animations */
+
 @keyframes heroGlow1{
 0%{
 transform:
@@ -2220,7 +2220,7 @@ translateY(0)
 rotate(360deg);
 }
 }
-/* Content Entrance Animation */
+
 .animated-hero .hero-content,
 .animated-hero .blog-detail-hero-content,
 .animated-hero h1,
@@ -2241,7 +2241,7 @@ transform:
 translateY(0);
 }
 }
-/* Image Animation */
+
 .animated-hero img{
 animation:
 heroImage 1.2s ease forwards;
@@ -2260,7 +2260,7 @@ translateX(0)
 scale(1);
 }
 }
-/* Mobile */
+
 @media(max-width:768px){
 .animated-hero::before{
 width:350px;
@@ -2273,4 +2273,286 @@ height:350px;
 .leaf{
 transform:scale(.7);
 }
+}
+
+
+/*==================================================
+HERO EMPHASIS TEXT
+==================================================*/
+
+.about-hero-content h1 em,
+.service-hero-content h1 em,
+.premium-hero-content h1 em,
+.blog-hero-content h1 em,
+.page-header-text h1 em{
+
+    font-style:normal;
+    color:var(--primary);
+    position:relative;
+    display:inline-block;
+    font-weight:800;
+}
+
+
+
+
+/*==================================================
+FLOATING LEAVES ANIMATION
+==================================================*/
+
+.animated-hero{
+
+    position:relative;
+    overflow:hidden;
+}
+
+
+.hero-animation{
+
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+}
+
+
+.leaf{
+
+    position:absolute;
+    width:25px;
+    height:45px;
+
+    background:var(--primary);
+
+    border-radius:100% 0 100% 0;
+
+    opacity:.18;
+
+    animation:leafFloat 12s infinite ease-in-out;
+}
+
+
+
+.leaf-1{
+    top:10%;
+    left:8%;
+}
+
+.leaf-2{
+    top:25%;
+    right:12%;
+    animation-delay:2s;
+}
+
+.leaf-3{
+    bottom:20%;
+    left:18%;
+    animation-delay:4s;
+}
+
+.leaf-4{
+    bottom:10%;
+    right:25%;
+    animation-delay:6s;
+}
+
+.leaf-5{
+    top:50%;
+    right:5%;
+    animation-delay:8s;
+}
+
+
+
+@keyframes leafFloat{
+
+    0%{
+        transform:
+        translateY(0)
+        rotate(0deg);
+    }
+
+
+    50%{
+        transform:
+        translateY(-40px)
+        rotate(180deg);
+    }
+
+
+    100%{
+        transform:
+        translateY(0)
+        rotate(360deg);
+    }
+}
+
+
+
+
+
+
+/* ==========================================
+PREMIUM THICK FLOATING LEAVES
+========================================== */
+
+.hero-animation{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:1;
+}
+
+.leaf{
+
+    position:absolute;
+
+    width:70px;
+    height:70px;
+
+    opacity:.22;
+
+    border-radius:65% 0 65% 0;
+
+    background:linear-gradient(
+        135deg,
+        #66bb6a 0%,
+        #43a047 45%,
+        #2e7d32 100%
+    );
+
+    box-shadow:
+        inset -8px -8px 15px rgba(0,0,0,.18),
+        inset 6px 6px 12px rgba(255,255,255,.15),
+        0 15px 30px rgba(0,0,0,.12);
+
+    animation:floatLeaf 14s linear infinite;
+
+    transform-origin:center;
+
+}
+
+/* Center Leaf Vein */
+
+.leaf::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:10%;
+
+    width:3px;
+    height:80%;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:20px;
+
+    transform:translateX(-50%) rotate(-15deg);
+
+}
+
+/* Side Veins */
+
+.leaf::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:18%;
+
+    background:
+    repeating-linear-gradient(
+        150deg,
+        transparent 0 7px,
+        rgba(255,255,255,.15) 7px 9px
+    );
+
+    opacity:.7;
+
+}
+
+/* Positions */
+
+.leaf-1{
+    left:6%;
+    animation-delay:0s;
+}
+
+.leaf-2{
+    left:26%;
+    animation-delay:3s;
+}
+
+.leaf-3{
+    left:48%;
+    animation-delay:6s;
+}
+
+.leaf-4{
+    left:70%;
+    animation-delay:9s;
+}
+
+.leaf-5{
+    left:90%;
+    animation-delay:12s;
+}
+
+/* Animation */
+
+@keyframes floatLeaf{
+
+    0%{
+
+        transform:
+        translateY(-120px)
+        rotate(0deg)
+        scale(.8);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.22;
+
+    }
+
+    40%{
+
+        transform:
+        translateY(30vh)
+        translateX(40px)
+        rotate(120deg)
+        scale(1);
+
+    }
+
+    70%{
+
+        transform:
+        translateY(65vh)
+        translateX(-35px)
+        rotate(240deg)
+        scale(1.1);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(110vh)
+        translateX(25px)
+        rotate(360deg)
+        scale(.9);
+
+        opacity:0;
+
+    }
+
 }

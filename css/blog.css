@@ -16,7 +16,7 @@
 .blog-hero-content{
     max-width:850px;
     margin:auto;
-    text-align:center;
+ 
 }
 .blog-hero h1{
     font-size:64px;
@@ -674,7 +674,7 @@ BLOG HERO SECTION
     background:var(--bg-soft);
     overflow:hidden;
 }
-/* Decorative Background */
+
 .blog-hero::before{
     content:"";
     position:absolute;
@@ -685,7 +685,7 @@ BLOG HERO SECTION
     border-radius:50%;
     background:rgba(46,125,50,0.08);
 }
-/* Hero Grid */
+
 .blog-hero-grid{
     display:grid;
     grid-template-columns:1fr 0.9fr;
@@ -694,7 +694,7 @@ BLOG HERO SECTION
     position:relative;
     z-index:2;
 }
-/* Content */
+
 .blog-hero-content{
     max-width:650px;
 }
@@ -719,13 +719,13 @@ BLOG HERO SECTION
     color:var(--text-muted);
     margin-bottom:35px;
 }
-/* Buttons */
+
 .hero-actions{
     display:flex;
     align-items:center;
     gap:18px;
 }
-/* Hero Image */
+
 .blog-hero-image{
     height:560px;
     border-radius:32px;
@@ -844,7 +844,7 @@ BLOG NEWSLETTER SECTION
     border:1px solid var(--border);
     box-shadow:0 20px 50px rgba(0,0,0,.08);
 }
-/* CONTENT */
+
 .newsletter-content{
     max-width:550px;
 }
@@ -862,7 +862,7 @@ BLOG NEWSLETTER SECTION
     font-size:16px;
     line-height:1.8;
 }
-/* FORM */
+
 .newsletter-form{
     display:flex;
     align-items:center;
@@ -971,7 +971,7 @@ MOBILE
    BLOOMNEST BLOG - SECONDARY COLOR FIX
    Add at END of CSS
 ================================================== */
-/* Secondary Text */
+
 .blog-content a,
 .blog-content a:hover,
 .blog-meta span,
@@ -980,7 +980,7 @@ MOBILE
 .category-wrapper button.active{
     color:var(--secondary);
 }
-/* Secondary Background Elements */
+
 .blog-tag{
     background:var(--secondary);
     color:#ffffff;
@@ -991,13 +991,13 @@ MOBILE
     border-color:var(--secondary);
     color:#ffffff;
 }
-/* Secondary Border */
+
 .blog-card:hover,
 .blog-search:focus-within,
 .newsletter-form input:focus{
     border-color:var(--secondary);
 }
-/* CTA Secondary Button */
+
 .blog-cta .btn-secondary,
 .hero-actions .btn-secondary{
     background:var(--secondary);
@@ -1009,12 +1009,12 @@ MOBILE
     background:var(--secondary-hover);
     color:#ffffff;
 }
-/* Icons Secondary */
+
 .blog-meta svg,
 .blog-content a svg{
     color:var(--secondary);
 }
-/* Dark Mode Secondary Fix */
+
 [data-theme="dark"] .blog-content a,
 [data-theme="dark"] .blog-meta span,
 [data-theme="dark"] .blog-meta svg{
@@ -1084,7 +1084,7 @@ MOBILE
     height:430px;
     border-radius:25px;
 }
-/* Featured Blog */
+
 .featured-grid{
     gap:35px;
     border-radius:25px;
@@ -1101,7 +1101,7 @@ MOBILE
 .featured-content p{
     font-size:15px;
 }
-/* Blog Cards */
+
 .blog-grid{
     gap:25px;
 }
@@ -1117,7 +1117,7 @@ MOBILE
 .blog-content p{
     font-size:14px;
 }
-/* Newsletter */
+
 .newsletter-box{
     padding:45px;
     gap:35px;
@@ -1131,7 +1131,7 @@ MOBILE
 .newsletter-form{
     min-width:350px;
 }
-/* CTA */
+
 .blog-cta .cta-box{
     gap:35px;
 }
@@ -1259,7 +1259,7 @@ MOBILE
     );
     z-index:2;
 }
-/* Hover Effect */
+
 .blog-card:hover::before{
     height:6px;
     background:linear-gradient(

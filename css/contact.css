@@ -1932,7 +1932,7 @@ PREMIUM TOP BORDER FOR ALL CARDS
     );
     border-radius:32px 32px 0 0;
 }
-/* Hover Effect */
+
 .contact-card:hover::before,
 .sidebar-card:hover::before,
 .location-card:hover::before,
