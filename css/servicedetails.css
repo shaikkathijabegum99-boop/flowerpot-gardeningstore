@@ -1,0 +1,1746 @@
+/* ==========================================================
+   BLOOMNEST SERVICE DETAILS CSS
+   PART 1
+   Hero + Overview + Benefits
+========================================================== */
+/* ==========================================================
+   SERVICE DETAIL HERO
+========================================================== */
+.service-detail-hero{
+    padding:100px 0;
+    background:
+    linear-gradient(
+        180deg,
+        var(--bg),
+        var(--bg2)
+    );
+    overflow:hidden;
+}
+.dark-mode .service-detail-hero{
+    background:
+    linear-gradient(
+        180deg,
+        #101510,
+        #161d16
+    );
+}
+.service-detail-hero .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+.service-detail-hero-content{
+    max-width:600px;
+}
+.service-detail-hero-content h1{
+    font-size:clamp(40px,5vw,60px);
+    line-height:1.15;
+    letter-spacing:-1px;
+    margin:25px 0;
+    color:var(--heading);
+    font-weight:800;
+}
+.service-detail-hero-content p{
+    font-size:17px;
+    line-height:1.8;
+    color:var(--text);
+    margin-bottom:35px;
+}
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.hero-buttons .btn{
+    min-width:170px;
+    justify-content:center;
+}
+/* HERO IMAGE */
+.service-detail-hero-image{
+    position:relative;
+}
+.service-detail-hero-image img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    border-radius:35px;
+    box-shadow:
+    0 25px 70px rgba(0,0,0,.15);
+    transition:.5s;
+}
+.service-detail-hero-image:hover img{
+    transform:scale(1.03);
+}
+/* ==========================================================
+   SERVICE OVERVIEW
+========================================================== */
+.service-overview{
+    padding:110px 0;
+    background:var(--surface);
+}
+.dark-mode .service-overview{
+    background:#101510;
+}
+.overview-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:80px;
+}
+/* IMAGE */
+.overview-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:32px;
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.12);
+}
+/* CONTENT */
+.overview-content h2{
+    font-size:44px;
+    line-height:1.2;
+    color:var(--heading);
+    margin:20px 0 25px;
+}
+.overview-content p{
+    font-size:16px;
+    line-height:1.8;
+    color:var(--text);
+    margin-bottom:18px;
+}
+/* CHECK LIST */
+.service-check-list{
+    list-style:none;
+    padding:0;
+    margin:35px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+.service-check-list li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:15px;
+    color:var(--text);
+}
+.service-check-list svg{
+    width:20px;
+    height:20px;
+    color:var(--primary);
+    flex-shrink:0;
+}
+/* ==========================================================
+   SERVICE BENEFITS
+========================================================== */
+.service-benefits{
+    padding:110px 0;
+    background:var(--bg2);
+}
+.dark-mode .service-benefits{
+    background:#161d16;
+}
+.benefits-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+.benefit-card{
+    background:var(--surface);
+    padding:40px 30px;
+    border-radius:28px;
+    text-align:center;
+    border:1px solid var(--border);
+    transition:.35s ease;
+}
+.benefit-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.12);
+}
+.benefit-icon{
+    width:75px;
+    height:75px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+    rgba(27,94,32,.12);
+}
+.benefit-icon svg{
+    width:35px;
+    height:35px;
+    color:var(--primary);
+}
+.benefit-card h3{
+    font-size:22px;
+    margin-bottom:15px;
+    color:var(--heading);
+}
+.benefit-card p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .service-detail-hero-content h1,
+.dark-mode .overview-content h2,
+.dark-mode .benefit-card h3{
+    color:#ffffff;
+}
+.dark-mode .service-detail-hero-content p,
+.dark-mode .overview-content p,
+.dark-mode .benefit-card p,
+.dark-mode .service-check-list li{
+    color:#b6beb5;
+}
+.dark-mode .benefit-card{
+    background:#1b231c;
+    border-color:#303a30;
+}
+.dark-mode .benefit-icon{
+    background:#263526;
+}
+.dark-mode .benefit-icon svg{
+    color:#9bd18d;
+}
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+@media(min-width:1280px){
+.service-detail-hero-content h1{
+    font-size:58px;
+}
+.overview-content h2{
+    font-size:40px;
+}
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:1024px){
+.service-detail-hero .container,
+.overview-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+.service-detail-hero-content,
+.overview-content{
+    text-align:center;
+    max-width:100%;
+}
+.hero-buttons{
+    justify-content:center;
+}
+.service-check-list{
+    text-align:left;
+}
+.benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.service-detail-hero-image img{
+    height:500px;
+}
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:640px){
+.service-detail-hero,
+.service-overview,
+.service-benefits{
+    padding:75px 0;
+}
+.service-detail-hero-content h1{
+    font-size:34px;
+}
+.service-detail-hero-content p{
+    font-size:15px;
+}
+.hero-buttons{
+    flex-direction:column;
+}
+.hero-buttons .btn{
+    width:100%;
+}
+.service-detail-hero-image img,
+.overview-image img{
+    height:350px;
+}
+.overview-content h2{
+    font-size:30px;
+}
+.service-check-list{
+    grid-template-columns:1fr;
+}
+.benefits-grid{
+    grid-template-columns:1fr;
+}
+.benefit-card{
+    padding:35px 25px;
+}
+}/* ==========================================================
+   BLOOMNEST SERVICE DETAILS CSS
+   PART 2
+   Plant Collection + Process + Pricing
+========================================================== */
+/* ==========================================================
+   PLANT COLLECTION SECTION
+========================================================== */
+.plant-collection{
+    padding:110px 0;
+    background:var(--surface);
+}
+.dark-mode .plant-collection{
+    background:#101510;
+}
+.plants-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+/* PLANT CARD */
+.plant-card{
+    background:var(--bg);
+    border-radius:28px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    transition:.4s ease;
+}
+.plant-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.15);
+}
+/* IMAGE */
+.plant-image{
+    height:300px;
+    overflow:hidden;
+}
+.plant-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+.plant-card:hover .plant-image img{
+    transform:scale(1.08);
+}
+/* CONTENT */
+.plant-content{
+    padding:30px;
+}
+.plant-content h3{
+    font-size:24px;
+    margin-bottom:12px;
+    color:var(--heading);
+}
+.plant-content p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text);
+    margin-bottom:20px;
+}
+.plant-content a{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--primary);
+    font-weight:700;
+    font-size:15px;
+}
+.plant-content a svg{
+    width:18px;
+}
+.plant-content a:hover{
+    gap:14px;
+}
+/* ==========================================================
+   WORK PROCESS SECTION
+========================================================== */
+.service-process{
+    padding:110px 0;
+    background:var(--bg2);
+}
+.dark-mode .service-process{
+    background:#161d16;
+}
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+.process-card{
+    background:var(--surface);
+    padding:40px 30px;
+    border-radius:28px;
+    border:1px solid var(--border);
+    position:relative;
+    transition:.35s ease;
+}
+.process-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.12);
+}
+.process-number{
+    width:65px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:var(--primary);
+    color:#ffffff;
+    font-size:22px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+.process-card h3{
+    font-size:22px;
+    color:var(--heading);
+    margin-bottom:15px;
+}
+.process-card p{
+    color:var(--text);
+    line-height:1.7;
+    font-size:15px;
+}
+/* ==========================================================
+   PRICING SECTION
+========================================================== */
+.service-pricing{
+    padding:110px 0;
+    background:var(--surface);
+}
+.dark-mode .service-pricing{
+    background:#101510;
+}
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    align-items:stretch;
+}
+/* PRICING CARD */
+.pricing-card{
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:32px;
+    padding:45px 35px;
+    position:relative;
+    transition:.4s ease;
+}
+.pricing-card:hover{
+    transform:translateY(-10px);
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.15);
+}
+.pricing-card.featured{
+    border:2px solid var(--primary);
+    transform:translateY(-15px);
+}
+.pricing-card.featured:hover{
+    transform:translateY(-25px);
+}
+/* POPULAR BADGE */
+.popular-badge{
+    position:absolute;
+    top:20px;
+    right:25px;
+    background:var(--primary);
+    color:white;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:700;
+}
+.pricing-card h3{
+    font-size:26px;
+    margin-bottom:25px;
+    color:var(--heading);
+}
+.price{
+    font-size:48px;
+    font-weight:800;
+    color:var(--primary);
+    margin-bottom:30px;
+}
+.price span{
+    font-size:14px;
+    font-weight:500;
+    color:var(--text);
+}
+.pricing-card ul{
+    list-style:none;
+    padding:0;
+    margin:0 0 35px;
+}
+.pricing-card li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:18px;
+    color:var(--text);
+    font-size:15px;
+}
+.pricing-card li svg{
+    width:18px;
+    color:var(--primary);
+}
+.pricing-card .btn{
+    width:100%;
+    justify-content:center;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .plant-card,
+.dark-mode .process-card,
+.dark-mode .pricing-card{
+    background:#1b231c;
+    border-color:#303a30;
+}
+.dark-mode .plant-content h3,
+.dark-mode .process-card h3,
+.dark-mode .pricing-card h3{
+    color:#ffffff;
+}
+.dark-mode .plant-content p,
+.dark-mode .process-card p,
+.dark-mode .pricing-card li{
+    color:#b6beb5;
+}
+.dark-mode .price span{
+    color:#b6beb5;
+}
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+@media(min-width:1280px){
+.plant-image{
+    height:320px;
+}
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:1024px){
+.plants-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+.pricing-card.featured{
+    transform:none;
+}
+.pricing-card.featured:hover{
+    transform:translateY(-10px);
+}
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:640px){
+.plant-collection,
+.service-process,
+.service-pricing{
+    padding:75px 0;
+}
+.plants-grid{
+    grid-template-columns:1fr;
+}
+.plant-image{
+    height:280px;
+}
+.plant-content{
+    padding:25px;
+}
+.process-grid{
+    grid-template-columns:1fr;
+}
+.process-card{
+    padding:35px 25px;
+}
+.pricing-card{
+    padding:35px 25px;
+}
+.price{
+    font-size:40px;
+}
+}/* ==========================================================
+   BLOOMNEST SERVICE DETAILS CSS
+   PART 3
+   FAQ + CTA + Final Dark Mode + Responsive
+========================================================== */
+/* ==========================================================
+   FAQ SECTION
+========================================================== */
+.service-faq{
+    padding:110px 0;
+    background:var(--bg2);
+}
+.dark-mode .service-faq{
+    background:#161d16;
+}
+.faq-wrapper{
+    max-width:900px;
+    margin:50px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.faq-item{
+    background:var(--surface);
+    border-radius:20px;
+    border:1px solid var(--border);
+    overflow:hidden;
+    transition:.3s ease;
+}
+.faq-item:hover{
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.10);
+}
+.faq-question{
+    width:100%;
+    padding:25px 30px;
+    border:none;
+    background:none;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+    text-align:left;
+    color:var(--heading);
+    font-size:17px;
+    font-weight:700;
+}
+.faq-icon{
+    width:32px;
+    height:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:rgba(27,94,32,.12);
+    color:var(--primary);
+    font-size:22px;
+    transition:.3s;
+}
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+}
+.faq-answer p{
+    padding:
+    0 30px 25px;
+    color:var(--text);
+    line-height:1.8;
+    font-size:15px;
+}
+.faq-item.active .faq-icon{
+    transform:rotate(45deg);
+}
+.faq-item.active .faq-answer{
+    max-height:200px;
+}
+/* ==========================================================
+   SERVICE DETAIL CTA
+========================================================== */
+.service-detail-cta{
+    padding:100px 0;
+    background:var(--surface);
+}
+.cta-box{
+    background:
+    linear-gradient(
+    135deg,
+    var(--primary),
+    #2e7d32
+    );
+    border-radius:40px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+}
+.cta-content{
+    padding:70px;
+    color:#ffffff;
+}
+.cta-content h2{
+    font-size:48px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#ffffff;
+}
+.cta-content p{
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:rgba(255,255,255,.85);
+}
+.cta-content .btn{
+    background:#ffffff;
+    color:var(--primary);
+}
+.cta-content .btn:hover{
+    background:#f5f5f5;
+}
+/* CTA IMAGE */
+.cta-image{
+    height:100%;
+}
+.cta-image img{
+    width:100%;
+    height:100%;
+    min-height:420px;
+    object-fit:cover;
+}
+/* ==========================================================
+   FINAL DARK MODE
+========================================================== */
+.dark-mode .service-detail-cta{
+    background:#101510;
+}
+.dark-mode .faq-item{
+    background:#1b231c;
+    border-color:#303a30;
+}
+.dark-mode .faq-question{
+    color:#ffffff;
+}
+.dark-mode .faq-answer p{
+    color:#b6beb5;
+}
+.dark-mode .faq-icon{
+    background:#263526;
+    color:#9bd18d;
+}
+/* ==========================================================
+   SECTION HEADER DARK FIX
+========================================================== */
+.dark-mode .section-header h2{
+    color:#ffffff;
+}
+.dark-mode .section-header p{
+    color:#b6beb5;
+}
+.dark-mode .section-tag{
+    color:#9bd18d;
+}
+/* ==========================================================
+   BUTTON DARK FIX
+========================================================== */
+.dark-mode .btn-outline{
+    border-color:#9bd18d;
+    color:#9bd18d;
+}
+.dark-mode .btn-outline:hover{
+    background:#9bd18d;
+    color:#111;
+}
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+@media(min-width:1280px){
+.cta-content h2{
+    font-size:52px;
+}
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:1024px){
+.cta-box{
+    grid-template-columns:1fr;
+}
+.cta-content{
+    padding:55px 40px;
+    text-align:center;
+}
+.cta-image img{
+    min-height:350px;
+}
+.cta-content h2{
+    font-size:38px;
+}
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:640px){
+.service-faq,
+.service-detail-cta{
+    padding:75px 0;
+}
+.faq-question{
+    padding:20px;
+    font-size:15px;
+}
+.faq-answer p{
+    padding:
+    0 20px 20px;
+}
+.cta-box{
+    border-radius:25px;
+}
+.cta-content{
+    padding:40px 25px;
+}
+.cta-content h2{
+    font-size:30px;
+}
+.cta-content p{
+    font-size:15px;
+}
+.cta-image img{
+    min-height:260px;
+}
+}/* ==========================================================
+   DESKTOP FONT SIZE OPTIMIZATION
+   Reduce typography for large screens
+========================================================== */
+@media (min-width:1025px){
+/* Section Headings */
+.section-header h2{
+    font-size:42px;
+}
+.section-header p{
+    font-size:15px;
+}
+/* Hero */
+.service-detail-hero-content h1{
+    font-size:52px;
+    line-height:1.15;
+}
+.service-detail-hero-content p{
+    font-size:16px;
+}
+/* Overview */
+.overview-content h2{
+    font-size:38px;
+}
+.overview-content p{
+    font-size:15px;
+}
+/* Benefits */
+.benefit-card h3{
+    font-size:20px;
+}
+.benefit-card p{
+    font-size:14px;
+}
+/* Plant Cards */
+.plant-content h3{
+    font-size:21px;
+}
+.plant-content p{
+    font-size:14px;
+}
+.plant-content a{
+    font-size:14px;
+}
+/* Process */
+.process-card h3{
+    font-size:20px;
+}
+.process-card p{
+    font-size:14px;
+}
+/* Pricing */
+.pricing-card h3{
+    font-size:22px;
+}
+.price{
+    font-size:42px;
+}
+.pricing-card li{
+    font-size:14px;
+}
+/* FAQ */
+.faq-question{
+    font-size:16px;
+}
+.faq-answer p{
+    font-size:14px;
+}
+/* CTA */
+.cta-content h2{
+    font-size:42px;
+}
+.cta-content p{
+    font-size:15px;
+}
+}/* ==========================================================
+   RESPONSIVE MEDIA QUERIES
+   SERVICE DETAILS PAGE
+========================================================== */
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media (min-width:1281px){
+.service-detail-hero-content h1{
+    font-size:52px;
+}
+.section-header h2{
+    font-size:42px;
+}
+.overview-content h2{
+    font-size:38px;
+}
+.benefits-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+.plants-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+.process-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+.pricing-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+}
+/* ==========================================================
+   DESKTOP
+   1025px - 1280px
+========================================================== */
+@media (min-width:1025px) and (max-width:1280px){
+.container{
+    max-width:1100px;
+}
+.service-detail-hero{
+    padding:90px 0;
+}
+.service-detail-hero-content h1{
+    font-size:44px;
+}
+.service-detail-hero-content p{
+    font-size:15px;
+}
+.service-detail-hero-image img{
+    height:480px;
+}
+.overview-grid{
+    gap:50px;
+}
+.overview-content h2{
+    font-size:34px;
+}
+.benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.plants-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.pricing-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+.cta-content{
+    padding:50px;
+}
+.cta-content h2{
+    font-size:38px;
+}
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media (min-width:640px) and (max-width:1024px){
+.container{
+    width:90%;
+}
+.service-detail-hero{
+    padding:80px 0;
+}
+.service-detail-hero .container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+.service-detail-hero-content{
+    order:1;
+}
+.service-detail-hero-image{
+    order:2;
+    margin-top:40px;
+}
+.service-detail-hero-content h1{
+    font-size:40px;
+}
+.service-detail-hero-content p{
+    max-width:650px;
+    margin:auto;
+}
+.hero-buttons{
+    justify-content:center;
+}
+.service-detail-hero-image img{
+    height:420px;
+}
+.overview-grid{
+    grid-template-columns:1fr;
+}
+.overview-image img{
+    height:420px;
+}
+.overview-content h2{
+    font-size:32px;
+}
+.benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.plants-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.pricing-grid{
+    grid-template-columns:1fr;
+    max-width:500px;
+    margin:auto;
+}
+.cta-box{
+    grid-template-columns:1fr;
+}
+.cta-content{
+    text-align:center;
+}
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:639px){
+.container{
+    width:92%;
+}
+.service-detail-hero{
+    padding:60px 0;
+}
+.service-detail-hero-content h1{
+    font-size:32px;
+    line-height:1.25;
+}
+.service-detail-hero-content p{
+    font-size:14px;
+}
+.hero-buttons{
+    flex-direction:column;
+    width:100%;
+}
+.hero-buttons .btn{
+    width:100%;
+}
+.service-detail-hero-image img{
+    height:280px;
+}
+.section-header h2{
+    font-size:28px;
+}
+.section-header p{
+    font-size:14px;
+}
+.service-overview{
+    padding:70px 0;
+}
+.overview-grid{
+    grid-template-columns:1fr;
+}
+.overview-image img{
+    height:280px;
+}
+.overview-content h2{
+    font-size:26px;
+}
+.overview-content p{
+    font-size:14px;
+}
+.service-check-list li{
+    font-size:14px;
+}
+.benefits-grid{
+    grid-template-columns:1fr;
+}
+.benefit-card{
+    padding:25px;
+}
+.plants-grid{
+    grid-template-columns:1fr;
+}
+.plant-image img{
+    height:260px;
+}
+.process-grid{
+    grid-template-columns:1fr;
+}
+.process-card{
+    padding:25px;
+}
+.pricing-grid{
+    grid-template-columns:1fr;
+}
+.pricing-card{
+    padding:30px 22px;
+}
+.price{
+    font-size:36px;
+}
+.faq-question{
+    padding:18px;
+    font-size:14px;
+}
+.faq-answer p{
+    font-size:13px;
+}
+.cta-content h2{
+    font-size:28px;
+}
+.cta-content p{
+    font-size:14px;
+}
+.cta-content{
+    padding:35px 20px;
+}
+.cta-image img{
+    min-height:240px;
+}
+}
+/* ==========================================================
+   SECONDARY COLOR ENHANCEMENTS
+========================================================== */
+/* Secondary Color Variables */
+:root{
+    --secondary:#8D6E63;
+    --secondary-hover:#6D544B;
+}
+/* ==========================================================
+   ICON SECONDARY COLOR
+========================================================== */
+.benefit-icon,
+.process-number,
+.faq-icon{
+    border-color:var(--secondary);
+}
+.benefit-icon svg,
+.process-card svg,
+.plant-content a svg,
+.service-check-list svg{
+    color:var(--secondary);
+}
+.benefit-icon:hover svg,
+.process-card:hover svg{
+    color:var(--secondary-hover);
+}
+/* ==========================================================
+   CARD HOVER SECONDARY EFFECT
+========================================================== */
+.benefit-card:hover,
+.plant-card:hover,
+.process-card:hover,
+.pricing-card:hover,
+.faq-item:hover{
+    border-color:var(--secondary);
+}
+/* ==========================================================
+   READ MORE HOVER
+========================================================== */
+.plant-content a,
+.service-content a{
+    color:var(--primary);
+    transition:.3s ease;
+}
+.plant-content a:hover,
+.service-content a:hover{
+    color:var(--secondary);
+    gap:14px;
+}
+.plant-content a svg,
+.service-content a svg{
+    transition:.3s ease;
+}
+.plant-content a:hover svg,
+.service-content a:hover svg{
+    transform:translateX(5px);
+    color:var(--secondary);
+}
+/* ==========================================================
+   BUTTON SECONDARY STYLE
+========================================================== */
+.btn-secondary{
+    background:var(--secondary);
+    color:#fff;
+}
+.btn-secondary:hover{
+    background:var(--secondary-hover);
+}
+/* ==========================================================
+   TAG / BADGE SECONDARY
+========================================================== */
+.popular-badge,
+.popular{
+    background:var(--secondary);
+}
+.popular-badge:hover,
+.popular:hover{
+    background:var(--secondary-hover);
+}
+/* ==========================================================
+   DARK MODE SECONDARY
+========================================================== */
+.dark-mode .benefit-icon,
+.dark-mode .faq-icon{
+    background:rgba(141,110,99,.18);
+}
+.dark-mode .benefit-icon svg,
+.dark-mode .faq-icon{
+    color:#d7b7a5;
+}
+.dark-mode .plant-content a:hover,
+.dark-mode .service-content a:hover{
+    color:#d7b7a5;
+}
+/* ==========================================================
+   SMALL FONT OPTIMIZATION
+========================================================== */
+@media(min-width:1025px){
+.benefit-card p,
+.plant-content p,
+.process-card p,
+.pricing-card li,
+.faq-answer p{
+    font-size:14px;
+}
+.plant-content h3,
+.process-card h3{
+    font-size:20px;
+}
+}
+/* ==========================================================
+   DESKTOP MEDIA QUERIES
+   1024px - 1280px
+========================================================== */
+@media(min-width:1024px) and (max-width:1280px){
+.benefits-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.plants-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.pricing-grid{
+    gap:22px;
+}
+.service-detail-hero .container{
+    gap:45px;
+}
+.service-detail-hero-image img{
+    height:480px;
+}
+}
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media(min-width:1281px){
+.service-detail-hero-image img{
+    height:620px;
+}
+.plant-image{
+    height:330px;
+}
+.benefit-card,
+.process-card,
+.pricing-card{
+    transition:.35s ease;
+}
+.benefit-card:hover,
+.process-card:hover,
+.pricing-card:hover,
+.plant-card:hover{
+    transform:translateY(-12px);
+}
+}/* ==========================================================
+   DESKTOP VIEW OPTIMIZATION
+   1024px - 1280px
+========================================================== */
+@media (min-width:1024px) and (max-width:1280px){
+    .service-detail-hero{
+        padding:80px 0;
+    }
+    .service-detail-hero .container{
+        gap:45px;
+    }
+    .service-detail-hero-content h1{
+        font-size:44px;
+    }
+    .service-detail-hero-content p{
+        font-size:15px;
+        max-width:520px;
+    }
+    .service-detail-hero-image img{
+        height:480px;
+        border-radius:28px;
+    }
+    /* Overview */
+    .service-overview{
+        padding:90px 0;
+    }
+    .overview-grid{
+        gap:45px;
+    }
+    .overview-image img{
+        height:430px;
+    }
+    .overview-content h2{
+        font-size:34px;
+    }
+    .overview-content p{
+        font-size:15px;
+    }
+    /* Benefits */
+    .benefits-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+    .benefit-card{
+        padding:30px 25px;
+    }
+    .benefit-card h3{
+        font-size:20px;
+    }
+    /* Plants */
+    .plants-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:25px;
+    }
+    .plant-image{
+        height:260px;
+    }
+    .plant-content{
+        padding:25px;
+    }
+    .plant-content h3{
+        font-size:21px;
+    }
+    /* Process */
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+    .process-card{
+        padding:32px 25px;
+    }
+    .process-card h3{
+        font-size:20px;
+    }
+    /* Pricing */
+    .pricing-grid{
+        grid-template-columns:repeat(1,1fr);
+        gap:20px;
+    }
+    .pricing-card{
+        padding:35px 25px;
+    }
+    .pricing-card h3{
+        font-size:22px;
+    }
+    .price{
+        font-size:40px;
+    }
+    /* FAQ */
+    .faq-wrapper{
+        max-width:800px;
+    }
+    .faq-question{
+        font-size:16px;
+    }
+    /* CTA */
+    .cta-box{
+        grid-template-columns:1fr 1fr;
+    }
+    .cta-content{
+        padding:45px;
+    }
+    .cta-content h2{
+        font-size:38px;
+    }
+    .cta-content p{
+        font-size:15px;
+    }
+    .cta-image img{
+        min-height:380px;
+    }
+}
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media (min-width:1281px){
+    .service-detail-hero-content h1{
+        font-size:52px;
+    }
+    .service-detail-hero-image img{
+        height:600px;
+    }
+    .benefits-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .plants-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .process-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .pricing-grid{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .cta-content h2{
+        font-size:46px;
+    }
+}/* ==========================================================
+   CENTER ALIGN - PROCESS SECTION
+========================================================== */
+.process-card{
+    text-align:center;
+}
+.process-number{
+    margin:0 auto 25px;
+}
+.process-card p{
+    margin:0 auto;
+}
+/* ==========================================================
+   CENTER ALIGN - PRICING SECTION
+========================================================== */
+.pricing-card{
+    text-align:center;
+}
+.pricing-card h3,
+.pricing-card .price{
+    text-align:center;
+}
+.pricing-card ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:18px;
+    margin:0 0 35px;
+}
+.pricing-card li{
+    justify-content:center;
+    text-align:center;
+    margin-bottom:0;
+}
+.pricing-card .btn{
+    margin:0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media (max-width:1024px){
+    .process-card,
+    .pricing-card{
+        text-align:center;
+    }
+    .pricing-card ul{
+        align-items:center;
+    }
+    .pricing-card li{
+        justify-content:center;
+    }
+}/* ==========================================================
+   PROCESS & PRICING ALIGNMENT FIX
+========================================================== */
+/* -----------------------------
+   OUR PROCESS
+------------------------------ */
+.process-card{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.process-number{
+    margin:0 auto 25px;
+}
+.process-card h3{
+    text-align:center;
+}
+.process-card p{
+    text-align:center;
+    max-width:280px;
+    margin:0 auto;
+}
+/* -----------------------------
+   PRICING PLANS
+------------------------------ */
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    align-items:stretch;
+}
+.pricing-card{
+    display:flex;
+    flex-direction:column;
+}
+.pricing-card .btn{
+    margin-top:auto;
+}
+/* -----------------------------
+   Tablet
+------------------------------ */
+@media (max-width:1024px){
+    .pricing-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* -----------------------------
+   Mobile
+------------------------------ */
+@media (max-width:640px){
+    .pricing-grid{
+        grid-template-columns:1fr;
+    }
+}/* ==========================================================
+   COMPACT CTA CARD
+========================================================== */
+.service-detail-cta{
+    padding:50px 0;
+}
+.cta-box{
+    max-width:900px;
+    margin:0 auto;
+    border-radius:24px;
+    grid-template-columns:1.2fr .8fr;
+    min-height:280px;
+}
+.cta-content{
+    padding:35px;
+}
+.cta-content h2{
+    font-size:34px;
+    margin-bottom:12px;
+    line-height:1.2;
+}
+.cta-content p{
+    font-size:15px;
+    margin-bottom:20px;
+    line-height:1.6;
+}
+.cta-image{
+    height:280px;
+}
+.cta-image img{
+    width:100%;
+    height:280px;
+    min-height:auto;
+    object-fit:cover;
+}/*==================================================
+SMALL PLANT CARDS
+==================================================*/
+.plants-grid{
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+.plant-card{
+    border:1px solid var(--border);
+    border-top:4px solid var(--primary);
+    border-radius:22px;
+}
+.plant-image{
+    height:220px;
+}
+.plant-content{
+    padding:20px;
+}
+.plant-content h3{
+    font-size:19px;
+    margin-bottom:10px;
+}
+.plant-content p{
+    font-size:14px;
+    line-height:1.6;
+    margin-bottom:16px;
+}
+.plant-content a{
+    font-size:14px;
+}
+.plant-content a svg{
+    width:16px;
+}
+/* Hover */
+.plant-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}
+/* Tablet */
+@media (max-width:1024px){
+    .plants-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .plant-image{
+        height:200px;
+    }
+    .plant-content{
+        padding:18px;
+    }
+}
+/* Mobile */
+@media (max-width:640px){
+    .plants-grid{
+        grid-template-columns:1fr;
+    }
+    .plant-image{
+        height:180px;
+    }
+    .plant-content{
+        padding:16px;
+    }
+    .plant-content h3{
+        font-size:18px;
+    }
+}.plant-card{
+    border:1px solid var(--border);
+    border-top:4px solid var(--primary);
+    transition:all .35s ease;
+}
+.plant-card:hover{
+    border-color:var(--secondary);
+    border-top-color:var(--secondary);
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.12);
+}/*==================================================
+TOP BORDER FOR ALL CARDS
+==================================================*/
+.benefit-card,
+.plant-card,
+.process-card,
+.pricing-card,
+.faq-item{
+    position:relative;
+    border-top:4px solid var(--border);
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease,
+        border-top-color .35s ease;
+}
+/*==================================================
+TOP BORDER HOVER
+==================================================*/
+.benefit-card:hover,
+.plant-card:hover,
+.process-card:hover,
+.pricing-card:hover,
+.faq-item:hover{
+    border-top-color:var(--primary);
+    border-color:var(--primary);
+}/*==================================================
+TOP BORDER FOR ALL CARDS
+==================================================*/
+.benefit-card,
+.plant-card,
+.process-card,
+.pricing-card,
+.faq-item{
+    position:relative;
+    border:1px solid var(--border);
+    border-top:4px solid var(--primary);
+    transition:all .35s ease;
+}
+/*==================================================
+HOVER EFFECT
+==================================================*/
+.benefit-card:hover,
+.plant-card:hover,
+.process-card:hover,
+.pricing-card:hover,
+.faq-item:hover{
+    border-color:var(--primary);
+    border-top-color:var(--secondary);
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}/*==================================================
+PREMIUM CARD TOP BORDER
+==================================================*/
+.service-card,
+.why-service-card,
+.service-process-card,
+.pricing-service-card,
+.service-testimonial-card,
+.faq-item{
+    position:relative;
+    overflow:hidden;
+}
+.service-card::before,
+.why-service-card::before,
+.service-process-card::before,
+.pricing-service-card::before,
+.service-testimonial-card::before,
+.faq-item::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:5px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .35s ease;
+}
+/* Show border on hover */
+.service-card:hover::before,
+.why-service-card:hover::before,
+.service-process-card:hover::before,
+.pricing-service-card:hover::before,
+.service-testimonial-card:hover::before,
+.faq-item:hover::before{
+    transform:scaleX(1);
+}
+/* Featured Pricing Card */
+.pricing-service-card.featured::before{
+    transform:scaleX(1);
+}
+/* Dark Mode */
+.dark-mode .service-card::before,
+.dark-mode .why-service-card::before,
+.dark-mode .service-process-card::before,
+.dark-mode .pricing-service-card::before,
+.dark-mode .service-testimonial-card::before,
+.dark-mode .faq-item::before{
+    background:linear-gradient(
+        90deg,
+        #8EE88B,
+        #D7B9AA
+    );
+}

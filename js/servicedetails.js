@@ -1,0 +1,138 @@
+/* ==========================================================
+   BLOOMNEST SERVICE DETAILS JS
+========================================================== */
+/* ==========================================================
+   LUCIDE ICONS
+========================================================== */
+document.addEventListener("DOMContentLoaded", () => {
+    if(typeof lucide !== "undefined"){
+        lucide.createIcons();
+    }
+});
+/* ==========================================================
+   FAQ ACCORDION
+========================================================== */
+const faqItems = document.querySelectorAll(".faq-item");
+faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+    question.addEventListener("click", () => {
+        // close other FAQ items
+        faqItems.forEach(otherItem => {
+            if(otherItem !== item){
+                otherItem.classList.remove("active");
+            }
+        });
+        // toggle current item
+        item.classList.toggle("active");
+    });
+});
+/* ==========================================================
+   SMOOTH SCROLL
+========================================================== */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e){
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
+        if(target){
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior:"smooth",
+                block:"start"
+            });
+        }
+    });
+});
+/* ==========================================================
+   IMAGE LAZY LOADING
+========================================================== */
+const images = document.querySelectorAll("img");
+images.forEach(img => {
+    img.setAttribute(
+        "loading",
+        "lazy"
+    );
+});
+/* ==========================================================
+   SCROLL REVEAL ANIMATION
+========================================================== */
+const revealElements = document.querySelectorAll(
+`
+.service-detail-hero-content,
+.service-detail-hero-image,
+.overview-image,
+.overview-content,
+.benefit-card,
+.plant-card,
+.process-card,
+.pricing-card,
+.faq-item,
+.cta-box
+`
+);
+const revealObserver = new IntersectionObserver(
+(entries)=>{
+entries.forEach(entry=>{
+    if(entry.isIntersecting){
+        entry.target.classList.add(
+            "show"
+        );
+        revealObserver.unobserve(
+            entry.target
+        );
+    }
+});
+},
+{
+threshold:0.15
+}
+);
+revealElements.forEach(el=>{
+    el.classList.add(
+        "reveal"
+    );
+    revealObserver.observe(el);
+});
+/* ==========================================================
+   ACTIVE PRICING CARD
+========================================================== */
+const pricingCards =
+document.querySelectorAll(".pricing-card");
+pricingCards.forEach(card=>{
+card.addEventListener(
+"mouseenter",
+()=>{
+pricingCards.forEach(item=>{
+    item.classList.remove(
+        "active"
+    );
+});
+card.classList.add(
+    "active"
+);
+});
+card.addEventListener(
+"mouseleave",
+()=>{
+card.classList.remove(
+    "active"
+);
+});
+});
+/* ==========================================================
+   BACK TO TOP (OPTIONAL)
+========================================================== */
+window.addEventListener(
+"scroll",
+()=>{
+if(window.scrollY > 500){
+document.body.classList.add(
+    "scroll-active"
+);
+}
+else{
+document.body.classList.remove(
+    "scroll-active"
+);
+}
+});

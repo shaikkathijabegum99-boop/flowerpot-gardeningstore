@@ -1,0 +1,3405 @@
+/* ==========================================================
+   BLOOMNEST HOME PAGE CSS
+   PART 1
+   Sections:
+   - Hero Section
+   - Stats Section
+   - Categories Section
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+.hero-section{
+    padding:120px 0;
+    background:var(--bg);
+    overflow:hidden;
+}
+/* HERO GRID */
+.hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+.hero-content{
+    max-width:620px;
+}
+/* Premium Badge */
+.hero-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 18%,
+        transparent
+    );
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+.hero-tag svg{
+    width:18px;
+    height:18px;
+}
+.hero-content h1{
+    font-size:clamp(40px,5vw,58px);
+    line-height:1.12;
+    letter-spacing:-1.5px;
+    font-weight:800;
+    color:var(--text);
+    margin-bottom:22px;
+}
+.hero-content p{
+    max-width:540px;
+    font-size:18px;
+    line-height:1.8;
+    color:var(--text-muted);
+    margin-bottom:35px;
+}
+/* BUTTON GROUP */
+.hero-buttons{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.hero-buttons .btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+/* Secondary CTA */
+.hero-buttons .btn-secondary{
+    background:var(--secondary);
+    color:#ffffff;
+}
+.hero-buttons .btn-secondary:hover{
+    background:var(--primary);
+}
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+.hero-image{
+    position:relative;
+}
+.hero-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:35px;
+    box-shadow:var(--shadow);
+}
+.hero-image::after{
+    content:"";
+    position:absolute;
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 25%,
+        transparent
+    );
+    top:-40px;
+    right:-40px;
+    z-index:-1;
+}
+/* ==========================================================
+   FLOATING CARD
+========================================================== */
+.floating-card{
+    position:absolute;
+    bottom:35px;
+    left:-35px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:22px 28px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+.floating-card svg{
+    width:38px;
+    height:38px;
+    color:var(--primary);
+}
+.floating-card strong{
+    display:block;
+    font-size:28px;
+    color:var(--text);
+}
+.floating-card span{
+    font-size:14px;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   STATS SECTION
+========================================================== */
+.stats-section{
+    padding:40px 0;
+    background:var(--bg-soft);
+}
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.stat-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:35px 25px;
+    text-align:center;
+    transition:.35s;
+}
+.stat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.stat-card svg{
+    width:38px;
+    height:38px;
+    color:var(--primary);
+    margin-bottom:15px;
+}
+.stat-card h3{
+    font-size:38px;
+    color:var(--text);
+    margin-bottom:5px;
+}
+.stat-card h3::after{
+    content:"+";
+    color:var(--secondary);
+}
+.stat-card p{
+    color:var(--text-muted);
+}
+/* ==========================================================
+   CATEGORY SECTION
+========================================================== */
+.categories-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.section-header{
+    max-width:700px;
+    text-align:center;
+    margin:0 auto 55px;
+}
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--secondary);
+    font-weight:700;
+    font-size:14px;
+    margin-bottom:15px;
+}
+.section-tag svg{
+    width:18px;
+    height:18px;
+}
+.section-header h2{
+    font-size:42px;
+    line-height:1.2;
+    color:var(--text);
+    margin-bottom:15px;
+}
+.section-header p{
+    font-size:17px;
+    color:var(--text-muted);
+    line-height:1.7;
+}
+/* ==========================================================
+   CATEGORY GRID
+========================================================== */
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.category-card{
+    height:360px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+}
+.category-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.category-card:hover img{
+    transform:scale(1.08);
+}
+.category-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.75)
+    );
+}
+.category-content{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:30px;
+    color:white;
+    z-index:2;
+}
+.category-content h3{
+    font-size:24px;
+    margin-bottom:12px;
+color: white;
+}
+.category-content p{
+color: white;
+}
+.category-content a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--secondary);
+    font-weight:700;
+}
+.category-content a:hover{
+    color:white;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media(max-width:1024px){
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .hero-content{
+        margin:auto;
+    }
+    .hero-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .category-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:640px){
+    .hero-section{
+        padding:70px 0;
+    }
+    .hero-content h1{
+        font-size:36px;
+    }
+    .hero-buttons{
+        flex-direction:column;
+    }
+    .hero-buttons .btn{
+        width:100%;
+        justify-content:center;
+    }
+    .hero-image img{
+        height:360px;
+    }
+    .floating-card{
+        position:static;
+        margin-top:20px;
+    }
+    .stats-grid,
+    .category-grid{
+        grid-template-columns:1fr;
+    }
+    .section-header h2{
+        font-size:32px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME PAGE CSS
+   PART 2
+   Sections:
+   - Featured Products
+   - Product Cards
+   - Product Actions
+   - Material Section
+   - Trending Products
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   FEATURED PRODUCTS SECTION
+========================================================== */
+.featured-products{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+/* ==========================================================
+   PRODUCT CARD
+========================================================== */
+.product-card{
+    display:flex;
+    flex-direction:column;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    transition:.35s ease;
+}
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* ==========================================================
+   PRODUCT IMAGE
+========================================================== */
+.product-image{
+    height:330px;
+    position:relative;
+    overflow:hidden;
+    background:var(--bg-soft);
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+.product-card:hover .product-image img{
+    transform:scale(1.08);
+}
+/* ==========================================================
+   PRODUCT BADGE
+========================================================== */
+.badge{
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:7px 16px;
+    border-radius:50px;
+    background:var(--primary);
+    color:white;
+    font-size:13px;
+    font-weight:700;
+    z-index:2;
+}
+.badge.sale{
+    background:var(--secondary);
+    color:#222;
+}
+/* ==========================================================
+   PRODUCT ACTION BUTTONS
+========================================================== */
+.product-actions{
+    position:absolute;
+    top:20px;
+    right:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    opacity:0;
+    transform:translateX(20px);
+    transition:.35s;
+}
+.product-card:hover .product-actions{
+    opacity:1;
+    transform:translateX(0);
+}
+.product-actions button{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:1px solid var(--border);
+    background:var(--surface);
+    color:var(--text);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s;
+}
+.product-actions button:hover{
+    background:var(--primary);
+    color:white;
+    border-color:var(--primary);
+}
+.product-actions svg{
+    width:18px;
+    height:18px;
+}
+/* ==========================================================
+   PRODUCT CONTENT
+========================================================== */
+.product-content{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+.product-title{
+    font-size:21px;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:15px;
+}
+.rating{
+    display:flex;
+    gap:4px;
+    margin-bottom:15px;
+}
+.rating svg{
+    width:17px;
+    height:17px;
+    fill:var(--secondary);
+    color:var(--secondary);
+}
+/* ==========================================================
+   PRICE
+========================================================== */
+.product-price{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:auto;
+    margin-bottom:20px;
+}
+.current-price{
+    font-size:24px;
+    font-weight:800;
+    color:var(--primary);
+}
+.old-price{
+    font-size:15px;
+    color:var(--text-muted);
+    text-decoration:line-through;
+}
+.add-cart{
+    width:100%;
+}
+/* ==========================================================
+   PRODUCT BUTTON HOVER
+========================================================== */
+.product-card .btn:hover{
+    transform:translateY(-3px);
+}
+/* ==========================================================
+   MATERIAL SECTION
+========================================================== */
+.material-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.material-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+/* ==========================================================
+   MATERIAL CARD
+========================================================== */
+.material-card{
+    height:280px;
+    position:relative;
+    overflow:hidden;
+    border-radius:24px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    transition:.35s;
+}
+.material-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.material-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.material-card:hover img{
+    transform:scale(1.1);
+}
+.material-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.75)
+    );
+}
+.material-card h3{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px;
+    margin:0;
+    color:white;
+    z-index:2;
+    font-size:26px;
+}
+/* ==========================================================
+   TRENDING PRODUCTS
+========================================================== */
+.trending-section{
+    padding:100px 0;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 8%,
+        var(--bg)
+    );
+}
+.trending-section .product-card{
+    background:var(--surface);
+}
+.trending-section .badge{
+    background:var(--secondary);
+    color:#222;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .product-card,
+.dark-mode .material-card{
+    background:var(--surface);
+}
+.dark-mode .product-image{
+    background:#202820;
+}
+.dark-mode .product-actions button{
+    background:#202820;
+    color:white;
+}
+.dark-mode .badge.sale{
+    color:#111;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+/* Tablet */
+@media(max-width:1024px){
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .material-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .featured-products,
+    .material-section,
+    .trending-section{
+        padding:70px 0;
+    }
+    .product-grid,
+    .material-grid{
+        grid-template-columns:1fr;
+    }
+    .product-image{
+        height:280px;
+    }
+    .material-card{
+        height:240px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME PAGE CSS
+   PART 3
+   Sections:
+   - Indoor Collection
+   - Outdoor Collection
+   - Garden Essentials
+   - Why Choose Us
+   - Process Section
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   COLLECTION SECTIONS
+========================================================== */
+.collection-section{
+    padding:100px 0;
+    background:var(--bg);
+    overflow:hidden;
+}
+.collection-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    gap:70px;
+}
+.collection-grid.reverse{
+    direction:rtl;
+}
+.collection-grid.reverse .collection-content{
+    direction:ltr;
+}
+/* ==========================================================
+   COLLECTION IMAGE
+========================================================== */
+.collection-image{
+    height:520px;
+    border-radius:32px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:var(--shadow);
+}
+.collection-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+.collection-image:hover img{
+    transform:scale(1.08);
+}
+.collection-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.25),
+        transparent
+    );
+    opacity:0;
+    transition:.4s;
+}
+.collection-image:hover::after{
+    opacity:1;
+}
+/* ==========================================================
+   COLLECTION CONTENT
+========================================================== */
+.collection-content{
+    max-width:560px;
+}
+.collection-content .section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 18%,
+        transparent
+    );
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.collection-content h2{
+    font-size:42px;
+    line-height:1.2;
+    color:var(--text);
+    margin-bottom:20px;
+}
+.collection-content p{
+    font-size:16px;
+    color:var(--text-muted);
+    line-height:1.8;
+    margin-bottom:30px;
+}
+.collection-content .btn:hover{
+    transform:translateY(-3px);
+}
+/* ==========================================================
+   GARDEN ESSENTIALS
+========================================================== */
+.essentials-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+/* FEATURE CARD */
+.feature-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:40px 30px;
+    transition:.35s;
+}
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.feature-icon{
+    width:70px;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:22px;
+    background:
+    color-mix(
+        in srgb,
+        var(--primary) 12%,
+        transparent
+    );
+    border:1px solid var(--secondary);
+    margin-bottom:25px;
+}
+.feature-icon svg{
+    width:32px;
+    height:32px;
+    color:var(--primary);
+}
+.feature-card h3{
+    font-size:23px;
+    color:var(--text);
+    margin-bottom:15px;
+}
+.feature-card p{
+    color:var(--text-muted);
+    line-height:1.7;
+    margin-bottom:20px;
+}
+.feature-card a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--primary);
+    font-weight:700;
+}
+.feature-card a:hover{
+    color:var(--secondary);
+}
+/* ==========================================================
+   WHY CHOOSE US
+========================================================== */
+.why-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.why-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+.why-image{
+    height:560px;
+    overflow:hidden;
+    border-radius:32px;
+}
+.why-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* WHY CONTENT */
+.why-content{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+.why-item{
+    display:flex;
+    gap:20px;
+    padding:25px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    transition:.35s;
+}
+.why-item:hover{
+    transform:translateX(10px);
+    border-color:var(--secondary);
+    box-shadow:var(--shadow);
+}
+.why-item svg{
+    width:36px;
+    height:36px;
+    color:var(--primary);
+    flex-shrink:0;
+}
+.why-item h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:8px;
+}
+.why-item p{
+    color:var(--text-muted);
+    line-height:1.7;
+}
+/* ==========================================================
+   PROCESS SECTION
+========================================================== */
+.process-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.process-card{
+    position:relative;
+    text-align:center;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:40px 25px;
+    transition:.35s;
+}
+.process-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.process-card span{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:55px;
+    font-weight:800;
+    color:
+    color-mix(
+        in srgb,
+        var(--secondary) 25%,
+        transparent
+    );
+}
+.process-card svg{
+    width:45px;
+    height:45px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+.process-card h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:12px;
+}
+.process-card p{
+    color:var(--text-muted);
+    line-height:1.6;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .feature-card,
+.dark-mode .why-item,
+.dark-mode .process-card{
+    background:var(--surface);
+}
+.dark-mode .feature-icon{
+    background:#203020;
+}
+.dark-mode .collection-content .section-tag{
+    background:#243124;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media(max-width:1024px){
+    .collection-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+    .collection-content{
+        max-width:100%;
+        text-align:center;
+    }
+    .collection-image,
+    .why-image{
+        height:430px;
+    }
+    .feature-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:640px){
+    .collection-section,
+    .essentials-section,
+    .why-section,
+    .process-section{
+        padding:70px 0;
+    }
+    .collection-grid.reverse{
+        direction:ltr;
+    }
+    .collection-image,
+    .why-image{
+        height:320px;
+        border-radius:22px;
+    }
+    .collection-content h2{
+        font-size:30px;
+    }
+    .feature-grid,
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+    .why-item{
+        padding:20px;
+    }
+    .why-item:hover{
+        transform:none;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME PAGE CSS
+   PART 4
+   Sections:
+   - Special Offers
+   - Testimonials
+   - Blog Section
+   - Instagram Gallery
+   - Newsletter
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   SPECIAL OFFER SECTION
+========================================================== */
+.offer-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.offer-banner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    overflow:hidden;
+    border-radius:35px;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+    box-shadow:var(--shadow);
+}
+/* OFFER CONTENT */
+.offer-content{
+    padding:60px;
+    color:#ffffff;
+}
+.offer-content span{
+    display:inline-flex;
+    padding:8px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 35%,
+        transparent
+    );
+    color:#ffffff;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.offer-content h2{
+    font-size:44px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+.offer-content p{
+    font-size:17px;
+    line-height:1.7;
+    opacity:.9;
+    margin-bottom:30px;
+}
+.offer-content .btn{
+    background:var(--secondary);
+    color:#222;
+}
+.offer-content .btn:hover{
+    background:#ffffff;
+}
+/* OFFER IMAGE */
+.offer-image{
+    height:420px;
+    overflow:hidden;
+}
+.offer-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+.offer-banner:hover .offer-image img{
+    transform:scale(1.06);
+}
+/* ==========================================================
+   TESTIMONIAL SECTION
+========================================================== */
+.testimonial-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.testimonial-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+}
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* CUSTOMER IMAGE */
+.customer-image{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 20px;
+    border:3px solid var(--secondary);
+}
+.customer-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.testimonial-card .rating{
+    justify-content:center;
+}
+.testimonial-card p{
+    color:var(--text-muted);
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.testimonial-card h3{
+    color:var(--text);
+    font-size:20px;
+    margin-bottom:5px;
+}
+.testimonial-card span{
+    color:var(--primary);
+    font-size:14px;
+}
+/* ==========================================================
+   BLOG SECTION
+========================================================== */
+.blog-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.blog-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.blog-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    overflow:hidden;
+    transition:.35s;
+}
+.blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.blog-image{
+    height:260px;
+    overflow:hidden;
+}
+.blog-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.blog-card:hover .blog-image img{
+    transform:scale(1.08);
+}
+.blog-content{
+    padding:30px;
+}
+.blog-content > span{
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+}
+.blog-content h3{
+    font-size:22px;
+    line-height:1.4;
+    color:var(--text);
+    margin:15px 0;
+}
+.blog-content p{
+    color:var(--text-muted);
+    line-height:1.7;
+    margin-bottom:20px;
+}
+.blog-content a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--primary);
+    font-weight:700;
+}
+.blog-content a:hover{
+    color:var(--secondary);
+}
+/* ==========================================================
+   INSTAGRAM GALLERY
+========================================================== */
+.instagram-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+.instagram-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+.instagram-item{
+    height:260px;
+    border-radius:22px;
+    overflow:hidden;
+    position:relative;
+}
+.instagram-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.instagram-item:hover img{
+    transform:scale(1.1);
+}
+.instagram-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    rgba(47,107,63,.35);
+    opacity:0;
+    transition:.35s;
+}
+.instagram-item:hover::after{
+    opacity:1;
+}
+/* ==========================================================
+   NEWSLETTER
+========================================================== */
+.newsletter{
+    margin:80px 0;
+    padding:70px 40px;
+    border-radius:35px;
+    text-align:center;
+    color:#ffffff;
+    position:relative;
+    overflow:hidden;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+}
+.newsletter::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 20%,
+        transparent
+    );
+    top:-120px;
+    right:-100px;
+}
+.newsletter-content{
+    position:relative;
+    z-index:2;
+}
+.newsletter-content svg{
+    width:45px;
+    height:45px;
+    margin-bottom:20px;
+}
+.newsletter h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+.newsletter p{
+    font-size:17px;
+    opacity:.9;
+    margin-bottom:35px;
+}
+.newsletter-form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+}
+.newsletter-form input{
+    flex:1;
+    height:55px;
+    padding:0 20px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+}
+.newsletter-form button{
+    border-radius:50px;
+    background:var(--secondary);
+    color:#222;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .testimonial-card,
+.dark-mode .blog-card{
+    background:var(--surface);
+}
+.dark-mode .newsletter input{
+    background:#ffffff;
+    color:#222;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media(max-width:1024px){
+    .offer-banner{
+        grid-template-columns:1fr;
+    }
+    .testimonial-grid,
+    .blog-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .instagram-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+@media(max-width:640px){
+    .offer-section,
+    .testimonial-section,
+    .blog-section,
+    .instagram-section{
+        padding:70px 0;
+    }
+    .offer-content{
+        padding:35px;
+        text-align:center;
+    }
+    .offer-content h2{
+        font-size:32px;
+    }
+    .offer-image{
+        height:300px;
+    }
+    .testimonial-grid,
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+    .instagram-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .instagram-item{
+        height:180px;
+    }
+    .newsletter{
+        padding:45px 20px;
+        border-radius:25px;
+    }
+    .newsletter h2{
+        font-size:30px;
+    }
+    .newsletter-form{
+        flex-direction:column;
+    }
+    .newsletter-form button{
+        height:55px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME PAGE CSS
+   PART 5 FINAL
+   Sections:
+   - Final Responsive Adjustments
+   - Typography Scaling
+   - Dark Mode Refinements
+   - Accessibility
+   - Performance
+========================================================== */
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media (min-width:1281px){
+    .hero-section{
+        padding-top:120px;
+    }
+    .hero-content h1{
+        font-size:58px;
+    }
+    .hero-image img{
+        height:620px;
+    }
+    .section-header h2{
+        font-size:44px;
+    }
+    .collection-content h2{
+        font-size:42px;
+    }
+    .category-card{
+        height:400px;
+    }
+    .product-image{
+        height:360px;
+    }
+}
+/* ==========================================================
+   DESKTOP
+   1024px - 1280px
+========================================================== */
+@media(min-width:1024px) and (max-width:1280px){
+    .hero-grid{
+        gap:45px;
+    }
+    .hero-content h1{
+        font-size:50px;
+    }
+    .hero-image img{
+        height:380px;
+    }
+    .category-grid{
+        grid-template-columns:
+        repeat(4,1fr);
+    }
+    .stats-grid{
+        grid-template-columns:
+        repeat(4,1fr);
+    }
+    .product-grid{
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+    .collection-grid{
+        gap:45px;
+    }
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .hero-content{
+        margin:auto;
+    }
+    .hero-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    .hero-image{
+        max-width:700px;
+        margin:auto;
+    }
+    .floating-card{
+        left:20px;
+    }
+    .stats-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .category-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .product-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .collection-grid,
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+    .collection-content{
+        text-align:center;
+        max-width:100%;
+    }
+    .collection-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .feature-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .process-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .testimonial-grid,
+    .blog-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .instagram-grid{
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .section{
+        padding:65px 0;
+    }
+    .hero-section{
+        padding:
+        120px 0 50px;
+    }
+    .hero-content h1{
+        font-size:36px;
+        letter-spacing:-1px;
+    }
+    .hero-content p{
+        font-size:15px;
+    }
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+    }
+    .hero-buttons .btn{
+        width:100%;
+        justify-content:center;
+    }
+    .hero-image img{
+        height:360px;
+        border-radius:25px;
+    }
+    .floating-card{
+        position:static;
+        margin-top:20px;
+        justify-content:center;
+    }
+    .floating-card strong{
+        font-size:22px;
+    }
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+    .stat-card{
+        padding:25px;
+    }
+    .section-header h2{
+        font-size:30px;
+    }
+    .section-header p{
+        font-size:15px;
+    }
+    .category-grid,
+    .product-grid,
+    .feature-grid,
+    .process-grid,
+    .testimonial-grid,
+    .blog-grid{
+        grid-template-columns:1fr;
+    }
+    .category-card{
+        height:320px;
+    }
+    .product-image{
+        height:280px;
+    }
+    .collection-image,
+    .why-image{
+        height:320px;
+    }
+    .collection-content h2{
+        font-size:30px;
+    }
+    .offer-content{
+        padding:35px;
+        text-align:center;
+    }
+    .offer-content h2{
+        font-size:30px;
+    }
+    .instagram-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .instagram-item{
+        height:170px;
+    }
+    .newsletter{
+        padding:45px 20px;
+        border-radius:25px;
+    }
+    .newsletter h2{
+        font-size:30px;
+    }
+    .newsletter-form{
+        flex-direction:column;
+    }
+    .newsletter-form button{
+        height:55px;
+    }
+}
+/* ==========================================================
+   SMALL MOBILE
+   BELOW 400px
+========================================================== */
+@media(max-width:400px){
+    .hero-content h1{
+        font-size:30px;
+    }
+    .section-header h2{
+        font-size:26px;
+    }
+    .instagram-grid{
+        grid-template-columns:1fr;
+    }
+}
+/* ==========================================================
+   SECONDARY COLOR UTILIZATION
+   Premium Gold Accent
+========================================================== */
+.hero-tag{
+    border:1px solid
+    rgba(216,179,106,.35);
+}
+.badge.sale{
+    background:
+    var(--secondary);
+    color:
+    var(--dark);
+}
+.rating svg{
+    color:
+    var(--secondary);
+    fill:
+    var(--secondary);
+}
+.stat-card:hover svg,
+.feature-card:hover svg{
+    color:
+    var(--secondary);
+}
+.collection-content .btn:hover,
+.hero-buttons .btn:hover{
+    box-shadow:
+    0 15px 35px
+    rgba(216,179,106,.25);
+}
+.customer-image{
+    border-color:
+    rgba(216,179,106,.35);
+}
+.testimonial-card:hover .customer-image{
+    border-color:
+    var(--secondary);
+}
+.process-card:hover{
+    border-color:
+    var(--secondary);
+}
+/* ==========================================================
+   DARK MODE FINAL
+========================================================== */
+.dark-mode .hero-tag{
+    background:
+    rgba(216,179,106,.12);
+    color:
+    var(--secondary);
+}
+.dark-mode .badge.sale{
+    color:#111;
+}
+.dark-mode .product-card,
+.dark-mode .blog-card,
+.dark-mode .feature-card,
+.dark-mode .stat-card,
+.dark-mode .process-card,
+.dark-mode .testimonial-card{
+    border-color:
+    var(--border-dark);
+}
+.dark-mode .newsletter{
+    background:
+    linear-gradient(
+        135deg,
+        #19301d,
+        #111811
+    );
+}
+.dark-mode .old-price{
+    color:#999;
+}
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible{
+    outline:
+    3px solid
+    var(--secondary);
+    outline-offset:4px;
+}
+/* ==========================================================
+   PERFORMANCE
+========================================================== */
+img{
+    max-width:100%;
+    height:auto;
+}
+.product-card,
+.blog-card,
+.feature-card,
+.category-card,
+.material-card{
+    will-change:transform;
+}
+html{
+    scroll-behavior:smooth;
+}
+@media(prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+        animation:none!important;
+        transition:none!important;
+        scroll-behavior:auto!important;
+    }
+}
+/* ==========================================================
+   END BLOOMNEST HOME INDEX CSS
+========================================================== */
+/* ==========================================================
+   FEATURE CARD CENTER ALIGNMENT
+========================================================== */
+.feature-card{
+    text-align:center;
+    align-items:center;
+}
+.feature-icon{
+    margin-left:auto;
+    margin-right:auto;
+}
+.feature-card h3{
+    text-align:center;
+}
+.feature-card p{
+    text-align:center;
+}
+.feature-card a{
+    justify-content:center;
+}
+/* Hover Enhancement */
+.feature-card:hover .feature-icon svg{
+    color:var(--secondary);
+    transform:scale(1.1);
+}
+.feature-icon svg{
+    transition:.3s ease;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .feature-card{
+    text-align:center;
+}
+.dark-mode .feature-icon svg{
+    color:var(--secondary);
+}/* ==========================================================
+   NEWSLETTER SECTION - PREMIUM
+========================================================== */
+.newsletter{
+    position:relative;
+    overflow:hidden;
+    padding:80px 50px;
+    border-radius:32px;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+    color:white;
+    text-align:center;
+}
+/* Decorative Shapes */
+.newsletter::before{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    background:
+    rgba(216,179,106,.18);
+    top:-140px;
+    right:-100px;
+}
+.newsletter::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:
+    rgba(255,255,255,.08);
+    bottom:-100px;
+    left:-80px;
+}
+.newsletter-content{
+    position:relative;
+    z-index:2;
+    max-width:750px;
+    margin:auto;
+}
+/* Icon */
+.newsletter-content svg{
+    width:48px;
+    height:48px;
+    margin-bottom:20px;
+    color:var(--secondary);
+}
+/* Heading */
+.newsletter h2{
+    font-size:42px;
+    line-height:1.2;
+    margin-bottom:15px;
+    font-weight:700;
+}
+/* Description */
+.newsletter p{
+    font-size:17px;
+    line-height:1.8;
+    opacity:.9;
+    max-width:600px;
+    margin:
+    0 auto 35px;
+}
+/* Form */
+.newsletter-form{
+    display:flex;
+    max-width:620px;
+    margin:auto;
+    gap:15px;
+}
+.newsletter-form input{
+    flex:1;
+    height:58px;
+    padding:0 25px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    font-size:15px;
+    background:white;
+    color:var(--text);
+}
+.newsletter-form input::placeholder{
+    color:#8b938c;
+}
+.newsletter-form button{
+    height:58px;
+    padding:0 35px;
+    border-radius:50px;
+    border:none;
+    background:
+    var(--secondary);
+    color:#222;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s ease;
+}
+.newsletter-form button:hover{
+    transform:translateY(-3px);
+    background:#c49b52;
+    box-shadow:
+    0 12px 25px
+    rgba(216,179,106,.35);
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .newsletter{
+    background:
+    linear-gradient(
+        135deg,
+        #19301d,
+        #101510
+    );
+}
+.dark-mode .newsletter-form input{
+    background:#ffffff;
+    color:#222;
+}
+.dark-mode .newsletter-form button{
+    color:#111;
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .newsletter{
+        padding:70px 35px;
+    }
+    .newsletter h2{
+        font-size:36px;
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .newsletter{
+        padding:55px 20px;
+        border-radius:24px;
+    }
+    .newsletter h2{
+        font-size:30px;
+    }
+    .newsletter p{
+        font-size:15px;
+    }
+    .newsletter-form{
+        flex-direction:column;
+        gap:12px;
+    }
+    .newsletter-form input,
+    .newsletter-form button{
+        width:100%;
+        height:55px;
+    }
+}
+/* ==========================================================
+   NEWSLETTER BORDER ENHANCEMENT
+========================================================== */
+.newsletter{
+    border:1px solid
+    rgba(216,179,106,.45);
+}
+/* Hover Effect */
+.newsletter:hover{
+    border-color:
+    var(--secondary);
+    box-shadow:
+    0 25px 60px
+    rgba(0,0,0,.15);
+}
+/* Dark Mode */
+.dark-mode .newsletter{
+    border-color:
+    rgba(216,179,106,.25);
+}
+.dark-mode .newsletter:hover{
+    border-color:
+    var(--secondary);
+}/*==========================================================
+  ALIGN READ MORE / CARD LINKS
+==========================================================*/
+/* Card equal height */
+.blog-card,
+.feature-card,
+.product-card{
+    display:flex;
+    flex-direction:column;
+}
+/* Card Content */
+.blog-content,
+.feature-card,
+.product-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+/* Read More / Learn More link */
+.blog-content a,
+.feature-card a,
+.product-content .read-more{
+    margin-top:auto;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    width:max-content;
+    color:var(--primary);
+    font-size:15px;
+    font-weight:600;
+    transition:.3s ease;
+}
+/* Hover */
+.blog-content a:hover,
+.feature-card a:hover,
+.product-content .read-more:hover{
+    color:var(--secondary);
+    gap:14px;
+}
+/* Icon alignment */
+.blog-content a svg,
+.feature-card a svg,
+.product-content .read-more svg{
+    width:18px;
+    height:18px;
+    transition:.3s ease;
+}
+.blog-content a:hover svg,
+.feature-card a:hover svg,
+.product-content .read-more:hover svg{
+    transform:translateX(4px);
+}
+/* Mobile Fix */
+@media(max-width:640px){
+    .blog-content a,
+    .feature-card a,
+    .product-content .read-more{
+        margin-top:20px;
+    }
+}/*==========================================================
+  TESTIMONIAL CARD ALIGNMENT
+==========================================================*/
+.testimonial-grid{
+    align-items:stretch;
+}
+.testimonial-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
+/* Customer Image */
+.customer-image{
+    flex-shrink:0;
+}
+/* Testimonial Content */
+.testimonial-card p{
+    flex:1;
+}
+/* Customer Name & Role */
+.testimonial-card h3{
+    margin-top:auto;
+    margin-bottom:6px;
+}
+.testimonial-card span{
+    display:block;
+}
+/* Rating Alignment */
+.testimonial-card .rating{
+    justify-content:center;
+}
+/* Hover Enhancement */
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--home-shadow);
+}
+/* Dark Mode */
+.dark-mode .testimonial-card{
+    background:#182018;
+    border-color:#303a30;
+}
+/* Mobile */
+@media(max-width:640px){
+    .testimonial-card{
+        padding:25px;
+    }
+    .testimonial-card p{
+        flex:auto;
+    }
+}
+/*==========================================================
+   REDUCED FONT SIZE - DESKTOP VIEW
+==========================================================*/
+@media (min-width:1024px){
+/* HERO */
+.hero-content h1{
+    font-size:38px;
+    line-height:1.2;
+}
+.hero-content p{
+    font-size:15px;
+}
+/* SECTION HEADINGS */
+.section-header h2{
+    font-size:30px;
+}
+.section-header p{
+    font-size:14px;
+}
+/* TAGS */
+.section-tag,
+.hero-tag{
+    font-size:13px;
+}
+/* BUTTONS */
+.btn{
+    font-size:14px;
+}
+/* CARDS */
+.category-content h3{
+    font-size:18px;
+}
+.product-title{
+    font-size:17px;
+}
+.current-price{
+    font-size:18px;
+}
+.old-price{
+    font-size:14px;
+}
+/* STATS */
+.stat-card h3{
+    font-size:28px;
+}
+.stat-card p{
+    font-size:14px;
+}
+/* COLLECTION SECTIONS */
+.collection-content h2{
+    font-size:30px;
+}
+.collection-content p{
+    font-size:15px;
+}
+/* WHY SECTION */
+.why-item h3{
+    font-size:17px;
+}
+.why-item p{
+    font-size:14px;
+}
+/* PROCESS */
+.process-card h3{
+    font-size:18px;
+}
+.process-card p{
+    font-size:14px;
+}
+/* OFFER */
+.offer-content h2{
+    font-size:30px;
+}
+.offer-content p{
+    font-size:15px;
+}
+/* TESTIMONIAL */
+.testimonial-card p{
+    font-size:14px;
+}
+.testimonial-card h3{
+    font-size:17px;
+}
+/* BLOG */
+.blog-content h3{
+    font-size:18px;
+}
+.blog-content p{
+    font-size:14px;
+}
+/* NEWSLETTER */
+.newsletter h2{
+    font-size:30px;
+}
+.newsletter p{
+    font-size:15px;
+}
+}
+/* LARGE DESKTOP */
+@media (min-width:1280px){
+.hero-content h1{
+    font-size:44px;
+}
+.section-header h2{
+    font-size:34px;
+}
+.collection-content h2{
+    font-size:34px;
+}
+.newsletter h2{
+    font-size:34px;
+}
+}
+/* ==========================================================
+   TRUST BAR SECTION
+========================================================== */
+.trust-bar{
+    padding:35px 0;
+    background:var(--surface);
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+/* TRUST GRID */
+.trust-bar .trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    align-items:center;
+}
+/* TRUST ITEM */
+.trust-bar .trust-grid > div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    padding:20px;
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:18px;
+    transition:.35s ease;
+}
+/* HOVER */
+.trust-bar .trust-grid > div:hover{
+    transform:translateY(-6px);
+    border-color:var(--secondary);
+    box-shadow:var(--shadow);
+}
+/* ICON */
+.trust-bar i{
+    width:32px;
+    height:32px;
+    color:var(--primary);
+    stroke-width:2;
+    flex-shrink:0;
+}
+/* TEXT */
+.trust-bar span{
+    font-size:16px;
+    font-weight:700;
+    color:var(--text);
+    white-space:nowrap;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .trust-bar{
+    background:var(--surface);
+}
+.dark-mode .trust-bar .trust-grid > div{
+    background:#182018;
+    border-color:var(--border-dark);
+}
+.dark-mode .trust-bar i{
+    color:var(--secondary);
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .trust-bar .trust-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .trust-bar{
+        padding:25px 0;
+    }
+    .trust-bar .trust-grid{
+        grid-template-columns:1fr;
+    }
+    .trust-bar .trust-grid > div{
+        justify-content:flex-start;
+        padding:18px;
+    }
+    .trust-bar span{
+        font-size:15px;
+    }
+}/* ==========================================================
+   SEASONAL GUIDE SECTION
+========================================================== */
+.seasonal-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+/* ==========================================================
+   SEASON GRID
+========================================================== */
+.season-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+/* ==========================================================
+   SEASON CARD
+========================================================== */
+.season-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    overflow:hidden;
+    transition:.35s ease;
+    position:relative;
+}
+.season-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* IMAGE */
+.season-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    display:block;
+    transition:.5s ease;
+}
+.season-card:hover img{
+    transform:scale(1.08);
+}
+/* CONTENT */
+.season-card h3{
+    font-size:24px;
+    font-weight:700;
+    color:var(--text);
+    margin:25px 25px 10px;
+}
+.season-card p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text-muted);
+    margin:0 25px 30px;
+}
+/* ==========================================================
+   IMAGE OVERLAY EFFECT
+========================================================== */
+.season-card::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:260px;
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.25)
+    );
+    opacity:0;
+    transition:.35s ease;
+}
+.season-card:hover::after{
+    opacity:1;
+}
+/* ==========================================================
+   ICON STYLE
+========================================================== */
+.seasonal-section .section-tag i{
+    width:18px;
+    height:18px;
+    color:var(--secondary);
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .season-card{
+    background:var(--surface);
+    border-color:var(--border-dark);
+}
+.dark-mode .season-card p{
+    color:#b8b8b8;
+}
+/* ==========================================================
+   LARGE DESKTOP
+========================================================== */
+@media(min-width:1280px){
+    .season-card img{
+        height:280px;
+    }
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:1024px){
+    .season-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:640px){
+    .seasonal-section{
+        padding:70px 0;
+    }
+    .season-grid{
+        grid-template-columns:1fr;
+    }
+    .season-card img{
+        height:240px;
+    }
+    .season-card h3{
+        font-size:22px;
+    }
+}/* ==========================================================
+   BULK ORDER SECTION
+========================================================== */
+.bulk-order-section{
+    padding:100px 0;
+    background:var(--bg);
+}
+.bulk-order-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:35px;
+    overflow:hidden;
+}
+/* ==========================================================
+   BULK CONTENT
+========================================================== */
+.bulk-content{
+    padding:60px;
+}
+.bulk-content .section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 18%,
+        transparent
+    );
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.bulk-content .section-tag svg{
+    width:18px;
+    height:18px;
+}
+.bulk-content h2{
+    font-size:42px;
+    line-height:1.2;
+    color:var(--text);
+    margin-bottom:20px;
+}
+.bulk-content p{
+    font-size:16px;
+    line-height:1.8;
+    color:var(--text-muted);
+    margin-bottom:30px;
+}
+/* ==========================================================
+   BULK LIST
+========================================================== */
+.bulk-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 35px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+.bulk-list li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:15px;
+    color:var(--text);
+    font-weight:500;
+}
+.bulk-list svg{
+    width:22px;
+    height:22px;
+    color:var(--primary);
+    flex-shrink:0;
+}
+.bulk-list li:hover svg{
+    color:var(--secondary);
+}
+/* ==========================================================
+   BULK IMAGE
+========================================================== */
+.bulk-image{
+    height:100%;
+    min-height:520px;
+    overflow:hidden;
+}
+.bulk-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+.bulk-image:hover img{
+    transform:scale(1.08);
+}
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+.contact-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+/* CONTACT GRID */
+.contact-grid{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:50px;
+    align-items:start;
+}
+/* ==========================================================
+   CONTACT INFO
+========================================================== */
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.contact-card{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    padding:25px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    transition:.35s ease;
+}
+.contact-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--secondary);
+    box-shadow:var(--shadow);
+}
+.contact-card > svg{
+    width:32px;
+    height:32px;
+    color:var(--primary);
+    flex-shrink:0;
+}
+.contact-card h3{
+    font-size:18px;
+    color:var(--text);
+    margin-bottom:8px;
+}
+.contact-card p{
+    font-size:15px;
+    color:var(--text-muted);
+    line-height:1.6;
+}
+/* ==========================================================
+   CONTACT FORM
+========================================================== */
+.contact-form-box{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:30px;
+    padding:40px;
+}
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width:100%;
+    padding:16px 18px;
+    border-radius:14px;
+    border:1px solid var(--border);
+    background:var(--bg);
+    color:var(--text);
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+.contact-form textarea{
+    resize:none;
+    margin:20px 0;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color:var(--secondary);
+    box-shadow:0 0 0 3px
+    color-mix(
+        in srgb,
+        var(--secondary) 20%,
+        transparent
+    );
+}
+.contact-form select{
+    margin-top:20px;
+}
+.contact-form .btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+.contact-form .btn svg{
+    width:18px;
+    height:18px;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .bulk-order-wrapper,
+.dark-mode .contact-card,
+.dark-mode .contact-form-box{
+    background:var(--surface);
+    border-color:var(--border-dark);
+}
+.dark-mode .contact-form input,
+.dark-mode .contact-form select,
+.dark-mode .contact-form textarea{
+    background:#202820;
+    color:white;
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .bulk-order-wrapper{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+    .bulk-content{
+        padding:45px;
+        text-align:center;
+    }
+    .bulk-list li{
+        justify-content:center;
+    }
+    .bulk-image{
+        min-height:400px;
+    }
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .bulk-order-section,
+    .contact-section{
+        padding:70px 0;
+    }
+    .bulk-content{
+        padding:30px 25px;
+    }
+    .bulk-content h2{
+        font-size:30px;
+    }
+    .bulk-content p{
+        font-size:15px;
+    }
+    .bulk-image{
+        min-height:300px;
+    }
+    .contact-form-box{
+        padding:25px;
+        border-radius:22px;
+    }
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+    .contact-card{
+        padding:20px;
+    }
+}/* ==========================================================
+   BLOOMNEST EXTRA HOME SECTIONS CSS
+   Sections:
+   - Trust Bar
+   - Seasonal Guide
+   - Bulk Order
+   - Contact
+   - Gallery
+   - Newsletter
+========================================================== */
+/* ==========================================================
+   TRUST BAR
+========================================================== */
+.trust-bar{
+    padding:35px 0;
+    background:var(--bg-soft);
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+.trust-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.trust-grid > div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    padding:25px;
+    background:var(--surface);
+    border-radius:20px;
+    border:1px solid var(--border);
+    transition:.35s;
+}
+.trust-grid > div:hover{
+    transform:translateY(-5px);
+    border-color:var(--secondary);
+    box-shadow:var(--shadow);
+}
+.trust-grid i{
+    width:35px;
+    height:35px;
+    color:var(--primary);
+}
+.trust-grid span{
+    font-size:16px;
+    font-weight:700;
+    color:var(--text);
+}
+/* ==========================================================
+   SEASONAL SECTION
+========================================================== */
+.seasonal-section{
+    background:var(--bg);
+}
+.season-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.season-card{
+    background:var(--surface);
+    border-radius:25px;
+    overflow:hidden;
+    border:1px solid var(--border);
+    transition:.35s;
+}
+.season-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.season-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+.season-card:hover img{
+    transform:scale(1.08);
+}
+.season-card h3{
+    font-size:24px;
+    color:var(--text);
+    padding:20px 25px 10px;
+}
+.season-card p{
+    padding:0 25px 25px;
+    color:var(--text-muted);
+    line-height:1.7;
+}
+/* ==========================================================
+   BULK ORDER SECTION
+========================================================== */
+.bulk-order-section{
+    background:var(--bg-soft);
+}
+.bulk-order-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+.bulk-content{
+    max-width:600px;
+}
+.bulk-content .section-tag{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    color:var(--secondary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+.bulk-content h2{
+    font-size:42px;
+    line-height:1.2;
+    color:var(--text);
+    margin-bottom:20px;
+}
+.bulk-content p{
+    color:var(--text-muted);
+    line-height:1.8;
+    margin-bottom:25px;
+}
+.bulk-list{
+    list-style:none;
+    padding:0;
+    margin:0 0 30px;
+}
+.bulk-list li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:15px;
+    color:var(--text);
+    font-weight:600;
+}
+.bulk-list svg{
+    width:22px;
+    height:22px;
+    color:var(--primary);
+}
+.bulk-image{
+    height:520px;
+    border-radius:35px;
+    overflow:hidden;
+}
+.bulk-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+.contact-section{
+    background:var(--bg);
+}
+.contact-grid{
+    display:grid;
+    grid-template-columns:0.8fr 1.2fr;
+    gap:50px;
+}
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.contact-card{
+    display:flex;
+    gap:20px;
+    padding:25px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    transition:.3s;
+}
+.contact-card:hover{
+    transform:translateX(8px);
+    border-color:var(--secondary);
+}
+.contact-card i{
+    width:35px;
+    height:35px;
+    color:var(--primary);
+}
+.contact-card h3{
+    font-size:18px;
+    color:var(--text);
+    margin-bottom:8px;
+}
+.contact-card p{
+    color:var(--text-muted);
+}
+/* CONTACT FORM */
+.contact-form-box{
+    background:var(--surface);
+    padding:40px;
+    border-radius:30px;
+    border:1px solid var(--border);
+}
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width:100%;
+    padding:16px 20px;
+    border-radius:15px;
+    border:1px solid var(--border);
+    background:var(--bg);
+    color:var(--text);
+    outline:none;
+    margin-bottom:20px;
+}
+.contact-form textarea{
+    resize:none;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color:var(--secondary);
+}
+/* ==========================================================
+   GALLERY SECTION
+========================================================== */
+.gallery-section{
+    background:var(--bg-soft);
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+.gallery-item{
+    height:280px;
+    overflow:hidden;
+    border-radius:25px;
+    position:relative;
+}
+.gallery-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.25);
+    opacity:0;
+    transition:.3s;
+}
+.gallery-item:hover::after{
+    opacity:1;
+}
+/* ==========================================================
+   NEWSLETTER BOX
+========================================================== */
+.newsletter-section{
+    background:var(--bg);
+}
+.newsletter-box{
+    padding:80px 50px;
+    border-radius:35px;
+    text-align:center;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-dark)
+    );
+    color:white;
+}
+.newsletter-content{
+    max-width:750px;
+    margin:auto;
+}
+.newsletter-content svg{
+    width:45px;
+    height:45px;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+.newsletter-content h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+.newsletter-content p{
+    opacity:.9;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+.newsletter-form{
+    display:flex;
+    gap:15px;
+    max-width:620px;
+    margin:auto;
+}
+.newsletter-form input{
+    flex:1;
+    height:58px;
+    border-radius:50px;
+    border:none;
+    padding:0 25px;
+}
+.newsletter-form button{
+    border-radius:50px;
+    padding:0 35px;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .trust-grid > div,
+.dark-mode .season-card,
+.dark-mode .contact-card,
+.dark-mode .contact-form-box{
+    background:var(--surface);
+}
+/* ==========================================================
+   TABLET
+========================================================== */
+@media(max-width:1024px){
+.trust-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.season-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+.bulk-order-wrapper,
+.contact-grid{
+    grid-template-columns:1fr;
+}
+.bulk-image{
+    height:420px;
+}
+.gallery-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+}
+/* ==========================================================
+   MOBILE
+========================================================== */
+@media(max-width:640px){
+.trust-grid,
+.season-grid,
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+.trust-grid > div{
+    justify-content:flex-start;
+}
+.bulk-content h2{
+    font-size:30px;
+}
+.bulk-image{
+    height:320px;
+}
+.contact-form-box{
+    padding:25px;
+}
+.form-grid{
+    grid-template-columns:1fr;
+}
+.gallery-item{
+    height:230px;
+}
+.newsletter-box{
+    padding:50px 20px;
+}
+.newsletter-content h2{
+    font-size:30px;
+}
+.newsletter-form{
+    flex-direction:column;
+}
+.newsletter-form button{
+    height:55px;
+}
+}/* ==========================================================
+   BLOOMNEST EXTRA SECTIONS RESPONSIVE
+========================================================== */
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media (min-width:1281px){
+    .trust-grid{
+        gap:30px;
+    }
+    .season-card img{
+        height:300px;
+    }
+    .bulk-order-wrapper{
+        gap:90px;
+    }
+    .bulk-content h2{
+        font-size:44px;
+    }
+    .bulk-image{
+        height:600px;
+    }
+    .gallery-item{
+        height:320px;
+    }
+    .newsletter-box{
+        padding:100px 70px;
+    }
+}
+/* ==========================================================
+   DESKTOP
+   1024px - 1280px
+========================================================== */
+@media(min-width:1024px) and (max-width:1280px){
+    .trust-grid{
+        grid-template-columns:
+        repeat(4,1fr);
+        gap:20px;
+    }
+    .trust-grid > div{
+        padding:20px;
+    }
+    .season-grid{
+        grid-template-columns:
+        repeat(4,1fr);
+        gap:20px;
+    }
+    .season-card img{
+        height:220px;
+    }
+    .bulk-order-wrapper{
+        gap:45px;
+    }
+    .bulk-content h2{
+        font-size:34px;
+    }
+    .bulk-image{
+        height:450px;
+    }
+    .contact-grid{
+        gap:35px;
+    }
+    .gallery-grid{
+        grid-template-columns:
+        repeat(4,1fr);
+    }
+    .gallery-item{
+        height:230px;
+    }
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .trust-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .trust-grid > div{
+        padding:25px;
+    }
+    .season-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+    .bulk-order-wrapper{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .bulk-content{
+        margin:auto;
+    }
+    .bulk-list li{
+        justify-content:center;
+    }
+    .bulk-image{
+        height:450px;
+    }
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+    .contact-info{
+        max-width:700px;
+        margin:auto;
+        width:100%;
+    }
+    .contact-form-box{
+        max-width:750px;
+        margin:auto;
+        width:100%;
+    }
+    .gallery-grid{
+        grid-template-columns:
+        repeat(3,1fr);
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .trust-bar{
+        padding:25px 0;
+    }
+    .trust-grid{
+        grid-template-columns:1fr;
+    }
+    .trust-grid > div{
+        justify-content:flex-start;
+        padding:20px;
+    }
+    .trust-grid span{
+        font-size:15px;
+    }
+    .seasonal-section,
+    .bulk-order-section,
+    .contact-section,
+    .gallery-section,
+    .newsletter-section{
+        padding:70px 0;
+    }
+    .season-grid{
+        grid-template-columns:1fr;
+    }
+    .season-card img{
+        height:240px;
+    }
+    .season-card h3{
+        font-size:22px;
+    }
+    .bulk-content h2{
+        font-size:30px;
+    }
+    .bulk-content p{
+        font-size:15px;
+    }
+    .bulk-list li{
+        align-items:flex-start;
+        text-align:left;
+    }
+    .bulk-image{
+        height:320px;
+        border-radius:25px;
+    }
+    .contact-card{
+        padding:20px;
+    }
+    .contact-card h3{
+        font-size:16px;
+    }
+    .contact-card p{
+        font-size:14px;
+    }
+    .contact-form-box{
+        padding:20px;
+        border-radius:22px;
+    }
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+    .gallery-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+        gap:15px;
+    }
+    .gallery-item{
+        height:170px;
+        border-radius:18px;
+    }
+    .newsletter-box{
+        padding:45px 20px;
+        border-radius:25px;
+    }
+    .newsletter-content h2{
+        font-size:28px;
+    }
+    .newsletter-content p{
+        font-size:14px;
+    }
+    .newsletter-form{
+        flex-direction:column;
+    }
+    .newsletter-form input,
+    .newsletter-form button{
+        width:100%;
+        height:55px;
+    }
+}
+/* ==========================================================
+   SMALL MOBILE
+   BELOW 400px
+========================================================== */
+@media(max-width:400px){
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+    .trust-grid span{
+        font-size:14px;
+    }
+    .season-card img{
+        height:220px;
+    }
+    .bulk-content h2{
+        font-size:26px;
+    }
+    .newsletter-content h2{
+        font-size:25px;
+    }
+}/*==================================================
+PREMIUM CARD TOP GRADIENT BORDER
+==================================================*/
+.category-card,
+.product-card,
+.feature-card,
+.material-card,
+.stat-card,
+.why-item,
+.process-card,
+.season-card,
+.testimonial-card,
+.blog-card,
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border:1px solid var(--border);
+}
+/* Gradient Top Line */
+.category-card::before,
+.product-card::before,
+.feature-card::before,
+.material-card::before,
+.stat-card::before,
+.why-item::before,
+.process-card::before,
+.season-card::before,
+.testimonial-card::before,
+.blog-card::before,
+.gallery-item::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:4px;
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary),
+        var(--primary)
+    );
+    background-size:200% 100%;
+    animation:borderMove 6s linear infinite;
+    z-index:2;
+}
+/* Gradient Animation */
+@keyframes borderMove{
+    0%{
+        background-position:0% 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position:0% 50%;
+    }
+}
+/* Hover Effect */
+.category-card:hover,
+.product-card:hover,
+.feature-card:hover,
+.material-card:hover,
+.stat-card:hover,
+.process-card:hover,
+.season-card:hover,
+.testimonial-card:hover,
+.blog-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+}
+/* Smooth Animation */
+.category-card,
+.product-card,
+.feature-card,
+.material-card,
+.stat-card,
+.process-card,
+.season-card,
+.testimonial-card,
+.blog-card{
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+/* Premium Shadow */
+.category-card:hover,
+.product-card:hover,
+.feature-card:hover,
+.material-card:hover,
+.stat-card:hover,
+.process-card:hover,
+.season-card:hover,
+.testimonial-card:hover,
+.blog-card:hover{
+    box-shadow:
+    0 20px 40px rgba(27,94,32,.12);
+}/*==================================
+HERO HEADING HIGHLIGHT
+==================================*/
+.hero-content  h1 em{
+    font-style:normal;
+    color:var(--primary);
+    position:relative;
+    display:inline-block;
+}
+.hero-content h1 em::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0.08em;
+    width:100%;
+    height:12px;
+    background:rgba(27,94,32,.12);
+    border-radius:999px;
+    z-index:-1;
+}
+[data-theme="dark"] .hero-content h1 em::after{
+    background:rgba(46,125,50,.20);
+}

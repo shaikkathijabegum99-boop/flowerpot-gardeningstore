@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        BloomNest | Flower Pot & Gardening Supplies Store
+    </title>
+    <meta name="description"
+          content="Premium flower pots, indoor plants, outdoor plants, gardening tools and garden accessories.">
+    <meta name="keywords"
+          content="flower pots, plants, gardening supplies, indoor plants, garden accessories">
+    <meta name="author"
+          content="BloomNest">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet"
+          href="../global/global.css">
+    <!-- Component CSS -->
+  <link rel="stylesheet"
+          href="css/com.css">
+</head>
+<body>
+<!-- ======================================================
+     HEADER START
+====================================================== -->
+<header class="site-header"
+        id="siteHeader">
+<div class="container">
+<nav class="navbar">
+<!-- ======================
+     LOGO
+======================= -->
+<a href="../index.html"
+   class="logo">
+<span class="logo-icon">
+<i data-lucide="flower-2"></i>
+</span>
+<span class="logo-text">
+Bloom<span>Nest</span>
+</span>
+</a>
+<!-- ======================
+     DESKTOP NAVIGATION
+======================= -->
+<ul class="nav-menu">
+<!-- Home Dropdown -->
+<li class="nav-item dropdown">
+    <button class="dropdown-toggle"
+            aria-haspopup="true"
+            aria-expanded="false">
+        Home
+        <i data-lucide="chevron-down"></i>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <a href="index.html">
+                Home 1
+            </a>
+        </li>
+        <li>
+            <a href="/home2.html">
+                Home 2
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="nav-item">
+<a href="about.html">
+About
+</a>
+</li>
+<li class="nav-item">
+<a href="/service.html">
+Services
+</a>
+</li>
+<li class="nav-item">
+<a href="/pricing.html">
+pricing
+</a>
+</li>
+<li class="nav-item">
+<a href="blog.html">
+Blog
+</a>
+</li>
+<li class="nav-item">
+<a href="contact.html">
+Contact
+</a>
+</li>
+<!-- Dashboard Always Last -->
+</ul>
+<!-- ======================
+     NAV ACTIONS
+======================= -->
+<div class="nav-actions">
+<!-- Search -->
+<!-- Dark Mode -->
+<button class="icon-btn"
+        id="themeToggle"
+        aria-label="Dark Mode">
+<i data-lucide="moon"></i>
+</button>
+<!-- RTL -->
+<button class="icon-btn"
+        id="rtlToggle"
+        aria-label="RTL">
+    <i class="fas fa-right-left"></i>
+</button>
+<!-- Wishlist -->
+<!-- Primary CTA -->
+<a href="/signin.html"
+   class="btn btn-primary">
+Sign in
+</a>
+<!-- Mobile Menu -->
+<button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open Menu">
+<i data-lucide="menu"></i>
+</button>
+</div>
+</nav>
+</div>
+</header>
+<!-- ======================================================
+     MOBILE SIDEBAR
+====================================================== -->
+<aside class="mobile-sidebar"
+       id="mobileSidebar">
+<div class="mobile-header">
+<a href="/index.html"
+   class="logo">
+<span class="logo-icon">
+<i data-lucide="flower-2"></i>
+</span>
+<span class="logo-text">
+Bloom<span>Nest</span>
+</span>
+</a>
+<button class="icon-btn"
+        id="closeMenu">
+<i data-lucide="x"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<ul class="mobile-nav">
+<li>
+    <details>
+        <summary>
+            Home
+        </summary>
+        <ul class="mobile-dropdown">
+            <li>
+                <a href="/index.html">
+                    Home 1
+                </a>
+            </li>
+            <li>
+                <a href="/home2.html">
+                    Home 2
+                </a>
+            </li>
+        </ul>
+    </details>
+</li>
+<li>
+<a href="/about.html">
+About
+</a>
+</li>
+<li>
+<a href="/service.html">
+Services
+</a>
+</li>
+<li>
+<a href="/blog.html">
+Blog
+</a>
+</li>
+<li>
+<a href="/contact.html">
+Contact
+</a>
+</li>
+<li>
+<a href="/dashboard.html">
+Dashboard
+</a>
+</li>
+</ul>
+<div class="mobile-buttons">
+<a href="../wishlist.html"
+   class="btn btn-outline">
+Wishlist
+</a>
+<a href="/signin.html"
+   class="btn btn-primary">
+Sign in
+</a>
+</div>
+</aside>
+<!-- ======================================================
+     MOBILE OVERLAY
+====================================================== -->
+<div class="mobile-overlay"
+     id="mobileOverlay">
+</div>
+<!-- ======================================================
+     SEARCH MODAL
+====================================================== -->
+<div class="search-modal"
+     id="searchModal">
+<div class="search-box">
+<input type="search"
+       placeholder="Search plants, pots and gardening products...">
+<button>
+<i data-lucide="search"></i>
+</button>
+</div>
+</div>
+<!-- ======================================================
+     SCRIPTS
+====================================================== -->
+<script src="../global/global.js"></script>
+<script>
+lucide.createIcons();
+</script>
+</body>
+</html>

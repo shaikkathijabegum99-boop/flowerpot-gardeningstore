@@ -1,0 +1,2336 @@
+/* ==========================================================
+   BLOOMNEST HOME 2 PREMIUM CSS
+   PART 1
+   Sections:
+   - Premium Hero Section
+   - Premium Stats
+   - Featured Collection
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   PREMIUM HERO SECTION
+========================================================== */
+.premium-hero{
+    padding:120px 0;
+    background:var(--bg);
+    overflow:hidden;
+}
+.premium-hero-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+.premium-hero-content{
+    max-width:620px;
+}
+/* Hero Badge */
+.hero-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 18%,
+        transparent
+    );
+    color:var(--secondary);
+    border:1px solid
+    color-mix(
+        in srgb,
+        var(--secondary) 35%,
+        transparent
+    );
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+.hero-badge svg{
+    width:18px;
+    height:18px;
+}
+.premium-hero-content h1{
+    font-size:clamp(40px,5vw,58px);
+    line-height:1.12;
+    letter-spacing:-1.5px;
+    font-weight:800;
+    color:var(--text);
+    margin-bottom:22px;
+}
+.premium-hero-content p{
+    max-width:540px;
+    font-size:17px;
+    line-height:1.8;
+    color:var(--text-muted);
+    margin-bottom:35px;
+}
+/* HERO ACTIONS */
+.hero-actions{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.hero-actions .btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.hero-actions{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+}
+.hero-actions .btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+/* Secondary CTA */
+.hero-actions .btn-secondary{
+    background:var(--secondary);
+    color:#ffffff;
+}
+.hero-actions .btn-secondary:hover{
+    background:var(--primary);
+}
+/* ==========================================================
+   HERO IMAGE
+========================================================== */
+.premium-hero-image{
+    position:relative;
+}
+.premium-hero-image img{
+    width:100%;
+    height:560px;
+    object-fit:cover;
+    border-radius:35px;
+    box-shadow:var(--shadow);
+}
+.premium-hero-image::before{
+    content:"";
+    position:absolute;
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 25%,
+        transparent
+    );
+    top:-45px;
+    right:-45px;
+    z-index:-1;
+}
+/* ==========================================================
+   HERO FLOATING CARD
+========================================================== */
+.hero-floating-card{
+    position:absolute;
+    bottom:35px;
+    left:-35px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:22px 28px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:22px;
+    box-shadow:var(--shadow);
+}
+.hero-floating-card svg{
+    width:38px;
+    height:38px;
+    color:var(--primary);
+}
+.hero-floating-card strong{
+    display:block;
+    font-size:28px;
+    font-weight:800;
+    color:var(--text);
+}
+.hero-floating-card span{
+    font-size:14px;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   PREMIUM STATS
+========================================================== */
+.premium-stats{
+    padding:45px 0;
+    background:var(--bg-soft);
+}
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+.stat-card{
+    padding:35px 25px;
+    text-align:center;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:24px;
+    transition:.35s ease;
+}
+.stat-card:hover{
+    transform:translateY(-8px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+.stat-card svg{
+    width:38px;
+    height:38px;
+    color:var(--primary);
+    margin-bottom:18px;
+}
+.stat-card h3{
+    font-size:36px;
+    font-weight:800;
+    color:var(--text);
+    margin-bottom:8px;
+}
+.stat-card p{
+    font-size:15px;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   FEATURED COLLECTION
+========================================================== */
+.premium-collection{
+    background:var(--bg);
+}
+.section-header{
+    max-width:700px;
+    text-align:center;
+    margin:0 auto 55px;
+}
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+.section-tag svg{
+    width:18px;
+    height:18px;
+}
+.section-header h2{
+    font-size:40px;
+    line-height:1.25;
+    font-weight:750;
+    color:var(--text);
+    margin-bottom:15px;
+}
+.section-header p{
+    font-size:16px;
+    line-height:1.7;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   COLLECTION GRID
+========================================================== */
+.collection-premium-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.collection-box{
+    height:420px;
+    position:relative;
+    overflow:hidden;
+    border-radius:28px;
+}
+.collection-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+.collection-box:hover img{
+    transform:scale(1.08);
+}
+.collection-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:35px;
+    color:white;
+    background:
+    linear-gradient(
+        transparent,
+        rgba(0,0,0,.75)
+    );
+}
+.collection-overlay h3{
+    font-size:26px;
+    margin-bottom:15px;
+color:white;
+}
+.collection-overlay a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:var(--secondary);
+    font-size:15px;
+    font-weight:700;
+}
+.collection-overlay a:hover{
+    color:white;
+}
+.collection-overlay svg{
+    width:18px;
+    height:18px;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .stat-card{
+    background:var(--surface);
+}
+.dark-mode .hero-floating-card{
+    background:var(--surface);
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+/* Desktop */
+@media(min-width:1024px) and (max-width:1280px){
+    .premium-hero-grid{
+        gap:45px;
+    }
+    .premium-hero-image img{
+        height:500px;
+    }
+    .collection-box{
+        height:360px;
+    }
+}
+/* Tablet */
+@media(max-width:1024px){
+    .premium-hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .premium-hero-content{
+        margin:auto;
+    }
+    .premium-hero-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .hero-actions{
+        justify-content:center;
+    }
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .collection-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .premium-hero{
+        padding:70px 0;
+    }
+    .premium-hero-content h1{
+        font-size:34px;
+    }
+    .premium-hero-content p{
+        font-size:15px;
+    }
+    .hero-actions{
+        flex-direction:column;
+    }
+    .hero-actions .btn{
+        width:100%;
+    }
+    .premium-hero-image img{
+        height:350px;
+        border-radius:24px;
+    }
+    .hero-floating-card{
+        position:static;
+        margin-top:20px;
+        justify-content:center;
+    }
+    .stats-grid,
+    .collection-premium-grid{
+        grid-template-columns:1fr;
+    }
+    .section-header h2{
+        font-size:30px;
+    }
+    .collection-box{
+        height:320px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME 2 PREMIUM CSS
+   PART 2
+   Sections:
+   - Premium Products
+   - Product Cards
+   - Garden Experience Section
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   PREMIUM PRODUCTS SECTION
+========================================================== */
+.premium-products{
+    background:var(--bg-soft);
+}
+/* PRODUCT GRID */
+.premium-product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+/* ==========================================================
+   PREMIUM PRODUCT CARD
+========================================================== */
+.premium-product-card{
+    display:flex;
+    flex-direction:column;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:26px;
+    overflow:hidden;
+    transition:.35s ease;
+}
+.premium-product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* ==========================================================
+   PRODUCT IMAGE
+========================================================== */
+.product-image{
+    height:330px;
+    position:relative;
+    overflow:hidden;
+    background:var(--bg-soft);
+}
+.product-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+.premium-product-card:hover 
+.product-image img{
+    transform:scale(1.08);
+}
+/* PRODUCT LABEL */
+.product-label{
+    position:absolute;
+    top:20px;
+    left:20px;
+    padding:7px 16px;
+    border-radius:50px;
+    background:var(--primary);
+    color:white;
+    font-size:13px;
+    font-weight:700;
+}
+.product-label:nth-child(1){
+    z-index:2;
+}
+/* HEART BUTTON */
+.product-image button{
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:1px solid var(--border);
+    background:var(--surface);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.3s ease;
+}
+.product-image button:hover{
+    background:var(--primary);
+    color:white;
+    border-color:var(--primary);
+}
+.product-image button svg{
+    width:18px;
+    height:18px;
+}
+/* ==========================================================
+   PRODUCT INFO
+========================================================== */
+.product-info{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+.product-info h3{
+    font-size:21px;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:18px;
+}
+.price{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:22px;
+}
+.price span{
+    font-size:24px;
+    font-weight:800;
+    color:var(--primary);
+}
+.price del{
+    font-size:15px;
+    color:var(--text-muted);
+}
+.product-info .btn{
+    width:100%;
+    margin-top:auto;
+}
+/* ==========================================================
+   GARDEN EXPERIENCE SECTION
+========================================================== */
+.garden-experience{
+    background:var(--bg);
+}
+.experience-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+}
+/* EXPERIENCE IMAGE */
+.experience-image{
+    height:540px;
+    overflow:hidden;
+    border-radius:32px;
+    box-shadow:var(--shadow);
+}
+.experience-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+.experience-image:hover img{
+    transform:scale(1.06);
+}
+/* EXPERIENCE CONTENT */
+.experience-content{
+    max-width:560px;
+}
+.experience-content .section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 15%,
+        transparent
+    );
+}
+.experience-content h2{
+    font-size:42px;
+    line-height:1.25;
+    color:var(--text);
+    margin:20px 0;
+}
+.experience-content p{
+    font-size:16px;
+    line-height:1.8;
+    color:var(--text-muted);
+    margin-bottom:30px;
+}
+/* EXPERIENCE LIST */
+.experience-content ul{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:35px;
+}
+.experience-content li{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--text);
+    font-size:16px;
+}
+.experience-content li svg{
+    width:22px;
+    height:22px;
+    color:var(--primary);
+    flex-shrink:0;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .premium-product-card{
+    background:var(--surface);
+}
+.dark-mode .product-image button{
+    background:#202820;
+    color:white;
+}
+.dark-mode .experience-content .section-tag{
+    background:#243124;
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+/* Desktop */
+@media(min-width:1024px) 
+and (max-width:1280px){
+    .premium-product-grid{
+        gap:25px;
+    }
+    .product-image{
+        height:300px;
+    }
+    .experience-grid{
+        gap:45px;
+    }
+    .experience-image{
+        height:450px;
+    }
+    .experience-content h2{
+        font-size:36px;
+    }
+}
+/* Tablet */
+@media(max-width:1024px){
+    .premium-product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .experience-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .experience-content{
+        max-width:100%;
+    }
+    .experience-content ul{
+        align-items:center;
+    }
+    .experience-image{
+        height:430px;
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .premium-products,
+    .garden-experience{
+        padding:70px 0;
+    }
+    .premium-product-grid{
+        grid-template-columns:1fr;
+    }
+    .product-image{
+        height:280px;
+    }
+    .product-info{
+        padding:22px;
+    }
+    .experience-image{
+        height:320px;
+        border-radius:24px;
+    }
+    .experience-content h2{
+        font-size:30px;
+    }
+    .experience-content p{
+        font-size:15px;
+    }
+    .experience-content ul{
+        align-items:flex-start;
+    }
+    .experience-content li{
+        text-align:left;
+        font-size:15px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME 2 PREMIUM CSS
+   PART 3
+   Sections:
+   - Why Choose Us
+   - Process Section
+   - Special Offer Banner
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   WHY CHOOSE US SECTION
+========================================================== */
+.premium-why{
+    background:var(--bg-soft);
+}
+/* WHY GRID */
+.why-premium-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+/* ==========================================================
+   WHY CARD
+========================================================== */
+.why-premium-card{
+    padding:35px 25px;
+    text-align:center;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:24px;
+    transition:.35s ease;
+}
+.why-premium-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* ICON */
+.why-premium-card svg{
+    width:42px;
+    height:42px;
+    color:var(--primary);
+    margin-bottom:20px;
+    transition:.3s ease;
+}
+.why-premium-card:hover svg{
+    color:var(--secondary);
+    transform:scale(1.1);
+}
+/* CONTENT */
+.why-premium-card h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:12px;
+}
+.why-premium-card p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   PROCESS SECTION
+========================================================== */
+.premium-process{
+    background:var(--bg);
+}
+.process-premium-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+/* PROCESS CARD */
+.process-box{
+    position:relative;
+    text-align:center;
+    padding:40px 25px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    transition:.35s ease;
+}
+.process-box:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* NUMBER */
+.process-box span{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:52px;
+    font-weight:800;
+    color:
+    color-mix(
+        in srgb,
+        var(--secondary) 20%,
+        transparent
+    );
+}
+/* ICON */
+.process-box svg{
+    width:45px;
+    height:45px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+/* TEXT */
+.process-box h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:12px;
+}
+.process-box p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text-muted);
+}
+/* ==========================================================
+   SPECIAL OFFER SECTION
+========================================================== */
+.premium-offer{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+/* OFFER BOX */
+.premium-offer-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    overflow:hidden;
+    border-radius:35px;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-hover)
+    );
+    box-shadow:var(--shadow);
+}
+/* OFFER CONTENT */
+.premium-offer-box > div:first-child{
+    padding:60px;
+    color:white;
+}
+.premium-offer-box span{
+    display:inline-flex;
+    padding:8px 18px;
+    border-radius:50px;
+    background:
+    color-mix(
+        in srgb,
+        var(--secondary) 35%,
+        transparent
+    );
+    color:white;
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+.premium-offer-box h2{
+    font-size:42px;
+    line-height:1.25;
+    margin-bottom:18px;
+    color:white;
+}
+.premium-offer-box p{
+    font-size:16px;
+    line-height:1.8;
+    opacity:.9;
+    margin-bottom:30px;
+color:white;
+}
+/* OFFER BUTTON */
+.premium-offer-box .btn{
+    background:var(--secondary);
+    color:#222;
+}
+.premium-offer-box .btn:hover{
+    background:white;
+}
+/* OFFER IMAGE */
+.offer-image{
+    height:420px;
+    overflow:hidden;
+}
+.offer-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s ease;
+}
+.premium-offer-box:hover 
+.offer-image img{
+    transform:scale(1.06);
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .why-premium-card,
+.dark-mode .process-box{
+    background:var(--surface);
+}
+.dark-mode .premium-offer-box{
+    background:
+    linear-gradient(
+        135deg,
+        #19301d,
+        #111811
+    );
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+/* Desktop */
+@media(min-width:1024px)
+and (max-width:1280px){
+    .why-premium-grid{
+        grid-template-columns:repeat(4,1fr);
+        gap:20px;
+    }
+    .process-premium-grid{
+        gap:20px;
+    }
+    .premium-offer-box h2{
+        font-size:36px;
+    }
+    .premium-offer-box > div:first-child{
+        padding:45px;
+    }
+}
+/* Tablet */
+@media(max-width:1024px){
+    .why-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .process-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .premium-offer-box{
+        grid-template-columns:1fr;
+    }
+    .premium-offer-box > div:first-child{
+        text-align:center;
+    }
+    .offer-image{
+        height:350px;
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .premium-why,
+    .premium-process,
+    .premium-offer{
+        padding:70px 0;
+    }
+    .why-premium-grid,
+    .process-premium-grid{
+        grid-template-columns:1fr;
+    }
+    .why-premium-card{
+        padding:30px 20px;
+    }
+    .process-box{
+        padding:35px 20px;
+    }
+    .premium-offer-box > div:first-child{
+        padding:35px 25px;
+    }
+    .premium-offer-box h2{
+        font-size:30px;
+    }
+    .premium-offer-box p{
+        font-size:15px;
+    }
+    .offer-image{
+        height:280px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME 2 PREMIUM CSS
+   PART 4
+   Sections:
+   - Premium Testimonials
+   - Premium Blog
+   - Instagram Gallery
+   - Newsletter Section
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   PREMIUM TESTIMONIAL SECTION
+========================================================== */
+.premium-testimonials{
+    background:var(--bg);
+}
+/* TESTIMONIAL GRID */
+.testimonial-premium-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+/* ==========================================================
+   TESTIMONIAL CARD
+========================================================== */
+.premium-testimonial-card{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:35px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:26px;
+    transition:.35s ease;
+}
+.premium-testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* CUSTOMER IMAGE */
+.customer-avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 20px;
+    border:3px solid var(--secondary);
+}
+.customer-avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+/* STARS */
+.stars{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+    margin-bottom:20px;
+}
+.stars svg{
+    width:18px;
+    height:18px;
+    color:var(--secondary);
+    fill:var(--secondary);
+}
+/* CONTENT */
+.premium-testimonial-card p{
+    flex:1;
+    font-size:15px;
+    line-height:1.8;
+    color:var(--text-muted);
+    margin-bottom:25px;
+}
+.premium-testimonial-card h3{
+    font-size:20px;
+    color:var(--text);
+    margin-bottom:6px;
+}
+.premium-testimonial-card span{
+    font-size:14px;
+    color:var(--primary);
+}
+/* ==========================================================
+   PREMIUM BLOG SECTION
+========================================================== */
+.premium-blog{
+    background:var(--bg-soft);
+}
+/* BLOG GRID */
+.blog-premium-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+/* ==========================================================
+   BLOG CARD
+========================================================== */
+.premium-blog-card{
+    display:flex;
+    flex-direction:column;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:25px;
+    overflow:hidden;
+    transition:.35s ease;
+}
+.premium-blog-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+    border-color:var(--secondary);
+}
+/* BLOG IMAGE */
+.premium-blog-card > img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s ease;
+}
+.premium-blog-card:hover > img{
+    transform:scale(1.08);
+}
+/* BLOG INFO */
+.blog-info{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:30px;
+}
+.blog-info span{
+    color:var(--secondary);
+    font-size:14px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+.blog-info h3{
+    font-size:22px;
+    line-height:1.4;
+    color:var(--text);
+    margin-bottom:15px;
+}
+.blog-info p{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text-muted);
+    margin-bottom:20px;
+}
+/* READ MORE */
+.blog-info a{
+    margin-top:auto;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    width:max-content;
+    color:var(--primary);
+    font-size:15px;
+    font-weight:700;
+    transition:.3s ease;
+}
+.blog-info a:hover{
+    color:var(--secondary);
+    gap:14px;
+}
+.blog-info a svg{
+    width:18px;
+    height:18px;
+}
+/* ==========================================================
+   PREMIUM GALLERY
+========================================================== */
+.premium-gallery{
+    padding:80px 0;
+    background:var(--bg);
+}
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:18px;
+}
+.gallery-grid div{
+    height:220px;
+    overflow:hidden;
+    border-radius:22px;
+}
+.gallery-grid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s ease;
+}
+.gallery-grid div:hover img{
+    transform:scale(1.1);
+}
+/* ==========================================================
+   NEWSLETTER SECTION
+========================================================== */
+.premium-newsletter{
+    padding:80px 0;
+    background:var(--bg-soft);
+}
+.newsletter-box{
+    position:relative;
+    overflow:hidden;
+    padding:70px 40px;
+    border-radius:35px;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-hover)
+    );
+    border:1px solid
+    rgba(216,179,106,.35);
+}
+.newsletter-box::before{
+    content:"";
+    position:absolute;
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:
+    rgba(216,179,106,.15);
+    top:-120px;
+    right:-80px;
+}
+.newsletter-box > *{
+    position:relative;
+    z-index:2;
+}
+.newsletter-box > svg{
+    width:45px;
+    height:45px;
+    color:var(--secondary);
+    margin-bottom:20px;
+}
+.newsletter-box h2{
+    font-size:40px;
+    margin-bottom:15px;
+    color:white;
+}
+.newsletter-box p{
+    max-width:600px;
+    margin:0 auto 35px;
+    font-size:16px;
+    line-height:1.8;
+    opacity:.9;
+color:white;
+}
+/* FORM */
+.newsletter-box form{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    max-width:620px;
+    margin:auto;
+}
+.newsletter-box input{
+    flex:1;
+    height:58px;
+    padding:0 25px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    font-size:15px;
+}
+.newsletter-box button{
+    height:58px;
+    padding:0 35px;
+    border-radius:50px;
+    border:none;
+    background:var(--secondary);
+    color:#222;
+    font-weight:700;
+    cursor:pointer;
+}
+.newsletter-box button:hover{
+    background:white;
+}
+/* ==========================================================
+   DARK MODE
+========================================================== */
+.dark-mode .premium-testimonial-card,
+.dark-mode .premium-blog-card{
+    background:var(--surface);
+}
+.dark-mode .newsletter-box{
+    background:
+    linear-gradient(
+        135deg,
+        #19301d,
+        #111811
+    );
+}
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+/* Desktop */
+@media(min-width:1024px)
+and (max-width:1280px){
+    .testimonial-premium-grid,
+    .blog-premium-grid{
+        gap:25px;
+    }
+    .premium-testimonial-card{
+        padding:30px;
+    }
+    .gallery-grid div{
+        height:190px;
+    }
+}
+/* Tablet */
+@media(max-width:1024px){
+    .testimonial-premium-grid,
+    .blog-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .premium-testimonials,
+    .premium-blog,
+    .premium-newsletter{
+        padding:70px 0;
+    }
+    .testimonial-premium-grid,
+    .blog-premium-grid{
+        grid-template-columns:1fr;
+    }
+    .premium-testimonial-card{
+        padding:25px;
+    }
+    .premium-blog-card > img{
+        height:220px;
+    }
+    .blog-info{
+        padding:25px;
+    }
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .gallery-grid div{
+        height:160px;
+    }
+    .newsletter-box{
+        padding:50px 20px;
+        border-radius:25px;
+    }
+    .newsletter-box h2{
+        font-size:30px;
+    }
+    .newsletter-box p{
+        font-size:15px;
+    }
+    .newsletter-box form{
+        flex-direction:column;
+    }
+    .newsletter-box input,
+    .newsletter-box button{
+        width:100%;
+        height:55px;
+    }
+}/* ==========================================================
+   BLOOMNEST HOME 2 PREMIUM CSS
+   PART 5 FINAL
+   Sections:
+   - Final Responsive Adjustments
+   - Typography Scaling
+   - Dark Mode Refinements
+   - Hover Enhancements
+   - Accessibility
+   - Performance Optimization
+   Uses Global CSS Variables
+========================================================== */
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media(min-width:1281px){
+    .premium-hero{
+        padding:120px 0;
+    }
+    .premium-hero-content h1{
+        font-size:60px;
+    }
+    .premium-hero-image img{
+        height:620px;
+    }
+    .section-header h2{
+        font-size:44px;
+    }
+    .collection-box{
+        height:450px;
+    }
+    .product-image{
+        height:360px;
+    }
+    .experience-image{
+        height:560px;
+    }
+    .premium-blog-card > img{
+        height:300px;
+    }
+}
+/* ==========================================================
+   DESKTOP
+   1024px - 1280px
+========================================================== */
+@media(min-width:1024px)
+and (max-width:1280px){
+    .premium-hero-grid{
+        gap:45px;
+    }
+    .premium-hero-content h1{
+        font-size:48px;
+    }
+    .premium-hero-image img{
+        height:500px;
+    }
+    .section-header h2{
+        font-size:36px;
+    }
+    .collection-premium-grid{
+        gap:22px;
+    }
+    .collection-box{
+        height:360px;
+    }
+    .premium-product-grid{
+        gap:25px;
+    }
+    .product-image{
+        height:300px;
+    }
+    .experience-grid{
+        gap:45px;
+    }
+    .experience-image{
+        height:450px;
+    }
+    .premium-offer-box h2{
+        font-size:36px;
+    }
+}
+/* ==========================================================
+   TABLET
+   640px - 1024px
+========================================================== */
+@media(max-width:1024px){
+    .premium-hero-grid{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+    .premium-hero-content{
+        margin:auto;
+    }
+    .premium-hero-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .hero-actions{
+        justify-content:center;
+    }
+    .premium-hero-image{
+        max-width:700px;
+        margin:auto;
+    }
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .collection-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .premium-product-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .why-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .process-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .premium-offer-box{
+        grid-template-columns:1fr;
+    }
+    .testimonial-premium-grid,
+    .blog-premium-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .gallery-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+/* ==========================================================
+   MOBILE
+   BELOW 640px
+========================================================== */
+@media(max-width:640px){
+    .section{
+        padding:65px 0;
+    }
+    .premium-hero{
+        padding:70px 0 50px;
+    }
+    .premium-hero-content h1{
+        font-size:34px;
+        letter-spacing:-1px;
+    }
+    .premium-hero-content p{
+        font-size:15px;
+    }
+    .hero-actions{
+        flex-direction:column;
+        width:100%;
+    }
+    .hero-actions .btn{
+        width:100%;
+    }
+    .premium-hero-image img{
+        height:350px;
+        border-radius:24px;
+    }
+    .hero-floating-card{
+        position:static;
+        margin-top:20px;
+    }
+    .hero-floating-card strong{
+        font-size:22px;
+    }
+    .stats-grid,
+    .collection-premium-grid,
+    .premium-product-grid,
+    .why-premium-grid,
+    .process-premium-grid,
+    .testimonial-premium-grid,
+    .blog-premium-grid{
+        grid-template-columns:1fr;
+    }
+    .section-header h2{
+        font-size:30px;
+    }
+    .section-header p{
+        font-size:15px;
+    }
+    .product-image{
+        height:280px;
+    }
+    .experience-image{
+        height:320px;
+        border-radius:24px;
+    }
+    .experience-content h2{
+        font-size:30px;
+    }
+    .premium-offer-box > div:first-child{
+        padding:35px 25px;
+    }
+    .premium-offer-box h2{
+        font-size:30px;
+    }
+    .offer-image{
+        height:280px;
+    }
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .gallery-grid div{
+        height:160px;
+    }
+    .newsletter-box{
+        padding:50px 20px;
+        border-radius:25px;
+    }
+    .newsletter-box h2{
+        font-size:30px;
+    }
+    .newsletter-box form{
+        flex-direction:column;
+    }
+}
+/* ==========================================================
+   SMALL MOBILE
+   BELOW 400px
+========================================================== */
+@media(max-width:400px){
+    .premium-hero-content h1{
+        font-size:30px;
+    }
+    .section-header h2{
+        font-size:26px;
+    }
+    .collection-box{
+        height:280px;
+    }
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+}
+/* ==========================================================
+   PREMIUM HOVER EFFECTS
+========================================================== */
+@media(min-width:1024px){
+    .premium-product-card:hover,
+    .premium-testimonial-card:hover,
+    .premium-blog-card:hover,
+    .why-premium-card:hover,
+    .process-box:hover{
+        transform:translateY(-10px);
+    }
+    .collection-box:hover img,
+    .premium-blog-card:hover img,
+    .premium-product-card:hover img{
+        transform:scale(1.08);
+    }
+    .btn:hover{
+        transform:translateY(-3px);
+    }
+}
+/* ==========================================================
+   COLOR ACCENT FINISH
+========================================================== */
+.hero-badge,
+.section-tag{
+    border-color:
+    rgba(216,179,106,.35);
+}
+.stat-card:hover svg,
+.why-premium-card:hover svg,
+.process-box:hover svg{
+    color:var(--secondary);
+}
+.stars svg{
+    color:var(--secondary);
+    fill:var(--secondary);
+}
+/* ==========================================================
+   DARK MODE FINAL REFINEMENTS
+========================================================== */
+.dark-mode .premium-product-card,
+.dark-mode .premium-testimonial-card,
+.dark-mode .premium-blog-card,
+.dark-mode .why-premium-card,
+.dark-mode .process-box,
+.dark-mode .stat-card{
+    border-color:
+    var(--border-dark);
+}
+.dark-mode .hero-badge{
+    background:
+    rgba(216,179,106,.12);
+}
+.dark-mode .product-image{
+    background:#202820;
+}
+.dark-mode .product-image button{
+    background:#202820;
+    color:white;
+}
+.dark-mode .premium-newsletter .newsletter-box{
+    background:
+    linear-gradient(
+        135deg,
+        #19301d,
+        #101510
+    );
+}
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible{
+    outline:
+    3px solid var(--secondary);
+    outline-offset:4px;
+}
+/* ==========================================================
+   IMAGE OPTIMIZATION
+========================================================== */
+img{
+    max-width:100%;
+    height:auto;
+}
+/* ==========================================================
+   PERFORMANCE
+========================================================== */
+.premium-product-card,
+.premium-blog-card,
+.premium-testimonial-card,
+.collection-box,
+.why-premium-card,
+.process-box{
+    will-change:transform;
+}
+html{
+    scroll-behavior:smooth;
+}
+@media(prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+        animation:none!important;
+        transition:none!important;
+        scroll-behavior:auto!important;
+    }
+}
+/* ==========================================================
+   END BLOOMNEST HOME 2 PREMIUM CSS
+========================================================== *//* ==========================================================
+   BLOOMNEST DESKTOP VIEW ENHANCEMENT
+   Desktop : 1024px - 1280px
+   Large   : Above 1280px
+========================================================== */
+/* ==========================================================
+   DESKTOP
+   1024px - 1280px
+========================================================== */
+@media (min-width:1024px) and (max-width:1280px){
+/* HERO */
+.hero-section{
+    padding:80px 0;
+}
+.hero-grid{
+    gap:45px;
+}
+.hero-content h1{
+    font-size:48px;
+}
+.hero-content p{
+    font-size:16px;
+    max-width:480px;
+}
+.hero-image img{
+    height:500px;
+}
+/* BUTTON */
+.btn{
+    padding:13px 26px;
+    font-size:14px;
+}
+/* SECTIONS */
+.section{
+    padding:80px 0;
+}
+.section-header{
+    margin-bottom:45px;
+}
+.section-header h2{
+    font-size:36px;
+}
+.section-header p{
+    font-size:15px;
+}
+/* STATS */
+.stats-grid{
+    gap:20px;
+}
+.stat-card{
+    padding:28px 20px;
+}
+.stat-card h3{
+    font-size:32px;
+}
+/* CATEGORY */
+.category-grid{
+    gap:20px;
+}
+.category-card{
+    height:320px;
+}
+.category-content{
+    padding:25px;
+}
+.category-content h3{
+    font-size:22px;
+}
+/* PRODUCTS */
+.product-grid{
+    gap:25px;
+}
+.product-image{
+    height:300px;
+}
+.product-content{
+    padding:22px;
+}
+.product-title{
+    font-size:19px;
+}
+.current-price{
+    font-size:22px;
+}
+/* COLLECTION */
+.collection-grid{
+    gap:45px;
+}
+.collection-image{
+    height:450px;
+}
+.collection-content h2{
+    font-size:36px;
+}
+.collection-content p{
+    font-size:15px;
+}
+/* FEATURES */
+.feature-grid{
+    gap:25px;
+}
+.feature-card{
+    padding:35px 25px;
+}
+.feature-card h3{
+    font-size:21px;
+}
+/* PROCESS */
+.process-grid{
+    gap:20px;
+}
+.process-card{
+    padding:35px 20px;
+}
+/* TESTIMONIAL */
+.testimonial-grid{
+    gap:25px;
+}
+.testimonial-card{
+    padding:30px;
+}
+/* BLOG */
+.blog-grid{
+    gap:25px;
+}
+.blog-image{
+    height:240px;
+}
+.blog-content{
+    padding:25px;
+}
+.blog-content h3{
+    font-size:20px;
+}
+/* GALLERY */
+.instagram-grid{
+    gap:18px;
+}
+.instagram-item{
+    height:230px;
+}
+/* NEWSLETTER */
+.newsletter{
+    padding:65px 40px;
+}
+.newsletter h2{
+    font-size:36px;
+}
+}
+/* ==========================================================
+   LARGE DESKTOP
+   ABOVE 1280px
+========================================================== */
+@media (min-width:1281px){
+/* HERO */
+.hero-section{
+    padding:120px 0;
+}
+.hero-grid{
+    gap:70px;
+}
+.hero-content h1{
+    font-size:58px;
+}
+.hero-content p{
+    font-size:18px;
+}
+.hero-image img{
+    height:620px;
+}
+/* SECTION TITLE */
+.section-header h2{
+    font-size:44px;
+}
+.section-header p{
+    font-size:17px;
+}
+/* GRID SPACING */
+.stats-grid,
+.category-grid,
+.product-grid,
+.feature-grid,
+.process-grid,
+.testimonial-grid,
+.blog-grid{
+    gap:30px;
+}
+/* CATEGORY */
+.category-card{
+    height:400px;
+}
+/* PRODUCT */
+.product-image{
+    height:360px;
+}
+.product-title{
+    font-size:22px;
+}
+/* COLLECTION */
+.collection-image{
+    height:520px;
+}
+.collection-content h2{
+    font-size:42px;
+}
+/* WHY */
+.why-image{
+    height:560px;
+}
+/* MATERIAL */
+.material-card{
+    height:300px;
+}
+/* BLOG */
+.blog-image{
+    height:280px;
+}
+/* OFFER */
+.offer-content{
+    padding:70px;
+}
+.offer-content h2{
+    font-size:46px;
+}
+/* NEWSLETTER */
+.newsletter{
+    padding:90px 60px;
+}
+.newsletter h2{
+    font-size:44px;
+}
+}
+/* ==========================================================
+   DESKTOP PREMIUM HOVER EFFECTS
+========================================================== */
+@media(min-width:1024px){
+.product-card:hover,
+.blog-card:hover,
+.feature-card:hover,
+.testimonial-card:hover,
+.process-card:hover{
+    transform:translateY(-10px);
+}
+.category-card:hover img,
+.product-card:hover img,
+.blog-card:hover img,
+.material-card:hover img{
+    transform:scale(1.08);
+}
+.btn:hover{
+    transform:translateY(-3px);
+}
+}
+/* ==========================================================
+   DESKTOP TYPOGRAPHY FIX
+========================================================== */
+@media(min-width:1024px){
+p{
+    line-height:1.7;
+}
+h1,
+h2,
+h3{
+    letter-spacing:-0.4px;
+}
+.section-tag{
+    font-size:13px;
+}
+.hero-tag{
+    font-size:13px;
+}
+}
+/* ==========================================================
+   BUTTON SIZE REDUCTION
+========================================================== */
+.btn{
+    padding:12px 24px;
+    font-size:14px;
+    border-radius:10px;
+}
+.hero-actions .btn{
+    padding:12px 26px;
+    font-size:14px;
+}
+.premium-offer-box .btn{
+    padding:12px 28px;
+    font-size:14px;
+}
+.newsletter-box button{
+    height:52px;
+    padding:0 28px;
+    font-size:14px;
+}
+/* Desktop */
+@media(min-width:1024px){
+    .btn{
+        padding:11px 22px;
+        font-size:13px;
+    }
+}
+/* Mobile */
+@media(max-width:640px){
+    .btn{
+        padding:12px 20px;
+        font-size:14px;
+    }
+}
+/*==========================================================
+    DESKTOP VIEW MEDIA QUERIES
+    BLOOMNEST HOME 2
+==========================================================*/
+/*==========================================================
+    LARGE DESKTOP
+    ABOVE 1280px
+==========================================================*/
+@media (min-width:1280px){
+/* HERO */
+.premium-hero{
+    padding:120px 0 100px;
+}
+.premium-hero-grid{
+    grid-template-columns:
+    1fr 1fr;
+    gap:90px;
+    align-items:center;
+}
+.premium-hero-content h1{
+    font-size:64px;
+    line-height:1.12;
+}
+.premium-hero-content p{
+    max-width:560px;
+    font-size:18px;
+}
+.premium-hero-image img{
+    height:360px;
+    object-fit:cover;
+}
+/* STATS */
+.stats-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:30px;
+}
+.stat-card{
+    padding:40px 30px;
+}
+/* COLLECTION */
+.collection-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:30px;
+}
+.collection-box{
+    height:430px;
+}
+/* PRODUCTS */
+.premium-product-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:35px;
+}
+.premium-product-card{
+    min-height:520px;
+}
+.product-image{
+    height:350px;
+}
+.product-info{
+    padding:28px;
+}
+/* EXPERIENCE */
+.experience-grid{
+    grid-template-columns:
+    1fr 1fr;
+    gap:90px;
+}
+.experience-image img{
+    height:600px;
+    object-fit:cover;
+}
+/* WHY */
+.why-premium-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:28px;
+}
+/* PROCESS */
+.process-premium-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:30px;
+}
+/* OFFER */
+.premium-offer-box{
+    grid-template-columns:
+    1fr 450px;
+    padding:70px;
+}
+/* TESTIMONIAL */
+.testimonial-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:35px;
+}
+/* BLOG */
+.blog-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:30px;
+}
+/* GALLERY */
+.gallery-grid{
+    grid-template-columns:
+    repeat(6,1fr);
+}
+}
+/*==========================================================
+    DESKTOP / LAPTOP
+    1024px - 1280px
+==========================================================*/
+@media (min-width:1024px) and (max-width:1279px){
+/* HERO */
+.premium-hero{
+    padding:120px 0;
+}
+.premium-hero-grid{
+    grid-template-columns:
+    1fr 1fr;
+    gap:50px;
+}
+.premium-hero-content h1{
+    font-size:48px;
+}
+.premium-hero-content p{
+    font-size:16px;
+}
+.premium-hero-image img{
+    height:460px;
+}
+/* STATS */
+.stats-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:20px;
+}
+.stat-card{
+    padding:28px 15px;
+}
+/* COLLECTION */
+.collection-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:20px;
+}
+.collection-box{
+    height:330px;
+}
+.collection-overlay h3{
+    font-size:22px;
+}
+/* PRODUCTS */
+.premium-product-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:22px;
+}
+.product-image{
+    height:280px;
+}
+.product-info{
+    padding:20px;
+}
+.product-info h3{
+    font-size:20px;
+}
+/* EXPERIENCE */
+.experience-grid{
+    grid-template-columns:
+    1fr 1fr;
+    gap:50px;
+}
+.experience-image img{
+    height:480px;
+}
+.experience-content h2{
+    font-size:38px;
+}
+/* WHY */
+.why-premium-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:20px;
+}
+.why-premium-card{
+    padding:25px 18px;
+}
+/* PROCESS */
+.process-premium-grid{
+    grid-template-columns:
+    repeat(4,1fr);
+    gap:18px;
+}
+.process-box{
+    padding:28px 18px;
+}
+/* OFFER */
+.premium-offer-box{
+    grid-template-columns:
+    1fr 350px;
+    padding:45px;
+}
+/* TESTIMONIAL */
+.testimonial-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:20px;
+}
+/* BLOG */
+.blog-premium-grid{
+    grid-template-columns:
+    repeat(3,1fr);
+    gap:20px;
+}
+/* GALLERY */
+.gallery-grid{
+    grid-template-columns:
+    repeat(6,1fr);
+}
+}/*==========================================================
+    DESKTOP FONT SIZE REDUCTION
+    1024px+
+==========================================================*/
+@media (min-width:1024px){
+/* HERO */
+.premium-hero-content h1{
+    font-size:42px;
+    line-height:1.2;
+}
+.premium-hero-content p{
+    font-size:15px;
+}
+/* HERO BUTTON */
+.hero-actions .btn{
+    font-size:14px;
+    padding:12px 24px;
+}
+/* SECTION HEADINGS */
+.section-header h2{
+    font-size:32px;
+}
+.section-header p{
+    font-size:15px;
+}
+/* TAGS */
+.section-tag,
+.hero-badge{
+    font-size:13px;
+}
+/* STATS */
+.stat-card h3{
+    font-size:32px;
+}
+.stat-card p{
+    font-size:14px;
+}
+/* COLLECTION */
+.collection-overlay h3{
+    font-size:22px;
+}
+.collection-overlay a{
+    font-size:14px;
+}
+/* PRODUCT CARDS */
+.product-info h3{
+    font-size:18px;
+}
+.product-info .price span{
+    font-size:20px;
+}
+.product-info .price del{
+    font-size:14px;
+}
+.product-info .btn{
+    font-size:13px;
+    padding:10px 20px;
+}
+/* EXPERIENCE */
+.experience-content h2{
+    font-size:34px;
+}
+.experience-content p{
+    font-size:15px;
+}
+.experience-content li{
+    font-size:14px;
+}
+/* WHY CARDS */
+.why-premium-card h3{
+    font-size:18px;
+}
+.why-premium-card p{
+    font-size:14px;
+}
+/* PROCESS */
+.process-box h3{
+    font-size:18px;
+}
+.process-box p{
+    font-size:14px;
+}
+/* OFFER */
+.premium-offer-box h2{
+    font-size:32px;
+}
+.premium-offer-box p{
+    font-size:15px;
+}
+/* TESTIMONIAL */
+.premium-testimonial-card p{
+    font-size:14px;
+}
+.premium-testimonial-card h3{
+    font-size:17px;
+}
+/* BLOG */
+.blog-info h3{
+    font-size:19px;
+}
+.blog-info p{
+    font-size:14px;
+}
+.blog-info a{
+    font-size:14px;
+}
+/* NEWSLETTER */
+.newsletter-box h2{
+    font-size:32px;
+}
+.newsletter-box p{
+    font-size:15px;
+}
+.newsletter-box input{
+    font-size:14px;
+}
+.newsletter-box .btn{
+    font-size:13px;
+    padding:11px 24px;
+}
+}/*==========================================================
+    PREMIUM TOP BORDER FOR ALL CARDS
+==========================================================*/
+.stat-card,
+.collection-box,
+.premium-product-card,
+.why-premium-card,
+.process-box,
+.premium-testimonial-card,
+.premium-blog-card,
+.hero-floating-card{
+    border-top:4px solid var(--secondary);
+}
+/* Hover Effect */
+.stat-card:hover,
+.collection-box:hover,
+.premium-product-card:hover,
+.why-premium-card:hover,
+.process-box:hover,
+.premium-testimonial-card:hover,
+.premium-blog-card:hover,
+.hero-floating-card:hover{
+    border-top-color:var(--primary);
+}

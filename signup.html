@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+<title>
+    Create Account | BloomNest
+</title>
+<meta name="description"
+      content="Create your BloomNest account and explore premium plants, flower pots and gardening essentials.">
+<meta name="keywords"
+      content="BloomNest signup, plants, flower pots, gardening store">
+<meta name="author"
+      content="BloomNest">
+<link rel="icon" href="./images/favicon.png">
+<!-- Google Fonts -->
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+<!-- Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<!-- Global CSS -->
+<link rel="stylesheet"
+      href="../global/global.css">
+<!-- Auth CSS -->
+<link rel="stylesheet"
+      href="css/auth.css">
+</head>
+<body>
+<div class="auth-card">
+<!-- ======================================================
+     TOP CONTROLS
+====================================================== -->
+<div class="card-topbar">
+<div></div>
+<div class="card-controls">
+<button class="icon-btn"
+        id="theme-btn"
+        aria-label="Toggle Theme">
+<i data-lucide="moon"></i>
+</button>
+<button class="icon-btn"
+        id="rtl-btn"
+        aria-label="Toggle RTL">
+<i data-lucide="arrow-left-right"></i>
+</button>
+</div>
+</div>
+<!-- ======================================================
+     BRAND
+====================================================== -->
+<div class="card-brand">
+<a href="../index.html"
+   class="logo">
+<span class="logo-icon">
+<i data-lucide="flower-2"></i>
+</span>
+<span class="logo-text">
+Bloom<span>Nest</span>
+</span>
+</a>
+</div>
+<!-- MESSAGE -->
+<div class="auth-msg"
+     id="auth-msg">
+</div>
+<!-- ======================================================
+     STEP 0 : ACCOUNT DETAILS
+====================================================== -->
+<div class="step on"
+     id="s0">
+<h1 class="auth-heading">
+Create
+<em>
+Account
+</em>
+</h1>
+<p class="auth-sub">
+Join BloomNest and bring nature closer to your home.
+</p>
+<!-- NAME -->
+<div class="fg-row">
+<div class="fg">
+<label for="fname">
+First Name
+</label>
+<div class="input-wrap">
+<input type="text"
+       id="fname"
+       placeholder="First name"
+       autocomplete="given-name">
+</div>
+</div>
+<div class="fg">
+<label for="lname">
+Last Name
+</label>
+<div class="input-wrap">
+<input type="text"
+       id="lname"
+       placeholder="Last name"
+       autocomplete="family-name">
+</div>
+</div>
+</div>
+<!-- EMAIL -->
+<div class="fg">
+<label for="email">
+Email Address
+</label>
+<div class="input-wrap">
+<input type="email"
+       id="email"
+       placeholder="your@email.com"
+       autocomplete="email">
+</div>
+</div>
+<!-- PHONE -->
+<div class="fg">
+<label for="phone">
+Phone Number
+</label>
+<div class="input-wrap">
+<input type="tel"
+       id="phone"
+       placeholder="+91 XXXXX XXXXX"
+       autocomplete="tel">
+</div>
+</div>
+<button class="auth-btn"
+        type="button"
+        onclick="nextStep(0)">
+Continue
+<i data-lucide="arrow-right"></i>
+</button>
+<!-- SOCIAL LOGIN -->
+<div class="auth-divider">
+<span>
+or continue with
+</span>
+</div>
+<div class="social-btns">
+<button class="social-btn">
+ <svg class="social-icon google-icon"
+        viewBox="0 0 24 24">
+            <path d="M21.35 12.27c0-.72-.06-1.41-.18-2.07H12v3.92h5.23a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.92-4.18 2.92-7.24z"/>
+            <path d="M12 22c2.63 0 4.84-.87 6.45-2.49l-3.14-2.45c-.87.58-1.98.92-3.31.92-2.54 0-4.69-1.72-5.46-4.03H3.29v2.53A9.74 9.74 0 0 0 12 22z"/>
+            <path d="M6.54 13.95a5.86 5.86 0 0 1 0-3.9V7.52H3.29a9.99 9.99 0 0 0 0 8.96l3.25-2.53z"/>
+            <path d="M12 5.97c1.43 0 2.71.49 3.72 1.45l2.79-2.79C16.84 3.02 14.63 2 12 2a9.74 9.74 0 0 0-8.71 5.52l3.25 2.53C7.31 7.69 9.46 5.97 12 5.97z"/>
+        </svg>
+        Google
+</button>
+<button class="social-btn">
+<svg class="social-icon"
+     viewBox="0 0 24 24">
+<path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.5 1.6-1.5h1.7V5c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.4V11H7v3h2.9v8h3.6z"/>
+</svg>
+Facebook
+</button>
+<button class="social-btn">
+<svg class="social-icon"
+     viewBox="0 0 24 24">
+<path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.41 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.51-1.31 3-2.54 4.08z"/>
+</svg>
+Apple
+</button>
+</div>
+<div class="card-switch bottom-switch">
+Already have an account?
+<a href="signin.html">
+Sign in →
+</a>
+</div>
+</div><!-- ======================================================
+     STEP 1 : PASSWORD
+====================================================== -->
+<div class="step"
+     id="s1">
+<div class="sec-tag">
+✦ Security
+</div>
+<h1 class="auth-heading">
+Set
+<em>
+Password
+</em>
+</h1>
+<p class="auth-sub">
+Create a secure password for your BloomNest account.
+</p>
+<!-- PASSWORD -->
+<div class="fg">
+<label for="password">
+Password
+</label>
+<div class="input-wrap">
+<input type="password"
+       id="password"
+       placeholder="Create a strong password"
+       autocomplete="new-password">
+<button type="button"
+        class="pw-eye"
+        onclick="togglePw('password',this)">
+<i data-lucide="eye"></i>
+</button>
+</div>
+<div class="pw-strength">
+<div class="pw-bar">
+<div class="pw-fill"></div>
+</div>
+<span class="pw-lbl">
+Enter password strength
+</span>
+</div>
+</div>
+<!-- CONFIRM PASSWORD -->
+<div class="fg">
+<label for="cpw">
+Confirm Password
+</label>
+<div class="input-wrap">
+<input type="password"
+       id="cpw"
+       placeholder="Repeat your password"
+       autocomplete="new-password">
+<button type="button"
+        class="pw-eye"
+        onclick="togglePw('cpw',this)">
+<i data-lucide="eye"></i>
+</button>
+</div>
+</div>
+<!-- TERMS -->
+<label class="auth-check">
+<input type="checkbox"
+       id="terms">
+<span>
+I agree to BloomNest
+<a href="#">
+Terms
+</a>
+&
+<a href="#">
+Privacy Policy
+</a>
+</span>
+</label>
+<label class="auth-check">
+<input type="checkbox"
+       id="offers"
+       checked>
+<span>
+Send me plant care tips, offers & gardening updates
+</span>
+</label>
+<!-- NAVIGATION -->
+<div class="step-nav">
+<button class="back-btn"
+        type="button"
+        onclick="prevStep(1)">
+<i data-lucide="arrow-left"></i>
+Back
+</button>
+<button class="auth-btn"
+        type="button"
+        onclick="nextStep(1)">
+Continue
+<i data-lucide="arrow-right"></i>
+</button>
+</div>
+</div>
+<!-- ======================================================
+     STEP 2 : GARDEN PREFERENCES
+====================================================== -->
+<div class="step"
+     id="s2">
+<div class="sec-tag">
+✦ Personalise
+</div>
+<h1 class="auth-heading">
+Your
+<em>
+Garden Preferences
+</em>
+</h1>
+<p class="auth-sub">
+Help us recommend plants and gardening products you love.
+</p>
+<!-- PLANTS -->
+<div class="fg">
+<label>
+Favourite Plants
+</label>
+<div class="occ-grid">
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Indoor Plants
+</label>
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Flower Plants
+</label>
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Succulents
+</label>
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Herbs
+</label>
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Garden Pots
+</label>
+<label class="occ"
+       onclick="toggleOcc(this)">
+<input type="checkbox">
+Gardening Tools
+</label>
+</div>
+</div>
+<!-- LOCATION -->
+<div class="fg">
+<label for="city">
+Your Location
+</label>
+<div class="input-wrap">
+<input type="text"
+       id="city"
+       placeholder="e.g. Hyderabad, Bengaluru">
+</div>
+</div>
+<!-- GARDEN SPACE -->
+<div class="fg">
+<label for="space">
+Garden Space
+</label>
+<div class="input-wrap">
+<select id="space">
+<option>
+Balcony Garden
+</option>
+<option>
+Indoor Garden
+</option>
+<option>
+Terrace Garden
+</option>
+<option>
+Large Outdoor Garden
+</option>
+</select>
+</div>
+</div>
+<!-- FINAL BUTTONS -->
+<div class="step-nav">
+<button class="back-btn"
+        type="button"
+        onclick="prevStep(2)">
+<i data-lucide="arrow-left"></i>
+Back
+</button>
+<button class="auth-btn"
+        id="create-btn"
+        type="button"
+        onclick="handleSignup()">
+Create Account
+<i data-lucide="check"></i>
+</button>
+</div>
+</div><!-- ======================================================
+     SUCCESS SCREEN
+====================================================== -->
+<div class="success"
+     id="success">
+<div class="success-ico">
+<i data-lucide="flower-2"></i>
+</div>
+<h2>
+Welcome to Bloom
+<em>
+Nest
+</em>
+!
+</h2>
+<p>
+Your account is ready. Explore beautiful plants,
+premium pots and gardening essentials.
+</p>
+<a href="../shop.html"
+   class="auth-btn success-btn"
+   style="text-decoration:none">
+Explore Plants
+<i data-lucide="arrow-right"></i>
+</a>
+<div class="auth-note">
+<a href="signin.html">
+Sign in to your account →
+</a>
+</div>
+</div>
+</div>
+<!-- AUTH CARD END -->
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+<script src="../global/global.js"></script>
+<script src="js/auth.js"></script>
+<script>
+/* Initialize Icons */
+lucide.createIcons();
+/* Password Toggle */
+function togglePw(id,btn){
+const input =
+document.getElementById(id);
+const icon =
+btn.querySelector("svg");
+if(input.type==="password"){
+input.type="text";
+btn.innerHTML =
+'<i data-lucide="eye-off"></i>';
+}else{
+input.type="password";
+btn.innerHTML =
+'<i data-lucide="eye"></i>';
+}
+lucide.createIcons();
+}
+/* Step Navigation */
+function nextStep(step){
+document
+.getElementById("s"+step)
+.classList.remove("on");
+document
+.getElementById("s"+(step+1))
+.classList.add("on");
+lucide.createIcons();
+}
+function prevStep(step){
+document
+.getElementById("s"+step)
+.classList.remove("on");
+document
+.getElementById("s"+(step-1))
+.classList.add("on");
+lucide.createIcons();
+}
+/* Garden Preference Selection */
+function toggleOcc(element){
+element.classList.toggle("on");
+const checkbox =
+element.querySelector("input");
+checkbox.checked =
+!checkbox.checked;
+}
+/* Signup Complete */
+function handleSignup(){
+const terms =
+document.getElementById("terms");
+const msg =
+document.getElementById("auth-msg");
+if(!terms.checked){
+msg.textContent =
+"Please accept Terms & Privacy Policy.";
+msg.className =
+"auth-msg error";
+return;
+}
+document
+.querySelectorAll(".step")
+.forEach(step=>{
+step.style.display="none";
+});
+document
+.getElementById("success")
+.classList.add("show");
+lucide.createIcons();
+}
+</script>
+</body>
+</html>
