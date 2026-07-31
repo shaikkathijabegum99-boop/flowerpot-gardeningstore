@@ -96,6 +96,7 @@ body{
     border-radius:50%;
     background:var(--primary);
     color:#fff;
+        border: 2px solid var(--secondary);
     display:flex;
     align-items:center;
     justify-content:center;
@@ -416,7 +417,6 @@ body{
     padding:28px;
     border-radius:22px;
 }
-
 .card-brand{
     margin-bottom:25px;
 }
@@ -431,7 +431,6 @@ body{
 .logo-text{
     font-size:1.7rem;
 }
-
 .card-topbar{
     margin-bottom:25px;
 }
@@ -442,7 +441,6 @@ body{
     width:36px;
     height:36px;
 }
-
 .auth-heading{
     font-size:34px;
     margin-bottom:8px;
@@ -451,7 +449,6 @@ body{
     font-size:.85rem;
     margin-bottom:25px;
 }
-
 .fg{
     margin-bottom:15px;
 }
@@ -468,7 +465,6 @@ body{
     height:48px;
     font-size:.85rem;
 }
-
 .auth-divider{
     margin:20px 0;
     font-size:.75rem;
@@ -481,12 +477,10 @@ body{
     width:16px;
     height:16px;
 }
-
 .pw-eye svg{
     width:16px;
     height:16px;
 }
-
 .login-options{
     display:flex;
     justify-content:space-between;
@@ -511,7 +505,6 @@ body{
     font-weight:700;
     white-space:nowrap;
 }
-
 .step-nav{
     margin-top:20px;
 }
@@ -519,12 +512,10 @@ body{
     height:48px;
     font-size:.85rem;
 }
-
 .occ{
     padding:10px;
     font-size:.8rem;
 }
-
 .success h2{
     font-size:28px;
 }
@@ -576,7 +567,6 @@ html[dir="ltr"] .input-wrap input{
 }/*==================================================
  SECONDARY COLOR ACCENTS
 ==================================================*/
-
 .card-switch a,
 .auth-note a{
     color:var(--secondary);
@@ -585,50 +575,40 @@ html[dir="ltr"] .input-wrap input{
 .auth-note a:hover{
     color:var(--secondary-hover);
 }
-
 .icon-btn:hover{
     background:var(--secondary);
     color:#fff;
 }
-
 .logo-text span{
     color:var(--secondary);
 }
-
 .sec-tag{
     color:var(--secondary);
 }
-
 .input-wrap input:focus,
 .input-wrap select:focus{
     border-color:var(--secondary);
     box-shadow:0 0 0 3px rgba(141,110,99,.15);
 }
-
 .auth-btn:hover{
     background:var(--secondary-hover);
 }
-
 .social-btn:hover{
     border-color:var(--secondary);
     color:var(--secondary);
 }
-
 .pw-fill{
     background:var(--secondary);
 }
-
 .occ.on{
     background:rgba(141,110,99,.12);
     border-color:var(--secondary);
     color:var(--secondary);
 }
-
 .success-ico{
     background:rgba(141,110,99,.12);
     color:var(--secondary);
 }
-
 .dark-mode .card-switch a,
 .dark-mode .auth-note a{
     color:#d7b7a5;
@@ -647,7 +627,6 @@ html[dir="ltr"] .input-wrap input{
 }/*==================================================
  BLOOMNEST AUTH CSS FIXES
 ==================================================*/
-
 .card-topbar{
     display:flex;
     justify-content:flex-end;
@@ -810,15 +789,12 @@ body{
     max-height:calc(100svh - 40px);
     overflow-y:auto;
 }
-
 .auth-card::-webkit-scrollbar{
     width:0;
 }
-
 .card-topbar{
     margin-bottom:18px;
 }
-
 .card-brand{
     margin-bottom:18px;
 }
@@ -833,7 +809,6 @@ body{
 .logo-text{
     font-size:1.5rem;
 }
-
 .auth-heading{
     font-size:30px;
     margin-bottom:5px;
@@ -842,7 +817,6 @@ body{
     margin-bottom:20px;
     font-size:.82rem;
 }
-
 .fg{
     margin-bottom:12px;
 }
@@ -852,19 +826,15 @@ body{
 .input-wrap input{
     height:44px;
 }
-
 .login-options{
     margin:10px 0 15px;
 }
-
 .auth-btn{
     height:46px;
 }
-
 .auth-divider{
     margin:15px 0;
 }
-
 .social-btns{
     gap:8px;
 }
@@ -876,12 +846,10 @@ body{
     width:16px;
     height:16px;
 }
-
 .icon-btn{
     width:34px;
     height:34px;
 }
-
 @media(min-width:1024px){
     body{
         padding:15px;
@@ -891,7 +859,6 @@ body{
         padding:22px;
     }
 }
-
 @media(max-width:640px){
     body{
         padding:12px;
@@ -911,15 +878,12 @@ body{
 .auth-card{
     padding:18px;
 }
-
 .card-topbar{
     margin-bottom:14px;
 }
-
 .card-brand{
     margin-bottom:14px;
 }
-
 .logo{
     gap:8px;
 }
@@ -934,7 +898,6 @@ body{
 .logo-text{
     font-size:1.4rem;
 }
-
 .auth-heading{
     font-size:28px;
     margin-bottom:4px;
@@ -942,7 +905,6 @@ body{
 .auth-sub{
     margin-bottom:15px;
 }
-
 .fg{
     margin-bottom:10px;
 }
@@ -955,19 +917,15 @@ body{
     padding-left:12px;
     padding-right:40px;
 }
-
 .login-options{
     margin:8px 0 14px;
 }
-
 .auth-btn{
     height:44px;
 }
-
 .auth-divider{
     margin:14px 0;
 }
-
 .social-btns{
     gap:7px;
 }
@@ -975,12 +933,10 @@ body{
     height:38px;
     font-size:.75rem;
 }
-
 .social-icon{
     width:15px;
     height:15px;
 }
-
 .icon-btn{
     width:32px;
     height:32px;
@@ -994,36 +950,593 @@ body{
 .auth-card{
     padding:18px 20px;
 }
-
 .card-topbar{
     margin-bottom:15px;
 }
-
 .card-brand{
     margin-bottom:15px;
 }
-
 .auth-sub{
     margin-bottom:15px;
 }
-
 .fg{
     margin-bottom:10px;
 }
-
 .auth-btn{
     height:42px;
 }
-
 .auth-divider{
     margin:14px 0;
 }
 .social-btn{
     height:36px;
 }
-
 @media(max-width:640px){
     .auth-card{
         padding:16px;
     }
+}/*==================================================
+BLOOMNEST SIGNUP FORM
+2 COLUMN DESKTOP FIX
+==================================================*/
+@media(min-width:1024px){
+.signup-form,
+#s0{
+display:block;
+}
+.fg-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+.auth-card{
+max-width:430px;
+}
+.fg{
+margin-bottom:12px;
+}
+}
+/*==================================================
+1024px TABLET FIX
+==================================================*/
+@media(max-width:1024px){
+.auth-card{
+max-width:420px;
+padding:22px;
+}
+.fg-row{
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+}
+/*==================================================
+MOBILE 640px FIX
+==================================================*/
+@media(max-width:640px){
+.auth-card{
+width:100%;
+max-width:380px;
+padding:20px;
+}
+.fg-row{
+grid-template-columns:1fr;
+}
+.auth-heading{
+font-size:28px;
+}
+.social-btns{
+grid-template-columns:1fr;
+}
+.step-nav{
+display:flex;
+gap:10px;
+}
+.step-nav .auth-btn,
+.step-nav .back-btn{
+height:40px;
+}
+}
+/*==================================================
+360px SMALL MOBILE FIX
+==================================================*/
+@media(max-width:360px){
+body{
+padding:10px;
+}
+.auth-card{
+max-width:100%;
+padding:16px;
+border-radius:18px;
+}
+.card-controls{
+gap:6px;
+}
+.icon-btn{
+width:32px;
+height:32px;
+}
+.logo-icon{
+width:36px;
+height:36px;
+}
+.logo-text{
+font-size:20px;
+}
+.auth-heading{
+font-size:24px;
+}
+.auth-sub{
+font-size:12px;
+}
+.input-wrap input,
+.input-wrap select{
+height:38px;
+font-size:12px;
+}
+.auth-btn{
+height:38px;
+font-size:12px;
+}
+.social-btns{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:6px;
+}
+.social-btn{
+font-size:10px;
+padding:8px 4px;
+}
+}/*==================================================
+BLOOMNEST AUTH FINAL COMPACT OVERRIDE
+PASTE AT THE VERY END OF auth.css
+==================================================*/
+body{
+    min-height:100vh;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow-y:auto;
+}
+.auth-card,
+.signup-card{
+    width:100%;
+    max-width:430px;
+    padding:18px 20px !important;
+    border-radius:20px;
+}
+.card-topbar{
+    margin-bottom:12px !important;
+}
+.card-brand{
+    margin-bottom:12px !important;
+}
+.logo{
+    gap:8px;
+}
+.logo-icon{
+    width:38px;
+    height:38px;
+}
+.logo-icon svg{
+    width:18px;
+    height:18px;
+}
+.logo-text{
+    font-size:1.45rem;
+}
+.auth-heading{
+    font-size:28px;
+    margin-bottom:4px;
+}
+.auth-sub{
+    font-size:12px;
+    margin-bottom:14px;
+}
+.signup-form,
+.auth-form{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px;
+}
+.fg-row{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px;
+}
+.fg,
+.form-group{
+    margin-bottom:0 !important;
+}
+.input-wrap input,
+.input-wrap select{
+    height:38px !important;
+    font-size:12px;
+    padding:0 38px 0 12px;
+}
+label{
+    font-size:11px;
+    margin-bottom:3px;
+}
+.pw-eye,
+.toggle-password{
+    right:10px;
+    font-size:12px;
+}
+.auth-check{
+    margin:8px 0;
+    font-size:11px;
+}
+.auth-btn{
+    height:38px !important;
+    font-size:12px;
+    border-radius:8px;
+    margin-top:4px;
+}
+.auth-divider,
+.divider{
+    margin:10px 0;
+    font-size:10px;
+}
+.social-btns,
+.social-login{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:6px;
+}
+.social-btn{
+    height:34px !important;
+    font-size:10px;
+    gap:4px;
+}
+.social-icon{
+    width:14px;
+    height:14px;
+}
+.card-switch,
+.auth-footer{
+    margin-top:8px;
+    font-size:11px;
+}
+/*==================================================
+DESKTOP
+==================================================*/
+@media(min-width:1024px){
+.auth-card,
+.signup-card{
+    max-width:430px;
+    padding:18px 20px !important;
+}
+}
+/*==================================================
+TABLET
+==================================================*/
+@media(max-width:1023px){
+.auth-card,
+.signup-card{
+    max-width:390px;
+}
+}
+/*==================================================
+MOBILE
+==================================================*/
+@media(max-width:640px){
+.auth-card,
+.signup-card{
+    max-width:100%;
+    padding:18px !important;
+}
+.logo{
+    flex-direction:column;
+}
+.logo-text{
+    text-align:center;
+}
+.social-btns,
+.social-login{
+    grid-template-columns:1fr;
+}
+}
+/*==================================================
+360px
+==================================================*/
+@media(max-width:360px){
+body{
+    padding:10px;
+}
+.auth-card,
+.signup-card{
+    padding:15px !important;
+}
+.auth-heading{
+    font-size:22px;
+}
+.logo-icon{
+    width:34px;
+    height:34px;
+}
+.logo-text{
+    font-size:20px;
+}
+.input-wrap input,
+.input-wrap select{
+    height:34px !important;
+    font-size:11px;
+}
+.auth-btn{
+    height:36px !important;
+    font-size:12px;
+}
+.social-btns,
+.social-login{
+    grid-template-columns:repeat(3,1fr);
+    gap:5px;
+}
+.social-btn{
+    height:32px !important;
+    font-size:9px;
+}
+}
+/*==================================================
+RTL
+==================================================*/
+html[dir="rtl"] .pw-eye,
+html[dir="rtl"] .toggle-password{
+    right:auto;
+    left:10px;
+}/*==================================================
+BLOOMNEST SIGNUP DESKTOP/TABLET FORM LAYOUT
+==================================================*/
+.signup-form{
+    display:grid !important;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+.signup-form .fg,
+.signup-form .form-group{
+    width:100%;
+    margin-bottom:0;
+}
+.signup-form .form-full,
+.signup-form .full-width{
+    grid-column:1 / -1;
+}
+.signup-form .fg:first-child{
+    grid-column:1 / -1;
+}
+.signup-form .auth-check{
+    grid-column:1 / -1;
+    margin:8px 0;
+}
+.signup-form .auth-btn{
+    grid-column:1 / -1;
+}
+.signup-form .auth-divider,
+.signup-form .divider{
+    grid-column:1 / -1;
+}
+.signup-form .social-btns,
+.signup-form .social-login{
+    grid-column:1 / -1;
+}
+.signup-form .card-switch,
+.signup-form .auth-footer{
+    grid-column:1 / -1;
+}
+/*==================================================
+TABLET
+==================================================*/
+@media(max-width:1023px){
+.signup-form{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+}
+}
+/*==================================================
+MOBILE
+==================================================*/
+@media(max-width:640px){
+.signup-form{
+    grid-template-columns:1fr;
+}
+.signup-form .fg:first-child,
+.signup-form .form-full,
+.signup-form .full-width{
+    grid-column:auto;
+}
+}
+/*==================================================
+360px
+==================================================*/
+@media(max-width:360px){
+.signup-form{
+    grid-template-columns:1fr;
+    gap:8px;
+}
+}/*=========================================
+COMPACT CARD - TABLET
+=========================================*/
+@media (max-width:1024px){
+.auth-card{
+    max-width:400px;
+    padding:16px !important;
+}
+.card-brand{
+    margin-bottom:10px !important;
+}
+.logo-icon{
+    width:34px;
+    height:34px;
+}
+.logo-text{
+    font-size:1.25rem;
+}
+.auth-heading{
+    font-size:24px !important;
+    margin-bottom:4px;
+}
+.auth-sub{
+    font-size:11px;
+    margin-bottom:12px;
+}
+.fg{
+    margin-bottom:8px !important;
+}
+.fg label{
+    font-size:11px;
+    margin-bottom:3px;
+}
+.input-wrap input,
+.input-wrap select{
+    height:38px !important;
+    font-size:12px;
+    padding:0 36px 0 10px;
+}
+.auth-check{
+    font-size:11px;
+    margin:6px 0;
+}
+.auth-btn{
+    height:40px !important;
+    font-size:12px;
+}
+.auth-divider{
+    margin:1px 0;
+    font-size:10px;
+}
+.social-btn{
+    height:34px !important;
+    font-size:10px;
+}
+.card-switch{
+    margin-top:10px;
+    font-size:11px;
+}
+}/*==================================================
+FULL SCREEN CARD (NO SCROLL)
+==================================================*/
+html,
+body{
+    height:100%;
+    overflow:hidden;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:8px;
+}
+.auth-card{
+    width:100%;
+    max-width:430px;
+    height:auto;
+    max-height:98vh;
+    overflow:hidden;
+    padding:14px 18px !important;
+}
+/*-----------------------
+Logo
+-----------------------*/
+.card-brand{
+    margin-bottom:8px !important;
+}
+.logo-icon{
+    width:32px;
+    height:32px;
+}
+.logo-icon svg{
+    width:16px;
+    height:16px;
+}
+.logo-text{
+    font-size:1.2rem;
+}
+/*-----------------------
+Heading
+-----------------------*/
+.auth-heading{
+    font-size:24px !important;
+    margin-bottom:2px;
+}
+.auth-sub{
+    font-size:11px;
+    margin-bottom:10px;
+}
+/*-----------------------
+Form
+-----------------------*/
+.fg{
+    margin-bottom:6px !important;
+}
+.fg label{
+    font-size:11px;
+    margin-bottom:2px;
+}
+.input-wrap input,
+.input-wrap select{
+    height:36px !important;
+    font-size:12px;
+    padding:0 38px 0 10px;
+}
+/*-----------------------
+Checkboxes
+-----------------------*/
+.auth-check{
+    margin:5px 0;
+    font-size:10px;
+}
+.auth-check input{
+    margin-top:2px;
+}
+/*-----------------------
+Button
+-----------------------*/
+.auth-btn{
+    height:38px !important;
+    font-size:12px;
+    margin-top:6px;
+}
+/*-----------------------
+Divider
+-----------------------*/
+.auth-divider{
+    margin:8px 0;
+    font-size:10px;
+}
+/*-----------------------
+Social
+-----------------------*/
+.social-btns{
+    gap:6px;
+}
+.social-btn{
+    height:34px !important;
+    font-size:10px;
+}
+.social-icon{
+    width:14px;
+    height:14px;
+}
+/*-----------------------
+Bottom Link
+-----------------------*/
+.card-switch{
+    margin-top:8px;
+    padding-top:8px;
+    font-size:10px;
+}
+/*-----------------------
+Controls
+-----------------------*/
+.card-controls{
+    top:10px;
+    right:10px;
+}
+.icon-btn{
+    width:30px;
+    height:30px;
+}
+.icon-btn svg{
+    width:14px;
+    height:14px;
 }

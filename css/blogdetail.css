@@ -859,7 +859,6 @@ CARD BORDERS
 .care-grid div{
     border:1px solid var(--border);
 }
-
 .tip-card:hover,
 .related-card:hover,
 .sidebar-widget:hover,
@@ -868,38 +867,30 @@ CARD BORDERS
     border-color:rgba(27,94,32,.35);
     box-shadow:0 18px 45px rgba(0,0,0,.08);
 }
-
 .article-quote{
     border-left:5px solid var(--primary);
 }
-
 .care-grid div{
     border:1px solid rgba(255,255,255,.15);
 }
-
 .sidebar-widget h3{
     border-bottom:1px solid var(--border);
 }
 .sidebar-widget li{
     border-bottom:1px solid var(--border);
 }
-
 .related-card img{
     border-bottom:1px solid var(--border);
 }
-
 .author-box img{
     border:5px solid var(--surface);
 }
-
 .article-gallery img{
     border:1px solid var(--border);
 }
-
 .blog-detail-hero-image{
     border:1px solid var(--border);
 }
-
 .article-cover,
 .article-image img{
     border:1px solid var(--border);
@@ -945,7 +936,6 @@ PREMIUM BORDER COLORS
 .article-gallery img{
     border:1px solid var(--border);
 }
-
 .tip-card:hover,
 .related-card:hover,
 .sidebar-widget:hover,
@@ -955,22 +945,18 @@ PREMIUM BORDER COLORS
 .article-image img:hover{
     border-color:var(--primary);
 }
-
 .article-quote{
     border-left:5px solid var(--primary);
 }
-
 .related-card img{
     border-bottom:1px solid var(--border);
 }
-
 .sidebar-widget h3{
     border-bottom:1px solid var(--border);
 }
 .sidebar-widget li{
     border-bottom:1px solid var(--border);
 }
-
 .care-grid div{
     border:1px solid rgba(255,255,255,.18);
 }
@@ -1000,7 +986,6 @@ body.dark-mode .faq-item:hover{
 }/*==================================================
 PREMIUM ACCENT BORDERS
 ==================================================*/
-
 .tip-card,
 .related-card,
 .sidebar-widget,
@@ -1022,7 +1007,6 @@ width:100%;
 height:4px;
 background:linear-gradient(90deg,var(--primary),var(--success));
 }
-
 .article-quote{
 position:relative;
 border-left:6px solid var(--primary);
@@ -1041,7 +1025,6 @@ width:4px;
 border-radius:10px;
 background:linear-gradient(var(--primary),var(--success));
 }
-
 .care-grid div{
 position:relative;
 overflow:hidden;
@@ -1055,14 +1038,12 @@ bottom:0;
 width:5px;
 background:rgba(255,255,255,.45);
 }
-
 .related-card:hover::before,
 .tip-card:hover::before,
 .sidebar-widget:hover::before,
 .faq-item:hover::before{
 height:6px;
 }
-
 body.dark-mode .tip-card::before,
 body.dark-mode .related-card::before,
 body.dark-mode .sidebar-widget::before,
@@ -1291,14 +1272,11 @@ font-size:15px;
 /*==================================================
 SECONDARY COLOR INTEGRATION
 ==================================================*/
-
-
 .blog-meta i,
 .faq-question i,
 .article-quote i{
     color:var(--secondary);
 }
-
 .related-content a,
 .blog-content a,
 .sidebar-widget a{
@@ -1309,21 +1287,18 @@ SECONDARY COLOR INTEGRATION
 .sidebar-widget a:hover{
     color:var(--secondary);
 }
-
 .category-wrapper button:hover,
 .category-wrapper button.active{
     background:var(--secondary);
     border-color:var(--secondary);
     color:#fff;
 }
-
 .tip-card:hover,
 .related-card:hover,
 .sidebar-widget:hover,
 .faq-item:hover{
     border-color:var(--secondary);
 }
-
 .tip-card::before,
 .related-card::before,
 .sidebar-widget::before,
@@ -1335,12 +1310,10 @@ SECONDARY COLOR INTEGRATION
         var(--secondary)
     );
 }
-
 .article-gallery img:hover,
 .article-image img:hover{
     border-color:var(--secondary);
 }
-
 html.dark-mode .blog-meta i,
 html.dark-mode .faq-question i,
 html.dark-mode .article-quote i{
@@ -1363,7 +1336,6 @@ CARE BOX PREMIUM DESIGN
     box-shadow:var(--shadow-lg);
     color:#fff;
 }
-
 .care-box::before{
     content:"";
     position:absolute;
@@ -1374,7 +1346,6 @@ CARE BOX PREMIUM DESIGN
     border-radius:50%;
     background:rgba(255,255,255,.12);
 }
-
 .care-box h3{
     position:relative;
     z-index:2;
@@ -1383,7 +1354,6 @@ CARE BOX PREMIUM DESIGN
     margin-bottom:35px;
     color:#fff;
 }
-
 .care-grid{
     position:relative;
     z-index:2;
@@ -1392,7 +1362,6 @@ CARE BOX PREMIUM DESIGN
     repeat(2,1fr);
     gap:25px;
 }
-
 .care-grid div{
     position:relative;
     padding:28px;
@@ -1402,25 +1371,21 @@ CARE BOX PREMIUM DESIGN
     backdrop-filter:blur(10px);
     transition:.35s ease;
 }
-
 .care-grid div:hover{
     transform:translateY(-8px);
     background:rgba(255,255,255,.22);
 }
-
 .care-grid h4{
     font-size:22px;
     margin-bottom:12px;
     color:#fff;
 }
-
 .care-grid p{
     font-size:15px;
     line-height:1.8;
     color:rgba(255,255,255,.9);
     margin:0;
 }
-
 .care-grid div::before{
     content:"";
     position:absolute;
@@ -1489,7 +1454,6 @@ CARE BOX - LIGHT MODE
     overflow:hidden;
     box-shadow:var(--shadow-lg);
 }
-
 .care-box::before{
     content:"";
     position:absolute;
@@ -1500,7 +1464,6 @@ CARE BOX - LIGHT MODE
     border-radius:50%;
     background:rgba(255,255,255,.15);
 }
-
 .care-box h3{
     position:relative;
     z-index:2;
@@ -1509,7 +1472,6 @@ CARE BOX - LIGHT MODE
     margin-bottom:35px;
     color:#ffffff;
 }
-
 .care-grid{
     position:relative;
     z-index:2;
@@ -1517,7 +1479,6 @@ CARE BOX - LIGHT MODE
     grid-template-columns:repeat(2,1fr);
     gap:25px;
 }
-
 .care-grid div{
     position:relative;
     padding:30px;
@@ -1527,13 +1488,11 @@ CARE BOX - LIGHT MODE
     box-shadow:var(--shadow-sm);
     transition:.35s ease;
 }
-
 .care-grid div:hover{
     transform:translateY(-8px);
     border-color:var(--secondary);
     box-shadow:var(--shadow-lg);
 }
-
 .care-grid div::before{
     content:"";
     position:absolute;
@@ -1544,13 +1503,11 @@ CARE BOX - LIGHT MODE
     border-radius:10px;
     background:var(--secondary);
 }
-
 .care-grid h4{
     font-size:22px;
     margin-bottom:12px;
     color:var(--text);
 }
-
 .care-grid p{
     margin:0;
     font-size:15px;
@@ -1588,7 +1545,6 @@ NEWSLETTER LIGHT MODE BACKGROUND
 .blog-newsletter{
     background:var(--bg-soft);
 }
-
 .newsletter-box{
     background:linear-gradient(
         135deg,
@@ -1597,15 +1553,12 @@ NEWSLETTER LIGHT MODE BACKGROUND
     );
     border:1px solid var(--border);
 }
-
 .newsletter-content h2{
     color:var(--text);
 }
-
 .newsletter-content p{
     color:var(--text2);
 }
-
 .newsletter-form input{
     background:#ffffff;
     border:1px solid var(--border);
@@ -1614,7 +1567,6 @@ NEWSLETTER LIGHT MODE BACKGROUND
 .newsletter-form input:focus{
     border-color:var(--primary);
 }
-
 .newsletter-form .btn:hover{
     background:var(--secondary);
     color:#fff;
@@ -1642,7 +1594,6 @@ html.dark-mode .newsletter-form input{
    1025px - 1280px
 ==================================================*/
 @media (min-width:1025px) and (max-width:1280px){
-
 .blog-detail-hero{
     padding:90px 0 70px;
 }
@@ -1663,7 +1614,6 @@ html.dark-mode .newsletter-form input{
 .blog-detail-hero-image img{
     height:360px;
 }
-
 .article-layout{
     grid-template-columns:minmax(0,1fr) 300px;
     gap:45px;
@@ -1671,14 +1621,12 @@ html.dark-mode .newsletter-form input{
 .blog-article{
     padding:80px 0;
 }
-
 .article-cover{
     height:420px;
 }
 .article-image img{
     height:360px;
 }
-
 .article-content h2{
     font-size:34px;
 }
@@ -1691,7 +1639,6 @@ html.dark-mode .newsletter-form input{
 .article-list li{
     font-size:15px;
 }
-
 .tips-grid{
     gap:22px;
 }
@@ -1704,14 +1651,12 @@ html.dark-mode .newsletter-form input{
 .tip-card p{
     font-size:15px;
 }
-
 .article-quote{
     padding:40px;
 }
 .article-quote blockquote{
     font-size:28px;
 }
-
 .care-box{
     padding:40px;
 }
@@ -1724,14 +1669,12 @@ html.dark-mode .newsletter-form input{
 .care-grid div{
     padding:22px;
 }
-
 .article-gallery{
     gap:18px;
 }
 .article-gallery img{
     height:220px;
 }
-
 .article-sidebar{
     top:90px;
 }
@@ -1752,7 +1695,6 @@ html.dark-mode .newsletter-form input{
 .sidebar-post a{
     font-size:14px;
 }
-
 .blog-faq{
     padding:80px 0;
 }
@@ -1762,7 +1704,6 @@ html.dark-mode .newsletter-form input{
 .faq-answer p{
     font-size:15px;
 }
-
 .related-grid{
     gap:22px;
 }
@@ -1772,7 +1713,6 @@ html.dark-mode .newsletter-form input{
 .related-content h3{
     font-size:22px;
 }
-
 .newsletter-box{
     padding:45px;
     gap:35px;
@@ -1790,7 +1730,6 @@ html.dark-mode .newsletter-form input{
     height:55px;
     padding:0 25px;
 }
-
 .blog-cta .cta-box{
     padding:45px;
     gap:40px;
@@ -1842,7 +1781,6 @@ html.dark-mode .newsletter-form input{
    DESKTOP VIEW - SMALL TYPOGRAPHY
 ==================================================*/
 @media (min-width:1025px){
-    
     .blog-detail-hero{
         padding:120px 0 70px;
     }
@@ -1853,11 +1791,9 @@ html.dark-mode .newsletter-form input{
         font-size:16px;
         line-height:1.8;
     }
-    
     .blog-meta span{
         font-size:14px;
     }
-    
     .article-content h2{
         font-size:34px;
         margin:40px 0 18px;
@@ -1876,7 +1812,6 @@ html.dark-mode .newsletter-form input{
         font-size:15px;
         line-height:1.8;
     }
-    
     .tip-card{
         padding:26px;
     }
@@ -1886,14 +1821,12 @@ html.dark-mode .newsletter-form input{
     .tip-card p{
         font-size:15px;
     }
-    
     .article-quote blockquote{
         font-size:28px;
     }
     .article-quote span{
         font-size:14px;
     }
-    
     .sidebar-widget{
         padding:26px;
     }
@@ -1909,28 +1842,24 @@ html.dark-mode .newsletter-form input{
     .sidebar-post span{
         font-size:13px;
     }
-    
     .faq-question{
         font-size:16px;
     }
     .faq-answer p{
         font-size:15px;
     }
-    
     .related-content h3{
         font-size:22px;
     }
     .related-content a{
         font-size:15px;
     }
-    
     .newsletter-content h2{
         font-size:40px;
     }
     .newsletter-content p{
         font-size:15px;
     }
-    
     .cta-content h2{
         font-size:42px;
     }
@@ -1948,18 +1877,15 @@ html.dark-mode .blog-detail-hero-image{
 html.dark-mode .blog-detail-hero-image img{
     filter:brightness(.82) contrast(1.05);
 }
-
 html.dark-mode .blog-detail-hero-image:hover img{
     filter:brightness(.95) contrast(1.05);
 }
-
 html.dark-mode .article-cover,
 html.dark-mode .article-image img,
 html.dark-mode .article-gallery img,
 html.dark-mode .cta-image img{
     filter:brightness(.88) contrast(1.03);
 }
-
 html.dark-mode .blog-detail-hero-image::after{
     content:"";
     position:absolute;
@@ -2181,11 +2107,9 @@ NEWSLETTER FORM PADDING
 .newsletter-form .btn{
     padding:0 36px;
 }
-
 html.dark-mode .newsletter-form{
     background:rgba(255,255,255,.06);
 }
-
 @media(max-width:640px){
 .newsletter-form{
     padding:10px;

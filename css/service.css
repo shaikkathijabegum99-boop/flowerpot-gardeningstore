@@ -272,11 +272,11 @@ PRICING SECTION
 }
 .popular{
     position:absolute;
-    top:18px;
-    right:18px;
+    top:8px;
+    right:130px;
     background:var(--primary);
     color:#fff;
-    padding:8px 18px;
+    padding:5px 12px;
     border-radius:50px;
     font-size:.75rem;
     font-weight:700;
@@ -816,7 +816,7 @@ FAQ ACCORDION
 }
 .faq-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr;
     gap:30px;
     margin-top:60px;
 }
@@ -1073,24 +1073,20 @@ MOBILE
 }/*==================================================
 SECONDARY COLOR ACCENTS
 ==================================================*/
-
 .section-tag{
     background:rgba(141,110,99,.12);
     color:var(--secondary);
 }
-
 .service-floating-card svg,
 .why-service-card svg,
 .service-process-card svg,
 .pricing-service-card li svg{
     color:var(--secondary);
 }
-
 .why-service-card:hover svg,
 .service-process-card:hover svg{
     color:var(--secondary-hover);
 }
-
 .service-content a,
 .related-content a{
     color:var(--secondary);
@@ -1099,23 +1095,19 @@ SECONDARY COLOR ACCENTS
 .related-content a:hover{
     color:var(--secondary-hover);
 }
-
 .service-content a:hover svg,
 .related-content a:hover svg{
     transform:translateX(5px);
 }
-
 .service-price{
     color:var(--secondary);
 }
-
 .service-floating-card{
     border-color:rgba(141,110,99,.25);
 }
 .service-floating-card strong{
     color:var(--secondary);
 }
-
 .faq-icon{
     background:rgba(141,110,99,.12);
     color:var(--secondary);
@@ -1123,15 +1115,12 @@ SECONDARY COLOR ACCENTS
 .faq-item[open] .faq-icon{
     background:var(--secondary);
 }
-
 .newsletter-icon{
     background:rgba(141,110,99,.18);
 }
-
 .gallery-grid img:hover{
     box-shadow:0 20px 45px rgba(141,110,99,.25);
 }
-
 .service-card:hover,
 .why-service-card:hover,
 .service-process-card:hover,
@@ -1139,7 +1128,6 @@ SECONDARY COLOR ACCENTS
 .service-testimonial-card:hover{
     border-color:rgba(141,110,99,.35);
 }
-
 .dark-mode .section-tag{
     background:rgba(141,110,99,.18);
     color:#D7B9AA;
@@ -1154,7 +1142,6 @@ SECONDARY COLOR ACCENTS
 }/*==================================================
 PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
 ==================================================*/
-
 .service-card,
 .why-service-card,
 .service-process-card,
@@ -1183,12 +1170,10 @@ PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
     box-shadow:
     0 20px 45px rgba(141,110,99,.18);
 }
-
 .service-card:hover .service-image img,
 .related-card:hover img{
     transform:scale(1.06);
 }
-
 .service-content a,
 .related-content a,
 .sidebar-post a{
@@ -1201,7 +1186,6 @@ PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
     color:var(--secondary);
     gap:16px;
 }
-
 .service-content a svg,
 .related-content a svg{
     transition:.3s ease;
@@ -1211,12 +1195,10 @@ PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
     transform:translateX(6px);
     color:var(--secondary);
 }
-
 .section-tag:hover{
     background:rgba(141,110,99,.15);
     color:var(--secondary);
 }
-
 .service-card:hover svg,
 .why-service-card:hover svg,
 .service-process-card:hover svg{
@@ -1224,7 +1206,6 @@ PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
     transform:scale(1.1);
     transition:.3s ease;
 }
-
 .dark-mode .service-card:hover,
 .dark-mode .why-service-card:hover,
 .dark-mode .service-process-card:hover,
@@ -1243,7 +1224,6 @@ DESKTOP VIEW
 1025px - 1280px
 ==================================================*/
 @media (min-width:1025px) and (max-width:1280px){
-
 .service-hero,
 .service-why,
 .service-process,
@@ -1255,7 +1235,6 @@ DESKTOP VIEW
 .service-faq{
     padding:85px 0;
 }
-
 .service-hero-grid{
     gap:45px;
 }
@@ -1276,7 +1255,6 @@ DESKTOP VIEW
 .service-floating-card strong{
     font-size:1.2rem;
 }
-
 .services-grid{
     grid-template-columns:repeat(3,1fr);
     gap:25px;
@@ -1290,7 +1268,6 @@ DESKTOP VIEW
 .service-content h3{
     font-size:24px;
 }
-
 .why-service-grid{
     grid-template-columns:repeat(4,1fr);
     gap:22px;
@@ -1298,7 +1275,6 @@ DESKTOP VIEW
 .why-service-card{
     padding:30px 20px;
 }
-
 .process-service-grid{
     grid-template-columns:repeat(4,1fr);
     gap:22px;
@@ -1306,7 +1282,6 @@ DESKTOP VIEW
 .service-process-card{
     padding:38px 22px;
 }
-
 .pricing-service-grid{
     gap:22px;
 }
@@ -1316,14 +1291,12 @@ DESKTOP VIEW
 .service-price{
     font-size:2.5rem;
 }
-
 .service-testimonial-grid{
     gap:22px;
 }
 .service-testimonial-card{
     padding:35px 25px;
 }
-
 .service-cta-box{
     gap:40px;
     padding:50px;
@@ -1331,7 +1304,6 @@ DESKTOP VIEW
 .service-cta-image img{
     height:420px;
 }
-
 .newsletter-box{
     max-width:850px;
     padding:60px 50px;
@@ -1339,7 +1311,6 @@ DESKTOP VIEW
 .newsletter-form input{
     min-width:280px;
 }
-
 .gallery-grid{
     grid-template-columns:repeat(4,1fr);
     gap:20px;
@@ -1347,9 +1318,8 @@ DESKTOP VIEW
 .gallery-grid img{
     height:240px;
 }
-
 .faq-grid{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(1,1fr);
     gap:25px;
 }
 }
@@ -1386,21 +1356,18 @@ SMALL FONT SIZE DESKTOP VIEW
 body{
     font-size:15px;
 }
-
 .service-hero-content h1{
     font-size:48px;
 }
 .service-hero-content p{
     font-size:15px;
 }
-
 .section-header h2{
     font-size:38px;
 }
 .section-header p{
     font-size:15px;
 }
-
 .service-content h3,
 .why-service-card h3,
 .service-process-card h3{
@@ -1411,7 +1378,6 @@ body{
 .service-process-card p{
     font-size:14px;
 }
-
 .pricing-service-card h3{
     font-size:24px;
 }
@@ -1421,7 +1387,6 @@ body{
 .pricing-service-card li{
     font-size:14px;
 }
-
 .service-testimonial-card p{
     font-size:14px;
 }
@@ -1431,14 +1396,12 @@ body{
 .service-testimonial-card span{
     font-size:13px;
 }
-
 .service-cta-content h2{
     font-size:40px;
 }
 .service-cta-content p{
     font-size:15px;
 }
-
 .newsletter-box h2{
     font-size:38px;
 }
@@ -1448,14 +1411,12 @@ body{
 .newsletter-form input{
     font-size:14px;
 }
-
 .faq-item summary span:first-child{
     font-size:16px;
 }
 .faq-item p{
     font-size:14px;
 }
-
 .service-content a,
 .related-content a{
     font-size:14px;
@@ -1471,14 +1432,12 @@ NEWSLETTER PREMIUM SECTION
     max-width:1000px;
     margin:auto;
     padding:70px 60px;
-  
     border-radius:32px;
     text-align:center;
     position:relative;
     overflow:hidden;
     box-shadow:var(--shadow-lg);
 }
-
 .newsletter-box::before{
     content:"";
     position:absolute;
@@ -1499,7 +1458,6 @@ NEWSLETTER PREMIUM SECTION
     border-radius:50%;
     background:rgba(255,255,255,.08);
 }
-
 .newsletter-icon{
     width:75px;
     height:75px;
@@ -1517,7 +1475,6 @@ NEWSLETTER PREMIUM SECTION
     height:36px;
     color:#fff;
 }
-
 .newsletter-box h2{
     position:relative;
     z-index:2;
@@ -1534,7 +1491,6 @@ NEWSLETTER PREMIUM SECTION
     font-size:16px;
     line-height:1.8;
 }
-
 .newsletter-form{
     position:relative;
     z-index:2;
@@ -1562,7 +1518,6 @@ NEWSLETTER PREMIUM SECTION
     padding:0 35px;
     border-radius:50px;
 }
-
 .newsletter-form .btn:hover{
     background:var(--secondary);
     color:#fff;
@@ -1989,13 +1944,11 @@ DARK MODE
 }/*==================================================
 FIX TESTIMONIAL ALIGNMENT
 ==================================================*/
-
 .service-testimonial-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     align-items:stretch;
 }
-
 .service-testimonial-card{
     display:flex;
     flex-direction:column;
@@ -2004,14 +1957,10 @@ FIX TESTIMONIAL ALIGNMENT
     min-height:430px;
     padding:40px 35px;
 }
-
-
 .customer-avatar{
     flex-shrink:0;
     margin-bottom:20px;
 }
-
-
 .service-testimonial-card .rating{
     display:flex;
     align-items:center;
@@ -2020,8 +1969,6 @@ FIX TESTIMONIAL ALIGNMENT
     min-height:25px;
     margin-bottom:20px;
 }
-
-
 .service-testimonial-card p{
     flex:1;
     display:flex;
@@ -2032,122 +1979,82 @@ FIX TESTIMONIAL ALIGNMENT
     max-width:320px;
     line-height:1.8;
 }
-
-
 .service-testimonial-card h3{
     margin-top:auto;
     margin-bottom:6px;
 }
-
-
 .service-testimonial-card span{
     margin-bottom:0;
 }
-
-
 /*==================================================
 TABLET
 ==================================================*/
-
 @media(max-width:1024px){
-
 .service-testimonial-grid{
     grid-template-columns:repeat(2,1fr);
 }
-
 .service-testimonial-card{
     min-height:420px;
 }
-
 }
-
-
 /*==================================================
 MOBILE
 ==================================================*/
-
 @media(max-width:640px){
-
 .service-testimonial-grid{
     grid-template-columns:1fr;
 }
-
 .service-testimonial-card{
     min-height:auto;
     padding:30px 22px;
 }
-
 .service-testimonial-card p{
     flex:none;
 }
-
 }/*==================================================
 TESTIMONIAL INNER PADDING FIX
 ==================================================*/
-
 .service-testimonial-card{
     padding:30px 25px;
     min-height:390px;
 }
-
-
 .customer-avatar{
     width:80px;
     height:80px;
     margin-bottom:18px;
 }
-
-
 .service-testimonial-card .rating{
     margin-bottom:15px;
 }
-
-
 .service-testimonial-card p{
     margin-bottom:18px;
     line-height:1.6;
 }
-
-
 .service-testimonial-card h3{
     margin-bottom:5px;
     font-size:1.1rem;
 }
-
-
 .service-testimonial-card span{
     font-size:.85rem;
 }
-
-
-
 @media(max-width:1024px){
-
 .service-testimonial-card{
     padding:28px 22px;
     min-height:360px;
 }
-
 }
-
-
-
 @media(max-width:640px){
-
 .service-testimonial-card{
     padding:25px 20px;
     min-height:auto;
 }
-
 .customer-avatar{
     width:70px;
     height:70px;
 }
-
 }/*==================================================
 SERVICE HERO PREMIUM STYLE
 ==================================================*/
-
 .service-hero{
     position:relative;
     padding:100px 0;
@@ -2158,10 +2065,6 @@ SERVICE HERO PREMIUM STYLE
     );
     overflow:hidden;
 }
-
-
-
-
 .service-hero::before{
     content:"";
     position:absolute;
@@ -2173,383 +2076,197 @@ SERVICE HERO PREMIUM STYLE
         transparent 45%
     );
 }
-
-
-
-
 .service-hero .hero-animation{
     position:absolute;
     inset:0;
     pointer-events:none;
 }
-
-
-
-
 .service-hero .container{
     position:relative;
     z-index:2;
 }
-
-
-
-
-
 .service-hero-grid{
-
     display:grid;
     grid-template-columns:1fr 1fr;
     align-items:center;
     gap:70px;
-
 }
-
-
-
-
-
 .service-hero-content{
     max-width:620px;
 }
-
-
 .service-hero-content h1{
-
     margin:25px 0 20px;
     font-size:3.8rem;
     line-height:1.15;
     font-weight:800;
-
 }
-
-
 .service-hero-content h1 em{
-
     font-style:normal;
     color:var(--primary);
-
 }
-
-
 .service-hero-content p{
-
     max-width:560px;
     color:var(--text2);
     font-size:1.05rem;
     line-height:1.8;
     margin-bottom:35px;
-
 }
-
-
-
-
-
 .service-hero-buttons{
-
     display:flex;
     align-items:center;
     gap:18px;
     flex-wrap:wrap;
-
 }
-
-
 .service-hero-buttons .btn{
-
     display:inline-flex;
     align-items:center;
     gap:10px;
-
 }
-
-
 .service-hero-buttons svg{
-
     width:18px;
     height:18px;
-
 }
-
-
-
-
-
 .service-hero-image{
-
     position:relative;
-
 }
-
-
 .service-hero-image img{
-
     width:100%;
     height:560px;
     object-fit:cover;
     border-radius:30px;
     box-shadow:var(--shadow-lg);
     transition:.5s ease;
-
 }
-
-
 .service-hero-image:hover img{
-
     transform:scale(1.03);
-
 }
-
-
-
 /*==================================================
 LEAF ANIMATION
 ==================================================*/
-
 .service-hero .leaf{
-
     position:absolute;
     width:45px;
     height:45px;
     background:rgba(27,94,32,.12);
     border-radius:100% 0 100% 0;
     animation:serviceLeaf 10s infinite ease-in-out;
-
 }
-
-
 .service-hero .leaf-1{
-
     top:12%;
     left:8%;
-
 }
-
-
 .service-hero .leaf-2{
-
     top:20%;
     right:12%;
     animation-delay:2s;
-
 }
-
-
 .service-hero .leaf-3{
-
     bottom:20%;
     left:15%;
     animation-delay:4s;
-
 }
-
-
 .service-hero .leaf-4{
-
     bottom:15%;
     right:10%;
     animation-delay:6s;
-
 }
-
-
 .service-hero .leaf-5{
-
     top:50%;
     left:50%;
     animation-delay:8s;
-
 }
-
-
-
 @keyframes serviceLeaf{
-
     0%,100%{
         transform:translateY(0) rotate(0);
     }
-
     50%{
         transform:translateY(-35px) rotate(45deg);
     }
-
 }
-
-
-
 /*==================================================
 DARK MODE
 ==================================================*/
-
 .dark-mode .service-hero{
-
     background:var(--bg);
-
 }
-
-
 .dark-mode .service-hero-content h1 em{
-
     color:#8EE88B;
-
 }
-
-
 .dark-mode .service-hero-image img{
-
     filter:brightness(.9);
-
 }
-
-
-
 /*==================================================
 DESKTOP
 1024px - 1280px
 ==================================================*/
-
 @media (max-width:1280px){
-
 .service-hero{
-
     padding:85px 0;
-
 }
-
-
 .service-hero-grid{
-
     gap:45px;
-
 }
-
-
 .service-hero-content h1{
-
     font-size:3rem;
-
 }
-
-
 .service-hero-image img{
-
     height:450px;
-
 }
-
 }
-
-
-
 /*==================================================
 TABLET
 640px - 1024px
 ==================================================*/
-
 @media(max-width:1024px){
-
 .service-hero-grid{
-
     grid-template-columns:1fr;
     text-align:center;
-
 }
-
-
 .service-hero-content{
-
     margin:auto;
-
 }
-
-
 .service-hero-content p{
-
     margin-left:auto;
     margin-right:auto;
-
 }
-
-
 .service-hero-buttons{
-
     justify-content:center;
-
 }
-
-
 .service-hero-image img{
-
     height:480px;
-
 }
-
 }
-
-
-
 /*==================================================
 MOBILE
 <640px
 ==================================================*/
-
 @media(max-width:640px){
-
-
 .service-hero{
-
     padding:60px 0;
-
 }
-
-
 .service-hero-grid{
-
     gap:35px;
-
 }
-
-
 .service-hero-content h1{
-
     font-size:2.2rem;
-
 }
-
-
 .service-hero-content p{
-
     font-size:.95rem;
-
 }
-
-
 .service-hero-buttons{
-
     flex-direction:column;
-
 }
-
-
 .service-hero-buttons .btn{
-
     width:100%;
     justify-content:center;
-
 }
-
-
 .service-hero-image img{
-
     height:300px;
     border-radius:22px;
-
 }
-
 }/* ==========================================================
    NEWSLETTER FORM
 ========================================================== */
-
 .newsletter-form{
     display:flex;
     align-items:center;
@@ -2557,172 +2274,101 @@ MOBILE
     max-width:650px;
     margin:0 auto;
 }
-
-
-
-
 .newsletter-form input{
     flex:1;
     height:58px;
     padding:0 25px;
-
     border-radius:50px;
     border:1px solid var(--border);
-
     background:#ffffff;
     color:var(--text);
-
     font-size:15px;
     outline:none;
-
     transition:.3s ease;
 }
-
-
 .newsletter-form input::placeholder{
     color:var(--text-muted);
 }
-
-
 .newsletter-form input:focus{
     border-color:var(--primary);
     box-shadow:
     0 0 0 4px rgba(47,107,63,.12);
 }
-
-
-
-
 .newsletter-form .btn{
     height:58px;
     min-width:150px;
-
     border-radius:50px;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     font-size:15px;
     font-weight:600;
-
     cursor:pointer;
 }
-
-
 /* ==========================================================
    DARK MODE
 ========================================================== */
-
 .dark-mode .newsletter-form input{
-
     background:#111714;
     border-color:#303830;
     color:#ffffff;
-
 }
-
-
 .dark-mode .newsletter-form input::placeholder{
     color:#9ca89c;
 }
-
-
 /* ==========================================================
    TABLET
 ========================================================== */
-
 @media(min-width:640px)
 and (max-width:1023px){
-
 .newsletter-form{
     max-width:550px;
 }
-
 .newsletter-form input{
     height:54px;
 }
-
 .newsletter-form .btn{
     height:54px;
 }
-
 }
-
-
 /* ==========================================================
    MOBILE
 ========================================================== */
-
 @media(max-width:640px){
-
 .newsletter-form{
-
     flex-direction:column;
     width:100%;
     gap:12px;
-
 }
-
-
 .newsletter-form input{
-
     width:100%;
     height:54px;
-
 }
-
-
 .newsletter-form .btn{
-
     width:100%;
     height:54px;
-
 }
-
 }
-
-
 /*==================================================
 SERVICE CARD ALIGNMENT FIX
 ==================================================*/
-
 .service-card{
-
     display:flex;
     flex-direction:column;
     height:100%;
-
 }
-
-
-
 .service-content{
-
     display:flex;
     flex-direction:column;
     flex:1;
-
 }
-
-
-
 .service-content p{
-
     flex:1;
-
 }
-
-
-
 .service-content a{
-
     margin-top:auto;
-
     display:inline-flex;
     align-items:center;
     gap:8px;
-
     width:max-content;
-
 }

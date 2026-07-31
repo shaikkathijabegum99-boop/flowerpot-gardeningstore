@@ -81,7 +81,6 @@
     min-width:170px;
     justify-content:center;
 }
-
 .about-hero-image{
     position:relative;
 }
@@ -97,7 +96,6 @@
 .about-hero-image:hover img{
     transform:scale(1.03);
 }
-
 .about-floating-card{
     position:absolute;
     left:-35px;
@@ -164,7 +162,6 @@
     font-size:16px;
     margin-bottom:20px;
 }
-
 .story-points{
     margin-top:35px;
     display:flex;
@@ -225,7 +222,6 @@
     background:#1b231c;
     border-color:#303830;
 }
-
 .mission-icon{
     width:75px;
     height:75px;
@@ -327,7 +323,6 @@
     align-items:center;
     gap:80px;
 }
-
 .why-image{
     position:relative;
 }
@@ -343,7 +338,6 @@
 .why-image:hover img{
     transform:scale(1.03);
 }
-
 .why-content h2{
     font-size:44px;
     line-height:1.25;
@@ -573,7 +567,6 @@ and (max-width:1023px){
     max-width:900px;
     margin:60px auto 0;
 }
-
 .timeline::before{
     content:"";
     position:absolute;
@@ -581,7 +574,7 @@ and (max-width:1023px){
     bottom:0;
     left:50%;
     width:2px;
-    background:var(--border);
+    background:var(--primary);
     transform:translateX(-50%);
 }
 .dark-mode .timeline::before{
@@ -599,7 +592,6 @@ and (max-width:1023px){
 .timeline-item:nth-child(even){
     left:50%;
 }
-
 .timeline-year{
     display:inline-flex;
     align-items:center;
@@ -613,7 +605,6 @@ and (max-width:1023px){
     font-weight:700;
     margin-bottom:18px;
 }
-
 .timeline-content{
     padding:30px;
     background:#ffffff;
@@ -637,7 +628,6 @@ and (max-width:1023px){
     line-height:1.8;
     margin:0;
 }
-
 .timeline-item::after{
     content:"";
     position:absolute;
@@ -703,21 +693,18 @@ and (max-width:1023px){
     background:#1b231c;
     border-color:#303830;
 }
-
 .team-image{
     height:350px;
     overflow:hidden;
 }
 .team-image img{
     width:100%;
-    height:100%;
     object-fit:cover;
     transition:.6s;
 }
 .team-card:hover .team-image img{
     transform:scale(1.08);
 }
-
 .team-content{
     padding:30px;
     text-align:center;
@@ -731,7 +718,6 @@ and (max-width:1023px){
     color:var(--primary);
     font-weight:600;
 }
-
 .team-social{
     display:flex;
     justify-content:center;
@@ -927,7 +913,6 @@ and (max-width:1023px){
     repeat(3,1fr);
     gap:30px;
 }
-
 .testimonial-card{
     padding:40px 30px;
     text-align:center;
@@ -947,7 +932,6 @@ and (max-width:1023px){
     background:#1b231c;
     border-color:#303830;
 }
-
 .customer-image{
     width:90px;
     height:90px;
@@ -960,7 +944,6 @@ and (max-width:1023px){
     height:100%;
     object-fit:cover;
 }
-
 .rating{
     display:flex;
     justify-content:center;
@@ -1058,7 +1041,6 @@ and (max-width:1023px){
     background:#ffffff;
     color:var(--primary);
 }
-
 .cta-image{
     position:relative;
     z-index:2;
@@ -1806,7 +1788,6 @@ and (max-width:1023px){
    ABOVE 1280px
 ========================================================== */
 @media (min-width:1280px){
-
 .about-hero{
     padding:120px 0 100px;
 }
@@ -1832,7 +1813,6 @@ and (max-width:1023px){
 .about-floating-card strong{
     font-size:26px;
 }
-
 .about-story{
     padding:100px 0;
 }
@@ -1853,7 +1833,6 @@ and (max-width:1023px){
 .story-point h3{
     font-size:18px;
 }
-
 .mission-section{
     padding:100px 0;
 }
@@ -1871,7 +1850,6 @@ and (max-width:1023px){
 .mission-card p{
     font-size:15px;
 }
-
 .about-stats{
     padding:90px 0;
 }
@@ -1886,7 +1864,6 @@ and (max-width:1023px){
 .stat-card h3{
     font-size:32px;
 }
-
 .about-why{
     padding:100px 0;
 }
@@ -1910,7 +1887,6 @@ and (max-width:1023px){
 .why-item p{
     font-size:14px;
 }
-
 .journey-section{
     padding:100px 0;
 }
@@ -1931,7 +1907,6 @@ and (max-width:1023px){
     height:80px;
     font-size:20px;
 }
-
 .team-section{
     padding:100px 0;
 }
@@ -1949,7 +1924,6 @@ and (max-width:1023px){
 .team-content h3{
     font-size:20px;
 }
-
 .about-testimonial{
     padding:100px 0;
 }
@@ -1964,14 +1938,13 @@ and (max-width:1023px){
 .testimonial-card h3{
     font-size:18px;
 }
-
 .about-cta{
     padding:100px 0;
 }
 .cta-box{
     grid-template-columns:
     1fr 450px;
-    padding:65px;
+    padding:25px;
 }
 .cta-content h2{
     font-size:38px;
@@ -1982,7 +1955,6 @@ and (max-width:1023px){
 .cta-image img{
     height:400px;
 }
-
 .newsletter-section{
     padding:90px 0;
 }
@@ -1998,7 +1970,6 @@ and (max-width:1023px){
    1024px - 1279px
 ========================================================== */
 @media (min-width:1024px) and (max-width:1279px){
-
 .about-hero{
     padding:120px 0;
 }
@@ -2014,7 +1985,6 @@ and (max-width:1023px){
 .about-hero-image img{
     height:520px;
 }
-
 .story-grid{
     gap:50px;
 }
@@ -2024,7 +1994,6 @@ and (max-width:1023px){
 .story-content h2{
     font-size:34px;
 }
-
 .mission-card{
     padding:35px 25px;
 }
@@ -2034,7 +2003,6 @@ and (max-width:1023px){
 .mission-card p{
     font-size:14px;
 }
-
 .stats-grid{
     gap:20px;
 }
@@ -2047,7 +2015,6 @@ and (max-width:1023px){
 .stat-card p{
     font-size:13px;
 }
-
 .why-grid{
     gap:50px;
 }
@@ -2066,7 +2033,6 @@ and (max-width:1023px){
 .why-item p{
     font-size:13px;
 }
-
 .timeline{
     max-width:800px;
 }
@@ -2084,7 +2050,6 @@ and (max-width:1023px){
     height:70px;
     font-size:18px;
 }
-
 .team-image{
     height:280px;
 }
@@ -2094,14 +2059,12 @@ and (max-width:1023px){
 .team-content h3{
     font-size:18px;
 }
-
 .testimonial-card{
     padding:30px 20px;
 }
 .testimonial-card p{
     font-size:13px;
 }
-
 .cta-box{
     grid-template-columns:
     1fr 350px;
@@ -2113,7 +2076,6 @@ and (max-width:1023px){
 .cta-image img{
     height:330px;
 }
-
 .newsletter-box h2{
     font-size:32px;
 }
@@ -2121,7 +2083,6 @@ and (max-width:1023px){
 /* ==========================================================
    ABOUT HERO IMAGE DESKTOP SIZE FIX
 ========================================================== */
-
 @media (min-width:1024px) and (max-width:1279px){
     .about-hero-grid{
         align-items:center;
@@ -2141,7 +2102,6 @@ and (max-width:1023px){
         bottom:25px;
     }
 }
-
 @media (min-width:1280px){
     .about-hero-grid{
         align-items:center;
@@ -2189,7 +2149,6 @@ and (max-width:1023px){
 .about-floating-card:hover{
     border-top-color:var(--secondary);
 }
-
 .dark-mode .mission-card,
 .dark-mode .stat-card,
 .dark-mode .why-item,

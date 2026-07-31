@@ -387,7 +387,6 @@ function initSearchModal() {
     if (!modal) return;
     const input =
         modal.querySelector("input");
-    
     document.addEventListener("keydown", (e) => {
         if (
             e.key === "/" &&
@@ -400,7 +399,6 @@ function initSearchModal() {
             input?.focus();
         }
     });
-    
     modal.addEventListener("click", (e) => {
         if (e.target === modal) {
             closeSearchModal();
@@ -423,7 +421,6 @@ function closeSearchModal() {
 function initEscapeKey() {
     document.addEventListener("keydown", (e) => {
         if (e.key !== "Escape") return;
-        
         const sidebar =
             document.getElementById("mobileSidebar");
         const overlay =
@@ -431,7 +428,6 @@ function initEscapeKey() {
         sidebar?.classList.remove("active");
         overlay?.classList.remove("active");
         document.body.classList.remove("menu-open");
-        
         closeSearchModal();
     });
 }
@@ -445,7 +441,6 @@ function initAnnouncementBar() {
     const items =
         wrapper.querySelectorAll("p");
     if (items.length <= 1) return;
-    
     if (window.innerWidth > 640) return;
     let index = 0;
     wrapper.style.transition =
@@ -607,7 +602,6 @@ function initResizeHandler() {
     window.addEventListener(
         "resize",
         () => {
-            
             if (window.innerWidth > 1024) {
                 const sidebar =
                     document.getElementById(

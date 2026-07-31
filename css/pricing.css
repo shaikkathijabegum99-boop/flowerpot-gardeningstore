@@ -72,7 +72,6 @@
     overflow:hidden;
     transition:.35s ease;
 }
-
 .pricing-card::before{
     content:"";
     position:absolute;
@@ -108,7 +107,6 @@
     font-size:.75rem;
     font-weight:700;
 }
-
 .pricing-icon{
     width:60px;
     height:60px;
@@ -282,6 +280,10 @@
 }
 .pricing-cta-box h2{
     font-size:42px;
+    color:white;
+}
+.pricing-cta-box p{
+    color:white;
 }
 .cta-buttons{
     margin-top:30px;
@@ -379,7 +381,6 @@
     gap:15px;
     margin-top:30px;
 }
-
 .page-header-image{
     position:relative;
 }
@@ -408,7 +409,6 @@
     z-index:1;
     box-shadow:var(--shadow-lg);
 }
-
 .page-header::after{
     content:"";
     position:absolute;
@@ -433,7 +433,6 @@
         transform:translateY(25px);
     }
 }
-
 [data-theme="dark"] .page-header{
     background:
     linear-gradient(
@@ -442,7 +441,6 @@
         var(--dark-surface)
     );
 }
-
 @media(max-width:1024px){
 .page-header-content{
     grid-template-columns:1fr;
@@ -472,169 +470,6 @@
     flex-direction:column;
 }
 }/*==================================================
- BULK PRICING DESKTOP FIX
-==================================================*/
-@media(min-width:1025px){
-.bulk-pricing-section{
-    padding:60px 0;
-}
-.bulk-pricing-container{
-    max-width:950px;
-    grid-template-columns:1fr 320px;
-    gap:30px;
-    padding:28px 32px;
-    border-radius:22px;
-}
-
-.bulk-pricing-content h2{
-    font-size:32px;
-    margin-bottom:12px;
-}
-.bulk-pricing-content p{
-    font-size:.9rem;
-    max-width:450px;
-}
-
-.bulk-list{
-    margin:18px 0;
-    gap:8px;
-}
-.bulk-list li{
-    font-size:.9rem;
-}
-
-.bulk-pricing-image{
-    width:500px;
-    height:480px;
-}
-.bulk-pricing-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-}
-}/*==================================================
- BULK PRICING SECTION
-==================================================*/
-.bulk-pricing-section{
-    padding:80px 0;
-}
-
-.bulk-pricing-container{
-    max-width:1100px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:1fr 380px;
-    gap:40px;
-    align-items:center;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:24px;
-    padding:35px;
-    position:relative;
-    overflow:hidden;
-    box-shadow:var(--shadow);
-}
-
-.bulk-pricing-container::before{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:5px;
-    background:
-    linear-gradient(
-        90deg,
-        var(--primary),
-        var(--secondary)
-    );
-}
-
-.bulk-pricing-content{
-    padding:10px 0;
-}
-.bulk-pricing-content h2{
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:15px;
-}
-.bulk-pricing-content p{
-    color:var(--text2);
-    max-width:520px;
-    line-height:1.7;
-}
-
-.bulk-list{
-    list-style:none;
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    margin:25px 0;
-}
-.bulk-list li{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:var(--text2);
-}
-.bulk-list svg{
-    width:18px;
-    height:18px;
-    color:var(--primary);
-}
-
-.bulk-pricing-container .btn{
-    width:max-content;
-}
-
-.bulk-pricing-image{
-    width:100%;
-    height:260px;
-    border-radius:20px;
-    overflow:hidden;
-    position:relative;
-}
-.bulk-pricing-image img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    display:block;
-    transition:.5s ease;
-}
-.bulk-pricing-image:hover img{
-    transform:scale(1.05);
-}
-/*==================================================
- TABLET
-==================================================*/
-@media(max-width:1024px){
-.bulk-pricing-container{
-    grid-template-columns:1fr;
-    max-width:700px;
-}
-.bulk-pricing-image{
-    height:300px;
-}
-}
-/*==================================================
- MOBILE
-==================================================*/
-@media(max-width:640px){
-.bulk-pricing-section{
-    padding:45px 0;
-}
-.bulk-pricing-container{
-    padding:22px;
-    border-radius:18px;
-}
-.bulk-pricing-content h2{
-    font-size:28px;
-}
-.bulk-pricing-image{
-    height:230px;
-}
-}/*==================================================
  COMPARISON TABLE PREMIUM STYLE
 ==================================================*/
 .comparison-section{
@@ -649,7 +484,6 @@
     box-shadow:var(--shadow);
     position:relative;
 }
-
 .comparison-table::before{
     content:"";
     position:absolute;
@@ -714,7 +548,6 @@
     position:relative;
     transition:.3s ease;
 }
-
 .faq-card::before{
     content:"";
     position:absolute;
@@ -739,7 +572,6 @@
     transform:translateY(-5px);
     box-shadow:var(--shadow);
 }
-
 .faq-question{
     width:100%;
     padding:22px 25px;
@@ -763,7 +595,6 @@
 .faq-question svg{
     transform:rotate(180deg);
 }
-
 .faq-answer{
     display:none;
     padding:0 25px 22px;
@@ -816,4 +647,67 @@
 .faq-answer{
     padding:0 18px 18px;
 }
+}/*==================================================
+   360px MOBILE HERO NAVBAR FIX
+==================================================*/
+@media(max-width:360px){
+    .pricing-hero{
+        padding:90px 15px 45px;
+    }
+    .pricing-hero h1{
+        font-size:32px;
+        line-height:1.2;
+        margin-top:10px;
+    }
+    .pricing-hero p{
+        font-size:14px;
+        line-height:1.7;
+    }
+    .page-header{
+        padding:90px 15px 45px;
+    }
+    .page-header-content{
+        gap:35px;
+    }
+    .page-header-text h1{
+        font-size:32px;
+        line-height:1.2;
+        margin-top:10px;
+    }
+    .page-header-text p{
+        font-size:14px;
+        line-height:1.7;
+    }
+    .page-header-buttons{
+        width:100%;
+        gap:12px;
+    }
+    .page-header-buttons .btn{
+        width:100%;
+    }
+    .page-header-image img{
+        height:250px;
+        border-radius:22px;
+    }
+    .premium-hero{
+        padding:90px 15px 50px;
+    }
+    .premium-hero-grid{
+        gap:30px;
+    }
+    .premium-hero-content h1{
+        font-size:30px;
+        line-height:1.2;
+    }
+    .premium-hero-content p{
+        font-size:14px;
+    }
+    .hero-badge{
+        font-size:12px;
+        padding:7px 14px;
+    }
+    .premium-hero-image img{
+        height:260px;
+        border-radius:20px;
+    }
 }

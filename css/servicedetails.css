@@ -56,7 +56,6 @@
     min-width:170px;
     justify-content:center;
 }
-
 .service-detail-hero-image{
     position:relative;
 }
@@ -88,7 +87,6 @@
     align-items:center;
     gap:80px;
 }
-
 .overview-image img{
     width:100%;
     height:520px;
@@ -97,7 +95,6 @@
     box-shadow:
     0 20px 60px rgba(0,0,0,.12);
 }
-
 .overview-content h2{
     font-size:44px;
     line-height:1.2;
@@ -110,7 +107,6 @@
     color:var(--text);
     margin-bottom:18px;
 }
-
 .service-check-list{
     list-style:none;
     padding:0;
@@ -305,7 +301,6 @@
     grid-template-columns:repeat(4,1fr);
     gap:30px;
 }
-
 .plant-card{
     background:var(--bg);
     border-radius:28px;
@@ -318,7 +313,6 @@
     box-shadow:
     0 25px 60px rgba(0,0,0,.15);
 }
-
 .plant-image{
     height:300px;
     overflow:hidden;
@@ -332,7 +326,6 @@
 .plant-card:hover .plant-image img{
     transform:scale(1.08);
 }
-
 .plant-content{
     padding:30px;
 }
@@ -428,7 +421,6 @@
     gap:30px;
     align-items:stretch;
 }
-
 .pricing-card{
     background:var(--bg);
     border:1px solid var(--border);
@@ -449,7 +441,6 @@
 .pricing-card.featured:hover{
     transform:translateY(-25px);
 }
-
 .popular-badge{
     position:absolute;
     top:20px;
@@ -698,7 +689,6 @@
 .cta-content .btn:hover{
     background:#f5f5f5;
 }
-
 .cta-image{
     height:100%;
 }
@@ -813,14 +803,12 @@
    Reduce typography for large screens
 ========================================================== */
 @media (min-width:1025px){
-
 .section-header h2{
     font-size:42px;
 }
 .section-header p{
     font-size:15px;
 }
-
 .service-detail-hero-content h1{
     font-size:52px;
     line-height:1.15;
@@ -828,21 +816,18 @@
 .service-detail-hero-content p{
     font-size:16px;
 }
-
 .overview-content h2{
     font-size:38px;
 }
 .overview-content p{
     font-size:15px;
 }
-
 .benefit-card h3{
     font-size:20px;
 }
 .benefit-card p{
     font-size:14px;
 }
-
 .plant-content h3{
     font-size:21px;
 }
@@ -852,14 +837,12 @@
 .plant-content a{
     font-size:14px;
 }
-
 .process-card h3{
     font-size:20px;
 }
 .process-card p{
     font-size:14px;
 }
-
 .pricing-card h3{
     font-size:22px;
 }
@@ -869,14 +852,12 @@
 .pricing-card li{
     font-size:14px;
 }
-
 .faq-question{
     font-size:16px;
 }
 .faq-answer p{
     font-size:14px;
 }
-
 .cta-content h2{
     font-size:42px;
 }
@@ -1126,7 +1107,6 @@
 /* ==========================================================
    SECONDARY COLOR ENHANCEMENTS
 ========================================================== */
-
 :root{
     --secondary:#8D6E63;
     --secondary-hover:#6D544B;
@@ -1301,7 +1281,6 @@
         height:480px;
         border-radius:28px;
     }
-    
     .service-overview{
         padding:90px 0;
     }
@@ -1309,7 +1288,7 @@
         gap:45px;
     }
     .overview-image img{
-        height:430px;
+        height:530px;
     }
     .overview-content h2{
         font-size:34px;
@@ -1317,7 +1296,6 @@
     .overview-content p{
         font-size:15px;
     }
-    
     .benefits-grid{
         grid-template-columns:repeat(2,1fr);
         gap:25px;
@@ -1328,7 +1306,6 @@
     .benefit-card h3{
         font-size:20px;
     }
-    
     .plants-grid{
         grid-template-columns:repeat(3,1fr);
         gap:25px;
@@ -1342,7 +1319,6 @@
     .plant-content h3{
         font-size:21px;
     }
-    
     .process-grid{
         grid-template-columns:repeat(2,1fr);
         gap:25px;
@@ -1353,7 +1329,6 @@
     .process-card h3{
         font-size:20px;
     }
-    
     .pricing-grid{
         grid-template-columns:repeat(1,1fr);
         gap:20px;
@@ -1367,14 +1342,12 @@
     .price{
         font-size:40px;
     }
-    
     .faq-wrapper{
         max-width:800px;
     }
     .faq-question{
         font-size:16px;
     }
-    
     .cta-box{
         grid-template-columns:1fr 1fr;
     }
@@ -1593,12 +1566,10 @@ SMALL PLANT CARDS
 .plant-content a svg{
     width:16px;
 }
-
 .plant-card:hover{
     transform:translateY(-8px);
     box-shadow:0 18px 45px rgba(0,0,0,.12);
 }
-
 @media (max-width:1024px){
     .plants-grid{
         grid-template-columns:repeat(2,1fr);
@@ -1610,7 +1581,6 @@ SMALL PLANT CARDS
         padding:18px;
     }
 }
-
 @media (max-width:640px){
     .plants-grid{
         grid-template-columns:1fr;
@@ -1718,7 +1688,6 @@ PREMIUM CARD TOP BORDER
     transform-origin:left;
     transition:transform .35s ease;
 }
-
 .service-card:hover::before,
 .why-service-card:hover::before,
 .service-process-card:hover::before,
@@ -1727,11 +1696,9 @@ PREMIUM CARD TOP BORDER
 .faq-item:hover::before{
     transform:scaleX(1);
 }
-
 .pricing-service-card.featured::before{
     transform:scaleX(1);
 }
-
 .dark-mode .service-card::before,
 .dark-mode .why-service-card::before,
 .dark-mode .service-process-card::before,
@@ -1746,412 +1713,172 @@ PREMIUM CARD TOP BORDER
 }/* ==========================================
 SERVICE CARD ALIGNMENT
 ========================================== */
-
 .service-card,
 .plant-card,
 .benefit-card{
     display:flex;
     flex-direction:column;
 }
-
-
-
-
 .service-image,
 .plant-image{
     height:280px;
     overflow:hidden;
 }
-
-
 .service-image img,
 .plant-image img{
     width:100%;
     height:100%;
     object-fit:cover;
 }
-
-
-
-
-
 .service-content,
 .plant-content{
     display:flex;
     flex-direction:column;
     flex:1;
 }
-
-
-
-
-
 .service-content p,
 .plant-content p{
-
     line-height:1.7;
-
     margin-bottom:20px;
-
     display:-webkit-box;
     -webkit-line-clamp:3;
     -webkit-box-orient:vertical;
     overflow:hidden;
-
 }
-
-
-
-
-
 .service-content a,
 .plant-content a{
-
     margin-top:auto;
-
     display:inline-flex;
-
     align-items:center;
-
     gap:8px;
-
     width:max-content;
-
     font-weight:600;
-
 }
-
-
-
-
-
 .service-content a i,
 .plant-content a i{
-
     width:18px;
     height:18px;
-
     transition:.3s ease;
-
 }
-
-
-
 .service-content a:hover i,
 .plant-content a:hover i{
-
     transform:translateX(5px);
-
 }
-
-
-
-
-
-
-
 .services-grid .service-card,
 .plants-grid .plant-card{
-
     min-height:520px;
-
 }
-
-
-
-
-
-
-
 @media(max-width:640px){
-
-
 .service-image,
 .plant-image{
-
     height:220px;
-
 }
-
-
 .services-grid .service-card,
 .plants-grid .plant-card{
-
     min-height:auto;
-
 }
-
-
-
 }/* ==========================================
 BULK ORDER SECTION
 ========================================== */
-
 .bulk-order-section{
-
     padding:100px 0;
-
     background:var(--bg2);
-
 }
-
-
-
 .bulk-order-box{
-
     display:grid;
-
     grid-template-columns:1fr 1fr;
-
     align-items:center;
-
     gap:60px;
-
     background:var(--surface);
-
     border:1px solid var(--border);
-
     border-radius:32px;
-
     overflow:hidden;
-
     box-shadow:var(--shadow);
-
 }
-
-
-
-
-
-
-
 .bulk-content{
-
     padding:60px;
-
 }
-
-
-
-
-
 .bulk-content .section-tag{
-
     margin-bottom:20px;
-
 }
-
-
-
 .bulk-content h2{
-
     font-size:clamp(32px,4vw,48px);
-
     line-height:1.2;
-
     margin-bottom:20px;
-
     color:var(--text);
-
 }
-
-
-
 .bulk-content p{
-
     font-size:17px;
-
     line-height:1.8;
-
     color:var(--text2);
-
     max-width:520px;
-
     margin-bottom:35px;
-
 }
-
-
-
-
 .bulk-content .btn{
-
     display:inline-flex;
-
     align-items:center;
-
     gap:10px;
-
 }
-
-
-
-
-
-
-
-
-
 .bulk-image{
-
     height:100%;
-
     min-height:420px;
-
     overflow:hidden;
-
 }
-
-
-
 .bulk-image img{
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
-
     transition:.5s ease;
-
 }
-
-
-
 .bulk-order-box:hover .bulk-image img{
-
     transform:scale(1.05);
-
 }
-
-
-
-
-
-
-
 /* ==========================================
 TABLET
 ========================================== */
-
 @media(max-width:1024px){
-
-
 .bulk-order-section{
-
     padding:80px 0;
-
 }
-
-
 .bulk-order-box{
-
     gap:30px;
-
 }
-
-
-
 .bulk-content{
-
     padding:40px;
-
 }
-
-
-
 .bulk-content h2{
-
     font-size:34px;
-
 }
-
-
-
 .bulk-image{
-
     min-height:350px;
-
 }
-
-
-
 }
-
-
-
-
-
-
-
-
 /* ==========================================
 MOBILE
 ========================================== */
-
 @media(max-width:640px){
-
-
 .bulk-order-section{
-
     padding:60px 0;
-
 }
-
-
-
 .bulk-order-box{
-
     grid-template-columns:1fr;
-
     border-radius:22px;
-
 }
-
-
-
 .bulk-content{
-
     padding:30px 25px;
-
 }
-
-
-
 .bulk-content h2{
-
     font-size:28px;
-
 }
-
-
-
 .bulk-content p{
-
     font-size:15px;
-
 }
-
-
-
 .bulk-image{
-
     min-height:250px;
-
     order:-1;
-
 }
-
-
-
 .bulk-content .btn{
-
     width:100%;
-
     justify-content:center;
-
 }
-
-
-
 }

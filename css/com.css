@@ -106,9 +106,25 @@ transition:var(--transition);
 background:rgba(27,94,32,.08);
 color:var(--primary);
 }
-.nav-item>a.active{
-background:var(--primary);
-color:#fff;
+/*==================================================
+FINAL ACTIVE NAV OVERRIDE
+==================================================*/
+.nav-item > a.active{
+    background:transparent !important;
+    color:var(--primary) !important;
+}
+.nav-item > a.active::after{
+    transform:scaleX(1) !important;
+    background:var(--primary) !important;
+    height:2px;
+}
+.dropdown-toggle.active{
+    background:transparent !important;
+    color:var(--primary) !important;
+}
+.dropdown-toggle.active::after{
+    transform:scaleX(1) !important;
+    background:var(--primary) !important;
 }
 .nav-item>a::after,
 .dropdown-toggle::after{
@@ -1007,7 +1023,6 @@ height:46px;
 }/*==================================================
 ANNOUNCEMENT BAR RESPONSIVE
 ==================================================*/
-
 @media (min-width:1281px){
 .announcement-bar{
 height:40px;
@@ -1021,7 +1036,6 @@ font-size:.8rem;
 top:40px;
 }
 }
-
 @media (min-width:1024px) and (max-width:1280px){
 .announcement-bar{
 height:40px;
@@ -1035,7 +1049,6 @@ font-size:.78rem;
 top:40px;
 }
 }
-
 @media (min-width:640px) and (max-width:1024px){
 .announcement-bar{
 height:38px;
@@ -1049,7 +1062,6 @@ font-size:.75rem;
 top:38px;
 }
 }
-
 @media (max-width:639px){
 .announcement-bar{
 height:36px;
@@ -1078,7 +1090,6 @@ top:36px;
 }/*==================================================
 COMPACT DESKTOP HEADER
 ==================================================*/
-
 .announcement-bar{
 height:32px;
 }
@@ -1088,14 +1099,12 @@ gap:32px;
 font-size:.72rem;
 font-weight:600;
 }
-
 .site-header{
 top:32px;
 }
 .navbar{
 height:68px;
 }
-
 .logo{
 gap:.65rem;
 }
@@ -1116,7 +1125,6 @@ line-height:1;
 .logo-text span{
 color:var(--secondary);
 }
-
 .nav-menu{
 gap:.2rem;
 }
@@ -1126,7 +1134,6 @@ padding:.65rem .9rem;
 font-size:.88rem;
 font-weight:600;
 }
-
 .nav-actions{
 gap:.6rem;
 }
@@ -1158,7 +1165,6 @@ FOOTER MAIN
     position:relative;
     overflow:hidden;
 }
-
 .site-footer::before{
     content:"";
     position:absolute;
@@ -1217,7 +1223,6 @@ FOOTER BRAND
 .footer-brand{
     max-width:360px;
 }
-
 .footer-brand .logo{
     display:inline-flex;
     align-items:center;
@@ -1939,7 +1944,6 @@ BUTTON OUTLINE
 /*==================================================
 HERO RESPONSIVE SPACING
 ==================================================*/
-
 @media (min-width:1281px){
     .hero,
     .contact-hero,
@@ -1952,7 +1956,6 @@ HERO RESPONSIVE SPACING
         padding:180px 0 120px;
     }
 }
-
 @media (min-width:1024px) and (max-width:1280px){
     .hero,
     .contact-hero,
@@ -1964,7 +1967,6 @@ HERO RESPONSIVE SPACING
         padding:120px 0 100px;
     }
 }
-
 @media (min-width:640px) and (max-width:1023px){
     .hero,
     .contact-hero,
@@ -1978,7 +1980,6 @@ HERO RESPONSIVE SPACING
         text-align:center;
     }
 }
-
 @media (max-width:639px){
     .hero,
     .contact-hero,
@@ -1992,7 +1993,6 @@ HERO RESPONSIVE SPACING
         text-align:center;
     }
 }
-
 @media (max-width:360px){
     .hero,
     .contact-hero,
@@ -2124,7 +2124,6 @@ Place at the END of com.css
     align-items:center;
     justify-content:center;
 }
-
 .dropdown-menu{
     margin-top:0;
     top:calc(100% + 8px);
@@ -2209,7 +2208,6 @@ Mobile
         min-height:72px;
         gap:1.25rem;
     }
-    
     .logo{
         gap:.65rem;
         flex-shrink:0;
@@ -2226,7 +2224,6 @@ Mobile
         font-size:1.45rem !important;
         white-space:nowrap;
     }
-    
     .nav-menu{
         flex:1;
         display:flex;
@@ -2248,7 +2245,6 @@ Mobile
         width:16px;
         height:16px;
     }
-    
     .nav-actions{
         gap:.5rem;
         flex-shrink:0;
@@ -2331,7 +2327,6 @@ FOOTER SOCIAL ICONS FIX
     color:#ffffff;
     transform:translateY(-2px) scale(1.08);
 }
-
 [data-theme="dark"] .footer-social a{
     background:var(--surface2);
     border-color:var(--border);
@@ -2349,7 +2344,6 @@ FOOTER SOCIAL ICONS FIX
     border-top:1px solid var(--border);
     position:relative;
 }
-
 .site-footer::before{
     content:"";
     position:absolute;
@@ -2378,11 +2372,9 @@ FOOTER SOCIAL ICONS FIX
 .footer-column a:hover{
     color:var(--primary);
 }
-
 .footer-brand .logo-text{
     color:var(--text);
 }
-
 .footer-social a{
     width:42px;
     height:42px;
@@ -2400,29 +2392,20 @@ FOOTER SOCIAL ICONS FIX
     color:#fff;
     transform:translateY(-4px);
 }
-
 .footer-contact svg{
     width:18px;
     height:18px;
     color:var(--primary);
 }
-
-.footer-bottom{
-    background:var(--surface);
-    border-top:1px solid var(--border);
-    padding:20px 0;
-}
 .footer-bottom p{
     color:var(--text2);
 }
-
 [data-theme="dark"] .site-footer{
     background:var(--dark-bg);
 }
 [data-theme="dark"] .footer-bottom{
     background:var(--dark-surface);
 }
-
 @media(max-width:640px){
 .footer-container{
     padding:45px 20px 35px;
@@ -2430,10 +2413,7 @@ FOOTER SOCIAL ICONS FIX
 .footer-bottom{
     text-align:center;
 }
-}/*==================================================
-EXTRA SMALL MOBILE FOOTER ALIGNMENT
-360px and Below
-==================================================*/
+}
 @media (max-width:360px){
     .site-footer{
         text-align:center;
@@ -2497,4 +2477,74 @@ EXTRA SMALL MOBILE FOOTER ALIGNMENT
         justify-content:center;
         flex-wrap:wrap;
     }
+}
+ /*==================================================
+ REMOVE FOOTER CLICK BOX COMPLETELY
+==================================================*/
+footer *,
+.footer *,
+.footer-links *,
+.footer-links ul *,
+.footer-links li *,
+.footer-links a *{
+    -webkit-tap-highlight-color:transparent !important;
+}
+footer a,
+.footer a,
+.footer-links a,
+footer ul,
+footer li{
+    outline:none !important;
+    -webkit-outline:none !important;
+}
+footer a:focus,
+footer a:focus-visible,
+footer a:active,
+.footer a:focus,
+.footer a:focus-visible,
+.footer a:active{
+    outline:none !important;
+    box-shadow:none !important;
+    border:none !important;
+    background:transparent !important;
+}
+footer a::-moz-focus-inner{
+    border:0 !important;
+}/*==================================================
+FOOTER LIST COMPACT SPACING
+==================================================*/
+footer ul,
+.footer ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+footer ul li,
+.footer ul li{
+    margin-bottom:8px;
+}
+footer ul li:last-child,
+.footer ul li:last-child{
+    margin-bottom:0;
+}
+footer ul li a,
+.footer ul li a{
+    padding:3px 0;
+    display:inline-flex;
+    line-height:1.4;
+}
+.footer-links ul{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+@media(max-width:640px){
+footer ul li,
+.footer ul li{
+    margin-bottom:6px;
+}
+footer ul li a,
+.footer ul li a{
+    padding:2px 0;
+}
 }

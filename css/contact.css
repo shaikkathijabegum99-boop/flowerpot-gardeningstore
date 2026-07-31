@@ -1932,7 +1932,6 @@ PREMIUM TOP BORDER FOR ALL CARDS
     );
     border-radius:32px 32px 0 0;
 }
-
 .contact-card:hover::before,
 .sidebar-card:hover::before,
 .location-card:hover::before,
@@ -2359,4 +2358,195 @@ PAGE HEADER - FIT IN ONE SCREEN
 }
 .section-tag{
     margin-bottom:18px;
+}/*==================================================
+360px HERO NAVBAR OVERLAP FIX
+Add at END of contact.css
+==================================================*/
+@media (max-width:360px){
+    .page-header,
+    .contact-hero{
+        min-height:auto !important;
+        height:auto;
+        padding:85px 0 45px !important;
+        display:flex;
+        align-items:center;
+    }
+    .page-header-content,
+    .contact-hero .container{
+        width:100%;
+    }
+    .page-header-content{
+        grid-template-columns:1fr !important;
+        gap:35px;
+        text-align:center;
+    }
+    .page-header-text{
+        max-width:100%;
+        padding:0 5px;
+    }
+    .page-header-text h1,
+    .hero-content h1{
+        font-size:28px !important;
+        line-height:1.2;
+        margin-bottom:15px;
+    }
+    .page-header-text p,
+    .hero-content p{
+        font-size:14px;
+        line-height:1.6;
+        margin-bottom:22px;
+    }
+    .page-header-buttons,
+    .hero-buttons{
+        flex-direction:column;
+        width:100%;
+        gap:12px;
+    }
+    .page-header-buttons .btn,
+    .hero-buttons .btn{
+        width:100%;
+        height:46px;
+        font-size:13px;
+    }
+    .page-header-image{
+        width:100%;
+        margin-top:10px;
+    }
+    .page-header-image img{
+        width:100%;
+        height:240px !important;
+        border-radius:22px;
+    }
+    .header-floating-card{
+        position:relative;
+        left:0;
+        bottom:0;
+        margin-top:15px;
+        padding:14px;
+        width:100%;
+    }
+    .header-floating-card i{
+        width:42px;
+        height:42px;
+        padding:10px;
+    }
+    .hero-features{
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        margin-top:25px;
+    }
+    .feature-item{
+        width:100%;
+        min-width:0;
+        padding:14px;
+    }
+    .feature-icon{
+        width:42px;
+        height:42px;
+    }
+    .breadcrumb{
+        margin-top:20px;
+        font-size:12px;
+    }
+}/*==================================================
+CONTACT NOTE
+Plant Advice Box
+==================================================*/
+.contact-note{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    margin:30px 0;
+    padding:20px;
+    background:var(--bg2);
+    border:1px solid var(--border);
+    border-radius:18px;
+    position:relative;
+    overflow:hidden;
+}
+.contact-note::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:var(--primary);
+}
+.note-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--primary-soft);
+    color:var(--primary);
+    flex-shrink:0;
+}
+.note-icon i{
+    width:24px;
+    height:24px;
+}
+.note-content h4{
+    margin:0 0 6px;
+    font-size:16px;
+    color:var(--text);
+}
+.note-content p{
+    margin:0;
+    color:var(--text2);
+    font-size:14px;
+    line-height:1.7;
+}
+.contact-note:hover{
+    background:var(--surface);
+    box-shadow:var(--shadow-sm);
+    transform:translateY(-2px);
+    transition:.3s ease;
+}
+@media(max-width:1024px){
+.contact-note{
+    margin:25px 0;
+}
+}
+@media(max-width:640px){
+.contact-note{
+    padding:16px;
+    gap:12px;
+}
+.note-icon{
+    width:38px;
+    height:38px;
+}
+.note-icon i{
+    width:20px;
+    height:20px;
+}
+.note-content h4{
+    font-size:15px;
+}
+.note-content p{
+    font-size:13px;
+}
+}
+@media(max-width:360px){
+.contact-note{
+    padding:14px;
+}
+.note-icon{
+    width:34px;
+    height:34px;
+}
+.note-icon i{
+    width:18px;
+    height:18px;
+}
+.note-content h4{
+    font-size:14px;
+}
+.note-content p{
+    font-size:12px;
+}
 }

@@ -13,17 +13,12 @@
           content="flower pots, plants, gardening supplies, indoor plants, garden accessories">
     <meta name="author"
           content="BloomNest">
-<!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Google Fonts -->
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Global CSS -->
     <link rel="stylesheet"
           href="../global/global.css">
-    <!-- Component CSS -->
   <link rel="stylesheet"
           href="css/com.css">
 </head>
@@ -51,14 +46,14 @@ Bloom<span>Nest</span>
      DESKTOP NAVIGATION
 ======================= -->
 <ul class="nav-menu">
-<!-- Home Dropdown -->
 <li class="nav-item dropdown">
-    <button class="dropdown-toggle"
-            aria-haspopup="true"
-            aria-expanded="false">
+       <a href="index.html"
+       class="dropdown-toggle active"
+       aria-haspopup="true"
+       aria-expanded="false">
         Home
         <i data-lucide="chevron-down"></i>
-    </button>
+    </a>
     <ul class="dropdown-menu">
         <li>
             <a href="index.html">
@@ -97,32 +92,25 @@ Blog
 Contact
 </a>
 </li>
-<!-- Dashboard Always Last -->
 </ul>
 <!-- ======================
      NAV ACTIONS
 ======================= -->
 <div class="nav-actions">
-<!-- Search -->
-<!-- Dark Mode -->
 <button class="icon-btn"
         id="themeToggle"
         aria-label="Dark Mode">
 <i data-lucide="moon"></i>
 </button>
-<!-- RTL -->
 <button class="icon-btn"
         id="rtlToggle"
-        aria-label="RTL">
-    <i class="fas fa-right-left"></i>
+        aria-label="Toggle RTL">
+    <i data-lucide="arrow-left-right"></i>
 </button>
-<!-- Wishlist -->
-<!-- Primary CTA -->
 <a href="/signin.html"
    class="btn btn-primary">
-Sign in
+Login
 </a>
-<!-- Mobile Menu -->
 <button class="menu-toggle"
         id="menuToggle"
         aria-label="Open Menu">
@@ -152,7 +140,6 @@ Bloom<span>Nest</span>
 <i data-lucide="x"></i>
 </button>
 </div>
-<!-- Mobile Menu -->
 <ul class="mobile-nav">
 <li>
     <details>
@@ -184,6 +171,11 @@ Services
 </a>
 </li>
 <li>
+<a href="/pricing.html">
+Pricing
+</a>
+</li>
+<li>
 <a href="/blog.html">
 Blog
 </a>
@@ -193,20 +185,11 @@ Blog
 Contact
 </a>
 </li>
-<li>
-<a href="/dashboard.html">
-Dashboard
-</a>
-</li>
 </ul>
 <div class="mobile-buttons">
-<a href="../wishlist.html"
-   class="btn btn-outline">
-Wishlist
-</a>
 <a href="/signin.html"
    class="btn btn-primary">
-Sign in
+Login
 </a>
 </div>
 </aside>

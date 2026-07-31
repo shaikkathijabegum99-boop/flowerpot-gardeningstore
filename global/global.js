@@ -769,7 +769,6 @@ function initReducedMotion(){
 document.addEventListener(
 "DOMContentLoaded",
 async ()=>{
-    
     await Promise.all([
         loadComponent(
             "navbar",
@@ -780,9 +779,7 @@ async ()=>{
             "../components/footer.html"
         )
     ]);
-    
     refreshIcons();
-    
     initTheme();
     initRTL();
     initStickyHeader();
@@ -792,14 +789,12 @@ async ()=>{
     initActiveMenu();
     initSearchModal();
     initEscapeClose();
-    
     initScrollTop();
     initSmoothScroll();
     initRevealAnimation();
     initCounter();
     initLazyImages();
     initCardHover();
-    
     initResizeHandler();
     initPageLoader();
     initPerformance();
@@ -931,7 +926,6 @@ themeBtn.innerHTML = isDark
 lucide.createIcons();
 });
 }
-
 const savedTheme =
 localStorage.getItem("theme");
 if(savedTheme==="dark"){
@@ -953,11 +947,11 @@ BloomNest Premium Hero Effects
 document.addEventListener("DOMContentLoaded", () => {
     const heroes = document.querySelectorAll(".animated-hero");
     heroes.forEach((hero) => {
-        // Add loaded animation class
+
         setTimeout(() => {
             hero.classList.add("hero-loaded");
         }, 100);
-        // Create extra floating leaves dynamically
+
         const animationBox = hero.querySelector(".hero-animation");
         if(animationBox){
             for(let i = 0; i < 8; i++){
@@ -977,7 +971,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-    // Smooth mouse movement effect
+
     document.querySelectorAll(
         ".animated-hero"
     ).forEach(hero => {
@@ -1015,5 +1009,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-
