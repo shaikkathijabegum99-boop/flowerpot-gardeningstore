@@ -1888,7 +1888,7 @@ TABLET
 ==================================================*/
 @media (max-width:1024px){
 .map-details{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr;
     grid-template-rows:auto;
 }
 }
@@ -2314,7 +2314,7 @@ PAGE HEADER - FIT IN ONE SCREEN
 }
 .page-header-content{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr;
     align-items:center;
     gap:60px;
 }
