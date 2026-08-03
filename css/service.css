@@ -1,6 +1,4 @@
-/*==================================================
-SERVICE HERO
-==================================================*/
+
 .service-hero{
     padding:90px 0;
     background:linear-gradient(180deg,var(--bg2),var(--bg));
@@ -63,16 +61,12 @@ SERVICE HERO
     color:var(--text2);
     font-size:.9rem;
 }
-/*==================================================
-SERVICES INTRO
-==================================================*/
+
 .services-intro{
     background:var(--bg);
     padding:40px 0 20px;
 }
-/*==================================================
-WHY CHOOSE US
-==================================================*/
+
 .service-why{
     padding:100px 0;
     background:var(--bg2);
@@ -110,9 +104,7 @@ WHY CHOOSE US
     color:var(--text2);
     font-size:.95rem;
 }
-/*==================================================
-SERVICE PROCESS
-==================================================*/
+
 .service-process{
     padding:100px 0;
     background:var(--bg);
@@ -157,9 +149,7 @@ SERVICE PROCESS
 .service-process-card p{
     color:var(--text2);
 }
-/*==================================================
-SERVICE PRICING
-==================================================*/
+
 .service-pricing{
     padding:100px 0;
     background:var(--bg3);
@@ -236,9 +226,7 @@ SERVICE PRICING
 }
 .pricing-service-card .btn{
     width:100%;
-}/*==================================================
-PRICING SECTION
-==================================================*/
+}
 .service-pricing{
     padding:100px 0;
     background:var(--bg2);
@@ -319,9 +307,7 @@ PRICING SECTION
 .pricing-service-card .btn{
     width:100%;
 }
-/*==================================================
-TESTIMONIALS
-==================================================*/
+
 .service-testimonials{
     padding:100px 0;
     background:var(--bg);
@@ -382,9 +368,7 @@ TESTIMONIALS
     font-size:.9rem;
     font-weight:600;
 }
-/*==================================================
-CTA SECTION
-==================================================*/
+
 .service-cta{
     padding:100px 0;
     background:var(--bg2);
@@ -423,9 +407,7 @@ CTA SECTION
 }
 .service-cta-image:hover img{
     transform:scale(1.08);
-}/*==================================================
-NEWSLETTER SECTION
-==================================================*/
+}
 .newsletter-section{
     padding:100px 0;
     background:var(--bg);
@@ -483,9 +465,7 @@ NEWSLETTER SECTION
 .newsletter-form .btn{
     height:56px;
 }
-/*==================================================
-GALLERY
-==================================================*/
+
 .instagram-gallery{
     padding:100px 0;
     background:var(--bg);
@@ -507,9 +487,7 @@ GALLERY
     transform:scale(1.05);
     box-shadow:var(--shadow-lg);
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .service-cta-box,
 .pricing-service-grid,
@@ -575,9 +553,7 @@ RESPONSIVE
     height:220px;
 }
 }
-/*==================================================
-DESKTOP
-==================================================*/
+
 @media (max-width:1280px){
 .service-hero-grid,
 .service-cta-box{
@@ -591,9 +567,7 @@ DESKTOP
     grid-template-columns:repeat(4,1fr);
 }
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media (max-width:1024px){
 .service-cta-box{
     grid-template-columns:1fr;
@@ -624,9 +598,7 @@ TABLET
     height:420px;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media (max-width:640px){
 .service-hero,
 .services-intro,
@@ -807,9 +779,7 @@ MOBILE
 }
 .dark-mode .gallery-grid img{
     filter:brightness(.9);
-}/*==================================================
-FAQ ACCORDION
-==================================================*/
+}
 .service-faq{
     padding:100px 0;
     background:var(--bg2);
@@ -880,9 +850,7 @@ FAQ ACCORDION
     color:var(--text2);
     line-height:1.8;
 }
-/*==================================================
-FAQ DARK MODE
-==================================================*/
+
 html.dark-mode .faq-item{
     background:var(--surface);
     border-color:var(--border);
@@ -898,9 +866,7 @@ html.dark-mode .faq-item[open] .faq-icon{
     background:var(--primary);
     color:#fff;
 }
-/*==================================================
-FAQ RESPONSIVE
-==================================================*/
+
 @media (max-width:1024px){
     .faq-grid{
         grid-template-columns:1fr;
@@ -926,9 +892,7 @@ FAQ RESPONSIVE
         font-size:1.5rem;
     }
 }
-/*==================================================
-SERVICES GRID
-==================================================*/
+
 .services-grid-section{
     padding:10px 0;
     background:var(--bg);
@@ -938,9 +902,7 @@ SERVICES GRID
     grid-template-columns:repeat(3,1fr);
     gap:32px;
 }
-/*==================================================
-SERVICE CARD
-==================================================*/
+
 .service-card{
     background:var(--surface);
     border:1px solid var(--border);
@@ -953,9 +915,7 @@ SERVICE CARD
     transform:translateY(-10px);
     box-shadow:var(--shadow-lg);
 }
-/*==================================================
-SERVICE IMAGE
-==================================================*/
+
 .service-image{
     overflow:hidden;
     position:relative;
@@ -970,9 +930,7 @@ SERVICE IMAGE
 .service-card:hover .service-image img{
     transform:scale(1.08);
 }
-/*==================================================
-SERVICE CONTENT
-==================================================*/
+
 .service-content{
     padding:30px;
 }
@@ -987,9 +945,7 @@ SERVICE CONTENT
     line-height:1.8;
     margin-bottom:24px;
 }
-/*==================================================
-LEARN MORE LINK
-==================================================*/
+
 .service-content a{
     display:inline-flex;
     align-items:center;
@@ -1007,9 +963,7 @@ LEARN MORE LINK
     width:18px;
     height:18px;
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 [data-theme="dark"] .services-grid-section{
     background:var(--bg);
 }
@@ -1026,9 +980,7 @@ DARK MODE
 [data-theme="dark"] .service-image img{
     filter:brightness(.92);
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media (max-width:1024px){
 .services-grid{
     grid-template-columns:repeat(2,1fr);
@@ -1043,9 +995,7 @@ TABLET
     font-size:22px;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media (max-width:640px){
 .services-grid-section{
     padding:70px 0;
@@ -1070,9 +1020,7 @@ MOBILE
     width:100%;
     justify-content:space-between;
 }
-}/*==================================================
-SECONDARY COLOR ACCENTS
-==================================================*/
+}
 .section-tag{
     background:rgba(141,110,99,.12);
     color:var(--secondary);
@@ -1139,9 +1087,7 @@ SECONDARY COLOR ACCENTS
 .dark-mode .service-content a:hover,
 .dark-mode .related-content a:hover{
     color:#E8CFC4;
-}/*==================================================
-PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
-==================================================*/
+}
 .service-card,
 .why-service-card,
 .service-process-card,
@@ -1219,10 +1165,7 @@ PREMIUM CARD HOVER + READ MORE SECONDARY COLOR
 .dark-mode .related-content a:hover,
 .dark-mode .sidebar-post a:hover{
     color:#D7B9AA;
-}/*==================================================
-DESKTOP VIEW
-1025px - 1280px
-==================================================*/
+}
 @media (min-width:1025px) and (max-width:1280px){
 .service-hero,
 .service-why,
@@ -1323,10 +1266,7 @@ DESKTOP VIEW
     gap:25px;
 }
 }
-/*==================================================
-LARGE DESKTOP
-ABOVE 1280px
-==================================================*/
+
 @media (min-width:1281px){
 .service-hero-grid{
     gap:80px;
@@ -1349,9 +1289,7 @@ ABOVE 1280px
 .gallery-grid img{
     height:300px;
 }
-}/*==================================================
-SMALL FONT SIZE DESKTOP VIEW
-==================================================*/
+}
 @media (min-width:1025px){
 body{
     font-size:15px;
@@ -1421,9 +1359,7 @@ body{
 .related-content a{
     font-size:14px;
 }
-}/*==================================================
-NEWSLETTER PREMIUM SECTION
-==================================================*/
+}
 .newsletter-section{
     padding:100px 0;
     background:var(--bg2);
@@ -1522,9 +1458,7 @@ NEWSLETTER PREMIUM SECTION
     background:var(--secondary);
     color:#fff;
 }
-/*==================================================
-NEWSLETTER DARK MODE
-==================================================*/
+
 .dark-mode .newsletter-section{
     background:var(--bg);
 }
@@ -1544,9 +1478,7 @@ NEWSLETTER DARK MODE
 .dark-mode .newsletter-form input::placeholder{
     color:#aaa;
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media(max-width:1024px){
 .newsletter-box{
     padding:55px 40px;
@@ -1558,9 +1490,7 @@ TABLET
     width:320px;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media(max-width:640px){
 .newsletter-section{
     padding:70px 0;
@@ -1592,17 +1522,7 @@ MOBILE
 .newsletter-form .btn{
     height:54px;
 }
-}/*==================================================
-RESPONSIVE BREAKPOINTS
-Mobile: < 640px
-Tablet: 640px - 1024px
-Desktop: 1024px - 1280px
-Large: > 1280px
-==================================================*/
-/*==================================================
-LARGE DESKTOP
-> 1280px
-==================================================*/
+}
 @media (min-width:1281px){
 .service-hero{
     padding:120px 0;
@@ -1637,10 +1557,7 @@ LARGE DESKTOP
     font-size:46px;
 }
 }
-/*==================================================
-DESKTOP
-1024px - 1280px
-==================================================*/
+
 @media (min-width:1024px) and (max-width:1280px){
 .service-hero{
     padding:90px 0;
@@ -1698,10 +1615,7 @@ DESKTOP
     min-width:280px;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media (min-width:640px) and (max-width:1024px){
 .service-hero{
     padding:80px 0;
@@ -1781,10 +1695,7 @@ TABLET
     grid-template-columns:repeat(2,1fr);
 }
 }
-/*==================================================
-MOBILE
-< 640px
-==================================================*/
+
 @media (max-width:640px){
 .service-hero{
     padding:60px 0;
@@ -1864,9 +1775,7 @@ MOBILE
 .gallery-grid img{
     height:220px;
 }
-}/*==================================================
-PREMIUM GRADIENT TOP BORDER
-==================================================*/
+}
 .service-card,
 .why-service-card,
 .service-process-card,
@@ -1898,9 +1807,7 @@ PREMIUM GRADIENT TOP BORDER
     );
     z-index:2;
 }
-/*==================================================
-HOVER EFFECT
-==================================================*/
+
 .service-card:hover::before,
 .why-service-card:hover::before,
 .service-process-card:hover::before,
@@ -1914,9 +1821,7 @@ HOVER EFFECT
         var(--secondary-hover) 100%
     );
 }
-/*==================================================
-FEATURED PRICING CARD
-==================================================*/
+
 .pricing-service-card.featured::before{
     height:6px;
     background:linear-gradient(
@@ -1926,9 +1831,7 @@ FEATURED PRICING CARD
         #81C784 100%
     );
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 .dark-mode .service-card::before,
 .dark-mode .why-service-card::before,
 .dark-mode .service-process-card::before,
@@ -1941,9 +1844,7 @@ DARK MODE
         #D7B9AA 50%,
         #4CAF50 100%
     );
-}/*==================================================
-FIX TESTIMONIAL ALIGNMENT
-==================================================*/
+}
 .service-testimonial-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -1986,9 +1887,7 @@ FIX TESTIMONIAL ALIGNMENT
 .service-testimonial-card span{
     margin-bottom:0;
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media(max-width:1024px){
 .service-testimonial-grid{
     grid-template-columns:repeat(2,1fr);
@@ -1997,9 +1896,7 @@ TABLET
     min-height:420px;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media(max-width:640px){
 .service-testimonial-grid{
     grid-template-columns:1fr;
@@ -2011,9 +1908,7 @@ MOBILE
 .service-testimonial-card p{
     flex:none;
 }
-}/*==================================================
-TESTIMONIAL INNER PADDING FIX
-==================================================*/
+}
 .service-testimonial-card{
     padding:30px 25px;
     min-height:390px;
@@ -2052,9 +1947,7 @@ TESTIMONIAL INNER PADDING FIX
     width:70px;
     height:70px;
 }
-}/*==================================================
-SERVICE HERO PREMIUM STYLE
-==================================================*/
+}
 .service-hero{
     position:relative;
     padding:100px 0;
@@ -2140,9 +2033,7 @@ SERVICE HERO PREMIUM STYLE
 .service-hero-image:hover img{
     transform:scale(1.03);
 }
-/*==================================================
-LEAF ANIMATION
-==================================================*/
+
 .service-hero .leaf{
     position:absolute;
     width:45px;
@@ -2183,9 +2074,7 @@ LEAF ANIMATION
         transform:translateY(-35px) rotate(45deg);
     }
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 .dark-mode .service-hero{
     background:var(--bg);
 }
@@ -2195,10 +2084,7 @@ DARK MODE
 .dark-mode .service-hero-image img{
     filter:brightness(.9);
 }
-/*==================================================
-DESKTOP
-1024px - 1280px
-==================================================*/
+
 @media (max-width:1280px){
 .service-hero{
     padding:85px 0;
@@ -2213,10 +2099,7 @@ DESKTOP
     height:450px;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media(max-width:1024px){
 .service-hero-grid{
     grid-template-columns:1fr;
@@ -2236,10 +2119,7 @@ TABLET
     height:480px;
 }
 }
-/*==================================================
-MOBILE
-<640px
-==================================================*/
+
 @media(max-width:640px){
 .service-hero{
     padding:60px 0;
@@ -2264,9 +2144,7 @@ MOBILE
     height:300px;
     border-radius:22px;
 }
-}/* ==========================================================
-   NEWSLETTER FORM
-========================================================== */
+}
 .newsletter-form{
     display:flex;
     align-items:center;
@@ -2305,9 +2183,7 @@ MOBILE
     font-weight:600;
     cursor:pointer;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .newsletter-form input{
     background:#111714;
     border-color:#303830;
@@ -2316,9 +2192,7 @@ MOBILE
 .dark-mode .newsletter-form input::placeholder{
     color:#9ca89c;
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(min-width:640px)
 and (max-width:1023px){
 .newsletter-form{
@@ -2331,9 +2205,7 @@ and (max-width:1023px){
     height:54px;
 }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
 .newsletter-form{
     flex-direction:column;
@@ -2349,9 +2221,7 @@ and (max-width:1023px){
     height:54px;
 }
 }
-/*==================================================
-SERVICE CARD ALIGNMENT FIX
-==================================================*/
+
 .service-card{
     display:flex;
     flex-direction:column;
@@ -2371,18 +2241,16 @@ SERVICE CARD ALIGNMENT FIX
     align-items:center;
     gap:8px;
     width:max-content;
-}/*==================================================
-FAQ SMALL CARD SIZE
-==================================================*/
+}
 
 .faq-grid{
-    max-width:900px;      /* Reduce overall width */
+    max-width:900px;     
     margin:40px auto 0;
     gap:16px;
 }
 
 .faq-item{
-    max-width:830px;      /* Smaller card width */
+    max-width:830px;     
     width:100%;
     margin:0 auto;
     border-radius:16px;

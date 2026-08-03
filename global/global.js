@@ -1,17 +1,6 @@
-/* ==========================================================
-   BLOOMNEST GLOBAL JS
-   FIXED VERSION
-   Features:
-   - Component Loader
-   - Dark Mode
-   - RTL
-   - Icons
-   - Sticky Header
-========================================================== */
+
 "use strict";
-/* ==========================================================
-   COMPONENT LOADER
-========================================================== */
+
 async function loadComponent(id,file){
     const element =
         document.getElementById(id);
@@ -39,18 +28,14 @@ async function loadComponent(id,file){
         `;
     }
 }
-/* ==========================================================
-   BODY LOCK
-========================================================== */
+
 function lockBody(){
     document.body.style.overflow="hidden";
 }
 function unlockBody(){
     document.body.style.overflow="";
 }
-/* ==========================================================
-   FIXED DARK MODE SYSTEM
-========================================================== */
+
 function initTheme(){
     const root =
         document.documentElement;
@@ -110,9 +95,7 @@ function updateThemeIcon(){
     `<i data-lucide="moon"></i>`;
     refreshIcons();
 }
-/* ==========================================================
-   RTL SYSTEM
-========================================================== */
+
 function initRTL(){
     const button =
         document.getElementById(
@@ -157,9 +140,6 @@ function initRTL(){
         );
     };
 }
-/* ==========================================================
-   ICON REFRESH
-========================================================== */
 function refreshIcons(){
     if(
         typeof lucide !== "undefined"
@@ -168,9 +148,7 @@ function refreshIcons(){
     ){
         lucide.createIcons();
     }
-}/* ==========================================================
-   STICKY HEADER
-========================================================== */
+}
 function initStickyHeader(){
     const header =
         document.getElementById(
@@ -201,9 +179,7 @@ function initStickyHeader(){
         }
     );
 }
-/* ==========================================================
-   MOBILE MENU
-========================================================== */
+
 function initMobileMenu(){
     const menu =
         document.getElementById(
@@ -261,9 +237,7 @@ function initMobileMenu(){
     window.closeSidebar =
         closeMenu;
 }
-/* ==========================================================
-   MOBILE DROPDOWN
-========================================================== */
+
 function initMobileDropdown(){
     const items =
         document.querySelectorAll(
@@ -287,9 +261,7 @@ function initMobileDropdown(){
         );
     });
 }
-/* ==========================================================
-   DESKTOP DROPDOWN
-========================================================== */
+
 function initDropdown(){
     const dropdowns =
         document.querySelectorAll(
@@ -320,9 +292,6 @@ function initDropdown(){
         );
     });
 }
-/* ==========================================================
-   ACTIVE NAVIGATION
-========================================================== */
 function initActiveMenu(){
     const page =
         window.location.pathname
@@ -354,9 +323,6 @@ function initActiveMenu(){
         }
     });
 }
-/* ==========================================================
-   SEARCH MODAL
-========================================================== */
 function initSearchModal(){
     const button =
         document.getElementById(
@@ -402,9 +368,7 @@ function initSearchModal(){
     }
     window.closeSearch =
         closeSearch;
-}/* ==========================================================
-   ESCAPE KEY CLOSE
-========================================================== */
+}
 function initEscapeClose(){
     document.addEventListener(
         "keydown",
@@ -430,9 +394,7 @@ function initEscapeClose(){
         }
     );
 }
-/* ==========================================================
-   SCROLL TO TOP
-========================================================== */
+
 function initScrollTop(){
     const button =
         document.getElementById(
@@ -456,9 +418,7 @@ function initScrollTop(){
         });
     };
 }
-/* ==========================================================
-   SMOOTH SCROLL
-========================================================== */
+
 function initSmoothScroll(){
     document
     .querySelectorAll(
@@ -493,9 +453,6 @@ function initSmoothScroll(){
         };
     });
 }
-/* ==========================================================
-   REVEAL ANIMATION
-========================================================== */
 function initRevealAnimation(){
     const elements =
         document.querySelectorAll(
@@ -535,9 +492,7 @@ function initRevealAnimation(){
         el=>observer.observe(el)
     );
 }
-/* ==========================================================
-   COUNTER ANIMATION
-========================================================== */
+
 function initCounter(){
     const counters =
         document.querySelectorAll(
@@ -591,9 +546,6 @@ function initCounter(){
         c=>observer.observe(c)
     );
 }
-/* ==========================================================
-   LAZY IMAGE LOADING
-========================================================== */
 function initLazyImages(){
     const images =
         document.querySelectorAll(
@@ -629,9 +581,6 @@ function initLazyImages(){
         img=>observer.observe(img)
     );
 }
-/* ==========================================================
-   CARD HOVER EFFECT
-========================================================== */
 function initCardHover(){
     if(
         window.matchMedia(
@@ -683,9 +632,7 @@ function initCardHover(){
             }
         );
     });
-}/* ==========================================================
-   RESIZE HANDLER
-========================================================== */
+}
 function initResizeHandler(){
     const resize =
         debounce(()=>{
@@ -697,9 +644,7 @@ function initResizeHandler(){
         resize
     );
 }
-/* ==========================================================
-   PAGE LOADER
-========================================================== */
+
 function initPageLoader(){
     const loader =
         document.getElementById(
@@ -719,9 +664,7 @@ function initPageLoader(){
         }
     );
 }
-/* ==========================================================
-   PERFORMANCE SETTINGS
-========================================================== */
+
 function initPerformance(){
     if(
         "scrollRestoration"
@@ -745,9 +688,7 @@ function initPerformance(){
             "async";
     });
 }
-/* ==========================================================
-   REDUCED MOTION
-========================================================== */
+
 function initReducedMotion(){
     const reduce =
         window.matchMedia(
@@ -763,9 +704,7 @@ function initReducedMotion(){
         );
     }
 }
-/* ==========================================================
-   INITIALIZE WEBSITE
-========================================================== */
+
 document.addEventListener(
 "DOMContentLoaded",
 async ()=>{
@@ -806,9 +745,6 @@ async ()=>{
         "page-ready"
     );
 });
-/* ==========================================================
-   PAGE LOAD STATUS
-========================================================== */
 window.addEventListener(
 "load",
 ()=>{
@@ -818,9 +754,7 @@ window.addEventListener(
         "page-loaded"
     );
 });
-/* ==========================================================
-   VISIBILITY STATUS
-========================================================== */
+
 document.addEventListener(
 "visibilitychange",
 ()=>{
@@ -831,9 +765,7 @@ document.addEventListener(
         document.hidden
     );
 });
-/* ==========================================================
-   ONLINE STATUS
-========================================================== */
+
 window.addEventListener(
 "online",
 ()=>{
@@ -852,9 +784,7 @@ window.addEventListener(
         "offline"
     );
 });
-/* ==========================================================
-   HELPERS
-========================================================== */
+
 function debounce(
 callback,
 delay=200
@@ -891,9 +821,7 @@ delay=100
         );
     };
 }
-/* ==========================================================
-   GLOBAL OBJECT
-========================================================== */
+
 window.BloomNest = {
     refreshIcons,
     lockBody,
@@ -907,9 +835,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         lucide.createIcons();
     }
 });
-/*========================================
- DARK MODE
-========================================*/
+
 const themeBtn = document.getElementById("theme-btn");
 if(themeBtn){
 themeBtn.addEventListener("click",()=>{
@@ -940,10 +866,7 @@ btn.innerHTML =
 }
 }
 lucide.createIcons();
-/*==================================================
-GLOBAL HERO ANIMATION JS
-BloomNest Premium Hero Effects
-==================================================*/
+
 document.addEventListener("DOMContentLoaded", () => {
     const heroes = document.querySelectorAll(".animated-hero");
     heroes.forEach((hero) => {

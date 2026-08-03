@@ -1,15 +1,4 @@
-/* ==========================================================
-   BLOOMNEST HOME 2 PREMIUM CSS
-   PART 1
-   Sections:
-   - Premium Hero Section
-   - Premium Stats
-   - Featured Collection
-   Uses Global CSS Variables
-========================================================== */
-/* ==========================================================
-   PREMIUM HERO SECTION
-========================================================== */
+
 .premium-hero{
     padding:120px 0;
     background:var(--bg);
@@ -21,9 +10,7 @@
     align-items:center;
     gap:70px;
 }
-/* ==========================================================
-   HERO CONTENT
-========================================================== */
+
 .premium-hero-content{
     max-width:620px;
 }
@@ -96,9 +83,6 @@
 .hero-actions .btn-secondary:hover{
     background:var(--primary);
 }
-/* ==========================================================
-   HERO IMAGE
-========================================================== */
 .premium-hero-image{
     position:relative;
 }
@@ -125,9 +109,7 @@
     right:-45px;
     z-index:-1;
 }
-/* ==========================================================
-   HERO FLOATING CARD
-========================================================== */
+
 .hero-floating-card{
     position:absolute;
     bottom:35px;
@@ -156,9 +138,7 @@
     font-size:14px;
     color:var(--text-muted);
 }
-/* ==========================================================
-   PREMIUM STATS
-========================================================== */
+
 .premium-stats{
     padding:45px 0;
     background:var(--bg-soft);
@@ -2415,6 +2395,7 @@ TABLET
 }
 .premium-hero-image img{
     height:480px;
+    width:550px;
 }
 }
 /*==================================================

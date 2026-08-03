@@ -1,14 +1,4 @@
-/*==================================================
-BLOOMNEST COMPONENT CSS
-PART 1
-Announcement • Header • Navigation
-==================================================*/
-/*==================================================
-ANNOUNCEMENT BAR
-==================================================*/
-/*==================================================
-HEADER
-==================================================*/
+
 .site-header{
 position:fixed;
 top:32px;
@@ -30,9 +20,7 @@ align-items:center;
 justify-content:space-between;
 gap:1.2rem;
 }
-/*==================================================
-LOGO
-==================================================*/
+
 .logo{
 display:flex;
 align-items:center;
@@ -72,9 +60,7 @@ color:var(--primary);
 color:var(--secondary);
 font-weight:700;
 }
-/*==================================================
-DESKTOP NAVIGATION
-==================================================*/
+
 .nav-menu{
 display:flex;
 align-items:center;
@@ -106,9 +92,7 @@ transition:var(--transition);
 background:rgba(27,94,32,.08);
 color:var(--primary);
 }
-/*==================================================
-FINAL ACTIVE NAV OVERRIDE
-==================================================*/
+
 .nav-item > a.active{
     background:transparent !important;
     color:var(--primary) !important;
@@ -142,9 +126,7 @@ transition:var(--transition);
 .dropdown-toggle:hover::after{
 transform:scaleX(1);
 }
-/*==================================================
-DROPDOWN
-==================================================*/
+
 .dropdown-menu{
 position:absolute;
 top:calc(100% + 14px);
@@ -185,9 +167,7 @@ background:rgba(141,110,99,.12);
 color:var(--secondary);
 padding-left:1.2rem;
 }
-/*==================================================
-HEADER ACTIONS
-==================================================*/
+
 .nav-actions{
 display:flex;
 align-items:center;
@@ -240,9 +220,7 @@ border-color:var(--secondary);
 }
 .menu-toggle:hover svg{
 stroke:#fff;
-}/*==================================================
-MOBILE SIDEBAR
-==================================================*/
+}
 .mobile-sidebar{
 position:fixed;
 top:0;
@@ -280,9 +258,7 @@ color:var(--primary);
 .mobile-header .logo-text span{
 color:var(--secondary);
 }
-/*==================================================
-MOBILE NAVIGATION
-==================================================*/
+
 .mobile-nav{
 padding:1.5rem;
 display:flex;
@@ -330,9 +306,7 @@ list-style:none;
 .mobile-nav summary::-webkit-details-marker{
 display:none;
 }
-/*==================================================
-MOBILE DROPDOWN
-==================================================*/
+
 .mobile-dropdown{
 display:flex;
 flex-direction:column;
@@ -352,9 +326,7 @@ transition:var(--transition);
 background:rgba(27,94,32,.08);
 color:var(--primary);
 }
-/*==================================================
-MOBILE BUTTONS
-==================================================*/
+
 .mobile-buttons{
 margin-top:auto;
 padding:1.5rem;
@@ -383,9 +355,7 @@ border:2px solid var(--primary);
 background:var(--secondary);
 border-color:var(--secondary);
 }
-/*==================================================
-MOBILE OVERLAY
-==================================================*/
+
 .mobile-overlay{
 position:fixed;
 inset:0;
@@ -399,9 +369,7 @@ z-index:1500;
 opacity:1;
 visibility:visible;
 }
-/*==================================================
-SEARCH MODAL
-==================================================*/
+
 .search-modal{
 position:fixed;
 inset:0;
@@ -462,9 +430,7 @@ stroke:#fff;
 }
 .search-box button:hover{
 background:var(--secondary);
-}/*==================================================
-RESPONSIVE
-==================================================*/
+}
 @media(max-width:1024px){
 .nav-menu{
 display:none;
@@ -539,9 +505,7 @@ width:46px;
 height:46px;
 }
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 html.dark-mode .announcement-bar{
 background:var(--primary);
 border-bottom-color:var(--secondary);
@@ -612,9 +576,7 @@ color:var(--text);
 }
 html.dark-mode .search-box input::placeholder{
 color:var(--text2);
-}/*==================================================
-FOOTER
-==================================================*/
+}
 .site-footer{
 background:var(--primary);
 color:#fff;
@@ -629,9 +591,7 @@ display:grid;
 grid-template-columns:2fr 1fr 1fr 1fr;
 gap:50px;
 }
-/*==================================================
-FOOTER BRAND
-==================================================*/
+
 .footer-brand{
 max-width:360px;
 }
@@ -665,9 +625,7 @@ font-size:.95rem;
 line-height:1.9;
 margin-bottom:1.8rem;
 }
-/*==================================================
-SOCIAL
-==================================================*/
+
 .footer-social{
 display:flex;
 gap:.8rem;
@@ -693,9 +651,7 @@ background:#fff;
 .footer-social a:hover svg{
 stroke:var(--primary);
 }
-/*==================================================
-FOOTER COLUMNS
-==================================================*/
+
 .footer-column h3{
 font-family:'Cormorant Garamond',serif;
 font-size:1.45rem;
@@ -718,9 +674,7 @@ transition:var(--transition);
 color:var(--secondary);
 padding-left:6px;
 }
-/*==================================================
-CONTACT
-==================================================*/
+
 .footer-contact li{
 display:flex;
 align-items:flex-start;
@@ -737,9 +691,7 @@ flex-shrink:0;
 .footer-contact span{
 font-size:.95rem;
 }
-/*==================================================
-NEWSLETTER
-==================================================*/
+
 .footer-newsletter{
 margin-top:2rem;
 }
@@ -788,13 +740,7 @@ stroke:#fff;
 .newsletter-form button:hover{
 background:var(--primary);
 }
-/*==================================================
-RESPONSIVE BREAKPOINTS
-BloomNest Component CSS
-==================================================*/
-/*=========================================
-LARGE DESKTOP (>1280px)
-=========================================*/
+
 @media (min-width:1281px){
 .container{
 max-width:1320px;
@@ -832,9 +778,7 @@ padding:5.5rem 0 4.5rem;
 padding:160px 0 110px;
 }
 }
-/*=========================================
-DESKTOP (1024px - 1280px)
-=========================================*/
+
 @media (min-width:1024px) and (max-width:1280px){
 .container{
 width:min(94%,1180px);
@@ -864,9 +808,7 @@ gap:2.5rem;
 padding:145px 0 90px;
 }
 }
-/*=========================================
-TABLET (640px - 1024px)
-=========================================*/
+
 @media (min-width:640px) and (max-width:1024px){
 .nav-menu{
 display:none;
@@ -912,9 +854,7 @@ padding:130px 0 80px;
 width:min(92%,650px);
 }
 }
-/*=========================================
-MOBILE (<640px)
-=========================================*/
+
 @media (max-width:639px){
 .announcement-bar{
 height:auto;
@@ -1020,9 +960,7 @@ bottom:18px;
 width:46px;
 height:46px;
 }
-}/*==================================================
-ANNOUNCEMENT BAR RESPONSIVE
-==================================================*/
+}
 @media (min-width:1281px){
 .announcement-bar{
 height:40px;
@@ -1087,9 +1025,7 @@ text-align:center;
 .site-header{
 top:36px;
 }
-}/*==================================================
-COMPACT DESKTOP HEADER
-==================================================*/
+}
 .announcement-bar{
 height:32px;
 }
@@ -1150,14 +1086,7 @@ height:42px;
 padding:0 22px;
 font-size:.85rem;
 }
-/*==================================================
-BLOOMNEST FOOTER CSS
-PART 1
-Premium Gardening Store Footer
-==================================================*/
-/*==================================================
-FOOTER MAIN
-==================================================*/
+
 .site-footer{
     background:var(--surface);
     color:var(--text);
@@ -1176,9 +1105,7 @@ FOOTER MAIN
     border-radius:50%;
     pointer-events:none;
 }
-/*==================================================
-FOOTER CONTAINER
-==================================================*/
+
 .footer-container{
     display:grid;
     grid-template-columns:
@@ -1192,9 +1119,7 @@ FOOTER CONTAINER
     position:relative;
     z-index:2;
 }
-/*==================================================
-FOOTER COLUMN
-==================================================*/
+
 .footer-column{
     min-width:0;
 }
@@ -1217,9 +1142,7 @@ FOOTER COLUMN
     bottom:0;
     border-radius:10px;
 }
-/*==================================================
-FOOTER BRAND
-==================================================*/
+
 .footer-brand{
     max-width:360px;
 }
@@ -1255,9 +1178,7 @@ FOOTER BRAND
     color:var(--text);
     letter-spacing:.3px;
 }
-/*==================================================
-BRAND DESCRIPTION
-==================================================*/
+
 .footer-brand p{
     margin-top:25px;
     color:var(--text2);
@@ -1265,9 +1186,7 @@ BRAND DESCRIPTION
     line-height:1.8;
     max-width:330px;
 }
-/*==================================================
-FOOTER COMMON LINKS AREA
-==================================================*/
+
 .footer-column ul{
     padding:0;
     margin:0;
@@ -1288,9 +1207,7 @@ FOOTER COMMON LINKS AREA
     color:var(--primary);
     transform:translateX(6px);
 }
-/*==================================================
-FOOTER DARK MODE SUPPORT
-==================================================*/
+
 [data-theme="dark"] .site-footer{
     background:var(--surface);
     border-color:var(--border);
@@ -1302,9 +1219,7 @@ FOOTER DARK MODE SUPPORT
 [data-theme="dark"] .footer-column ul li a,
 [data-theme="dark"] .footer-brand p{
     color:var(--text2);
-}/*==================================================
-FOOTER SOCIAL ICONS
-==================================================*/
+}
 .footer-social{
     display:flex;
     align-items:center;
@@ -1350,9 +1265,7 @@ FOOTER SOCIAL ICONS
     color:#fff;
     transform:translateY(-2px);
 }
-/*==================================================
-FOOTER COLUMN LINKS
-==================================================*/
+
 .footer-column ul li{
     position:relative;
 }
@@ -1369,9 +1282,7 @@ FOOTER COLUMN LINKS
 .footer-column ul li a:hover::before{
     width:100%;
 }
-/*==================================================
-CONTACT COLUMN
-==================================================*/
+
 .footer-contact{
     display:flex;
     flex-direction:column;
@@ -1395,30 +1306,22 @@ CONTACT COLUMN
 .footer-contact li span{
     display:block;
 }
-/*==================================================
-CONTACT ICON HOVER
-==================================================*/
+
 .footer-contact li:hover svg{
     transform:translateY(-3px);
     transition:.3s ease;
 }
-/*==================================================
-FOOTER LINKS GROUP
-==================================================*/
+
 .footer-column:nth-child(2) ul li a,
 .footer-column:nth-child(3) ul li a,
 .footer-column:nth-child(4) ul li a{
     padding:4px 0;
 }
-/*==================================================
-FOOTER LIST ICON STYLE
-==================================================*/
+
 .footer-column ul li a:hover{
     color:var(--primary);
 }
-/*==================================================
-FOOTER COLUMN HOVER EFFECT
-==================================================*/
+
 .footer-column{
     transition:.3s ease;
 }
@@ -1426,9 +1329,7 @@ FOOTER COLUMN HOVER EFFECT
     width:55px;
     transition:.3s ease;
 }
-/*==================================================
-NEWSLETTER READY STYLE
-==================================================*/
+
 .footer-newsletter{
     margin-top:25px;
 }
@@ -1450,9 +1351,7 @@ NEWSLETTER READY STYLE
     margin-top:12px;
     width:100%;
 }
-/*==================================================
-RTL SUPPORT
-==================================================*/
+
 [dir="rtl"] .footer-column h3::after{
     left:auto;
     right:0;
@@ -1466,18 +1365,14 @@ RTL SUPPORT
 [dir="rtl"] .footer-social{
     justify-content:flex-start;
 }
-/*==================================================
-DARK MODE ICON COLORS
-==================================================*/
+
 [data-theme="dark"] .footer-social a{
     background:var(--surface2);
 }
 [data-theme="dark"] .footer-contact li svg,
 [data-theme="dark"] .footer-social a{
     color:var(--primary);
-}/*==================================================
-FOOTER BOTTOM
-==================================================*/
+}
 .footer-bottom{
     border-top:1px solid var(--border);
     padding:25px 0;
@@ -1496,9 +1391,7 @@ FOOTER BOTTOM
     color:var(--text2);
     font-size:.9rem;
 }
-/*==================================================
-FOOTER BOTTOM LINKS
-==================================================*/
+
 .footer-links{
     display:flex;
     align-items:center;
@@ -1516,9 +1409,7 @@ FOOTER BOTTOM LINKS
 .footer-links span{
     color:var(--border);
 }
-/*==================================================
-FOOTER IMAGE / LEAF DECORATION
-==================================================*/
+
 .site-footer::after{
     content:"";
     position:absolute;
@@ -1534,9 +1425,7 @@ FOOTER IMAGE / LEAF DECORATION
     );
     border-radius:50%;
 }
-/*==================================================
-FOOTER HOVER EFFECTS
-==================================================*/
+
 .footer-brand:hover .logo-icon{
     box-shadow:
     0 15px 35px rgba(27,94,32,.25);
@@ -1544,9 +1433,7 @@ FOOTER HOVER EFFECTS
 .footer-column:hover h3{
     color:var(--primary);
 }
-/*==================================================
-SMOOTH ICON ANIMATION
-==================================================*/
+
 .footer-column svg,
 .footer-social svg{
     transition:.35s ease;
@@ -1554,9 +1441,7 @@ SMOOTH ICON ANIMATION
 .footer-column li:hover svg{
     transform:translateY(-3px);
 }
-/*==================================================
-BUTTON STYLE IF NEWSLETTER ADDED
-==================================================*/
+
 .footer-newsletter button{
     height:48px;
     border:none;
@@ -1571,9 +1456,7 @@ BUTTON STYLE IF NEWSLETTER ADDED
     background:var(--primary-hover);
     transform:translateY(-3px);
 }
-/*==================================================
-FOOTER DARK MODE
-==================================================*/
+
 [data-theme="dark"] .footer-bottom{
     background:var(--bg2);
 }
@@ -1584,10 +1467,7 @@ FOOTER DARK MODE
 [data-theme="dark"] .footer-links span{
     color:var(--border);
 }
-/*==================================================
-LARGE DESKTOP
-1280px+
-==================================================*/
+
 @media(max-width:1280px){
 .footer-container{
     gap:35px;
@@ -1599,10 +1479,7 @@ LARGE DESKTOP
     font-size:1.8rem;
 }
 }
-/*==================================================
-DESKTOP TABLET
-1024px - 1280px
-==================================================*/
+
 @media(max-width:1024px){
 .footer-container{
     grid-template-columns:
@@ -1618,10 +1495,7 @@ DESKTOP TABLET
     text-align:center;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media(max-width:768px){
 .footer-container{
     grid-template-columns:
@@ -1639,10 +1513,7 @@ TABLET
     height:42px;
 }
 }
-/*==================================================
-MOBILE
-Below 640px
-==================================================*/
+
 @media(max-width:640px){
 .footer-container{
     grid-template-columns:1fr;
@@ -1681,10 +1552,7 @@ Below 640px
     justify-content:center;
 }
 }
-/*==================================================
-SMALL MOBILE
-360px
-==================================================*/
+
 @media(max-width:360px){
 .footer-container{
     padding:45px 15px;
@@ -1721,18 +1589,14 @@ SMALL MOBILE
 .footer-links a{
     font-size:.8rem;
 }
-}/*==================================================
-FOOTER ACCESSIBILITY
-==================================================*/
+}
 .footer-social a:focus,
 .footer-links a:focus,
 .footer-column a:focus{
     outline:2px solid var(--primary);
     outline-offset:4px;
 }
-/*==================================================
-FOOTER ANIMATION
-==================================================*/
+
 @keyframes footerFadeUp{
     from{
         opacity:0;
@@ -1758,9 +1622,7 @@ FOOTER ANIMATION
 .site-footer .footer-column:nth-child(5){
     animation-delay:.4s;
 }
-/*==================================================
-FOOTER LOGO PREMIUM EFFECT
-==================================================*/
+
 .footer-brand .logo{
     display:inline-flex;
     align-items:center;
@@ -1776,9 +1638,7 @@ FOOTER LOGO PREMIUM EFFECT
 .footer-brand .logo:hover .logo-icon{
     transform:rotate(8deg) scale(1.05);
 }
-/*==================================================
-FOOTER LINKS ARROW EFFECT
-==================================================*/
+
 .footer-column ul li a{
     position:relative;
     display:inline-flex;
@@ -1803,9 +1663,7 @@ FOOTER LINKS ARROW EFFECT
     left:auto;
     right:-12px;
 }
-/*==================================================
-FOOTER DIVIDER EFFECT
-==================================================*/
+
 .footer-column h3{
     position:relative;
     padding-bottom:12px;
@@ -1820,9 +1678,7 @@ FOOTER DIVIDER EFFECT
 .footer-column:hover h3::after{
     width:70px;
 }
-/*==================================================
-MOBILE TOUCH OPTIMIZATION
-==================================================*/
+
 @media(max-width:480px){
 .footer-column ul{
     gap:12px;
@@ -1838,10 +1694,7 @@ MOBILE TOUCH OPTIMIZATION
     height:40px;
 }
 }
-/*==================================================
-VERY SMALL DEVICES
-320px
-==================================================*/
+
 @media(max-width:320px){
 .footer-container{
     padding-left:12px;
@@ -1871,9 +1724,7 @@ VERY SMALL DEVICES
     gap:8px;
 }
 }
-/*==================================================
-REDUCED MOTION SUPPORT
-==================================================*/
+
 @media(prefers-reduced-motion:reduce){
 *,
 *::before,
@@ -1883,9 +1734,7 @@ REDUCED MOTION SUPPORT
     transition-duration:.01ms!important;
 }
 }
-/*==================================================
-PRINT STYLE
-==================================================*/
+
 @media print{
 .site-footer{
     background:#fff!important;
@@ -1899,9 +1748,7 @@ PRINT STYLE
     color:#000!important;
 }
 }
-/*==================================
-BUTTON OUTLINE
-==================================*/
+
 .btn-outline{
     display:inline-flex;
     align-items:center;
@@ -1941,9 +1788,7 @@ BUTTON OUTLINE
     outline:3px solid rgba(141,110,99,.25);
     outline-offset:3px;
 }
-/*==================================================
-HERO RESPONSIVE SPACING
-==================================================*/
+
 @media (min-width:1281px){
     .hero,
     .contact-hero,
@@ -2003,9 +1848,7 @@ HERO RESPONSIVE SPACING
     .shop-hero{
         padding:110px 0 60px;
     }
-}/*==================================================
-HERO IMAGE RESPONSIVE FIX
-==================================================*/
+}
 .contact-hero{
     position:relative;
     overflow:hidden;
@@ -2028,10 +1871,7 @@ HERO IMAGE RESPONSIVE FIX
     display:block;
     object-fit:cover;
     object-position:center;
-}/*==================================================
-NAVBAR FIX OVERRIDE
-Place at the END of com.css
-==================================================*/
+}
 .site-header{
     top:0 !important;
     left:0;
@@ -2128,9 +1968,7 @@ Place at the END of com.css
     margin-top:0;
     top:calc(100% + 8px);
 }
-/*=========================
-Tablet
-=========================*/
+
 @media (max-width:1023px){
     .site-header{
         top:0 !important;
@@ -2156,9 +1994,7 @@ Tablet
         font-size:1.35rem !important;
     }
 }
-/*=========================
-Mobile
-=========================*/
+
 @media (max-width:639px){
     .site-header{
         top:0px !important;
@@ -2189,9 +2025,7 @@ Mobile
         width:38px !important;
         height:38px !important;
     }
-}/*==================================================
-1024px DESKTOP NAVBAR FIX
-==================================================*/
+}
 @media (min-width:1024px) and (max-width:1280px){
     .site-header{
         top:0px !important;
@@ -2267,9 +2101,7 @@ Mobile
         display:none;
     }
 }
-/* ==========================================================
-   RTL TOGGLE ICON COLOR
-========================================================== */
+
 #rtlToggle i{
     color:var(--primary);
     font-size:18px;
@@ -2286,9 +2118,7 @@ Mobile
 }
 .dark-mode #rtlToggle:hover i{
     color:#ffffff;
-}/*==================================================
-FOOTER SOCIAL ICONS FIX
-==================================================*/
+}
 .footer-social a{
     width:45px;
     height:45px;
@@ -2336,9 +2166,7 @@ FOOTER SOCIAL ICONS FIX
 }
 [data-theme="dark"] .footer-social a:hover i{
     color:#ffffff;
-}/*==================================================
-   BLOOMNEST FOOTER BACKGROUND
-==================================================*/
+}
 .site-footer{
     background:var(--bg3);
     border-top:1px solid var(--border);
@@ -2473,9 +2301,7 @@ FOOTER SOCIAL ICONS FIX
         flex-wrap:wrap;
     }
 }
- /*==================================================
- REMOVE FOOTER CLICK BOX COMPLETELY
-==================================================*/
+
 footer *,
 .footer *,
 .footer-links *,
@@ -2505,9 +2331,7 @@ footer a:active,
 }
 footer a::-moz-focus-inner{
     border:0 !important;
-}/*==================================================
-FOOTER LIST COMPACT SPACING
-==================================================*/
+}
 footer ul,
 .footer ul{
     padding:0;
@@ -2542,10 +2366,7 @@ footer ul li a,
 .footer ul li a{
     padding:2px 0;
 }
-}/*==================================================
-TABLET (640px - 768px)
-Footer Brand Center Fix
-==================================================*/
+}
 @media (min-width:641px) and (max-width:768px){
 
     .footer-container{
@@ -2554,7 +2375,7 @@ Footer Brand Center Fix
         padding:60px 0;
     }
 
-    /* Brand section */
+  
     .footer-brand{
         grid-column:1 / -1;
         max-width:500px;
@@ -2574,7 +2395,7 @@ Footer Brand Center Fix
         justify-content:center;
     }
 
-    /* Center remaining columns */
+  
     .footer-column{
         text-align:center;
     }
@@ -2596,10 +2417,7 @@ Footer Brand Center Fix
         justify-content:center;
         text-align:center;
     }
-}/*==================================================
-FOOTER FIX
-768px - 1024px
-==================================================*/
+}
 @media (min-width:769px) and (max-width:1024px){
 
     .footer-container{
@@ -2610,7 +2428,7 @@ FOOTER FIX
         justify-content:center;
     }
 
-    /* Brand section full width */
+
     .footer-brand{
         grid-column:1 / -1;
         max-width:700px;
@@ -2666,9 +2484,7 @@ FOOTER FIX
         justify-content:center;
         flex-wrap:wrap;
     }
-}/*==================================================
-MOBILE DROPDOWN ARROW
-==================================================*/
+}
 .mobile-nav details summary{
     position:relative;
     display:flex;
@@ -2701,4 +2517,19 @@ MOBILE DROPDOWN ARROW
     .mobile-nav details summary::after{
         display:none;
     }
+}
+
+.rating{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.rating i,
+.rating svg{
+    width:18px;
+    height:18px;
+    color:#fbbf24;
+    fill:#fbbf24;
+    stroke:#fbbf24;
 }

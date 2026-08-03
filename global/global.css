@@ -1,10 +1,4 @@
-/*==================================================
-BLOOMNEST GLOBAL CSS
-PART 1 - ROOT, RESET & TYPOGRAPHY
-==================================================*/
-/*==================================================
-ROOT VARIABLES
-==================================================*/
+
 :root{
     --primary:#1B5E20;
     --primary-hover:#14471A;
@@ -42,9 +36,7 @@ ROOT VARIABLES
     --container:1320px;
     --transition:.35s ease;
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 html.dark-mode{
     --bg:#121212;
     --bg2:#181818;
@@ -65,9 +57,7 @@ html.dark-mode{
     --shadow-lg:0 20px 70px rgba(0,0,0,.55);
     --shadow-xl:0 30px 90px rgba(0,0,0,.65);
 }
-/*==================================================
-RESET
-==================================================*/
+
 *,
 *::before,
 *::after{
@@ -136,9 +126,7 @@ iframe{
     background:var(--primary);
     color:#fff;
 }
-/*==================================================
-TYPOGRAPHY
-==================================================*/
+
 h1,
 h2,
 h3,
@@ -196,13 +184,7 @@ code{
     color:var(--primary);
     padding:.2rem .45rem;
     border-radius:6px;
-}/*==================================================
-BLOOMNEST GLOBAL CSS
-PART 2 - LAYOUT & UTILITIES
-==================================================*/
-/*==================================================
-CONTAINERS
-==================================================*/
+}
 .container{
     width:min(var(--container),92%);
     margin-inline:auto;
@@ -223,9 +205,7 @@ CONTAINERS
     width:100%;
     padding-inline:40px;
 }
-/*==================================================
-SECTIONS
-==================================================*/
+
 section{
     position:relative;
     padding:100px 0;
@@ -239,9 +219,7 @@ section{
 .section-xl{
     padding:180px 0;
 }
-/*==================================================
-SECTION HEADER
-==================================================*/
+
 .section-header{
     max-width:760px;
     margin:0 auto 70px;
@@ -269,9 +247,7 @@ SECTION HEADER
     margin:auto;
     color:var(--text2);
 }
-/*==================================================
-GRID SYSTEM
-==================================================*/
+
 .grid{
     display:grid;
     gap:30px;
@@ -291,9 +267,7 @@ GRID SYSTEM
 .grid-auto{
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
-/*==================================================
-FLEX UTILITIES
-==================================================*/
+
 .flex{
     display:flex;
 }
@@ -345,9 +319,7 @@ FLEX UTILITIES
 .justify-evenly{
     justify-content:space-evenly;
 }
-/*==================================================
-GAP UTILITIES
-==================================================*/
+
 .gap-5{gap:5px;}
 .gap-10{gap:10px;}
 .gap-15{gap:15px;}
@@ -357,9 +329,7 @@ GAP UTILITIES
 .gap-40{gap:40px;}
 .gap-50{gap:50px;}
 .gap-60{gap:60px;}
-/*==================================================
-WIDTH & HEIGHT
-==================================================*/
+
 .w-100{width:100%;}
 .w-auto{width:auto;}
 .h-100{height:100%;}
@@ -367,18 +337,14 @@ WIDTH & HEIGHT
 .min-vh-100{
     min-height:100vh;
 }
-/*==================================================
-DISPLAY
-==================================================*/
+
 .d-block{display:block;}
 .d-inline{display:inline;}
 .d-inline-block{display:inline-block;}
 .d-flex{display:flex;}
 .d-grid{display:grid;}
 .d-none{display:none;}
-/*==================================================
-TEXT ALIGNMENT
-==================================================*/
+
 .text-left{text-align:left;}
 .text-center{text-align:center;}
 .text-right{text-align:right;}
@@ -394,9 +360,7 @@ TEXT ALIGNMENT
 .text-light{
     color:var(--text3);
 }
-/*==================================================
-BACKGROUND UTILITIES
-==================================================*/
+
 .bg-primary{
     background:var(--primary);
     color:#fff;
@@ -414,9 +378,7 @@ BACKGROUND UTILITIES
 .bg-soft{
     background:var(--bg-soft);
 }
-/*==================================================
-BORDER RADIUS
-==================================================*/
+
 .radius-xs{border-radius:var(--radius-xs);}
 .radius-sm{border-radius:var(--radius-sm);}
 .radius-md{border-radius:var(--radius-md);}
@@ -424,9 +386,7 @@ BORDER RADIUS
 .radius-lg{border-radius:var(--radius-lg);}
 .radius-xl{border-radius:var(--radius-xl);}
 .radius-round{border-radius:var(--radius-round);}
-/*==================================================
-SHADOW UTILITIES
-==================================================*/
+
 .shadow-sm{
     box-shadow:var(--shadow-sm);
 }
@@ -441,13 +401,7 @@ SHADOW UTILITIES
 }
 .shadow-xl{
     box-shadow:var(--shadow-xl);
-}/*==================================================
-BLOOMNEST GLOBAL CSS
-PART 3 - BUTTONS, FORMS & COMMON COMPONENTS
-==================================================*/
-/*==================================================
-BUTTONS
-==================================================*/
+}
 .btn{
     display:inline-flex;
     align-items:center;
@@ -530,9 +484,7 @@ BUTTONS
 .btn-block{
     width:100%;
 }
-/*==================================================
-FORMS
-==================================================*/
+
 .form-group{
     margin-bottom:24px;
 }
@@ -575,17 +527,13 @@ select:disabled{
     opacity:.6;
     cursor:not-allowed;
 }
-/*==================================================
-CHECKBOX & RADIO
-==================================================*/
+
 input[type="checkbox"],
 input[type="radio"]{
     width:18px;
     accent-color:var(--primary);
 }
-/*==================================================
-SEARCH FIELD
-==================================================*/
+
 .search-box{
     position:relative;
 }
@@ -599,9 +547,7 @@ SEARCH FIELD
     transform:translateY(-50%);
     color:var(--primary);
 }
-/*==================================================
-COMMON LISTS
-==================================================*/
+
 .list-check{
     display:grid;
     gap:14px;
@@ -631,9 +577,7 @@ COMMON LISTS
     height:18px;
     color:var(--secondary);
 }
-/*==================================================
-DIVIDERS
-==================================================*/
+
 .divider{
     width:100%;
     height:1px;
@@ -648,9 +592,7 @@ DIVIDERS
 .divider-sm{
     margin:20px 0;
 }
-/*==================================================
-BREADCRUMB
-==================================================*/
+
 .breadcrumb{
     display:flex;
     align-items:center;
@@ -666,9 +608,7 @@ BREADCRUMB
 .breadcrumb span{
     color:var(--text3);
 }
-/*==================================================
-PAGINATION
-==================================================*/
+
 .pagination{
     display:flex;
     justify-content:center;
@@ -692,9 +632,7 @@ PAGINATION
     border-color:var(--primary);
     color:#fff;
 }
-/*==================================================
-LOADER
-==================================================*/
+
 .spinner{
     width:40px;
     height:40px;
@@ -707,13 +645,7 @@ LOADER
     to{
         transform:rotate(360deg);
     }
-}/*==================================================
-BLOOMNEST GLOBAL CSS
-PART 4 - CARDS, BADGES, TABLES & MEDIA
-==================================================*/
-/*==================================================
-COMMON CARD
-==================================================*/
+}
 .card{
     background:var(--surface);
     border:1px solid var(--border);
@@ -767,9 +699,7 @@ COMMON CARD
 .card-link:hover{
     color:var(--primary-hover);
 }
-/*==================================================
-BADGES
-==================================================*/
+
 .badge{
     display:inline-flex;
     align-items:center;
@@ -801,9 +731,7 @@ BADGES
     background:rgba(211,47,47,.12);
     color:var(--danger);
 }
-/*==================================================
-PRICE
-==================================================*/
+
 .price{
     align-items:center;
     gap:12px;
@@ -821,9 +749,7 @@ PRICE
     color:var(--secondary);
     font-weight:700;
 }
-/*==================================================
-RATING
-==================================================*/
+
 .rating{
     display:flex;
     align-items:center;
@@ -839,9 +765,7 @@ RATING
     color:var(--text2);
     font-size:.9rem;
 }
-/*==================================================
-TABLES
-==================================================*/
+
 .table{
     width:100%;
     border-collapse:collapse;
@@ -863,9 +787,7 @@ TABLES
 .table tbody tr:hover{
     background:var(--bg-soft);
 }
-/*==================================================
-IMAGE HELPERS
-==================================================*/
+
 .img-cover{
     width:100%;
     height:100%;
@@ -885,9 +807,7 @@ IMAGE HELPERS
 .img-shadow{
     box-shadow:var(--shadow-lg);
 }
-/*==================================================
-AVATAR
-==================================================*/
+
 .avatar{
     width:60px;
     height:60px;
@@ -907,9 +827,7 @@ AVATAR
     width:90px;
     height:90px;
 }
-/*==================================================
-ICON BOX
-==================================================*/
+
 .icon-box{
     width:70px;
     height:70px;
@@ -928,26 +846,20 @@ ICON BOX
     background:var(--secondary-soft);
     color:var(--secondary);
 }
-/*==================================================
-DIVIDER
-==================================================*/
+
 .hr{
     width:100%;
     height:1px;
     background:var(--border);
     border:none;
 }
-/*==================================================
-OVERFLOW
-==================================================*/
+
 .overflow-hidden{
     overflow:hidden;
 }
 .overflow-auto{
     overflow:auto;
-}/*==================================================
-ANIMATIONS
-==================================================*/
+}
 @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(40px);}to{opacity:1;transform:translateY(0);}}
 @keyframes fadeLeft{from{opacity:0;transform:translateX(-40px);}to{opacity:1;transform:translateX(0);}}
@@ -958,9 +870,7 @@ ANIMATIONS
 .animate-left{animation:fadeLeft .8s ease both;}
 .animate-right{animation:fadeRight .8s ease both;}
 .animate-zoom{animation:zoomIn .8s ease both;}
-/*==================================================
-LUCIDE ICONS
-==================================================*/
+
 svg.lucide{
 display:inline-block;
 width:20px;
@@ -983,9 +893,7 @@ color:currentColor;
 width:18px;
 height:18px;
 }
-/*==================================================
-FOOTER
-==================================================*/
+
 .footer-social{
 display:flex;
 gap:12px;
@@ -1019,9 +927,7 @@ width:18px;
 height:18px;
 color:var(--secondary);
 }
-/*==================================================
-COMMON ICONS
-==================================================*/
+
 .about-floating-card>svg,
 .stat-card>svg{
 width:40px;
@@ -1054,9 +960,7 @@ width:40px;
 height:40px;
 color:var(--secondary);
 }
-/*==================================================
-SCROLLBAR
-==================================================*/
+
 ::-webkit-scrollbar{
 width:10px;
 }
@@ -1070,23 +974,17 @@ border-radius:20px;
 ::-webkit-scrollbar-thumb:hover{
 background:var(--secondary);
 }
-/*==================================================
-SELECTION
-==================================================*/
+
 ::selection{
 background:var(--primary);
 color:#fff;
 }
-/*==================================================
-FOCUS
-==================================================*/
+
 :focus-visible{
 outline:3px solid rgba(27,94,32,.25);
 outline-offset:3px;
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(min-width:1281px){
 .container{max-width:1320px;}
 }
@@ -1132,10 +1030,7 @@ height:28px;
 .show-mobile{
 display:none!important;
 }
-}/*==================================================
-PART 6
-FORMS
-==================================================*/
+}
 .form-group{
 margin-bottom:24px;
 }
@@ -1196,9 +1091,7 @@ width:18px;
 height:18px;
 accent-color:var(--primary);
 }
-/*==================================================
-TABLES
-==================================================*/
+
 .table{
 width:100%;
 border-collapse:collapse;
@@ -1237,9 +1130,7 @@ background:var(--bg2);
 .table-responsive{
 overflow-x:auto;
 }
-/*==================================================
-LIST STYLES
-==================================================*/
+
 .list{
 display:flex;
 flex-direction:column;
@@ -1264,9 +1155,7 @@ color:var(--primary);
 .cross-list li svg{
 color:var(--danger);
 }
-/*==================================================
-SECTION HEADER
-==================================================*/
+
 .section-header{
 max-width:760px;
 margin:0 auto 70px;
@@ -1294,9 +1183,7 @@ max-width:650px;
 margin:auto;
 color:var(--text2);
 }
-/*==================================================
-HELPER CLASSES
-==================================================*/
+
 .text-primary{
 color:var(--primary);
 }
@@ -1376,10 +1263,7 @@ padding-top:0;
 }
 .pb-0{
 padding-bottom:0;
-}/*==================================================
-PART 7
-ANIMATIONS
-==================================================*/
+}
 @keyframes fadeIn{
 from{opacity:0;}
 to{opacity:1;}
@@ -1474,9 +1358,7 @@ animation:float 4s ease-in-out infinite;
 .animate-rotate{
 animation:rotate 12s linear infinite;
 }
-/*==================================================
-SCROLLBAR
-==================================================*/
+
 ::-webkit-scrollbar{
 width:10px;
 height:10px;
@@ -1491,23 +1373,17 @@ border-radius:999px;
 ::-webkit-scrollbar-thumb:hover{
 background:var(--primary-hover);
 }
-/*==================================================
-TEXT SELECTION
-==================================================*/
+
 ::selection{
 background:var(--primary);
 color:#fff;
 }
-/*==================================================
-FOCUS
-==================================================*/
+
 :focus-visible{
 outline:3px solid rgba(27,94,32,.25);
 outline-offset:3px;
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media (min-width:1281px){
 .container{
 max-width:1320px;
@@ -1600,10 +1476,7 @@ display:block!important;
 .show-mobile{
 display:none!important;
 }
-}/*==================================================
-PART 8
-LUCIDE ICONS
-==================================================*/
+}
 svg.lucide{
 display:inline-block;
 width:20px;
@@ -1639,9 +1512,7 @@ color:var(--primary);
 .icon-secondary{
 color:var(--secondary);
 }
-/*==================================================
-FOOTER
-==================================================*/
+
 .footer-social{
 display:flex;
 align-items:center;
@@ -1690,9 +1561,7 @@ transition:all var(--transition);
 color:var(--primary);
 padding-left:6px;
 }
-/*==================================================
-COMMON ICONS
-==================================================*/
+
 .about-floating-card>svg{
 width:38px;
 height:38px;
@@ -1738,9 +1607,7 @@ width:42px;
 height:42px;
 color:var(--secondary);
 }
-/*==================================================
-DARK MODE FIXES
-==================================================*/
+
 .dark-mode .footer-social a{
 background:rgba(255,255,255,.06);
 color:var(--primary);
@@ -1755,9 +1622,7 @@ color:var(--text2);
 .dark-mode .footer-links a:hover{
 color:var(--primary);
 }
-/*==================================================
-DESKTOP FONT OPTIMIZATION
-==================================================*/
+
 @media(min-width:1024px){
 body{
 font-size:15px;
@@ -1805,9 +1670,7 @@ font-size:18px;
 font-size:14px;
 }
 }
-/*==================================================
-MOBILE ICONS
-==================================================*/
+
 @media(max-width:640px){
 svg.lucide{
 width:18px;
@@ -1834,9 +1697,7 @@ width:18px;
 height:18px;
 }
 }
-/*==================================================
-PRINT
-==================================================*/
+
 @media print{
 body{
 background:#fff!important;
@@ -1854,12 +1715,7 @@ text-decoration:none;
 color:#000;
 }
 }
-/*==================================================
-END OF GLOBAL CSS
-BloomNest Premium Gardening Store
-==================================================*//* ==========================================================
-   SECTION TAG - PREMIUM STYLE
-========================================================== */
+
 .section-tag{
     display:inline-flex;
     align-items:center;
@@ -1879,11 +1735,9 @@ BloomNest Premium Gardening Store
 .section-tag svg{
     width:18px;
     height:18px;
-    color:var(--secondary);
+  
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .section-tag{
     color:
     var(--secondary);
@@ -1896,11 +1750,7 @@ BloomNest Premium Gardening Store
     color:
     var(--secondary);
 }
-/* ==========================================================
-   BLOOMNEST NAVBAR SMALL DESKTOP VIEW
-   Desktop : 1024px - 1280px
-   Large   : Above 1280px
-========================================================== */
+
 @media (min-width:1024px){
     .navbar{
         padding:12px 0;
@@ -1945,10 +1795,7 @@ BloomNest Premium Gardening Store
         height:17px;
     }
 }
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media (min-width:1281px){
     .navbar{
         padding:14px 0;
@@ -1970,10 +1817,7 @@ BloomNest Premium Gardening Store
         padding:11px 24px;
         font-size:14px;
     }
-}/* ==========================================================
-   HEADER BUTTON SIZE + SECONDARY BUTTON
-   Desktop View
-========================================================== */
+}
 @media (min-width:1024px){
 .navbar .btn,
 .header-actions .btn{
@@ -2024,10 +1868,7 @@ BloomNest Premium Gardening Store
     color:var(--primary);
 }
 }
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media (min-width:1281px){
 .navbar .btn,
 .header-actions .btn{
@@ -2036,9 +1877,7 @@ BloomNest Premium Gardening Store
     font-size:14px;
 }
 }
-/*==================================================
-GLOBAL HERO ANIMATION
-==================================================*/
+
 .animated-hero{
     position:relative;
     overflow:hidden;
@@ -2246,9 +2085,7 @@ height:350px;
 transform:scale(.7);
 }
 }
-/*==================================================
-HERO EMPHASIS TEXT
-==================================================*/
+
 .about-hero-content h1 em,
 .service-hero-content h1 em,
 .premium-hero-content h1 em,
@@ -2260,9 +2097,7 @@ HERO EMPHASIS TEXT
     display:inline-block;
     font-weight:800;
 }
-/*==================================================
-FLOATING LEAVES ANIMATION
-==================================================*/
+
 .animated-hero{
     position:relative;
     overflow:hidden;
@@ -2322,9 +2157,7 @@ FLOATING LEAVES ANIMATION
         rotate(360deg);
     }
 }
-/* ==========================================
-PREMIUM THICK FLOATING LEAVES
-========================================== */
+
 .hero-animation{
     position:absolute;
     inset:0;

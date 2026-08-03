@@ -1,9 +1,4 @@
-/* ==================================================
-   BLOOMNEST BLOG PAGE CSS
-================================================== */
-/* ==================================================
-   BLOG HERO
-================================================== */
+
 .blog-hero{
     padding:120px 0 80px;
     background:
@@ -30,9 +25,7 @@
     color:var(--text-muted);
     line-height:1.8;
 }
-/* ================================
-BLOG SEARCH
-================================ */
+
 .blog-search{
     max-width:650px;
     margin:auto;
@@ -63,9 +56,7 @@ BLOG SEARCH
 .blog-search svg{
     width:20px;
 }
-/* ==================================================
-BLOG CATEGORY
-================================================== */
+
 .blog-category{
     padding:40px 0;
 }
@@ -91,9 +82,7 @@ BLOG CATEGORY
     color:white;
     border-color:var(--primary);
 }
-/* ==================================================
-FEATURED BLOG
-================================================== */
+
 .featured-blog{
     padding:80px 0;
 }
@@ -141,9 +130,7 @@ FEATURED BLOG
     color:var(--text-muted);
     margin-bottom:25px;
 }
-/* ================================
-BLOG META
-================================ */
+
 .blog-meta{
     display:flex;
     gap:25px;
@@ -159,9 +146,7 @@ BLOG META
 .blog-meta svg{
     width:16px;
 }
-/* ==================================================
-   BLOG POSTS SECTION
-================================================== */
+
 .blog-posts{
     padding:80px 0;
     background:var(--soft);
@@ -172,9 +157,7 @@ BLOG META
     repeat(3,1fr);
     gap:30px;
 }
-/* ==================================================
-   BLOG CARD
-================================================== */
+
 .blog-card{
     background:var(--white);
     border-radius:22px;
@@ -187,9 +170,7 @@ BLOG META
     box-shadow:
     0 20px 45px rgba(0,0,0,.12);
 }
-/* ================================
-BLOG IMAGE
-================================ */
+
 .blog-image{
     height:260px;
     position:relative;
@@ -215,9 +196,7 @@ BLOG IMAGE
     border-radius:50px;
     font-size:12px;
 }
-/* ================================
-BLOG CONTENT
-================================ */
+
 .blog-content{
     padding:28px;
 }
@@ -247,9 +226,7 @@ BLOG CONTENT
 .blog-content a svg{
     width:17px;
 }
-/* ==================================================
-   NEWSLETTER SECTION
-================================================== */
+
 .blog-newsletter{
     padding:80px 0;
 }
@@ -293,9 +270,7 @@ BLOG CONTENT
 .newsletter-form button{
     white-space:nowrap;
 }
-/* ==================================================
-BLOG CTA
-================================================== */
+
 .blog-cta{
     padding:100px 0;
 }
@@ -336,10 +311,7 @@ BLOG CTA
     height:100%;
     object-fit:cover;
 }
-/* ==================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-================================================== */
+
 @media(min-width:1281px){
 .blog-hero h1{
     font-size:72px;
@@ -357,10 +329,7 @@ BLOG CTA
     padding:70px;
 }
 }
-/* ==================================================
-   DESKTOP
-   1024px - 1280px
-================================================== */
+
 @media(min-width:1024px) and (max-width:1280px){
 .container{
     max-width:1100px;
@@ -417,10 +386,7 @@ BLOG CTA
     height:360px;
 }
 }
-/* ==================================================
-   TABLET
-   640px - 1023px
-================================================== */
+
 @media(min-width:640px) and (max-width:1023px){
 .blog-hero{
     padding:80px 0 60px;
@@ -459,10 +425,7 @@ BLOG CTA
     order:-1;
 }
 }
-/* ==================================================
-   MOBILE
-   BELOW 640px
-================================================== */
+
 @media(max-width:639px){
 .blog-hero{
     padding:70px 0 50px;
@@ -560,9 +523,7 @@ BLOG CTA
     height:280px;
 }
 }
-/* ==========================================================
-   ABOUT DARK MODE VARIABLE FIX
-========================================================== */
+
 html.dark-mode .about-hero,
 html.dark-mode .about-story,
 html.dark-mode .about-stats,
@@ -577,9 +538,7 @@ html.dark-mode .journey-section,
 html.dark-mode .about-cta{
     background:var(--bg2);
 }
-/* ==========================================================
-   TEXT COLOR FIX
-========================================================== */
+
 html.dark-mode .about-hero-content h1,
 html.dark-mode .story-content h2,
 html.dark-mode .why-content h2,
@@ -598,9 +557,7 @@ html.dark-mode .testimonial-card p,
 html.dark-mode .newsletter-box p{
     color:var(--text2);
 }
-/* ==========================================================
-   CARD CONSISTENCY
-========================================================== */
+
 html.dark-mode .mission-card,
 html.dark-mode .stat-card,
 html.dark-mode .why-item,
@@ -611,9 +568,7 @@ html.dark-mode .newsletter-box{
     background:var(--surface);
     border-color:var(--border);
 }
-/* ==========================================================
-   ICON COLOR POLISH
-========================================================== */
+
 html.dark-mode .mission-icon,
 html.dark-mode .newsletter-icon{
     background:var(--primary-soft);
@@ -624,16 +579,12 @@ html.dark-mode .stat-card svg,
 html.dark-mode .why-item svg{
     color:var(--secondary);
 }
-/* ==========================================================
-   TAG COLOR
-========================================================== */
+
 html.dark-mode .section-tag{
     background:var(--primary-soft);
     color:var(--text);
 }
-/* ==========================================================
-   IMAGE DARK MODE
-========================================================== */
+
 html.dark-mode img{
     filter:brightness(.94);
 }
@@ -643,9 +594,7 @@ html.dark-mode .why-image img,
 html.dark-mode .cta-image img{
     filter:brightness(.9);
 }
-/* ==========================================================
-   TIMELINE
-========================================================== */
+
 html.dark-mode .timeline-year{
     background:var(--secondary);
     color:#ffffff;
@@ -653,9 +602,7 @@ html.dark-mode .timeline-year{
 html.dark-mode .timeline::before{
     background:var(--border);
 }
-/* ==========================================================
-   SOCIAL ICONS
-========================================================== */
+
 html.dark-mode .team-social a{
     background:var(--surface-hover);
     color:var(--text);
@@ -664,9 +611,7 @@ html.dark-mode .team-social a:hover{
     background:var(--secondary);
     color:#ffffff;
 }
-/* ==================================================
-BLOG HERO SECTION
-================================================== */
+
 .blog-hero{
     position:relative;
     padding:120px 0;
@@ -735,9 +680,7 @@ BLOG HERO SECTION
 .blog-hero-image:hover img{
     transform:scale(1.05);
 }
-/* ==================================================
-DARK MODE
-================================================== */
+
 [data-theme="dark"] .blog-hero{
     background:var(--dark-bg);
 }
@@ -750,10 +693,7 @@ DARK MODE
 [data-theme="dark"] .blog-hero::before{
     background:rgba(255,255,255,0.05);
 }
-/* ==================================================
-TABLET
-1024px - 1280px
-================================================== */
+
 @media(max-width:1280px){
 .blog-hero{
     padding:100px 0;
@@ -768,10 +708,7 @@ TABLET
     height:480px;
 }
 }
-/* ==================================================
-TABLET
-640px - 1024px
-================================================== */
+
 @media(max-width:1024px){
 .blog-hero-grid{
     grid-template-columns:1fr;
@@ -794,10 +731,7 @@ TABLET
     margin:auto;
 }
 }
-/* ==================================================
-MOBILE
-< 640px
-================================================== */
+
 @media(max-width:640px){
 .blog-hero{
     padding:70px 0;
@@ -820,9 +754,7 @@ MOBILE
     height:320px;
     border-radius:22px;
 }
-}/* ==================================================
-BLOG NEWSLETTER SECTION
-================================================== */
+}
 .blog-newsletter{
     padding:100px 0;
     background:var(--bg-soft);
@@ -881,9 +813,7 @@ BLOG NEWSLETTER SECTION
     padding:0 28px;
     white-space:nowrap;
 }
-/* ==================================================
-DARK MODE
-================================================== */
+
 [data-theme="dark"] .blog-newsletter{
     background:var(--dark-bg);
 }
@@ -902,10 +832,7 @@ DARK MODE
     color:var(--dark-text);
     border-color:var(--dark-border);
 }
-/* ==================================================
-DESKTOP
-1024px - 1280px
-================================================== */
+
 @media(max-width:1280px){
 .newsletter-box{
     padding:50px;
@@ -917,10 +844,7 @@ DESKTOP
     min-width:380px;
 }
 }
-/* ==================================================
-TABLET
-640px - 1024px
-================================================== */
+
 @media(max-width:1024px){
 .newsletter-box{
     flex-direction:column;
@@ -934,10 +858,7 @@ TABLET
     min-width:auto;
 }
 }
-/* ==================================================
-MOBILE
-<640px
-================================================== */
+
 @media(max-width:640px){
 .blog-newsletter{
     padding:70px 0;
@@ -959,10 +880,7 @@ MOBILE
 .newsletter-form button{
     width:100%;
 }
-}/* ==================================================
-   BLOOMNEST BLOG - SECONDARY COLOR FIX
-   Add at END of CSS
-================================================== */
+}
 .blog-content a,
 .blog-content a:hover,
 .blog-meta span,
@@ -1009,13 +927,7 @@ MOBILE
 [data-theme="dark"] .blog-tag{
     background:var(--secondary);
     color:#ffffff;
-}/* ==================================================
-   BLOG DESKTOP RESPONSIVE FIX
-================================================== */
-/* ==================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-================================================== */
+}
 @media(min-width:1281px){
 .blog-hero-content h1{
     font-size:64px;
@@ -1048,10 +960,7 @@ MOBILE
     height:380px;
 }
 }
-/* ==================================================
-   DESKTOP VIEW
-   1024px - 1280px
-================================================== */
+
 @media(min-width:1024px) and (max-width:1280px){
 .blog-hero{
     padding:90px 0;
@@ -1129,10 +1038,7 @@ MOBILE
 .blog-cta .cta-image{
     height:340px;
 }
-}/* ==================================================
-   SMALL FONT DESKTOP VIEW
-   1024px - 1280px
-================================================== */
+}
 @media(min-width:1024px) and (max-width:1280px){
 .blog-hero-content h1{
     font-size:44px;
@@ -1174,10 +1080,7 @@ MOBILE
     font-size:14px;
 }
 }
-/* ==================================================
-   LARGE DESKTOP SMALL FONT
-   ABOVE 1280px
-================================================== */
+
 @media(min-width:1281px){
 .blog-hero-content h1{
     font-size:56px;
@@ -1197,9 +1100,7 @@ MOBILE
 .blog-cta h2{
     font-size:34px;
 }
-}/* ==================================================
-   READ MORE HOVER EFFECT
-================================================== */
+}
 .blog-content a{
     display:inline-flex;
     align-items:center;
@@ -1219,9 +1120,7 @@ MOBILE
 }
 .blog-content a:hover svg{
     transform:translateX(5px);
-}/* ==================================================
-   BLOG CARD TOP GRADIENT BORDER
-================================================== */
+}
 .blog-card{
     position:relative;
     overflow:hidden;

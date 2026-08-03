@@ -1,6 +1,4 @@
-/*==================================================
-CONTACT HERO
-==================================================*/
+
 .contact-hero{
     position:relative;
     min-height:100vh;
@@ -161,9 +159,7 @@ CONTACT HERO
 .breadcrumb span{
     color:#D7C38A;
 }
-/*==================================================
-CONTACT INFO
-==================================================*/
+
 .contact-info{
     background:var(--bg);
 }
@@ -258,9 +254,7 @@ CONTACT INFO
 .contact-card a:hover{
     color:var(--secondary);
 }
-/*==================================================
-ANIMATIONS
-==================================================*/
+
 @keyframes floatShape{
     0%,100%{
         transform:translateY(0);
@@ -268,9 +262,7 @@ ANIMATIONS
     50%{
         transform:translateY(-20px);
     }
-}/*==================================================
-CONTACT FORM SECTION
-==================================================*/
+}
 .contact-main{
     background:var(--bg2);
     position:relative;
@@ -281,9 +273,7 @@ CONTACT FORM SECTION
     gap:50px;
     align-items:start;
 }
-/*==================================================
-CONTACT FORM CARD
-==================================================*/
+
 .contact-form-card{
     background:var(--surface);
     border:1px solid var(--border);
@@ -298,9 +288,7 @@ CONTACT FORM CARD
     margin-bottom:40px;
     max-width:620px;
 }
-/*==================================================
-FORM
-==================================================*/
+
 .contact-form{
     width:100%;
 }
@@ -344,9 +332,7 @@ FORM
 .contact-form button{
     margin-top:12px;
 }
-/*==================================================
-CONTACT OPTIONS
-==================================================*/
+
 .contact-options{
     display:flex;
     flex-wrap:wrap;
@@ -373,9 +359,7 @@ CONTACT OPTIONS
     height:18px;
     accent-color:var(--primary);
 }
-/*==================================================
-SIDEBAR
-==================================================*/
+
 .contact-sidebar{
     display:flex;
     flex-direction:column;
@@ -394,9 +378,7 @@ SIDEBAR
 .sidebar-card p{
     margin-bottom:22px;
 }
-/*==================================================
-SUPPORT CARD
-==================================================*/
+
 .support-card{
     text-align:center;
     background:
@@ -436,9 +418,7 @@ SUPPORT CARD
 .support-card .btn:hover{
     background:#f6f6f6;
 }
-/*==================================================
-CHECK LIST
-==================================================*/
+
 .check-list{
     display:grid;
     gap:16px;
@@ -455,9 +435,7 @@ CHECK LIST
     color:var(--primary);
     flex-shrink:0;
 }
-/*==================================================
-QUICK CONTACT
-==================================================*/
+
 .quick-contact{
     display:grid;
     gap:18px;
@@ -477,9 +455,7 @@ QUICK CONTACT
     color:var(--text2);
     line-height:1.6;
 }
-/*==================================================
-SOCIAL LINKS
-==================================================*/
+
 .social-links{
     display:flex;
     flex-wrap:wrap;
@@ -505,9 +481,7 @@ SOCIAL LINKS
     width:20px;
     height:20px;
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .contact-wrapper{
     grid-template-columns:1fr;
@@ -525,9 +499,7 @@ RESPONSIVE
 }
 .sidebar-card{
     padding:24px;
-}/*==================================================
-GOOGLE MAP SECTION
-==================================================*/
+}
 .contact-map{
     background:var(--bg);
 }
@@ -589,9 +561,7 @@ GOOGLE MAP SECTION
     color:var(--text2);
     line-height:1.8;
 }
-/*==================================================
-FAQ SECTION
-==================================================*/
+
 .faq-section{
     background:var(--bg2);
 }
@@ -644,9 +614,7 @@ FAQ SECTION
     color:var(--text2);
     line-height:1.8;
 }
-/*==================================================
-NEWSLETTER CTA
-==================================================*/
+
 .newsletter-cta{
     padding:110px 0;
     background:
@@ -700,9 +668,7 @@ NEWSLETTER CTA
 .newsletter-form button:hover{
     background:var(--secondary-hover);
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .map-wrapper{
     grid-template-columns:1fr;
@@ -749,9 +715,7 @@ RESPONSIVE
 .contact-options label{
     width:100%;
 }
-}/*==================================================
-GOOGLE MAP SECTION
-==================================================*/
+}
 .contact-map{
     background:var(--bg);
 }
@@ -813,9 +777,7 @@ GOOGLE MAP SECTION
     color:var(--text2);
     line-height:1.8;
 }
-/*==================================================
-FAQ SECTION
-==================================================*/
+
 .faq-section{
     background:var(--bg2);
 }
@@ -868,9 +830,7 @@ FAQ SECTION
     color:var(--text2);
     line-height:1.8;
 }
-/*==================================================
-NEWSLETTER CTA
-==================================================*/
+
 .newsletter-cta{
     padding:110px 0;
     background:
@@ -924,9 +884,7 @@ NEWSLETTER CTA
 .newsletter-form button:hover{
     background:var(--secondary-hover);
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .map-wrapper{
     grid-template-columns:1fr;
@@ -966,14 +924,7 @@ RESPONSIVE
 .faq-answer{
     padding:0 20px 20px;
 }
-}/*==================================================
-RESPONSIVE MEDIA QUERIES
-BloomNest Contact Page
-==================================================*/
-/*==================================================
-LARGE DESKTOP
-Above 1280px
-==================================================*/
+}
 @media (min-width:1281px){
 .contact-hero{
 min-height:760px;
@@ -995,10 +946,7 @@ grid-template-columns:1.8fr 1fr;
 padding:70px;
 }
 }
-/*==================================================
-DESKTOP
-1024px - 1280px
-==================================================*/
+
 @media (max-width:1280px){
 .contact-hero{
 padding:170px 0 120px;
@@ -1025,10 +973,7 @@ height:520px;
 padding:55px;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media (max-width:1024px){
 .contact-hero{
 padding:150px 0 90px;
@@ -1099,10 +1044,7 @@ max-width:600px;
 margin:auto;
 }
 }
-/*==================================================
-MOBILE
-Below 640px
-==================================================*/
+
 @media (max-width:640px){
 .contact-hero{
 padding:120px 0 70px;
@@ -1208,10 +1150,7 @@ width:100%;
 display:none;
 }
 }
-/*==================================================
-SMALL MOBILE
-Below 480px
-==================================================*/
+
 @media (max-width:480px){
 .contact-hero{
 padding-top:110px;
@@ -1252,9 +1191,7 @@ font-size:28px;
 font-size:14px;
 }
 }
-/*==================================================
-PRINT
-==================================================*/
+
 @media print{
 .contact-hero,
 .newsletter-cta,
@@ -1282,10 +1219,7 @@ body{
 background:#fff;
 color:#000;
 }
-}/*==================================================
-EXTRA SMALL MOBILE
-360px and Below
-==================================================*/
+}
 @media (max-width:360px){
 html{
     font-size:14px;
@@ -1484,9 +1418,7 @@ html{
     height:16px;
 }
 }
-/*==================================================
-DESKTOP HERO IMPROVEMENTS
-==================================================*/
+
 .contact-hero{
     position:relative;
     min-height:100vh;
@@ -1538,14 +1470,7 @@ DESKTOP HERO IMPROVEMENTS
 .breadcrumb{
     justify-content:center;
     margin-top:40px;
-}/*==================================================
-BLOOMNEST CONTACT PAGE FIXES
-Premium Card Border + Hero + Alignment
-Add at the END of contact.css
-==================================================*/
-/*==================================================
-HERO FIX
-==================================================*/
+}
 .contact-hero{
     position:relative;
     min-height:90vh;
@@ -1601,9 +1526,7 @@ HERO FIX
     justify-content:center;
     margin-top:35px;
 }
-/*==================================================
-SECTION SPACING
-==================================================*/
+
 .contact-info,
 .contact-main,
 .contact-map,
@@ -1611,9 +1534,7 @@ SECTION SPACING
 .newsletter-cta{
     padding:100px 0;
 }
-/*==================================================
-CONTACT GRID
-==================================================*/
+
 .contact-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -1626,9 +1547,7 @@ CONTACT GRID
     justify-content:flex-start;
     height:100%;
 }
-/*==================================================
-CONTACT MAIN ALIGNMENT
-==================================================*/
+
 .contact-wrapper{
     display:grid;
     grid-template-columns:minmax(0,2fr) minmax(320px,.9fr);
@@ -1645,9 +1564,7 @@ CONTACT MAIN ALIGNMENT
 .sidebar-card{
     height:100%;
 }
-/*==================================================
-MAP ALIGNMENT
-==================================================*/
+
 .map-wrapper{
     display:grid;
     grid-template-columns:1.7fr .9fr;
@@ -1669,9 +1586,7 @@ MAP ALIGNMENT
 .location-card{
     height:100%;
 }
-/*==================================================
-DESKTOP
-==================================================*/
+
 @media (max-width:1280px){
 .contact-hero{
     padding:130px 0 80px;
@@ -1689,9 +1604,7 @@ DESKTOP
     grid-template-columns:1fr;
 }
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media (max-width:1024px){
 .contact-hero{
     min-height:auto;
@@ -1737,9 +1650,7 @@ TABLET
     margin:auto;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media (max-width:640px){
 .contact-hero{
     padding:100px 0 60px;
@@ -1792,9 +1703,7 @@ MOBILE
     width:100%;
 }
 }
-/*==================================================
-EXTRA SMALL
-==================================================*/
+
 @media (max-width:360px){
 .contact-hero{
     padding:90px 0 50px;
@@ -1814,9 +1723,7 @@ EXTRA SMALL
 .hero-shape{
     display:none;
 }
-}/*==================================================
-MAP DETAILS
-==================================================*/
+}
 .map-details{
     display:grid;
     grid-template-columns:1fr;
@@ -1839,9 +1746,7 @@ MAP DETAILS
 .map-details{
     grid-template-columns:1fr;
 }
-}/*==================================================
-MAP DETAILS RESPONSIVE LAYOUT
-==================================================*/
+}
 .map-wrapper{
     display:grid;
     grid-template-columns:1.8fr 1fr;
@@ -1869,10 +1774,7 @@ MAP DETAILS RESPONSIVE LAYOUT
     gap:18px;
     height:100%;
 }
-/*==================================================
-DESKTOP
-1024px - 1280px
-==================================================*/
+
 @media (max-width:1280px){
 .map-wrapper{
     grid-template-columns:1fr;
@@ -1882,20 +1784,14 @@ DESKTOP
     grid-template-rows:auto;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media (max-width:1024px){
 .map-details{
     grid-template-columns:1fr;
     grid-template-rows:auto;
 }
 }
-/*==================================================
-MOBILE
-Below 640px
-==================================================*/
+
 @media (max-width:640px){
 .map-details{
     grid-template-columns:1fr;
@@ -1905,9 +1801,7 @@ Below 640px
     align-items:center;
     text-align:center;
 }
-}/*==================================================
-PREMIUM TOP BORDER FOR ALL CARDS
-==================================================*/
+}
 .contact-card,
 .contact-form-card,
 .sidebar-card,
@@ -1938,9 +1832,7 @@ PREMIUM TOP BORDER FOR ALL CARDS
 .contact-form-card:hover::before{
     height:6px;
     transition:.3s ease;
-}/*==================================================
-PREMIUM TOP BORDER - FAQ SECTION
-==================================================*/
+}
 .faq-item{
     position:relative;
     overflow:hidden;
@@ -1963,10 +1855,7 @@ PREMIUM TOP BORDER - FAQ SECTION
 .faq-item:hover::before,
 .faq-item.active::before{
     height:6px;
-}/*==================================================
-BLOOMNEST CONTACT PAGE HEADER
-Premium Split Hero Layout
-==================================================*/
+}
 .contact-header{
     position:relative;
     background:var(--bg);
@@ -1994,9 +1883,7 @@ Premium Split Hero Layout
     align-items:center;
     gap:70px;
 }
-/*====================================
-TEXT CONTENT
-====================================*/
+
 .page-header-text{
     max-width:650px;
 }
@@ -2021,9 +1908,8 @@ TEXT CONTENT
     color:var(--text2);
     margin-bottom:35px;
 }
-/*====================================
-BUTTONS
-====================================*/
+
+
 .page-header-buttons{
     display:flex;
     align-items:center;
@@ -2034,9 +1920,7 @@ BUTTONS
     height:52px;
     padding:0 30px;
 }
-/*====================================
-IMAGE
-====================================*/
+
 .page-header-image{
     position:relative;
 }
@@ -2047,9 +1931,7 @@ IMAGE
     border-radius:32px;
     box-shadow:var(--shadow-lg);
 }
-/*====================================
-FLOATING CARD
-====================================*/
+
 .header-floating-card{
     position:absolute;
     left:-35px;
@@ -2080,9 +1962,7 @@ FLOATING CARD
     font-size:14px;
     color:var(--text2);
 }
-/*====================================
-DECORATIVE IMAGE EFFECT
-====================================*/
+
 .page-header-image::before{
     content:"";
     position:absolute;
@@ -2095,10 +1975,7 @@ DECORATIVE IMAGE EFFECT
     right:-50px;
     z-index:-1;
 }
-/*====================================
-DESKTOP
-1024px - 1280px
-====================================*/
+
 @media(max-width:1280px){
 .page-header-content{
     gap:50px;
@@ -2110,10 +1987,7 @@ DESKTOP
     font-size:56px;
 }
 }
-/*====================================
-TABLET
-640px - 1024px
-====================================*/
+
 @media(max-width:1024px){
 .page-header{
     padding:130px 0 80px;
@@ -2140,10 +2014,7 @@ TABLET
     left:20px;
 }
 }
-/*====================================
-MOBILE
-Below 640px
-====================================*/
+
 @media(max-width:640px){
 .page-header{
     padding:110px 0 60px;
@@ -2170,10 +2041,7 @@ Below 640px
     bottom:0;
     margin-top:20px;
 }
-}/*==================================================
-DESKTOP RESPONSIVE
-1024px - 1440px
-==================================================*/
+}
 @media (min-width:1025px){
 .page-header{
     padding:170px 0 110px;
@@ -2220,10 +2088,7 @@ DESKTOP RESPONSIVE
     bottom:35px;
 }
 }
-/*==================================================
-LARGE DESKTOP
-1441px - 1919px
-==================================================*/
+
 @media (min-width:1441px){
 .page-header{
     padding:190px 0 130px;
@@ -2250,10 +2115,7 @@ LARGE DESKTOP
     bottom:45px;
 }
 }
-/*==================================================
-ULTRA WIDE DESKTOP
-1920px+
-==================================================*/
+
 @media (min-width:1920px){
 .page-header{
     padding:220px 0 150px;
@@ -2286,9 +2148,7 @@ ULTRA WIDE DESKTOP
     left:-55px;
     bottom:55px;
 }
-}/*==================================================
-DESKTOP FONT SIZE
-==================================================*/
+}
 .page-header-text h1{
     font-size:clamp(2.6rem,4vw,4.2rem);
     line-height:1.15;
@@ -2303,9 +2163,7 @@ DESKTOP FONT SIZE
     height:50px;
     padding:0 26px;
     font-size:15px;
-}/*==================================================
-PAGE HEADER - FIT IN ONE SCREEN
-==================================================*/
+}
 .page-header{
     min-height:100vh;
     display:flex;
@@ -2358,10 +2216,7 @@ PAGE HEADER - FIT IN ONE SCREEN
 }
 .section-tag{
     margin-bottom:18px;
-}/*==================================================
-360px HERO NAVBAR OVERLAP FIX
-Add at END of contact.css
-==================================================*/
+}
 @media (max-width:360px){
     .page-header,
     .contact-hero{
@@ -2449,10 +2304,7 @@ Add at END of contact.css
         margin-top:20px;
         font-size:12px;
     }
-}/*==================================================
-CONTACT NOTE
-Plant Advice Box
-==================================================*/
+}
 .contact-note{
     display:flex;
     align-items:flex-start;

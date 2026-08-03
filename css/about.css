@@ -1,12 +1,4 @@
-/* ==========================================================
-   BLOOMNEST ABOUT.CSS
-   PREMIUM VERSION
-   PART 1
-   Base + About Hero + Story + Mission
-========================================================== */
-/* ==========================================================
-   GLOBAL ABOUT RESET
-========================================================== */
+
 .about-page{
     overflow:hidden;
 }
@@ -26,9 +18,7 @@
     color:var(--text);
     line-height:1.8;
 }
-/* ==========================================================
-   ABOUT HERO
-========================================================== */
+
 .about-hero{
     padding:100px 0;
     background:
@@ -128,9 +118,7 @@
     background:#1b231c;
     border:1px solid var(--dark-border);
 }
-/* ==========================================================
-   STORY SECTION
-========================================================== */
+
 .about-story{
     padding:110px 0;
     background:var(--bg);
@@ -187,9 +175,7 @@
     margin:0;
     font-size:15px;
 }
-/* ==========================================================
-   MISSION SECTION
-========================================================== */
+
 .mission-section{
     padding:110px 0;
     background:var(--bg-soft);
@@ -248,17 +234,7 @@
 .dark-mode .mission-card p{
     color:#b8c2b8;
 }
-/* ==========================================================
-   END PART 1
-========================================================== *//* ==========================================================
-   BLOOMNEST ABOUT.CSS
-   PREMIUM VERSION
-   PART 2
-   Stats + Why Choose Section
-========================================================== */
-/* ==========================================================
-   ABOUT STATS
-========================================================== */
+
 .about-stats{
     padding:100px 0;
     background:var(--bg);
@@ -306,9 +282,7 @@
     font-size:15px;
     color:var(--text-muted);
 }
-/* ==========================================================
-   WHY CHOOSE BLOOMNEST
-========================================================== */
+
 .about-why{
     padding:110px 0;
     background:var(--bg-soft);
@@ -382,9 +356,7 @@
     line-height:1.7;
     margin:0;
 }
-/* ==========================================================
-   DARK MODE POLISH
-========================================================== */
+
 .dark-mode .stat-card h3,
 .dark-mode .why-content h2,
 .dark-mode .why-item h3{
@@ -398,14 +370,7 @@
 .dark-mode .stat-card svg{
     color:#9bd18d;
 }
-/* ==========================================================
-   DESKTOP VIEW MEDIA QUERIES
-   BLOOMNEST ABOUT
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media (min-width:1280px){
 .about-stats{
     padding:120px 0;
@@ -436,10 +401,7 @@
     padding:25px;
 }
 }
-/* ==========================================================
-   DESKTOP / LAPTOP
-   1024px - 1279px
-========================================================== */
+
 @media (min-width:1024px)
 and (max-width:1279px){
 .about-stats{
@@ -478,10 +440,7 @@ and (max-width:1279px){
     font-size:14px;
 }
 }
-/* ==========================================================
-   TABLET
-   640px - 1023px
-========================================================== */
+
 @media (min-width:640px)
 and (max-width:1023px){
 .stats-grid{
@@ -503,10 +462,7 @@ and (max-width:1023px){
     height:450px;
 }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
 .about-stats,
 .about-why{
@@ -546,15 +502,7 @@ and (max-width:1023px){
 .why-item p{
     font-size:14px;
 }
-}/* ==========================================================
-   BLOOMNEST ABOUT.CSS
-   PREMIUM VERSION
-   PART 3
-   Journey Timeline + Team Section
-========================================================== */
-/* ==========================================================
-   JOURNEY TIMELINE
-========================================================== */
+}
 .journey-section{
     padding:110px 0;
     background:var(--bg);
@@ -659,9 +607,7 @@ and (max-width:1023px){
 .dark-mode .timeline-item::after{
     border-color:#101510;
 }
-/* ==========================================================
-   TEAM SECTION
-========================================================== */
+
 .team-section{
     padding:110px 0;
     background:var(--bg-soft);
@@ -758,14 +704,7 @@ and (max-width:1023px){
     background:var(--primary);
     color:#ffffff;
 }
-/* ==========================================================
-   DESKTOP VIEW MEDIA QUERIES
-   BLOOMNEST ABOUT
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media(min-width:1280px){
 .journey-section{
     padding:120px 0;
@@ -791,10 +730,7 @@ and (max-width:1023px){
     padding:35px;
 }
 }
-/* ==========================================================
-   DESKTOP / LAPTOP
-   1024px - 1279px
-========================================================== */
+
 @media(min-width:1024px)
 and (max-width:1279px){
 .journey-section{
@@ -825,10 +761,7 @@ and (max-width:1279px){
     font-size:20px;
 }
 }
-/* ==========================================================
-   TABLET
-   640px - 1023px
-========================================================== */
+
 @media(min-width:640px)
 and (max-width:1023px){
 .timeline::before{
@@ -853,10 +786,7 @@ and (max-width:1023px){
     repeat(2,1fr);
 }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
 .journey-section,
 .team-section{
@@ -891,15 +821,7 @@ and (max-width:1023px){
 .team-content h3{
     font-size:20px;
 }
-}/* ==========================================================
-   BLOOMNEST ABOUT.CSS
-   PREMIUM VERSION
-   PART 4
-   Testimonials + CTA + Newsletter
-========================================================== */
-/* ==========================================================
-   TESTIMONIAL SECTION
-========================================================== */
+}
 .about-testimonial{
     padding:110px 0;
     background:var(--bg);
@@ -969,9 +891,7 @@ and (max-width:1023px){
     color:var(--primary);
     font-size:14px;
 }
-/* ==========================================================
-   CTA SECTION
-========================================================== */
+
 .about-cta{
     padding:110px 0;
     background:var(--bg-soft);
@@ -1059,9 +979,7 @@ and (max-width:1023px){
         #122219
     );
 }
-/* ==========================================================
-   NEWSLETTER SECTION
-========================================================== */
+
 .newsletter-section{
     padding:100px 0;
     background:var(--bg);
@@ -1130,9 +1048,7 @@ and (max-width:1023px){
 .newsletter-form button{
     min-width:150px;
 }
-/* ==========================================================
-   DARK MODE POLISH
-========================================================== */
+
 .dark-mode .testimonial-card h3,
 .dark-mode .newsletter-box h2{
     color:#f5f7f3;
@@ -1141,14 +1057,7 @@ and (max-width:1023px){
 .dark-mode .newsletter-box p{
     color:#b8c2b8;
 }
-/* ==========================================================
-   DESKTOP VIEW MEDIA QUERIES
-   BLOOMNEST ABOUT
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media(min-width:1280px){
 .about-testimonial,
 .about-cta{
@@ -1177,10 +1086,7 @@ and (max-width:1023px){
     padding:80px;
 }
 }
-/* ==========================================================
-   DESKTOP / LAPTOP
-   1024px - 1279px
-========================================================== */
+
 @media(min-width:1024px)
 and (max-width:1279px){
 .about-testimonial,
@@ -1217,10 +1123,7 @@ and (max-width:1279px){
     font-size:36px;
 }
 }
-/* ==========================================================
-   TABLET
-   640px - 1023px
-========================================================== */
+
 @media(min-width:640px)
 and (max-width:1023px){
 .testimonial-grid{
@@ -1237,10 +1140,7 @@ and (max-width:1023px){
     justify-content:center;
 }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
 .about-testimonial,
 .about-cta,
@@ -1286,16 +1186,7 @@ and (max-width:1023px){
 .newsletter-form button{
     width:100%;
 }
-}/* ==========================================================
-   BLOOMNEST ABOUT.CSS
-   PREMIUM VERSION
-   PART 5
-   Final Global Fix + Responsive Cleanup
-   Accessibility + Animations
-========================================================== */
-/* ==========================================================
-   GLOBAL DARK MODE FINAL POLISH
-========================================================== */
+}
 .dark-mode .about-hero,
 .dark-mode .about-story,
 .dark-mode .about-stats,
@@ -1310,9 +1201,7 @@ and (max-width:1023px){
 .dark-mode .about-cta{
     background:#161d16;
 }
-/* ==========================================================
-   TEXT COLOR FIX
-========================================================== */
+
 .dark-mode .about-hero-content h1,
 .dark-mode .story-content h2,
 .dark-mode .why-content h2,
@@ -1326,9 +1215,7 @@ and (max-width:1023px){
 .dark-mode p{
     color:#b8c2b8;
 }
-/* ==========================================================
-   CARD CONSISTENCY
-========================================================== */
+
 .dark-mode .mission-card,
 .dark-mode .stat-card,
 .dark-mode .why-item,
@@ -1339,9 +1226,7 @@ and (max-width:1023px){
     background:#1b231c;
     border-color:#303830;
 }
-/* ==========================================================
-   ICON POLISH
-========================================================== */
+
 .dark-mode .mission-icon,
 .dark-mode .newsletter-icon{
     background:#263526;
@@ -1352,9 +1237,7 @@ and (max-width:1023px){
 .dark-mode .why-item svg{
     color:#9bd18d;
 }
-/* ==========================================================
-   IMAGE DARK MODE
-========================================================== */
+
 .dark-mode img{
     filter:brightness(.94);
 }
@@ -1364,9 +1247,7 @@ and (max-width:1023px){
 .dark-mode .cta-image img{
     filter:brightness(.9);
 }
-/* ==========================================================
-   GLOBAL HOVER EFFECT
-========================================================== */
+
 .mission-card,
 .stat-card,
 .why-item,
@@ -1388,9 +1269,7 @@ and (max-width:1023px){
     box-shadow:
     0 25px 60px rgba(0,0,0,.12);
 }
-/* ==========================================================
-   SECTION HEADER MATCH HOME2
-========================================================== */
+
 .section-header{
     max-width:750px;
     margin:0 auto 60px;
@@ -1415,9 +1294,7 @@ and (max-width:1023px){
     color:var(--primary);
     margin-bottom:15px;
 }
-/* ==========================================================
-   DESKTOP FONT OPTIMIZATION
-========================================================== */
+
 @media(min-width:1024px){
 .section-header h2{
     font-size:34px;
@@ -1439,10 +1316,7 @@ and (max-width:1023px){
     font-size:36px;
 }
 }
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media(min-width:1280px){
 .section-header h2{
     font-size:42px;
@@ -1455,10 +1329,7 @@ and (max-width:1023px){
     font-size:44px;
 }
 }
-/* ==========================================================
-   TABLET CLEANUP
-   640px - 1023px
-========================================================== */
+
 @media(min-width:640px)
 and (max-width:1023px){
 .about-hero-content,
@@ -1480,10 +1351,7 @@ and (max-width:1023px){
     margin-bottom:45px;
 }
 }
-/* ==========================================================
-   MOBILE FINAL FIX
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
 .section-header h2{
     font-size:30px;
@@ -1522,9 +1390,7 @@ and (max-width:1023px){
     height:54px;
 }
 }
-/* ==========================================================
-   BUTTON ACCESSIBILITY
-========================================================== */
+
 button,
 a{
     -webkit-tap-highlight-color:transparent;
@@ -1535,22 +1401,16 @@ a:focus-visible{
     3px solid #d8b36a;
     outline-offset:3px;
 }
-/* ==========================================================
-   SMOOTH SCROLL
-========================================================== */
+
 html{
     scroll-behavior:smooth;
 }
-/* ==========================================================
-   IMAGE RESET
-========================================================== */
+
 img{
     display:block;
     max-width:100%;
 }
-/* ==========================================================
-   REDUCED MOTION SUPPORT
-========================================================== */
+
 @media(prefers-reduced-motion:reduce){
 *,
 *::before,
@@ -1560,9 +1420,7 @@ img{
     scroll-behavior:auto !important;
 }
 }
-/* ==========================================================
-   FINAL RESPONSIVE SAFETY
-========================================================== */
+
 @media(max-width:1024px){
 .about-hero-grid,
 .story-grid,
@@ -1586,16 +1444,7 @@ img{
     text-align:center;
 }
 }
-/* ==========================================================
-   END BLOOMNEST ABOUT.CSS
-========================================================== *//* ==========================================================
-   OUR JOURNEY TIMELINE FIX
-   BLOOMNEST ABOUT
-========================================================== */
-/* ==========================================================
-   DESKTOP VIEW
-   ABOVE 1280px
-========================================================== */
+
 @media(min-width:1280px){
 .journey-section{
     padding:120px 0;
@@ -1621,10 +1470,7 @@ img{
     font-size:17px;
 }
 }
-/* ==========================================================
-   DESKTOP / LAPTOP
-   1024px - 1279px
-========================================================== */
+
 @media(min-width:1024px)
 and (max-width:1279px){
 .journey-section{
@@ -1650,10 +1496,7 @@ and (max-width:1279px){
     font-size:15px;
 }
 }
-/* ==========================================================
-   TABLET
-   640px - 1023px
-========================================================== */
+
 @media(min-width:640px)
 and (max-width:1023px){
 .timeline{
@@ -1685,10 +1528,7 @@ and (max-width:1023px){
     font-size:14px;
 }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
 .journey-section{
     padding:70px 0;
@@ -1740,10 +1580,7 @@ and (max-width:1023px){
     word-break:break-word;
 }
 }
-/* ==========================================================
-   EXTRA SMALL MOBILE FIX
-   360px
-========================================================== */
+
 @media(max-width:380px){
 .journey-section{
     padding:60px 0;
@@ -1779,14 +1616,7 @@ and (max-width:1023px){
     font-size:13px;
 }
 }
-/* ==========================================================
-   BLOOMNEST ABOUT PAGE
-   DESKTOP VIEW OPTIMIZATION
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media (min-width:1280px){
 .about-hero{
     padding:120px 0 100px;
@@ -1965,10 +1795,7 @@ and (max-width:1023px){
     font-size:36px;
 }
 }
-/* ==========================================================
-   DESKTOP / LAPTOP
-   1024px - 1279px
-========================================================== */
+
 @media (min-width:1024px) and (max-width:1279px){
 .about-hero{
     padding:120px 0;
@@ -2080,9 +1907,7 @@ and (max-width:1023px){
     font-size:32px;
 }
 }
-/* ==========================================================
-   ABOUT HERO IMAGE DESKTOP SIZE FIX
-========================================================== */
+
 @media (min-width:1024px) and (max-width:1279px){
     .about-hero-grid{
         align-items:center;
@@ -2120,10 +1945,7 @@ and (max-width:1023px){
         left:-25px;
         bottom:30px;
     }
-}/*==========================================================
-  BLOOMNEST
-  COLORED TOP BORDER FOR ALL CARDS
-==========================================================*/
+}
 .mission-card,
 .stat-card,
 .why-item,
@@ -2168,9 +1990,7 @@ and (max-width:1023px){
 .dark-mode .newsletter-box:hover,
 .dark-mode .about-floating-card:hover{
     border-top-color:var(--secondary);
-}/* ==========================================================
-   WHY CHOOSE US - COMPACT LAYOUT
-========================================================== */
+}
 .why-grid{
     display:grid;
     grid-template-columns:1fr 1fr;

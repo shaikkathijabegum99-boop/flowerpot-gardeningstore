@@ -1,11 +1,4 @@
-/* ==========================================================
-   BLOOMNEST SERVICE DETAILS CSS
-   PART 1
-   Hero + Overview + Benefits
-========================================================== */
-/* ==========================================================
-   SERVICE DETAIL HERO
-========================================================== */
+
 .service-detail-hero{
     padding:100px 0;
     background:
@@ -71,9 +64,7 @@
 .service-detail-hero-image:hover img{
     transform:scale(1.03);
 }
-/* ==========================================================
-   SERVICE OVERVIEW
-========================================================== */
+
 .service-overview{
     padding:110px 0;
     background:var(--surface);
@@ -128,9 +119,7 @@
     color:var(--primary);
     flex-shrink:0;
 }
-/* ==========================================================
-   SERVICE BENEFITS
-========================================================== */
+
 .service-benefits{
     padding:110px 0;
     background:var(--bg2);
@@ -182,9 +171,7 @@
     line-height:1.7;
     color:var(--text);
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .service-detail-hero-content h1,
 .dark-mode .overview-content h2,
 .dark-mode .benefit-card h3{
@@ -206,9 +193,7 @@
 .dark-mode .benefit-icon svg{
     color:#9bd18d;
 }
-/* ==========================================================
-   LARGE DESKTOP
-========================================================== */
+
 @media(min-width:1280px){
 .service-detail-hero-content h1{
     font-size:58px;
@@ -217,9 +202,7 @@
     font-size:40px;
 }
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(max-width:1024px){
 .service-detail-hero .container,
 .overview-grid{
@@ -244,9 +227,7 @@
     height:500px;
 }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
 .service-detail-hero,
 .service-overview,
@@ -281,14 +262,7 @@
 .benefit-card{
     padding:35px 25px;
 }
-}/* ==========================================================
-   BLOOMNEST SERVICE DETAILS CSS
-   PART 2
-   Plant Collection + Process + Pricing
-========================================================== */
-/* ==========================================================
-   PLANT COLLECTION SECTION
-========================================================== */
+}
 .plant-collection{
     padding:110px 0;
     background:var(--surface);
@@ -354,9 +328,7 @@
 .plant-content a:hover{
     gap:14px;
 }
-/* ==========================================================
-   WORK PROCESS SECTION
-========================================================== */
+
 .service-process{
     padding:110px 0;
     background:var(--bg2);
@@ -405,9 +377,7 @@
     line-height:1.7;
     font-size:15px;
 }
-/* ==========================================================
-   PRICING SECTION
-========================================================== */
+
 .service-pricing{
     padding:110px 0;
     background:var(--surface);
@@ -489,9 +459,7 @@
     width:100%;
     justify-content:center;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .plant-card,
 .dark-mode .process-card,
 .dark-mode .pricing-card{
@@ -511,17 +479,13 @@
 .dark-mode .price span{
     color:#b6beb5;
 }
-/* ==========================================================
-   LARGE DESKTOP
-========================================================== */
+
 @media(min-width:1280px){
 .plant-image{
     height:320px;
 }
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(max-width:1024px){
 .plants-grid{
     grid-template-columns:repeat(2,1fr);
@@ -539,9 +503,7 @@
     transform:translateY(-10px);
 }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
 .plant-collection,
 .service-process,
@@ -569,14 +531,7 @@
 .price{
     font-size:40px;
 }
-}/* ==========================================================
-   BLOOMNEST SERVICE DETAILS CSS
-   PART 3
-   FAQ + CTA + Final Dark Mode + Responsive
-========================================================== */
-/* ==========================================================
-   FAQ SECTION
-========================================================== */
+}
 .service-faq{
     padding:110px 0;
     background:var(--bg2);
@@ -646,9 +601,7 @@
 .faq-item.active .faq-answer{
     max-height:200px;
 }
-/* ==========================================================
-   SERVICE DETAIL CTA
-========================================================== */
+
 .service-detail-cta{
     padding:100px 0;
     background:var(--surface);
@@ -698,9 +651,7 @@
     min-height:420px;
     object-fit:cover;
 }
-/* ==========================================================
-   FINAL DARK MODE
-========================================================== */
+
 .dark-mode .service-detail-cta{
     background:#101510;
 }
@@ -718,9 +669,7 @@
     background:#263526;
     color:#9bd18d;
 }
-/* ==========================================================
-   SECTION HEADER DARK FIX
-========================================================== */
+
 .dark-mode .section-header h2{
     color:#ffffff;
 }
@@ -730,9 +679,7 @@
 .dark-mode .section-tag{
     color:#9bd18d;
 }
-/* ==========================================================
-   BUTTON DARK FIX
-========================================================== */
+
 .dark-mode .btn-outline{
     border-color:#9bd18d;
     color:#9bd18d;
@@ -741,17 +688,13 @@
     background:#9bd18d;
     color:#111;
 }
-/* ==========================================================
-   LARGE DESKTOP
-========================================================== */
+
 @media(min-width:1280px){
 .cta-content h2{
     font-size:52px;
 }
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(max-width:1024px){
 .cta-box{
     grid-template-columns:1fr;
@@ -767,9 +710,7 @@
     font-size:38px;
 }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
 .service-faq,
 .service-detail-cta{
@@ -798,10 +739,7 @@
 .cta-image img{
     min-height:260px;
 }
-}/* ==========================================================
-   DESKTOP FONT SIZE OPTIMIZATION
-   Reduce typography for large screens
-========================================================== */
+}
 @media (min-width:1025px){
 .section-header h2{
     font-size:42px;
@@ -864,14 +802,7 @@
 .cta-content p{
     font-size:15px;
 }
-}/* ==========================================================
-   RESPONSIVE MEDIA QUERIES
-   SERVICE DETAILS PAGE
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+}
 @media (min-width:1281px){
 .service-detail-hero-content h1{
     font-size:52px;
@@ -895,10 +826,7 @@
     grid-template-columns:repeat(3,1fr);
 }
 }
-/* ==========================================================
-   DESKTOP
-   1025px - 1280px
-========================================================== */
+
 @media (min-width:1025px) and (max-width:1280px){
 .container{
     max-width:1100px;
@@ -940,10 +868,7 @@
     font-size:38px;
 }
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media (min-width:640px) and (max-width:1024px){
 .container{
     width:90%;
@@ -1005,10 +930,7 @@
     text-align:center;
 }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:639px){
 .container{
     width:92%;
@@ -1104,16 +1026,12 @@
     min-height:240px;
 }
 }
-/* ==========================================================
-   SECONDARY COLOR ENHANCEMENTS
-========================================================== */
+
 :root{
     --secondary:#8D6E63;
     --secondary-hover:#6D544B;
 }
-/* ==========================================================
-   ICON SECONDARY COLOR
-========================================================== */
+
 .benefit-icon,
 .process-number,
 .faq-icon{
@@ -1129,9 +1047,7 @@
 .process-card:hover svg{
     color:var(--secondary-hover);
 }
-/* ==========================================================
-   CARD HOVER SECONDARY EFFECT
-========================================================== */
+
 .benefit-card:hover,
 .plant-card:hover,
 .process-card:hover,
@@ -1139,9 +1055,7 @@
 .faq-item:hover{
     border-color:var(--secondary);
 }
-/* ==========================================================
-   READ MORE HOVER
-========================================================== */
+
 .plant-content a,
 .service-content a{
     color:var(--primary);
@@ -1161,9 +1075,7 @@
     transform:translateX(5px);
     color:var(--secondary);
 }
-/* ==========================================================
-   BUTTON SECONDARY STYLE
-========================================================== */
+
 .btn-secondary{
     background:var(--secondary);
     color:#fff;
@@ -1171,9 +1083,7 @@
 .btn-secondary:hover{
     background:var(--secondary-hover);
 }
-/* ==========================================================
-   TAG / BADGE SECONDARY
-========================================================== */
+
 .popular-badge,
 .popular{
     background:var(--secondary);
@@ -1182,9 +1092,7 @@
 .popular:hover{
     background:var(--secondary-hover);
 }
-/* ==========================================================
-   DARK MODE SECONDARY
-========================================================== */
+
 .dark-mode .benefit-icon,
 .dark-mode .faq-icon{
     background:rgba(141,110,99,.18);
@@ -1197,9 +1105,7 @@
 .dark-mode .service-content a:hover{
     color:#d7b7a5;
 }
-/* ==========================================================
-   SMALL FONT OPTIMIZATION
-========================================================== */
+
 @media(min-width:1025px){
 .benefit-card p,
 .plant-content p,
@@ -1213,10 +1119,6 @@
     font-size:20px;
 }
 }
-/* ==========================================================
-   DESKTOP MEDIA QUERIES
-   1024px - 1280px
-========================================================== */
 @media(min-width:1024px) and (max-width:1280px){
 .benefits-grid{
     grid-template-columns:repeat(2,1fr);
@@ -1237,10 +1139,7 @@
     height:480px;
 }
 }
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media(min-width:1281px){
 .service-detail-hero-image img{
     height:620px;
@@ -1259,10 +1158,7 @@
 .plant-card:hover{
     transform:translateY(-12px);
 }
-}/* ==========================================================
-   DESKTOP VIEW OPTIMIZATION
-   1024px - 1280px
-========================================================== */
+}
 @media (min-width:1024px) and (max-width:1280px){
     .service-detail-hero{
         padding:80px 0;
@@ -1364,10 +1260,7 @@
         min-height:380px;
     }
 }
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+
 @media (min-width:1281px){
     .service-detail-hero-content h1{
         font-size:52px;
@@ -1390,9 +1283,7 @@
     .cta-content h2{
         font-size:46px;
     }
-}/* ==========================================================
-   CENTER ALIGN - PROCESS SECTION
-========================================================== */
+}
 .process-card{
     text-align:center;
 }
@@ -1402,9 +1293,7 @@
 .process-card p{
     margin:0 auto;
 }
-/* ==========================================================
-   CENTER ALIGN - PRICING SECTION
-========================================================== */
+
 .pricing-card{
     text-align:center;
 }
@@ -1431,9 +1320,7 @@
     align-items:center;
     width:100%;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 @media (max-width:1024px){
     .process-card,
     .pricing-card{
@@ -1445,12 +1332,7 @@
     .pricing-card li{
         justify-content:center;
     }
-}/* ==========================================================
-   PROCESS & PRICING ALIGNMENT FIX
-========================================================== */
-/* -----------------------------
-   OUR PROCESS
------------------------------- */
+}
 .process-card{
     text-align:center;
     display:flex;
@@ -1468,9 +1350,7 @@
     max-width:280px;
     margin:0 auto;
 }
-/* -----------------------------
-   PRICING PLANS
------------------------------- */
+
 .pricing-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -1484,24 +1364,18 @@
 .pricing-card .btn{
     margin-top:auto;
 }
-/* -----------------------------
-   Tablet
------------------------------- */
+
 @media (max-width:1024px){
     .pricing-grid{
         grid-template-columns:repeat(2,1fr);
     }
 }
-/* -----------------------------
-   Mobile
------------------------------- */
+
 @media (max-width:640px){
     .pricing-grid{
         grid-template-columns:1fr;
     }
-}/* ==========================================================
-   COMPACT CTA CARD
-========================================================== */
+}
 .service-detail-cta{
     padding:50px 0;
 }
@@ -1533,9 +1407,7 @@
     height:280px;
     min-height:auto;
     object-fit:cover;
-}/*==================================================
-SMALL PLANT CARDS
-==================================================*/
+}
 .plants-grid{
     grid-template-columns:repeat(4,1fr);
     gap:24px;
@@ -1604,9 +1476,7 @@ SMALL PLANT CARDS
     border-top-color:var(--secondary);
     transform:translateY(-8px);
     box-shadow:0 18px 45px rgba(0,0,0,.12);
-}/*==================================================
-TOP BORDER FOR ALL CARDS
-==================================================*/
+}
 .benefit-card,
 .plant-card,
 .process-card,
@@ -1620,9 +1490,6 @@ TOP BORDER FOR ALL CARDS
         border-color .35s ease,
         border-top-color .35s ease;
 }
-/*==================================================
-TOP BORDER HOVER
-==================================================*/
 .benefit-card:hover,
 .plant-card:hover,
 .process-card:hover,
@@ -1630,9 +1497,7 @@ TOP BORDER HOVER
 .faq-item:hover{
     border-top-color:var(--primary);
     border-color:var(--primary);
-}/*==================================================
-TOP BORDER FOR ALL CARDS
-==================================================*/
+}
 .benefit-card,
 .plant-card,
 .process-card,
@@ -1643,9 +1508,7 @@ TOP BORDER FOR ALL CARDS
     border-top:4px solid var(--primary);
     transition:all .35s ease;
 }
-/*==================================================
-HOVER EFFECT
-==================================================*/
+
 .benefit-card:hover,
 .plant-card:hover,
 .process-card:hover,
@@ -1655,9 +1518,7 @@ HOVER EFFECT
     border-top-color:var(--secondary);
     transform:translateY(-8px);
     box-shadow:0 20px 50px rgba(0,0,0,.12);
-}/*==================================================
-PREMIUM CARD TOP BORDER
-==================================================*/
+}
 .service-card,
 .why-service-card,
 .service-process-card,
@@ -1710,9 +1571,7 @@ PREMIUM CARD TOP BORDER
         #8EE88B,
         #D7B9AA
     );
-}/* ==========================================
-SERVICE CARD ALIGNMENT
-========================================== */
+}
 .service-card,
 .plant-card,
 .benefit-card{
@@ -1777,9 +1636,7 @@ SERVICE CARD ALIGNMENT
 .plants-grid .plant-card{
     min-height:auto;
 }
-}/* ==========================================
-BULK ORDER SECTION
-========================================== */
+}
 .bulk-order-section{
     padding:100px 0;
     background:var(--bg2);
@@ -1833,9 +1690,7 @@ BULK ORDER SECTION
 .bulk-order-box:hover .bulk-image img{
     transform:scale(1.05);
 }
-/* ==========================================
-TABLET
-========================================== */
+
 @media(max-width:1024px){
 .bulk-order-section{
     padding:80px 0;
@@ -1853,9 +1708,7 @@ TABLET
     min-height:350px;
 }
 }
-/* ==========================================
-MOBILE
-========================================== */
+
 @media(max-width:640px){
 .bulk-order-section{
     padding:60px 0;

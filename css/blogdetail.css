@@ -1,6 +1,4 @@
-/*==================================================
-BLOG DETAIL HERO
-==================================================*/
+
 .blog-detail-hero{
 position:relative;
 padding:110px 0 90px;
@@ -106,9 +104,7 @@ transition:.5s;
 .blog-detail-hero-image:hover img{
 transform:scale(1.04);
 }
-/*==================================================
-ARTICLE
-==================================================*/
+
 .blog-article{
 padding:100px 0;
 background:var(--bg);
@@ -192,9 +188,7 @@ height:12px;
 border-radius:50%;
 background:var(--primary);
 box-shadow:0 0 0 5px rgba(76,175,80,.15);
-}/*==================================================
-TIPS GRID
-==================================================*/
+}
 .tips-grid{
 display:grid;
 grid-template-columns:repeat(2,1fr);
@@ -235,9 +229,7 @@ margin:0;
 color:var(--text-light);
 line-height:1.8;
 }
-/*==================================================
-ARTICLE QUOTE
-==================================================*/
+
 .article-quote{
 position:relative;
 margin:70px 0;
@@ -278,9 +270,7 @@ font-weight:700;
 letter-spacing:.5px;
 color:var(--primary-dark);
 }
-/*==================================================
-CARE BOX
-==================================================*/
+
 .care-box{
 margin:70px 0;
 padding:50px;
@@ -335,9 +325,7 @@ margin:0;
 line-height:1.8;
 color:rgba(255,255,255,.9);
 }
-/*==================================================
-IMAGE GALLERY
-==================================================*/
+
 .article-gallery{
 display:grid;
 grid-template-columns:repeat(3,1fr);
@@ -358,9 +346,7 @@ transition:.4s;
 transform:translateY(-6px) scale(1.03);
 box-shadow:var(--shadow-lg);
 }
-/*==================================================
-AUTHOR BOX
-==================================================*/
+
 .author-box{
 display:flex;
 align-items:center;
@@ -388,9 +374,7 @@ color:var(--heading-color);
 margin:0;
 line-height:1.9;
 color:var(--text-light);
-}/*==================================================
-SIDEBAR
-==================================================*/
+}
 .article-sidebar{
 position:sticky;
 top:110px;
@@ -453,9 +437,7 @@ padding-left:10px;
 opacity:1;
 transform:translateX(0);
 }
-/*==================================================
-POPULAR POSTS
-==================================================*/
+
 .sidebar-post{
 display:flex;
 gap:16px;
@@ -501,9 +483,7 @@ color:var(--primary);
 font-size:14px;
 color:var(--text-light);
 }
-/*==================================================
-FAQ
-==================================================*/
+
 .blog-faq{
 padding:110px 0;
 background:var(--bg-soft);
@@ -561,9 +541,7 @@ font-size:16px;
 line-height:1.9;
 color:var(--text-light);
 }
-/*==================================================
-RELATED ARTICLES
-==================================================*/
+
 .related-articles{
 padding:110px 0;
 background:var(--bg);
@@ -619,9 +597,7 @@ gap:14px;
 .related-content i{
 width:18px;
 height:18px;
-}/*==================================================
-NEWSLETTER
-==================================================*/
+}
 .blog-newsletter{
 padding:110px 0;
 background:var(--bg-soft);
@@ -702,9 +678,7 @@ height:60px;
 padding:0 34px;
 white-space:nowrap;
 }
-/*==================================================
-CTA
-==================================================*/
+
 .blog-cta{
 padding:110px 0;
 background:var(--bg);
@@ -751,9 +725,7 @@ transition:.45s;
 .cta-image:hover img{
 transform:scale(1.05);
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 body.dark-mode .blog-detail-hero,
 body.dark-mode .blog-article,
 body.dark-mode .related-articles,
@@ -827,9 +799,7 @@ body.dark-mode .blog-detail-hero-image,
 body.dark-mode .cta-image img{
 border-color:rgba(255,255,255,.08);
 }
-/*==================================================
-HOVER EFFECTS
-==================================================*/
+
 .tip-card,
 .related-card,
 .sidebar-widget,
@@ -846,9 +816,7 @@ box-shadow:var(--shadow-lg);
 }
 .article-gallery img:hover{
 transform:translateY(-6px) scale(1.03);
-}/*==================================================
-CARD BORDERS
-==================================================*/
+}
 .tip-card,
 .related-card,
 .sidebar-widget,
@@ -895,9 +863,6 @@ CARD BORDERS
 .article-image img{
     border:1px solid var(--border);
 }
-/*==================================================
-DARK MODE
-==================================================*/
 body.dark-mode .tip-card,
 body.dark-mode .related-card,
 body.dark-mode .sidebar-widget,
@@ -917,9 +882,7 @@ body.dark-mode .blog-detail-hero-image{
 body.dark-mode .sidebar-widget h3,
 body.dark-mode .sidebar-widget li{
     border-color:var(--dark-border);
-}/*==================================================
-PREMIUM BORDER COLORS
-==================================================*/
+}
 .tip-card,
 .related-card,
 .sidebar-widget,
@@ -960,9 +923,7 @@ PREMIUM BORDER COLORS
 .care-grid div{
     border:1px solid rgba(255,255,255,.18);
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 body.dark-mode .tip-card,
 body.dark-mode .related-card,
 body.dark-mode .sidebar-widget,
@@ -983,9 +944,7 @@ body.dark-mode .sidebar-widget:hover,
 body.dark-mode .sidebar-post:hover,
 body.dark-mode .faq-item:hover{
     border-color:var(--primary);
-}/*==================================================
-PREMIUM ACCENT BORDERS
-==================================================*/
+}
 .tip-card,
 .related-card,
 .sidebar-widget,
@@ -1051,9 +1010,7 @@ body.dark-mode .faq-item::before,
 body.dark-mode .author-box::before,
 body.dark-mode .sidebar-post::before{
 background:linear-gradient(90deg,#4CAF50,#81C784);
-}/*==================================================
-TYPOGRAPHY
-==================================================*/
+}
 body{
 font-family:'Manrope',sans-serif;
 font-size:16px;
@@ -1191,9 +1148,7 @@ font-size:26px;
 .cta-content h2{
 font-size:32px;
 }
-}/*==================================================
-DESKTOP TYPOGRAPHY
-==================================================*/
+}
 @media (min-width:1025px){
 .blog-detail-hero h1{
 font-size:52px;
@@ -1269,9 +1224,7 @@ font-size:40px;
 font-size:15px;
 }
 }
-/*==================================================
-SECONDARY COLOR INTEGRATION
-==================================================*/
+
 .blog-meta i,
 .faq-question i,
 .article-quote i{
@@ -1319,9 +1272,7 @@ html.dark-mode .faq-question i,
 html.dark-mode .article-quote i{
     color:var(--secondary);
 }
-/*==================================================
-CARE BOX PREMIUM DESIGN
-==================================================*/
+
 .care-box{
     position:relative;
     padding:55px;
@@ -1396,9 +1347,7 @@ CARE BOX PREMIUM DESIGN
     border-radius:10px;
     background:var(--secondary);
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 html.dark-mode .care-box{
     background:linear-gradient(
         135deg,
@@ -1413,9 +1362,7 @@ html.dark-mode .care-grid div{
 html.dark-mode .care-grid div:hover{
     background:rgba(255,255,255,.15);
 }
-/*==================================================
-RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
     .care-box{
         padding:40px;
@@ -1438,9 +1385,7 @@ RESPONSIVE
     .care-grid h4{
         font-size:20px;
     }
-}/*==================================================
-CARE BOX - LIGHT MODE
-==================================================*/
+}
 .care-box{
     position:relative;
     padding:55px;
@@ -1514,9 +1459,7 @@ CARE BOX - LIGHT MODE
     line-height:1.8;
     color:var(--text2);
 }
-/*==================================================
-LIGHT MODE RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
     .care-box{
         padding:40px;
@@ -1539,9 +1482,7 @@ LIGHT MODE RESPONSIVE
     .care-grid h4{
         font-size:20px;
     }
-}/*==================================================
-NEWSLETTER LIGHT MODE BACKGROUND
-==================================================*/
+}
 .blog-newsletter{
     background:var(--bg-soft);
 }
@@ -1571,9 +1512,7 @@ NEWSLETTER LIGHT MODE BACKGROUND
     background:var(--secondary);
     color:#fff;
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 html.dark-mode .blog-newsletter{
     background:var(--bg);
 }
@@ -1589,10 +1528,7 @@ html.dark-mode .newsletter-form input{
     background:var(--surface);
     color:var(--text);
 }
-/*==================================================
-   DESKTOP VIEW OPTIMIZATION
-   1025px - 1280px
-==================================================*/
+
 @media (min-width:1025px) and (max-width:1280px){
 .blog-detail-hero{
     padding:90px 0 70px;
@@ -1744,10 +1680,7 @@ html.dark-mode .newsletter-form input{
     height:360px;
 }
 }
-/*==================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-==================================================*/
+
 @media (min-width:1281px){
 .blog-detail-hero h1{
     font-size:60px;
@@ -1777,9 +1710,7 @@ html.dark-mode .newsletter-form input{
 .cta-box{
     padding:60px;
 }
-}/*==================================================
-   DESKTOP VIEW - SMALL TYPOGRAPHY
-==================================================*/
+}
 @media (min-width:1025px){
     .blog-detail-hero{
         padding:120px 0 70px;
@@ -1866,9 +1797,7 @@ html.dark-mode .newsletter-form input{
     .cta-content p{
         font-size:15px;
     }
-}/*==================================================
-   DARK MODE - HERO IMAGE
-==================================================*/
+}
 html.dark-mode .blog-detail-hero-image{
     background:var(--surface);
     border-color:var(--border);
@@ -1897,14 +1826,7 @@ html.dark-mode .blog-detail-hero-image::after{
 html.dark-mode .blog-detail-hero-image{
     position:relative;
     overflow:hidden;
-}/*==================================================
- RESPONSIVE MEDIA QUERIES
- Blog Detail Page
-==================================================*/
-/*==================================================
- MOBILE
- Less than 640px
-==================================================*/
+}
 @media (max-width:639px){
 .blog-detail-hero{
     padding:70px 0 50px;
@@ -1992,10 +1914,7 @@ html.dark-mode .blog-detail-hero-image{
     height:280px;
 }
 }
-/*==================================================
- TABLET
- 640px - 1024px
-==================================================*/
+
 @media (min-width:640px) and (max-width:1024px){
 .blog-detail-hero{
     padding:90px 0 70px;
@@ -2038,10 +1957,6 @@ html.dark-mode .blog-detail-hero-image{
     grid-template-columns:1fr;
 }
 }
-/*==================================================
- DESKTOP
- 1024px - 1280px
-==================================================*/
 @media (min-width:1025px) and (max-width:1280px){
 .blog-detail-hero{
     padding:90px 0 70px;
@@ -2070,10 +1985,6 @@ html.dark-mode .blog-detail-hero-image{
     padding:45px;
 }
 }
-/*==================================================
- LARGE DESKTOP
- Above 1280px
-==================================================*/
 @media (min-width:1281px){
 .blog-detail-hero h1{
     font-size:58px;
@@ -2093,9 +2004,7 @@ html.dark-mode .blog-detail-hero-image{
 .related-grid{
     grid-template-columns:repeat(3,1fr);
 }
-}/*==================================================
-NEWSLETTER FORM PADDING
-==================================================*/
+}
 .newsletter-form{
     padding:12px;
     background:rgba(255,255,255,.12);

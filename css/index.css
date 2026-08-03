@@ -1,15 +1,4 @@
-/* ==========================================================
-   BLOOMNEST HOME PAGE CSS
-   PART 1
-   Sections:
-   - Hero Section
-   - Stats Section
-   - Categories Section
-   Uses Global CSS Variables
-========================================================== */
-/* ==========================================================
-   HERO SECTION
-========================================================== */
+
 .hero-section{
     padding:120px 0;
     background:var(--bg);
@@ -21,9 +10,7 @@
     align-items:center;
     gap:70px;
 }
-/* ==========================================================
-   HERO CONTENT
-========================================================== */
+
 .hero-content{
     max-width:620px;
 }
@@ -80,9 +67,7 @@
 .hero-buttons .btn-secondary:hover{
     background:var(--primary);
 }
-/* ==========================================================
-   HERO IMAGE
-========================================================== */
+
 .hero-image{
     position:relative;
 }
@@ -109,9 +94,7 @@
     right:-40px;
     z-index:-1;
 }
-/* ==========================================================
-   FLOATING CARD
-========================================================== */
+
 .floating-card{
     position:absolute;
     bottom:35px;
@@ -139,9 +122,7 @@
     font-size:14px;
     color:var(--text-muted);
 }
-/* ==========================================================
-   STATS SECTION
-========================================================== */
+
 .stats-section{
     padding:40px 0;
     background:var(--bg-soft);
@@ -182,9 +163,7 @@
 .stat-card p{
     color:var(--text-muted);
 }
-/* ==========================================================
-   CATEGORY SECTION
-========================================================== */
+
 .categories-section{
     padding:100px 0;
     background:var(--bg);
@@ -218,9 +197,7 @@
     color:var(--text-muted);
     line-height:1.7;
 }
-/* ==========================================================
-   CATEGORY GRID
-========================================================== */
+
 .category-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -278,9 +255,7 @@ color: white;
 .category-content a:hover{
     color:white;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 @media(max-width:1024px){
     .hero-grid{
         grid-template-columns:1fr;
@@ -331,20 +306,7 @@ color: white;
     .section-header h2{
         font-size:32px;
     }
-}/* ==========================================================
-   BLOOMNEST HOME PAGE CSS
-   PART 2
-   Sections:
-   - Featured Products
-   - Product Cards
-   - Product Actions
-   - Material Section
-   - Trending Products
-   Uses Global CSS Variables
-========================================================== */
-/* ==========================================================
-   FEATURED PRODUCTS SECTION
-========================================================== */
+}
 .featured-products{
     padding:100px 0;
     background:var(--bg-soft);
@@ -354,9 +316,7 @@ color: white;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
 }
-/* ==========================================================
-   PRODUCT CARD
-========================================================== */
+
 .product-card{
     display:flex;
     flex-direction:column;
@@ -372,9 +332,7 @@ color: white;
     box-shadow:var(--shadow);
     border-color:var(--secondary);
 }
-/* ==========================================================
-   PRODUCT IMAGE
-========================================================== */
+
 .product-image{
     height:330px;
     position:relative;
@@ -390,9 +348,7 @@ color: white;
 .product-card:hover .product-image img{
     transform:scale(1.08);
 }
-/* ==========================================================
-   PRODUCT BADGE
-========================================================== */
+
 .badge{
     position:absolute;
     top:20px;
@@ -409,9 +365,7 @@ color: white;
     background:var(--secondary);
     color:#222;
 }
-/* ==========================================================
-   PRODUCT ACTION BUTTONS
-========================================================== */
+
 .product-actions{
     position:absolute;
     top:20px;
@@ -449,9 +403,7 @@ color: white;
     width:18px;
     height:18px;
 }
-/* ==========================================================
-   PRODUCT CONTENT
-========================================================== */
+
 .product-content{
     padding:25px;
     display:flex;
@@ -475,9 +427,7 @@ color: white;
     fill:var(--secondary);
     color:var(--secondary);
 }
-/* ==========================================================
-   PRICE
-========================================================== */
+
 .product-price{
     display:flex;
     align-items:center;
@@ -498,15 +448,11 @@ color: white;
 .add-cart{
     width:100%;
 }
-/* ==========================================================
-   PRODUCT BUTTON HOVER
-========================================================== */
+
 .product-card .btn:hover{
     transform:translateY(-3px);
 }
-/* ==========================================================
-   MATERIAL SECTION
-========================================================== */
+
 .material-section{
     padding:100px 0;
     background:var(--bg);
@@ -516,9 +462,7 @@ color: white;
     grid-template-columns:repeat(4,1fr);
     gap:25px;
 }
-/* ==========================================================
-   MATERIAL CARD
-========================================================== */
+
 .material-card{
     height:280px;
     position:relative;
@@ -563,9 +507,7 @@ color: white;
     z-index:2;
     font-size:26px;
 }
-/* ==========================================================
-   TRENDING PRODUCTS
-========================================================== */
+
 .trending-section{
     padding:100px 0;
     background:
@@ -582,9 +524,7 @@ color: white;
     background:var(--secondary);
     color:#222;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .product-card,
 .dark-mode .material-card{
     background:var(--surface);
@@ -599,9 +539,7 @@ color: white;
 .dark-mode .badge.sale{
     color:#111;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 @media(max-width:1024px){
     .product-grid{
         grid-template-columns:repeat(2,1fr);
@@ -626,20 +564,7 @@ color: white;
     .material-card{
         height:240px;
     }
-}/* ==========================================================
-   BLOOMNEST HOME PAGE CSS
-   PART 3
-   Sections:
-   - Indoor Collection
-   - Outdoor Collection
-   - Garden Essentials
-   - Why Choose Us
-   - Process Section
-   Uses Global CSS Variables
-========================================================== */
-/* ==========================================================
-   COLLECTION SECTIONS
-========================================================== */
+}
 .collection-section{
     padding:100px 0;
     background:var(--bg);
@@ -657,9 +582,7 @@ color: white;
 .collection-grid.reverse .collection-content{
     direction:ltr;
 }
-/* ==========================================================
-   COLLECTION IMAGE
-========================================================== */
+
 .collection-image{
     height:450px;
     border-radius:32px;
@@ -692,9 +615,7 @@ color: white;
 .collection-image:hover::after{
     opacity:1;
 }
-/* ==========================================================
-   COLLECTION CONTENT
-========================================================== */
+
 .collection-content{
     max-width:560px;
 }
@@ -730,9 +651,7 @@ color: white;
 .collection-content .btn:hover{
     transform:translateY(-3px);
 }
-/* ==========================================================
-   GARDEN ESSENTIALS
-========================================================== */
+
 .essentials-section{
     padding:100px 0;
     background:var(--bg-soft);
@@ -795,9 +714,7 @@ color: white;
 .feature-card a:hover{
     color:var(--secondary);
 }
-/* ==========================================================
-   WHY CHOOSE US
-========================================================== */
+
 .why-section{
     padding:100px 0;
     background:var(--bg);
@@ -852,9 +769,7 @@ color: white;
     color:var(--text-muted);
     line-height:1.7;
 }
-/* ==========================================================
-   PROCESS SECTION
-========================================================== */
+
 .process-section{
     padding:100px 0;
     background:var(--bg-soft);
@@ -906,9 +821,7 @@ color: white;
     color:var(--text-muted);
     line-height:1.6;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .feature-card,
 .dark-mode .why-item,
 .dark-mode .process-card{
@@ -920,9 +833,7 @@ color: white;
 .dark-mode .collection-content .section-tag{
     background:#243124;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 @media(max-width:1024px){
     .collection-grid,
     .why-grid{
@@ -972,20 +883,7 @@ color: white;
     .why-item:hover{
         transform:none;
     }
-}/* ==========================================================
-   BLOOMNEST HOME PAGE CSS
-   PART 4
-   Sections:
-   - Special Offers
-   - Testimonials
-   - Blog Section
-   - Instagram Gallery
-   - Newsletter
-   Uses Global CSS Variables
-========================================================== */
-/* ==========================================================
-   SPECIAL OFFER SECTION
-========================================================== */
+}
 .offer-section{
     padding:100px 0;
     background:var(--bg);
@@ -1054,9 +952,7 @@ color: white;
 .offer-banner:hover .offer-image img{
     transform:scale(1.06);
 }
-/* ==========================================================
-   TESTIMONIAL SECTION
-========================================================== */
+
 .testimonial-section{
     padding:100px 0;
     background:var(--bg-soft);
@@ -1109,9 +1005,7 @@ color: white;
     color:var(--primary);
     font-size:14px;
 }
-/* ==========================================================
-   BLOG SECTION
-========================================================== */
+
 .blog-section{
     padding:100px 0;
     background:var(--bg);
@@ -1175,9 +1069,7 @@ color: white;
 .blog-content a:hover{
     color:var(--secondary);
 }
-/* ==========================================================
-   INSTAGRAM GALLERY
-========================================================== */
+
 .instagram-section{
     padding:100px 0;
     background:var(--bg-soft);
@@ -1214,9 +1106,7 @@ color: white;
 .instagram-item:hover::after{
     opacity:1;
 }
-/* ==========================================================
-   NEWSLETTER
-========================================================== */
+
 .newsletter{
     margin:80px 0;
     padding:70px 40px;
@@ -1284,9 +1174,7 @@ color: white;
     background:var(--secondary);
     color:#222;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .testimonial-card,
 .dark-mode .blog-card{
     background:var(--surface);
@@ -1295,9 +1183,7 @@ color: white;
     background:#ffffff;
     color:#222;
 }
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 @media(max-width:1024px){
     .offer-banner{
         grid-template-columns:1fr;
@@ -1350,20 +1236,7 @@ color: white;
     .newsletter-form button{
         height:55px;
     }
-}/* ==========================================================
-   BLOOMNEST HOME PAGE CSS
-   PART 5 FINAL
-   Sections:
-   - Final Responsive Adjustments
-   - Typography Scaling
-   - Dark Mode Refinements
-   - Accessibility
-   - Performance
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+}
 @media (min-width:1281px){
     .hero-section{
         padding-top:120px;
@@ -1387,10 +1260,7 @@ color: white;
         height:360px;
     }
 }
-/* ==========================================================
-   DESKTOP
-   1024px - 1280px
-========================================================== */
+
 @media(min-width:1024px) and (max-width:1280px){
     .hero-grid{
         gap:45px;
@@ -1417,10 +1287,7 @@ color: white;
         gap:45px;
     }
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media(max-width:1024px){
     .hero-grid{
         grid-template-columns:1fr;
@@ -1485,10 +1352,7 @@ color: white;
         repeat(3,1fr);
     }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
     .section{
         padding:65px 0;
@@ -1585,10 +1449,7 @@ color: white;
         height:55px;
     }
 }
-/* ==========================================================
-   SMALL MOBILE
-   BELOW 400px
-========================================================== */
+
 @media(max-width:400px){
     .hero-content h1{
         font-size:30px;
@@ -1600,10 +1461,7 @@ color: white;
         grid-template-columns:1fr;
     }
 }
-/* ==========================================================
-   SECONDARY COLOR UTILIZATION
-   Premium Gold Accent
-========================================================== */
+
 .hero-tag{
     border:1px solid
     rgba(216,179,106,.35);
@@ -1643,9 +1501,7 @@ color: white;
     border-color:
     var(--secondary);
 }
-/* ==========================================================
-   DARK MODE FINAL
-========================================================== */
+
 .dark-mode .hero-tag{
     background:
     rgba(216,179,106,.12);
@@ -1675,9 +1531,7 @@ color: white;
 .dark-mode .old-price{
     color:#999;
 }
-/* ==========================================================
-   ACCESSIBILITY
-========================================================== */
+
 button:focus-visible,
 a:focus-visible,
 input:focus-visible{
@@ -1686,9 +1540,7 @@ input:focus-visible{
     var(--secondary);
     outline-offset:4px;
 }
-/* ==========================================================
-   PERFORMANCE
-========================================================== */
+
 img{
     max-width:100%;
     height:auto;
@@ -1712,12 +1564,7 @@ html{
         scroll-behavior:auto!important;
     }
 }
-/* ==========================================================
-   END BLOOMNEST HOME INDEX CSS
-========================================================== */
-/* ==========================================================
-   FEATURE CARD CENTER ALIGNMENT
-========================================================== */
+
 .feature-card{
     text-align:center;
     align-items:center;
@@ -1742,17 +1589,13 @@ html{
 .feature-icon svg{
     transition:.3s ease;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .feature-card{
     text-align:center;
 }
 .dark-mode .feature-icon svg{
     color:var(--secondary);
-}/* ==========================================================
-   NEWSLETTER SECTION - PREMIUM
-========================================================== */
+}
 .newsletter{
     position:relative;
     overflow:hidden;
@@ -1854,9 +1697,7 @@ html{
     0 12px 25px
     rgba(216,179,106,.35);
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .newsletter{
     background:
     linear-gradient(
@@ -1872,10 +1713,7 @@ html{
 .dark-mode .newsletter-form button{
     color:#111;
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media(max-width:1024px){
     .newsletter{
         padding:70px 35px;
@@ -1909,9 +1747,7 @@ html{
         height:55px;
     }
 }
-/* ==========================================================
-   NEWSLETTER BORDER ENHANCEMENT
-========================================================== */
+
 .newsletter{
     border:1px solid
     rgba(216,179,106,.45);
@@ -1930,9 +1766,7 @@ html{
 .dark-mode .newsletter:hover{
     border-color:
     var(--secondary);
-}/*==========================================================
-  ALIGN READ MORE / CARD LINKS
-==========================================================*/
+}
 .blog-card,
 .feature-card,
 .product-card{
@@ -1983,9 +1817,7 @@ html{
     .product-content .read-more{
         margin-top:20px;
     }
-}/*==========================================================
-  TESTIMONIAL CARD ALIGNMENT
-==========================================================*/
+}
 .testimonial-grid{
     align-items:stretch;
 }
@@ -2026,9 +1858,7 @@ html{
         flex:auto;
     }
 }
-/*==========================================================
-   REDUCED FONT SIZE - DESKTOP VIEW
-==========================================================*/
+
 @media (min-width:1024px){
 .hero-content h1{
     font-size:38px;
@@ -2125,9 +1955,7 @@ html{
     font-size:34px;
 }
 }
-/* ==========================================================
-   TRUST BAR SECTION
-========================================================== */
+
 .trust-bar{
     padding:35px 0;
     background:var(--surface);
@@ -2169,9 +1997,7 @@ html{
     color:var(--text);
     white-space:nowrap;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .trust-bar{
     background:var(--surface);
 }
@@ -2182,19 +2008,13 @@ html{
 .dark-mode .trust-bar i{
     color:var(--secondary);
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media(max-width:1024px){
     .trust-bar .trust-grid{
         grid-template-columns:repeat(2,1fr);
     }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
     .trust-bar{
         padding:25px 0;
@@ -2209,24 +2029,18 @@ html{
     .trust-bar span{
         font-size:15px;
     }
-}/* ==========================================================
-   SEASONAL GUIDE SECTION
-========================================================== */
+}
 .seasonal-section{
     padding:100px 0;
     background:var(--bg-soft);
 }
-/* ==========================================================
-   SEASON GRID
-========================================================== */
+
 .season-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:25px;
 }
-/* ==========================================================
-   SEASON CARD
-========================================================== */
+
 .season-card{
     background:var(--surface);
     border:1px solid var(--border);
@@ -2262,9 +2076,7 @@ html{
     color:var(--text-muted);
     margin:0 25px 30px;
 }
-/* ==========================================================
-   IMAGE OVERLAY EFFECT
-========================================================== */
+
 .season-card::after{
     content:"";
     position:absolute;
@@ -2283,17 +2095,13 @@ html{
 .season-card:hover::after{
     opacity:1;
 }
-/* ==========================================================
-   ICON STYLE
-========================================================== */
+
 .seasonal-section .section-tag i{
     width:18px;
     height:18px;
     color:var(--secondary);
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .season-card{
     background:var(--surface);
     border-color:var(--border-dark);
@@ -2301,25 +2109,19 @@ html{
 .dark-mode .season-card p{
     color:#b8b8b8;
 }
-/* ==========================================================
-   LARGE DESKTOP
-========================================================== */
+
 @media(min-width:1280px){
     .season-card img{
         height:280px;
     }
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(max-width:1024px){
     .season-grid{
         grid-template-columns:repeat(2,1fr);
     }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
     .seasonal-section{
         padding:70px 0;
@@ -2333,9 +2135,7 @@ html{
     .season-card h3{
         font-size:22px;
     }
-}/* ==========================================================
-   BULK ORDER SECTION
-========================================================== */
+}
 .bulk-order-section{
     padding:100px 0;
     background:var(--bg);
@@ -2350,9 +2150,7 @@ html{
     border-radius:35px;
     overflow:hidden;
 }
-/* ==========================================================
-   BULK CONTENT
-========================================================== */
+
 .bulk-content{
     padding:60px;
 }
@@ -2389,9 +2187,7 @@ html{
     color:var(--text-muted);
     margin-bottom:30px;
 }
-/* ==========================================================
-   BULK LIST
-========================================================== */
+
 .bulk-list{
     list-style:none;
     padding:0;
@@ -2417,9 +2213,7 @@ html{
 .bulk-list li:hover svg{
     color:var(--secondary);
 }
-/* ==========================================================
-   BULK IMAGE
-========================================================== */
+
 .bulk-image{
     height:100%;
     min-height:520px;
@@ -2434,9 +2228,7 @@ html{
 .bulk-image:hover img{
     transform:scale(1.08);
 }
-/* ==========================================================
-   CONTACT SECTION
-========================================================== */
+
 .contact-section{
     padding:100px 0;
     background:var(--bg-soft);
@@ -2447,9 +2239,7 @@ html{
     gap:50px;
     align-items:start;
 }
-/* ==========================================================
-   CONTACT INFO
-========================================================== */
+
 .contact-info{
     display:flex;
     flex-direction:column;
@@ -2486,9 +2276,7 @@ html{
     color:var(--text-muted);
     line-height:1.6;
 }
-/* ==========================================================
-   CONTACT FORM
-========================================================== */
+
 .contact-form-box{
     background:var(--surface);
     border:1px solid var(--border);
@@ -2541,9 +2329,7 @@ html{
     width:18px;
     height:18px;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .bulk-order-wrapper,
 .dark-mode .contact-card,
 .dark-mode .contact-form-box{
@@ -2556,10 +2342,7 @@ html{
     background:#202820;
     color:white;
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media(max-width:1024px){
     .bulk-order-wrapper{
         grid-template-columns:1fr;
@@ -2579,10 +2362,7 @@ html{
         grid-template-columns:1fr;
     }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
     .bulk-order-section,
     .contact-section{
@@ -2610,19 +2390,7 @@ html{
     .contact-card{
         padding:20px;
     }
-}/* ==========================================================
-   BLOOMNEST EXTRA HOME SECTIONS CSS
-   Sections:
-   - Trust Bar
-   - Seasonal Guide
-   - Bulk Order
-   - Contact
-   - Gallery
-   - Newsletter
-========================================================== */
-/* ==========================================================
-   TRUST BAR
-========================================================== */
+}
 .trust-bar{
     padding:35px 0;
     background:var(--bg-soft);
@@ -2660,9 +2428,7 @@ html{
     font-weight:700;
     color:var(--text);
 }
-/* ==========================================================
-   SEASONAL SECTION
-========================================================== */
+
 .seasonal-section{
     background:var(--bg);
 }
@@ -2702,9 +2468,7 @@ html{
     color:var(--text-muted);
     line-height:1.7;
 }
-/* ==========================================================
-   BULK ORDER SECTION
-========================================================== */
+
 .bulk-order-section{
     background:var(--bg-soft);
 }
@@ -2764,9 +2528,7 @@ html{
     height:100%;
     object-fit:cover;
 }
-/* ==========================================================
-   CONTACT SECTION
-========================================================== */
+
 .contact-section{
     background:var(--bg);
 }
@@ -2837,9 +2599,7 @@ html{
 .contact-form textarea:focus{
     border-color:var(--secondary);
 }
-/* ==========================================================
-   GALLERY SECTION
-========================================================== */
+
 .gallery-section{
     background:var(--bg-soft);
 }
@@ -2874,9 +2634,7 @@ html{
 .gallery-item:hover::after{
     opacity:1;
 }
-/* ==========================================================
-   NEWSLETTER BOX
-========================================================== */
+
 .newsletter-section{
     background:var(--bg);
 }
@@ -2928,18 +2686,14 @@ html{
     border-radius:50px;
     padding:0 35px;
 }
-/* ==========================================================
-   DARK MODE
-========================================================== */
+
 .dark-mode .trust-grid > div,
 .dark-mode .season-card,
 .dark-mode .contact-card,
 .dark-mode .contact-form-box{
     background:var(--surface);
 }
-/* ==========================================================
-   TABLET
-========================================================== */
+
 @media(max-width:1024px){
 .trust-grid{
     grid-template-columns:repeat(2,1fr);
@@ -2958,9 +2712,7 @@ html{
     grid-template-columns:repeat(3,1fr);
 }
 }
-/* ==========================================================
-   MOBILE
-========================================================== */
+
 @media(max-width:640px){
 .trust-grid,
 .season-grid,
@@ -2997,13 +2749,7 @@ html{
 .newsletter-form button{
     height:55px;
 }
-}/* ==========================================================
-   BLOOMNEST EXTRA SECTIONS RESPONSIVE
-========================================================== */
-/* ==========================================================
-   LARGE DESKTOP
-   ABOVE 1280px
-========================================================== */
+}
 @media (min-width:1281px){
     .trust-grid{
         gap:30px;
@@ -3027,10 +2773,7 @@ html{
         padding:100px 70px;
     }
 }
-/* ==========================================================
-   DESKTOP
-   1024px - 1280px
-========================================================== */
+
 @media(min-width:1024px) and (max-width:1280px){
     .trust-grid{
         grid-template-columns:
@@ -3068,10 +2811,7 @@ html{
         height:230px;
     }
 }
-/* ==========================================================
-   TABLET
-   640px - 1024px
-========================================================== */
+
 @media(max-width:1024px){
     .trust-grid{
         grid-template-columns:
@@ -3115,10 +2855,7 @@ html{
         repeat(3,1fr);
     }
 }
-/* ==========================================================
-   MOBILE
-   BELOW 640px
-========================================================== */
+
 @media(max-width:640px){
     .trust-bar{
         padding:25px 0;
@@ -3207,10 +2944,7 @@ html{
         height:55px;
     }
 }
-/* ==========================================================
-   SMALL MOBILE
-   BELOW 400px
-========================================================== */
+
 @media(max-width:400px){
     .gallery-grid{
         grid-template-columns:1fr;
@@ -3227,9 +2961,7 @@ html{
     .newsletter-content h2{
         font-size:25px;
     }
-}/*==================================================
-PREMIUM CARD TOP GRADIENT BORDER
-==================================================*/
+}
 .category-card,
 .product-card,
 .feature-card,
@@ -3320,9 +3052,7 @@ PREMIUM CARD TOP GRADIENT BORDER
 .blog-card:hover{
     box-shadow:
     0 20px 40px rgba(27,94,32,.12);
-}/*==================================
-HERO HEADING HIGHLIGHT
-==================================*/
+}
 .hero-content  h1 em{
     font-style:normal;
     color:var(--primary);
@@ -3342,9 +3072,7 @@ HERO HEADING HIGHLIGHT
 }
 [data-theme="dark"] .hero-content h1 em::after{
     background:rgba(46,125,50,.20);
-}/*==================================================
-HOME HERO SECTION
-==================================================*/
+}
 .hero-section{
     position:relative;
     padding:100px 0;
@@ -3422,17 +3150,7 @@ HOME HERO SECTION
 .hero-content{
     max-width:620px;
 }
-.hero-tag{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    padding:8px 18px;
-    border-radius:50px;
-    background:rgba(27,94,32,.1);
-    color:var(--primary);
-    font-size:.9rem;
-    font-weight:600;
-}
+
 .hero-tag svg{
     width:18px;
     height:18px;
@@ -3468,9 +3186,7 @@ HOME HERO SECTION
     border-radius:30px;
     box-shadow:var(--shadow-lg);
 }
-/*==================================================
-DARK MODE
-==================================================*/
+
 .dark-mode .hero-section{
     background:var(--bg);
 }
@@ -3484,10 +3200,7 @@ DARK MODE
 .dark-mode .hero-image img{
     filter:brightness(.9);
 }
-/*==================================================
-DESKTOP
-1024px - 1280px
-==================================================*/
+
 @media (max-width:1280px){
 .hero-section{
     padding:85px 0;
@@ -3502,10 +3215,7 @@ DESKTOP
     height:450px;
 }
 }
-/*==================================================
-TABLET
-640px - 1024px
-==================================================*/
+
 @media(max-width:1024px){
 .hero-grid{
     grid-template-columns:1fr;
@@ -3523,12 +3233,10 @@ TABLET
 }
 .hero-image img{
     height:480px;
+    width:550px;
 }
 }
-/*==================================================
-MOBILE
-<640px
-==================================================*/
+
 @media(max-width:640px){
 .hero-section{
     padding:60px 0;
@@ -3549,9 +3257,7 @@ MOBILE
     height:300px;
     border-radius:20px;
 }
-}/*==================================================
-COLLECTION SECTION
-==================================================*/
+}
 .collection-section{
     padding:100px 0;
 }
@@ -3584,9 +3290,7 @@ COLLECTION SECTION
     line-height:1.8;
     margin-bottom:28px;
 }
-/*==================================================
-COLLECTION LIST (NO CARD STYLE)
-==================================================*/
+
 .collection-list{
     list-style:none;
     padding:0;
@@ -3620,15 +3324,11 @@ COLLECTION LIST (NO CARD STYLE)
     width:20px;
     height:20px;
 }
-/*==================================================
-BUTTON
-==================================================*/
+
 .collection-content .btn{
     margin-top:10px;
 }
-/*==================================================
-TABLET
-==================================================*/
+
 @media(max-width:992px){
 .collection-grid{
     grid-template-columns:1fr;
@@ -3642,9 +3342,7 @@ TABLET
     height:420px;
 }
 }
-/*==================================================
-MOBILE
-==================================================*/
+
 @media(max-width:640px){
 .collection-section{
     padding:70px 0;
@@ -3680,9 +3378,7 @@ MOBILE
 .collection-content .btn{
     width:100%;
 }
-}/* ==================================================
-   FIX HERO UNDER NAVBAR - SMALL MOBILE
-================================================== */
+}
 @media(max-width:640px){
     .hero-section{
         padding-top:110px;

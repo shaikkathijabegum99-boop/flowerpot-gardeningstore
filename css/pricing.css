@@ -1,9 +1,4 @@
-/*==================================================
- BLOOMNEST PRICING PAGE CSS
-==================================================*/
-/*==================================================
- PRICING HERO
-==================================================*/
+
 .pricing-hero{
     padding:100px 0 50px;
     background:
@@ -26,9 +21,7 @@
     margin:auto;
     color:var(--text2);
 }
-/*==================================================
- TOGGLE
-==================================================*/
+
 .pricing-toggle-section{
     padding:20px 0;
 }
@@ -55,9 +48,7 @@
     background:var(--primary);
     color:#fff;
 }
-/*==================================================
- PRICING GRID
-==================================================*/
+
 .pricing-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -130,9 +121,7 @@
     color:var(--text2);
     min-height:70px;
 }
-/*==================================================
- PRICE
-==================================================*/
+
 .price{
     display:flex;
     align-items:center;
@@ -153,9 +142,7 @@
 .period{
     color:var(--text3);
 }
-/*==================================================
- FEATURES
-==================================================*/
+
 .pricing-card ul{
     list-style:none;
     margin:25px 0;
@@ -171,9 +158,7 @@
     width:18px;
     color:var(--primary);
 }
-/*==================================================
- COMPARISON TABLE
-==================================================*/
+
 .comparison-table{
     overflow-x:auto;
     border-radius:20px;
@@ -197,9 +182,7 @@
 .comparison-table svg{
     color:var(--primary);
 }
-/*==================================================
- BULK PRICING
-==================================================*/
+
 .bulk-pricing-box{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -229,9 +212,7 @@
     height:100%;
     object-fit:cover;
 }
-/*==================================================
- FAQ
-==================================================*/
+
 .faq-grid{
     max-width:850px;
     margin:auto;
@@ -263,9 +244,7 @@
 .faq-card.active .faq-answer{
     display:block;
 }
-/*==================================================
- CTA
-==================================================*/
+
 .pricing-cta-box{
     text-align:center;
     padding:70px 30px;
@@ -295,18 +274,14 @@
     border-color:#fff;
     color:#fff;
 }
-/*==================================================
- DARK MODE
-==================================================*/
+
 [data-theme="dark"] .pricing-card,
 [data-theme="dark"] .comparison-table table,
 [data-theme="dark"] .faq-card,
 [data-theme="dark"] .bulk-pricing-box{
     background:var(--dark-surface);
 }
-/*==================================================
- RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .pricing-grid{
     grid-template-columns:1fr 1fr;
@@ -337,9 +312,7 @@
 .cta-buttons{
     flex-direction:column;
 }
-}/*==================================================
- PAGE HEADER WITH IMAGE
-==================================================*/
+}
 .page-header{
     position:relative;
     padding:90px 0;
@@ -469,9 +442,7 @@
 .page-header-buttons{
     flex-direction:column;
 }
-}/*==================================================
- COMPARISON TABLE PREMIUM STYLE
-==================================================*/
+}
 .comparison-section{
     padding:80px 0;
 }
@@ -527,9 +498,7 @@
     width:20px;
     color:var(--primary);
 }
-/*==================================================
- FAQ SECTION
-==================================================*/
+
 .faq-section{
     padding:80px 0;
 }
@@ -617,16 +586,12 @@
         transform:translateY(0);
     }
 }
-/*==================================================
- DARK MODE
-==================================================*/
+
 [data-theme="dark"] .comparison-table,
 [data-theme="dark"] .faq-card{
     background:var(--dark-surface);
 }
-/*==================================================
- RESPONSIVE
-==================================================*/
+
 @media(max-width:1024px){
 .comparison-table{
     overflow-x:auto;
@@ -647,9 +612,7 @@
 .faq-answer{
     padding:0 18px 18px;
 }
-}/*==================================================
-   360px MOBILE HERO NAVBAR FIX
-==================================================*/
+}
 @media(max-width:360px){
     .pricing-hero{
         padding:90px 15px 45px;
