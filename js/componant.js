@@ -1,28 +1,18 @@
-/* ==========================================================
-   BLOOMNEST COMPONENT JS
-   Part 1
-   Helpers • Component Loader • Theme • RTL • Sticky Header
-========================================================== */
+
 "use strict";
 console.log("🌿 BloomNest Component JS Loaded");
-/* ==========================================================
-   HELPERS
-========================================================== */
+
 const $ = (selector, scope = document) =>
     scope.querySelector(selector);
 const $$ = (selector, scope = document) =>
     [...scope.querySelectorAll(selector)];
-/* ==========================================================
-   REFRESH LUCIDE ICONS
-========================================================== */
+
 function refreshIcons() {
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
-/* ==========================================================
-   COMPONENT LOADER
-========================================================== */
+
 async function loadComponent(id, file) {
     const element = document.getElementById(id);
     if (!element) return;
@@ -41,9 +31,7 @@ async function loadComponent(id, file) {
         );
     }
 }
-/* ==========================================================
-   ROOT PATH
-========================================================== */
+
 function getRootPath() {
     const page =
         window.location.pathname
@@ -56,9 +44,7 @@ function getRootPath() {
         ? "./"
         : "../";
 }
-/* ==========================================================
-   THEME (LIGHT / DARK)
-========================================================== */
+
 function initTheme() {
     const button =
         document.getElementById("themeToggle");
@@ -83,9 +69,7 @@ function initTheme() {
         updateThemeIcon();
     });
 }
-/* ==========================================================
-   UPDATE THEME ICON
-========================================================== */
+
 function updateThemeIcon() {
     const button =
         document.getElementById("themeToggle");
@@ -97,9 +81,7 @@ function updateThemeIcon() {
         : '<i data-lucide="moon"></i>';
     refreshIcons();
 }
-/* ==========================================================
-   RTL / LTR
-========================================================== */
+
 function initRTL() {
     const button =
         document.getElementById("rtlToggle");
@@ -127,9 +109,7 @@ function initRTL() {
         );
     });
 }
-/* ==========================================================
-   STICKY HEADER
-========================================================== */
+
 function initStickyHeader() {
     const header =
         document.getElementById("siteHeader");
@@ -151,9 +131,7 @@ function initStickyHeader() {
         }
     );
 }
-/* ==========================================================
-   HEADER SHADOW
-========================================================== */
+
 function updateHeaderShadow() {
     const header =
         document.getElementById("siteHeader");
@@ -171,14 +149,7 @@ window.addEventListener(
     {
         passive: true
     }
-);/* ==========================================================
-   BLOOMNEST COMPONENT JS
-   Part 2
-   Mobile Sidebar • Overlay • Navigation • Dropdowns
-========================================================== */
-/* ==========================================================
-   MOBILE SIDEBAR
-========================================================== */
+);
 function initMobileMenu() {
     const menuBtn =
         document.getElementById("menuToggle");
@@ -220,9 +191,7 @@ function initMobileMenu() {
             );
         });
 }
-/* ==========================================================
-   ACTIVE NAVIGATION
-========================================================== */
+
 function setActiveNavigation() {
     const currentPage =
         window.location.pathname
@@ -248,9 +217,7 @@ function setActiveNavigation() {
         }
     });
 }
-/* ==========================================================
-   DESKTOP DROPDOWN
-========================================================== */
+
 function initDropdowns() {
     if (window.innerWidth <= 1024) return;
     const dropdowns =
@@ -287,9 +254,7 @@ function initDropdowns() {
         );
     });
 }
-/* ==========================================================
-   CLOSE MOBILE MENU ON DESKTOP
-========================================================== */
+
 function closeMobileOnDesktop() {
     if (window.innerWidth <= 1024) return;
     const sidebar =
@@ -300,9 +265,7 @@ function closeMobileOnDesktop() {
     overlay?.classList.remove("active");
     document.body.classList.remove("menu-open");
 }
-/* ==========================================================
-   WINDOW RESIZE
-========================================================== */
+
 window.addEventListener(
     "resize",
     () => {
@@ -312,9 +275,7 @@ window.addEventListener(
         passive: true
     }
 );
-/* ==========================================================
-   MOBILE DROPDOWN
-========================================================== */
+
 function initMobileDropdowns() {
     const details =
         document.querySelectorAll(
@@ -334,9 +295,7 @@ function initMobileDropdowns() {
         );
     });
 }
-/* ==========================================================
-   NAVBAR HOVER FIX
-========================================================== */
+
 function initNavHover() {
     const items =
         document.querySelectorAll(
@@ -357,10 +316,7 @@ function initNavHover() {
         );
     });
 }
-/* ==========================================================
-   BODY CLICK
-   Close dropdowns if needed
-========================================================== */
+
 document.addEventListener(
     "click",
     e => {
@@ -373,14 +329,7 @@ document.addEventListener(
                 menu.classList.remove("show");
             });
     }
-);/* ==========================================================
-   BLOOMNEST COMPONENT JS
-   Part 3
-   Search Modal • Announcement Bar • Keyboard Controls
-========================================================== */
-/* ==========================================================
-   SEARCH MODAL
-========================================================== */
+);
 function initSearchModal() {
     const modal =
         document.getElementById("searchModal");
@@ -405,9 +354,7 @@ function initSearchModal() {
         }
     });
 }
-/* ==========================================================
-   CLOSE SEARCH
-========================================================== */
+
 function closeSearchModal() {
     const modal =
         document.getElementById("searchModal");
@@ -415,9 +362,7 @@ function closeSearchModal() {
     modal.classList.remove("active");
     document.body.classList.remove("search-open");
 }
-/* ==========================================================
-   ESC KEY
-========================================================== */
+
 function initEscapeKey() {
     document.addEventListener("keydown", (e) => {
         if (e.key !== "Escape") return;
@@ -431,9 +376,7 @@ function initEscapeKey() {
         closeSearchModal();
     });
 }
-/* ==========================================================
-   ANNOUNCEMENT BAR AUTO SLIDER
-========================================================== */
+
 function initAnnouncementBar() {
     const wrapper =
         document.querySelector(".announcement-content");
@@ -454,9 +397,7 @@ function initAnnouncementBar() {
             `translateY(-${index * 100}%)`;
     }, 3000);
 }
-/* ==========================================================
-   HEADER SHADOW
-========================================================== */
+
 function initHeaderShadow() {
     const header =
         document.getElementById("siteHeader");
@@ -478,9 +419,7 @@ function initHeaderShadow() {
         }
     );
 }
-/* ==========================================================
-   SCROLL TO TOP
-========================================================== */
+
 function initBackToTop() {
     const button =
         document.querySelector(".back-to-top");
@@ -507,9 +446,7 @@ function initBackToTop() {
         });
     });
 }
-/* ==========================================================
-   SMOOTH SCROLL LINKS
-========================================================== */
+
 function initSmoothScroll() {
     document
         .querySelectorAll('a[href^="#"]')
@@ -528,9 +465,7 @@ function initSmoothScroll() {
             });
         });
 }
-/* ==========================================================
-   LAZY IMAGE FADE
-========================================================== */
+
 function initLazyImages() {
     const images =
         document.querySelectorAll("img");
@@ -544,14 +479,7 @@ function initLazyImages() {
             });
         }
     });
-}/* ==========================================================
-   BLOOMNEST COMPONENT JS
-   Part 4
-   Accessibility • Layout Loader • Resize • Utilities
-========================================================== */
-/* ==========================================================
-   ACCESSIBILITY
-========================================================== */
+}
 function initAccessibility() {
     document
         .querySelectorAll("button")
@@ -564,9 +492,7 @@ function initAccessibility() {
             }
         });
 }
-/* ==========================================================
-   LOAD NAVBAR & FOOTER
-========================================================== */
+
 async function loadLayout() {
     const navbar =
         document.getElementById("navbar");
@@ -588,16 +514,12 @@ async function loadLayout() {
     }
     refreshIcons();
 }
-/* ==========================================================
-   REFRESH COMPONENTS
-========================================================== */
+
 function refreshComponents() {
     refreshIcons();
     setActiveNavigation();
 }
-/* ==========================================================
-   WINDOW RESIZE
-========================================================== */
+
 function initResizeHandler() {
     window.addEventListener(
         "resize",
@@ -628,9 +550,7 @@ function initResizeHandler() {
         }
     );
 }
-/* ==========================================================
-   PAGE LOADER (OPTIONAL)
-========================================================== */
+
 function hidePageLoader() {
     const loader =
         document.querySelector(".page-loader");
@@ -644,9 +564,7 @@ window.addEventListener(
     "load",
     hidePageLoader
 );
-/* ==========================================================
-   BUTTON RIPPLE EFFECT
-========================================================== */
+
 function initRippleEffect() {
     document
         .querySelectorAll(".btn,.icon-btn")
@@ -685,9 +603,7 @@ function initRippleEffect() {
             );
         });
 }
-/* ==========================================================
-   ACTIVE PAGE TITLE
-========================================================== */
+
 function updatePageTitle() {
     const page =
         window.location.pathname
@@ -697,92 +613,54 @@ function updatePageTitle() {
     document.body.dataset.page =
         page;
 }
-/* ==========================================================
-   INITIALIZE COMMON UTILITIES
-========================================================== */
+
 function initUtilities() {
     initAccessibility();
     initResizeHandler();
     initRippleEffect();
     updatePageTitle();
-}/* ==========================================================
-   BLOOMNEST COMPONENT JS
-   Part 5
-   DOM Ready • Initialization • Exports
-========================================================== */
-/* ==========================================================
-   DOM READY
-========================================================== */
+}
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("🌿 Initializing BloomNest...");
-    /* ------------------------------------------
-       Load Navbar / Footer (Optional)
-    ------------------------------------------ */
+ 
     await loadLayout();
-    /* ------------------------------------------
-       Theme
-    ------------------------------------------ */
+
     initTheme();
-    /* ------------------------------------------
-       RTL Support
-    ------------------------------------------ */
+ 
     initRTL();
-    /* ------------------------------------------
-       Sticky Header
-    ------------------------------------------ */
+
     initStickyHeader();
     initHeaderShadow();
-    /* ------------------------------------------
-       Mobile Sidebar
-    ------------------------------------------ */
+
     initMobileMenu();
     initMobileDropdowns();
-    /* ------------------------------------------
-       Desktop Navigation
-    ------------------------------------------ */
+  
     initDropdowns();
     initNavHover();
     setActiveNavigation();
-    /* ------------------------------------------
-       Search
-    ------------------------------------------ */
+ 
     initSearchModal();
-    /* ------------------------------------------
-       Announcement Bar
-    ------------------------------------------ */
+   
     initAnnouncementBar();
-    /* ------------------------------------------
-       Scroll Features
-    ------------------------------------------ */
+ 
     initBackToTop();
     initSmoothScroll();
-    /* ------------------------------------------
-       Images
-    ------------------------------------------ */
+ 
     initLazyImages();
-    /* ------------------------------------------
-       Keyboard
-    ------------------------------------------ */
+ 
     initEscapeKey();
-    /* ------------------------------------------
-       Utilities
-    ------------------------------------------ */
+
     initUtilities();
-    /* ------------------------------------------
-       Lucide Icons
-    ------------------------------------------ */
+
+
     refreshIcons();
     console.log("✅ BloomNest Ready");
 });
-/* ==========================================================
-   WINDOW LOAD
-========================================================== */
+
 window.addEventListener("load", () => {
     refreshIcons();
 });
-/* ==========================================================
-   PUBLIC METHODS
-========================================================== */
+
 window.BloomNest = {
     refreshIcons,
     refreshComponents,
@@ -794,9 +672,7 @@ window.BloomNest = {
     initSearchModal,
     closeSearchModal
 };
-/* ==========================================================
-   AUTO REFRESH LUCIDE
-========================================================== */
+
 const observer = new MutationObserver(() => {
     refreshIcons();
 });
@@ -804,9 +680,7 @@ observer.observe(document.body, {
     childList: true,
     subtree: true
 });
-/* ==========================================================
-   END OF FILE
-========================================================== */
+
 console.log(
     "%c🌿 BloomNest Component.js Loaded Successfully",
     "color:#2e7d32;font-size:14px;font-weight:bold;"

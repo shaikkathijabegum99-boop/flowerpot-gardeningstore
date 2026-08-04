@@ -2039,3 +2039,711 @@ and (max-width:1023px){
     line-height:1.6;
     margin:0;
 }
+
+
+
+.garden-contact-hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+
+    background-image:url("../images/bloghero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+
+    /* NAVBAR FIX */
+
+    padding-top:100px;
+
+}
+
+
+
+
+
+.garden-contact-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        rgba(0,0,0,.65),
+
+        rgba(0,0,0,.55)
+
+    );
+
+}
+
+
+
+
+
+.garden-contact-container{
+
+
+    position:relative;
+
+    z-index:2;
+
+
+    width:100%;
+
+    max-width:1200px;
+
+
+    margin:auto;
+
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+
+
+
+
+.garden-contact-content{
+
+
+    max-width:760px;
+
+
+    margin:auto;
+
+
+    color:#fff;
+
+
+}
+
+
+
+
+
+.garden-contact-tag{
+
+
+    display:inline-flex;
+
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    gap:8px;
+
+
+    padding:10px 22px;
+
+
+    border-radius:50px;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(12px);
+
+
+    color:#fff;
+
+
+    font-size:.9rem;
+
+
+    font-weight:600;
+
+
+    margin-bottom:25px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+
+}
+
+
+
+.garden-contact-tag svg{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+
+
+
+
+.garden-contact-content h1{
+
+
+    font-size:clamp(2.5rem,5vw,4.5rem);
+
+
+    line-height:1.15;
+
+
+    font-weight:800;
+
+
+    color:#fff;
+
+
+    margin-bottom:22px;
+
+
+}
+
+
+
+.garden-contact-content h1 em{
+
+
+    display:block;
+
+
+    font-style:normal;
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+.garden-contact-content p{
+
+
+    max-width:620px;
+
+
+    margin:0 auto 35px;
+
+
+    font-size:1.05rem;
+
+
+    line-height:1.8;
+
+
+    color:
+
+    rgba(255,255,255,.9);
+
+
+}
+
+
+
+
+.garden-contact-buttons{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:18px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.garden-contact-buttons svg{
+
+
+    width:18px;
+
+    height:18px;
+
+
+}
+
+
+
+
+
+@media(min-width:1280px){
+
+
+.garden-contact-hero{
+
+    min-height:92vh;
+
+}
+
+
+}
+
+
+
+
+
+
+@media(max-width:1280px){
+
+
+.garden-contact-hero{
+
+
+    min-height:85vh;
+
+    padding-top:110px;
+
+
+}
+
+
+.garden-contact-content h1{
+
+
+    font-size:3.2rem;
+
+
+}
+
+
+}
+
+
+
+
+
+
+@media(max-width:1024px){
+
+
+.garden-contact-hero{
+
+
+    min-height:85vh;
+
+
+    padding-top:120px;
+
+    padding-bottom:60px;
+
+
+}
+
+
+
+.garden-contact-container{
+
+
+    padding-left:25px;
+
+    padding-right:25px;
+
+
+}
+
+
+
+.garden-contact-content h1{
+
+
+    font-size:2.6rem;
+
+
+}
+
+
+
+.garden-contact-content p{
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media(min-width:641px) and (max-width:768px){
+
+
+.garden-contact-hero{
+
+
+    min-height:100vh;
+
+
+    padding-top:130px;
+
+    padding-bottom:70px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+}
+
+
+
+.garden-contact-container{
+
+
+    max-width:720px;
+
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+
+}
+
+
+
+.garden-contact-content{
+
+
+    max-width:620px;
+
+
+    margin:auto;
+
+
+}
+
+
+
+.garden-contact-tag{
+
+
+    font-size:.85rem;
+
+
+    padding:9px 18px;
+
+
+}
+
+
+
+.garden-contact-content h1{
+
+
+    font-size:2.4rem;
+
+
+    line-height:1.2;
+
+
+}
+
+
+
+.garden-contact-content p{
+
+
+    font-size:.95rem;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+.garden-contact-buttons{
+
+
+    gap:15px;
+
+
+}
+
+
+
+}
+
+
+
+
+@media(max-width:640px){
+
+
+.garden-contact-hero{
+
+
+    min-height:auto;
+
+
+    padding:
+
+    120px 20px 70px;
+
+
+}
+
+
+
+.garden-contact-container{
+
+
+    padding:0;
+
+
+}
+
+
+
+.garden-contact-tag{
+
+
+    padding:8px 15px;
+
+
+    font-size:.78rem;
+
+
+}
+
+
+
+.garden-contact-content h1{
+
+
+    font-size:2rem;
+
+
+    line-height:1.25;
+
+
+}
+
+
+
+.garden-contact-content h1 em{
+
+
+    display:inline;
+
+
+}
+
+
+
+.garden-contact-content p{
+
+
+    font-size:.88rem;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+.garden-contact-buttons{
+
+
+    flex-direction:column;
+
+
+    width:100%;
+
+
+}
+
+
+
+.garden-contact-buttons .btn{
+
+
+    width:100%;
+
+
+    max-width:280px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:400px){
+
+
+.garden-contact-hero{
+
+
+    padding-top:110px;
+
+    padding-left:15px;
+
+    padding-right:15px;
+
+
+}
+
+
+
+.garden-contact-content h1{
+
+
+    font-size:1.65rem;
+
+
+}
+
+
+
+.garden-contact-content p{
+
+
+    font-size:.82rem;
+
+
+}
+
+
+
+.garden-contact-tag{
+
+
+    font-size:.7rem;
+
+
+    padding:7px 12px;
+
+
+}
+
+
+
+.garden-contact-buttons .btn{
+
+
+    max-width:100%;
+
+
+}
+
+
+
+}
+
+
+
+
+.dark-mode .garden-contact-hero{
+
+
+    background-image:url("../images/bloghero.jpg");
+
+}
+
+
+
+.dark-mode .garden-contact-overlay{
+
+
+    background:
+
+
+    linear-gradient(
+
+        180deg,
+
+        rgba(0,0,0,.82),
+
+        rgba(0,0,0,.75)
+
+    );
+
+
+}
+
+
+
+.dark-mode .garden-contact-tag{
+
+
+    background:
+
+    rgba(255,255,255,.08);
+
+
+    border-color:
+
+    rgba(255,255,255,.18);
+
+
+}
+
+
+
+.dark-mode .garden-contact-content h1 em{
+
+
+    color:var(--primary);
+
+
+}

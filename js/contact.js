@@ -1,17 +1,10 @@
-/*==================================================
-BloomNest Contact Page
-contact.js
-==================================================*/
+
 document.addEventListener("DOMContentLoaded", () => {
-    /*=========================================
-    Lucide Icons
-    =========================================*/
+ 
     if (window.lucide) {
         lucide.createIcons();
     }
-    /*=========================================
-    FAQ Accordion
-    =========================================*/
+ 
     const faqItems = document.querySelectorAll(".faq-item");
     faqItems.forEach(item => {
         const question = item.querySelector(".faq-question");
@@ -24,9 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             item.classList.toggle("active");
         });
     });
-    /*=========================================
-    Contact Form
-    =========================================*/
+
     const contactForm = document.getElementById("contact-form");
     if (contactForm) {
         contactForm.addEventListener("submit", function (e) {
@@ -60,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 1500);
         });
     }
-    /*=========================================
-    Newsletter Form
-    =========================================*/
+
     const newsletter = document.querySelector(".newsletter-form");
     if (newsletter) {
         newsletter.addEventListener("submit", function (e) {
@@ -76,9 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             newsletter.reset();
         });
     }
-    /*=========================================
-    Smooth Scroll
-    =========================================*/
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             const target = document.querySelector(this.getAttribute("href"));
@@ -91,9 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    /*=========================================
-    Contact Card Hover Animation
-    =========================================*/
+
     const cards = document.querySelectorAll(".contact-card, .sidebar-card");
     cards.forEach(card => {
         card.addEventListener("mouseenter", () => {
@@ -103,9 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.style.transform = "";
         });
     });
-    /*=========================================
-    Hero Fade Animation
-    =========================================*/
+ 
     const heroContent = document.querySelector(".hero-content");
     if (heroContent) {
         heroContent.style.opacity = "0";
@@ -116,9 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
             heroContent.style.transform = "translateY(0)";
         }, 200);
     }
-    /*=========================================
-    Reveal On Scroll
-    =========================================*/
+ 
     const reveals = document.querySelectorAll(
         ".contact-card,.contact-form-card,.sidebar-card,.location-card,.faq-item,.newsletter-box"
     );

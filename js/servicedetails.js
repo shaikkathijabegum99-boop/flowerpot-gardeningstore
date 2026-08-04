@@ -1,17 +1,10 @@
-/* ==========================================================
-   BLOOMNEST SERVICE DETAILS JS
-========================================================== */
-/* ==========================================================
-   LUCIDE ICONS
-========================================================== */
+
 document.addEventListener("DOMContentLoaded", () => {
     if(typeof lucide !== "undefined"){
         lucide.createIcons();
     }
 });
-/* ==========================================================
-   FAQ ACCORDION
-========================================================== */
+
 const faqItems = document.querySelectorAll(".faq-item");
 faqItems.forEach(item => {
     const question = item.querySelector(".faq-question");
@@ -26,9 +19,7 @@ faqItems.forEach(item => {
         item.classList.toggle("active");
     });
 });
-/* ==========================================================
-   SMOOTH SCROLL
-========================================================== */
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e){
         const target = document.querySelector(
@@ -43,9 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-/* ==========================================================
-   IMAGE LAZY LOADING
-========================================================== */
+
 const images = document.querySelectorAll("img");
 images.forEach(img => {
     img.setAttribute(
@@ -53,9 +42,7 @@ images.forEach(img => {
         "lazy"
     );
 });
-/* ==========================================================
-   SCROLL REVEAL ANIMATION
-========================================================== */
+
 const revealElements = document.querySelectorAll(
 `
 .service-detail-hero-content,
@@ -93,9 +80,7 @@ revealElements.forEach(el=>{
     );
     revealObserver.observe(el);
 });
-/* ==========================================================
-   ACTIVE PRICING CARD
-========================================================== */
+
 const pricingCards =
 document.querySelectorAll(".pricing-card");
 pricingCards.forEach(card=>{
@@ -119,9 +104,7 @@ card.classList.remove(
 );
 });
 });
-/* ==========================================================
-   BACK TO TOP (OPTIONAL)
-========================================================== */
+
 window.addEventListener(
 "scroll",
 ()=>{

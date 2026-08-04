@@ -2402,3 +2402,880 @@ html{
     font-size:12px;
 }
 }
+
+.contact-hero{
+
+    position:relative;
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+
+    background-image:url("../images/contact.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+
+    /* FIX NAVBAR OVERLAP */
+
+    padding-top:90px;
+
+}
+
+
+
+
+.contact-hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+
+    background:
+
+    linear-gradient(
+
+        180deg,
+
+        rgba(0,0,0,.65),
+
+        rgba(0,0,0,.55)
+
+    );
+
+}
+
+
+
+
+.contact-hero .container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+
+.contact-hero-content{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#fff;
+
+}
+
+
+
+
+
+.contact-hero-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+
+    padding:10px 22px;
+
+    border-radius:50px;
+
+
+    background:
+
+    rgba(255,255,255,.15);
+
+
+    backdrop-filter:blur(12px);
+
+
+    color:#fff;
+
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+
+    margin-bottom:25px;
+
+
+    border:
+
+    1px solid rgba(255,255,255,.2);
+
+}
+
+
+
+.contact-hero-tag svg{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+
+
+
+.contact-hero-content h1{
+
+
+    font-size:clamp(2.5rem,5vw,4.5rem);
+
+
+    line-height:1.15;
+
+
+    font-weight:800;
+
+
+    color:#fff;
+
+
+    margin-bottom:22px;
+
+
+}
+
+
+.contact-hero-content h1 em{
+
+
+    display:block;
+
+
+    font-style:normal;
+
+
+    color:var(--secondary);
+
+
+}
+
+
+
+
+
+.contact-hero-content p{
+
+
+    max-width:620px;
+
+
+    margin:0 auto 35px;
+
+
+    font-size:1.05rem;
+
+
+    line-height:1.8;
+
+
+    color:rgba(255,255,255,.9);
+
+
+}
+
+
+
+
+
+.contact-hero-actions{
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:18px;
+
+
+    flex-wrap:wrap;
+
+
+}
+
+
+
+.contact-hero-actions svg{
+
+
+    width:18px;
+
+    height:18px;
+
+
+}
+
+
+
+
+
+@media(min-width:1280px){
+
+
+.contact-hero{
+
+    min-height:92vh;
+
+}
+
+
+}
+
+
+
+
+
+@media(max-width:1280px){
+
+
+.contact-hero{
+
+    min-height:85vh;
+
+}
+
+
+.contact-hero-content h1{
+
+    font-size:3.2rem;
+
+}
+
+
+}
+
+
+
+
+
+
+@media(max-width:1024px){
+
+
+.contact-hero{
+
+
+    min-height:80vh;
+
+
+    padding-top:100px;
+
+
+}
+
+
+
+.contact-hero .container{
+
+
+    padding-left:25px;
+
+    padding-right:25px;
+
+
+}
+
+
+
+.contact-hero-content h1{
+
+
+    font-size:2.8rem;
+
+
+}
+
+
+
+.contact-hero-content p{
+
+
+    font-size:.95rem;
+
+
+}
+
+
+
+}
+
+
+
+
+
+
+@media(max-width:640px){
+
+
+.contact-hero{
+
+
+    min-height:auto;
+
+
+    padding:
+
+    100px 20px 70px;
+
+
+}
+
+
+
+.contact-hero .container{
+
+
+    padding:0;
+
+
+}
+
+
+
+.contact-hero-tag{
+
+
+    padding:8px 15px;
+
+
+    font-size:.78rem;
+
+
+}
+
+
+
+.contact-hero-content h1{
+
+
+    font-size:2rem;
+
+
+    line-height:1.25;
+
+
+}
+
+
+
+.contact-hero-content h1 em{
+
+
+    display:inline;
+
+
+}
+
+
+
+.contact-hero-content p{
+
+
+    font-size:.88rem;
+
+
+    line-height:1.7;
+
+
+}
+
+
+
+.contact-hero-actions{
+
+
+    flex-direction:column;
+
+
+    width:100%;
+
+
+}
+
+
+
+.contact-hero-actions .btn{
+
+
+    width:100%;
+
+
+    max-width:280px;
+
+
+}
+
+
+
+}
+
+
+
+
+
+@media(max-width:400px){
+
+
+.contact-hero{
+
+
+    padding-top:95px;
+
+
+}
+
+
+
+.contact-hero-content h1{
+
+
+    font-size:1.7rem;
+
+
+}
+
+
+
+.contact-hero-content p{
+
+
+    font-size:.82rem;
+
+
+}
+
+
+
+.contact-hero-tag{
+
+
+    font-size:.7rem;
+
+
+    padding:7px 12px;
+
+
+}
+
+
+
+.contact-hero-actions .btn{
+
+
+    max-width:100%;
+
+
+}
+
+
+
+}
+
+
+
+
+
+.dark-mode .contact-hero-overlay{
+
+
+background:
+
+
+linear-gradient(
+
+180deg,
+
+rgba(0,0,0,.82),
+
+rgba(0,0,0,.75)
+
+);
+
+
+}
+
+
+
+.dark-mode .contact-hero-tag{
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+border-color:
+
+rgba(255,255,255,.18);
+
+
+}
+
+
+.dark-mode .contact-hero-content h1 em{
+
+
+color:var(--primary);
+
+
+}
+
+@media (max-width:1280px){
+
+.contact-hero{
+
+    min-height:85vh;
+
+    padding-top:110px;
+
+}
+
+
+.contact-hero-content h1{
+
+    font-size:3.2rem;
+
+}
+
+}
+
+
+
+/*=========================================
+TABLET 640 - 1024
+=========================================*/
+
+@media (max-width:1024px){
+
+
+.contact-hero{
+
+    min-height:85vh;
+
+    padding-top:120px;
+
+    padding-bottom:60px;
+
+}
+
+
+
+.contact-hero .container{
+
+    padding-left:25px;
+
+    padding-right:25px;
+
+}
+
+
+
+.contact-hero-content h1{
+
+    font-size:2.6rem;
+
+}
+
+
+
+.contact-hero-content p{
+
+    font-size:.95rem;
+
+}
+
+
+
+}
+
+
+
+@media (max-width:640px){
+
+
+.contact-hero{
+
+    min-height:auto;
+
+    padding-top:120px;   /* FIX NAV OVERLAP */
+
+    padding-bottom:70px;
+
+}
+
+
+
+.contact-hero-content h1{
+
+    font-size:2rem;
+
+    line-height:1.25;
+
+}
+
+
+
+.contact-hero-content p{
+
+    font-size:.88rem;
+
+}
+
+
+
+.contact-hero-actions{
+
+    flex-direction:column;
+
+}
+
+
+
+.contact-hero-actions .btn{
+
+    width:100%;
+
+    max-width:280px;
+
+}
+
+
+
+}
+
+
+
+
+@media (max-width:400px){
+
+
+.contact-hero{
+
+    padding-top:110px;
+
+    padding-left:15px;
+
+    padding-right:15px;
+
+}
+
+
+
+.contact-hero-content h1{
+
+    font-size:1.65rem;
+
+}
+
+
+
+.contact-hero-content p{
+
+    font-size:.82rem;
+
+}
+
+
+
+.contact-hero-tag{
+
+    font-size:.7rem;
+
+    padding:7px 12px;
+
+}
+
+
+
+}
+
+@media (min-width:641px) and (max-width:768px){
+
+
+
+
+.contact-hero{
+
+    min-height:100vh;
+
+    padding-top:120px;
+
+    padding-bottom:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+
+
+.contact-hero .container{
+
+    width:100%;
+
+    max-width:720px;
+
+    padding-left:30px;
+
+    padding-right:30px;
+
+}
+
+
+
+
+
+.contact-hero-content{
+
+    max-width:620px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+}
+
+
+
+
+.contact-hero-tag{
+
+    padding:9px 18px;
+
+    font-size:.85rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.contact-hero-tag svg{
+
+    width:16px;
+
+    height:16px;
+
+}
+
+
+
+
+
+.contact-hero-content h1{
+
+    font-size:2.5rem;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.contact-hero-content h1 em{
+
+    display:block;
+
+}
+
+
+
+
+.contact-hero-content p{
+
+    max-width:560px;
+
+    margin:0 auto 30px;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+
+
+
+.contact-hero-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.contact-hero-actions .btn{
+
+    padding:12px 25px;
+
+}
+
+
+
+
+
+.contact-hero{
+
+    background-position:center center;
+
+}
+
+
+
+}

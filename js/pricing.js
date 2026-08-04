@@ -1,16 +1,10 @@
-/*==================================================
- BLOOMNEST PRICING JAVASCRIPT
-==================================================*/
+
 document.addEventListener("DOMContentLoaded",()=>{
-    /*==============================================
-    LUCIDE ICONS
-    ==============================================*/
+  
     if(window.lucide){
         lucide.createIcons();
     }
-    /*==============================================
-    MONTHLY / YEARLY TOGGLE
-    ==============================================*/
+ 
     const monthlyBtn =
     document.getElementById("monthly");
     const yearlyBtn =
@@ -45,9 +39,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             });
         });
     }
-    /*==============================================
-    FAQ ACCORDION
-    ==============================================*/
+   
     const faqButtons =
     document.querySelectorAll(".faq-question");
     faqButtons.forEach(button=>{
@@ -73,9 +65,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             }
         });
     });
-    /*==============================================
-    PRICING CARD REVEAL ANIMATION
-    ==============================================*/
+ 
     const cards =
     document.querySelectorAll(".pricing-card");
     const observer =

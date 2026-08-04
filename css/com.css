@@ -1375,7 +1375,7 @@ font-size:.85rem;
 }
 .footer-bottom{
     border-top:1px solid var(--border);
-    padding:25px 0;
+    padding:10px 0;
     background:var(--bg2);
     position:relative;
     z-index:2;
@@ -1852,7 +1852,7 @@ font-size:.85rem;
 .contact-hero{
     position:relative;
     overflow:hidden;
-    padding:0;
+  
 }
 .contact-hero .container{
     position:relative;

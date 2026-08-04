@@ -8,17 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
     initNewsletter();
     refreshIcons();
 });
-/* ==========================================
-   REFRESH LUCIDE ICONS
-========================================== */
+
 function refreshIcons() {
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
-/* ==========================================
-   COUNTER ANIMATION
-========================================== */
+
 function initCounters() {
     const counters = document.querySelectorAll("[data-count]");
     if (!counters.length) return;
@@ -44,9 +40,7 @@ function initCounters() {
     });
     counters.forEach(counter => observer.observe(counter));
 }
-/* ==========================================
-   WISHLIST
-========================================== */
+
 function initWishlist() {
     document.querySelectorAll(".wishlist-btn").forEach(button => {
         button.addEventListener("click", () => {
@@ -59,9 +53,7 @@ function initWishlist() {
         });
     });
 }
-/* ==========================================
-   QUICK VIEW
-========================================== */
+
 function initQuickView() {
     document.querySelectorAll(".quick-view").forEach(button => {
         button.addEventListener("click", () => {
@@ -72,9 +64,7 @@ function initQuickView() {
         });
     });
 }
-/* ==========================================
-   COMPARE
-========================================== */
+
 function initCompare() {
     document.querySelectorAll(".compare-btn").forEach(button => {
         button.addEventListener("click", () => {
@@ -86,9 +76,7 @@ function initCompare() {
         });
     });
 }
-/* ==========================================
-   ADD TO CART
-========================================== */
+
 function initAddToCart() {
     document.querySelectorAll(".add-cart").forEach(button => {
         button.addEventListener("click", () => {
@@ -108,9 +96,7 @@ function initAddToCart() {
         });
     });
 }
-/* ==========================================
-   NEWSLETTER
-========================================== */
+
 function initNewsletter() {
     const form = document.querySelector(".newsletter-form");
     if (!form) return;

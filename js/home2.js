@@ -1,23 +1,6 @@
-/*==========================================================
-    BLOOMNEST FLOWER STORE
-    HOME 2 JS
-    File:
-    home2/home2.js
-    Includes:
-    ✓ Premium Hero Animation
-    ✓ Product Wishlist
-    ✓ Add To Cart Interaction
-    ✓ Counter Animation
-    ✓ Image Lazy Loading
-    ✓ Scroll Reveal
-    ✓ FAQ Toggle
-    ✓ Smooth Scroll
-    ✓ Newsletter
-==========================================================*/
+
 "use strict";
-/*==========================================================
-    DOM READY
-==========================================================*/
+
 document.addEventListener(
 "DOMContentLoaded",
 ()=>{
@@ -29,9 +12,7 @@ document.addEventListener(
     initNewsletter();
     initSmoothScroll();
 });
-/*==========================================================
-    SCROLL REVEAL
-==========================================================*/
+
 function initPremiumReveal(){
 const elements =
 document.querySelectorAll(
@@ -61,9 +42,7 @@ elements.forEach(
 el=>observer.observe(el)
 );
 }
-/*==========================================================
-    COUNTER ANIMATION
-==========================================================*/
+
 function initCounters(){
 const counters =
 document.querySelectorAll(
@@ -116,9 +95,7 @@ counters.forEach(
 item=>observer.observe(item)
 );
 }
-/*==========================================================
-    WISHLIST BUTTON
-==========================================================*/
+
 function initWishlist(){
 const buttons =
 document.querySelectorAll(
@@ -157,9 +134,7 @@ button.classList.contains("active")
 });
 });
 }
-/*==========================================================
-    ADD TO CART
-==========================================================*/
+
 function initCartButtons(){
 const buttons =
 document.querySelectorAll(
@@ -190,9 +165,7 @@ lucide.createIcons();
 });
 });
 }
-/*==========================================================
-    FAQ ACCORDION
-==========================================================*/
+
 function initFAQ(){
 const items =
 document.querySelectorAll(
@@ -213,9 +186,7 @@ item.classList.toggle(
 });
 });
 }
-/*==========================================================
-    NEWSLETTER
-==========================================================*/
+
 function initNewsletter(){
 const form =
 document.querySelector(
@@ -244,9 +215,7 @@ showHome2Toast(
 input.value="";
 });
 }
-/*==========================================================
-    SMOOTH SCROLL
-==========================================================*/
+
 function initSmoothScroll(){
 document.querySelectorAll(
 'a[href^="#"]'
@@ -270,9 +239,7 @@ block:"start"
 });
 });
 }
-/*==========================================================
-    TOAST MESSAGE
-==========================================================*/
+
 function showHome2Toast(
 message
 ){
@@ -305,9 +272,7 @@ toast.classList.remove(
 2500
 );
 }
-/*==========================================================
-    LAZY IMAGE LOAD
-==========================================================*/
+
 const images =
 document.querySelectorAll(
 "img[data-src]"
@@ -320,6 +285,3 @@ img.removeAttribute(
 "data-src"
 );
 });
-/*==========================================================
-    HOME2 COMPLETE
-==========================================================*/

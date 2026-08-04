@@ -1,16 +1,10 @@
-/*=========================================================
-BloomNest Blog Detail JS
-=========================================================*/
+
 document.addEventListener("DOMContentLoaded", () => {
-    /*=========================================
-    Lucide Icons
-    =========================================*/
+   
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
-    /*=========================================
-    FAQ Accordion
-    =========================================*/
+  
     const faqItems = document.querySelectorAll(".faq-item");
     faqItems.forEach(item => {
         const question = item.querySelector(".faq-question");
@@ -39,9 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    /*=========================================
-    Smooth Scroll
-    =========================================*/
+   
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener("click", function (e) {
             const target = document.querySelector(this.getAttribute("href"));
@@ -53,9 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
-    /*=========================================
-    Reading Progress Bar
-    =========================================*/
+   
     const progressBar = document.createElement("div");
     progressBar.className = "reading-progress";
     document.body.appendChild(progressBar);
@@ -65,9 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const progress = (scrollTop / docHeight) * 100;
         progressBar.style.width = progress + "%";
     });
-    /*=========================================
-    Reveal Animation
-    =========================================*/
+
     const revealItems = document.querySelectorAll(
         ".tip-card,.related-card,.sidebar-widget,.article-image,.article-quote,.author-box,.care-box,.faq-item"
     );
@@ -84,9 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.classList.add("reveal");
         observer.observe(item);
     });
-    /*=========================================
-    Gallery Image Zoom
-    =========================================*/
+  
     document.querySelectorAll(".article-gallery img").forEach(image => {
         image.addEventListener("click", () => {
             const overlay = document.createElement("div");

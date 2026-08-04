@@ -1,17 +1,10 @@
-/*==================================================
- BLOOMNEST AUTH JAVASCRIPT
- Login + Signup
-==================================================*/
+
 document.addEventListener("DOMContentLoaded",()=>{
-    /*==============================================
-    LUCIDE ICONS
-    ==============================================*/
+   
     if(window.lucide){
         lucide.createIcons();
     }
-    /*==============================================
-    THEME TOGGLE
-    ==============================================*/
+   
     const themeBtn=document.getElementById("theme-btn");
     if(themeBtn){
         themeBtn.addEventListener("click",()=>{
@@ -38,9 +31,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             lucide.createIcons();
         });
     }
-    /*==============================================
-    RTL SWITCH
-    ==============================================*/
+  
     const rtlBtn=document.getElementById("rtl-btn");
     if(rtlBtn){
         rtlBtn.addEventListener("click",()=>{
@@ -66,9 +57,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         });
     }
 });
-/*==================================================
- PASSWORD SHOW / HIDE
-==================================================*/
+
 function togglePw(id,button){
     const input=document.getElementById(id);
     const icon=button.querySelector("i");
@@ -84,9 +73,7 @@ function togglePw(id,button){
     }
     lucide.createIcons();
 }
-/*==================================================
- SIGNUP STEP SYSTEM
-==================================================*/
+
 let currentStep=0;
 function nextStep(step){
     if(!validateStep(step)){
@@ -109,9 +96,7 @@ function prevStep(step){
     .getElementById("s"+currentStep)
     ?.classList.add("on");
 }
-/*==================================================
- FORM VALIDATION
-==================================================*/
+
 function validateStep(step){
     const msg=
     document.getElementById("auth-msg");
@@ -174,9 +159,7 @@ function showError(text){
         "auth-msg error";
     }
 }
-/*==================================================
- PASSWORD STRENGTH
-==================================================*/
+
 document.addEventListener(
 "input",
 function(e){
@@ -209,9 +192,7 @@ label.textContent=text;
 }
 }
 });
-/*==================================================
- PREFERENCE SELECT
-==================================================*/
+
 function toggleOcc(el){
 el.classList.toggle("on");
 const input=
@@ -221,9 +202,7 @@ input.checked=
 !input.checked;
 }
 }
-/*==================================================
- SIGNUP COMPLETE
-==================================================*/
+
 function handleSignup(){
 const success=
 document.getElementById("success");
@@ -237,9 +216,7 @@ success.classList.add("show");
 }
 lucide.createIcons();
 }
-/*==================================================
- LOGIN
-==================================================*/
+
 function handleLogin(){
 const email=
 document.getElementById("email").value;

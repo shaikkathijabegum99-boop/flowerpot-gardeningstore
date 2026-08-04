@@ -1,9 +1,4 @@
-/* =====================================================
-   BLOOMNEST ABOUT PAGE JS
-===================================================== */
-/* =====================================================
-   INITIALIZE
-===================================================== */
+
 document.addEventListener("DOMContentLoaded",()=>{
     initIcons();
     initCounters();
@@ -11,17 +6,13 @@ document.addEventListener("DOMContentLoaded",()=>{
     initNewsletter();
     initImageAnimation();
 });
-/* =====================================================
-   LUCIDE ICONS
-===================================================== */
+
 function initIcons(){
     if(window.lucide){
         lucide.createIcons();
     }
 }
-/* =====================================================
-   COUNTER ANIMATION
-===================================================== */
+
 function initCounters(){
 const counters=document.querySelectorAll("[data-counter]");
 if(!counters.length) return;
@@ -64,9 +55,7 @@ requestAnimationFrame(update);
 };
 update();
 }
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
+
 function initReveal(){
 const elements=document.querySelectorAll(
 `
@@ -102,9 +91,7 @@ elements.forEach(el=>{
 observer.observe(el);
 });
 }
-/* =====================================================
-   NEWSLETTER FORM
-===================================================== */
+
 function initNewsletter(){
 const form=document.querySelector(
 ".newsletter-form"
@@ -125,9 +112,7 @@ alert(
 input.value="";
 });
 }
-/* =====================================================
-   IMAGE EFFECT
-===================================================== */
+
 function initImageAnimation(){
 const images=document.querySelectorAll(
 "img"
@@ -143,6 +128,3 @@ img.classList.add(
 );
 });
 }
-/* =====================================================
-   END
-===================================================== */

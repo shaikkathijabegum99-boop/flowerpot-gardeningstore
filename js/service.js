@@ -1,17 +1,10 @@
-/*==================================================
-BloomNest Service Page
-service.js
-==================================================*/
+
 document.addEventListener("DOMContentLoaded", () => {
-    /*==========================================
-    Lucide Icons
-    ==========================================*/
+   
     if (window.lucide) {
         lucide.createIcons();
     }
-    /*==========================================
-    Scroll Animation
-    ==========================================*/
+  
     const animatedElements = document.querySelectorAll(
         ".service-card, .why-service-card, .service-process-card, .pricing-service-card, .service-testimonial-card, .faq-item"
     );
@@ -28,9 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.classList.add("fade-up");
         observer.observe(item);
     });
-    /*==========================================
-    Counter Animation
-    ==========================================*/
+ 
     const counters = document.querySelectorAll(".counter");
     counters.forEach(counter => {
         const target = +counter.dataset.target;
@@ -47,9 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
         updateCounter();
     });
-    /*==========================================
-    Pricing Card Hover
-    ==========================================*/
+   
     document.querySelectorAll(".pricing-service-card").forEach(card => {
         card.addEventListener("mouseenter", () => {
             card.style.transform = "translateY(-10px)";
@@ -62,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    /*==========================================
-    Newsletter Form
-    ==========================================*/
+   
     const newsletter = document.querySelector(".newsletter-form");
     if (newsletter) {
         newsletter.addEventListener("submit", function (e) {
@@ -78,9 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.reset();
         });
     }
-    /*==========================================
-    Smooth Scroll Buttons
-    ==========================================*/
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             const target = document.querySelector(this.getAttribute("href"));
@@ -92,9 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-    /*==========================================
-    Gallery Hover Zoom
-    ==========================================*/
+ 
     document.querySelectorAll(".gallery-grid img").forEach(image => {
         image.addEventListener("mouseenter", () => {
             image.style.transform = "scale(1.08)";
@@ -103,9 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
             image.style.transform = "scale(1)";
         });
     });
-    /*==========================================
-    Floating Hero Card Animation
-    ==========================================*/
+  
     const floatingCard = document.querySelector(".service-floating-card");
     if (floatingCard) {
         let direction = 1;
@@ -115,9 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
             direction *= -1;
         }, 1800);
     }
-    /*==========================================
-    Image Reveal
-    ==========================================*/
+   
     document.querySelectorAll(".service-hero-image img, .service-cta-image img")
         .forEach(img => {
             img.addEventListener("load", () => {
