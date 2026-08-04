@@ -1352,19 +1352,14 @@ font-size:.85rem;
     width:100%;
 }
 
-[dir="rtl"] .footer-column h3::after{
-    left:auto;
-    right:0;
-}
+
 [dir="rtl"] .footer-column ul li a:hover{
     transform:translateX(-6px);
 }
 [dir="rtl"] .footer-contact li{
     flex-direction:row-reverse;
 }
-[dir="rtl"] .footer-social{
-    justify-content:flex-start;
-}
+
 
 [data-theme="dark"] .footer-social a{
     background:var(--surface2);
