@@ -1,61 +1,236 @@
 
+
+
 :root{
-    --primary:#1B5E20;
-    --primary-hover:#14471A;
-    --primary-soft:#EAF5EC;
-    --secondary:#8D6E63;
-    --secondary-hover:#6D544B;
-    --secondary-soft:#F4EFED;
-    --success:#2E7D32;
-    --warning:#F9A825;
-    --danger:#D32F2F;
-    --info:#1976D2;
-    --bg:#FFFFFF;
-    --bg2:#FAF9F6;
-    --bg3:#F4F7F2;
-    --bg-soft:#F7F8F5;
-    --surface:#FFFFFF;
-    --surface-hover:#FBFBFB;
-    --border:#E6EAE5;
-    --text:#1D2A22;
-    --text2:#59655D;
-    --text3:#8A938D;
-    --text-light:#6D786F;
-    --shadow-sm:0 4px 14px rgba(0,0,0,.06);
-    --shadow:0 10px 35px rgba(0,0,0,.08);
-    --shadow-md:0 12px 40px rgba(0,0,0,.10);
-    --shadow-lg:0 20px 60px rgba(0,0,0,.12);
-    --shadow-xl:0 30px 80px rgba(0,0,0,.18);
-    --radius-xs:6px;
-    --radius-sm:10px;
-    --radius-md:14px;
-    --radius:16px;
-    --radius-lg:22px;
-    --radius-xl:30px;
-    --radius-round:999px;
-    --container:1320px;
-    --transition:.35s ease;
+
+
+
+
+
+--primary:#2E7D32;
+--primary-hover:#1B5E20;
+--primary-light:#43A047;
+--primary-soft:#E8F5E9;
+
+
+
+--secondary:#C96B3B;
+--secondary-hover:#A94F28;
+--secondary-light:#D98255;
+--secondary-soft:#FBEDE6;
+
+
+--accent:#D4A017;
+--accent-hover:#B8860B;
+--accent-soft:#FFF6D8;
+
+
+
+
+--success:#388E3C;
+--warning:#F9A825;
+--danger:#D32F2F;
+--info:#1976D2;
+
+
+
+
+--bg:#FFFFFF;
+
+--bg-primary:#FFFFFF;
+
+--bg-secondary:#FAF9F4;
+
+--bg-soft:#F5F8F1;
+
+--bg-green:#F1F8E9;
+
+
+--surface:#FFFFFF;
+
+--surface-hover:#FCFCF7;
+
+
+
+
+--border:#DCE8D5;
+
+--border-light:#EAF0E5;
+
+--border-dark:#C8D8C0;
+
+
+
+--text:#1B2A1F;
+
+--text-heading:#16351D;
+
+--text2:#59665D;
+
+--text3:#89948C;
+
+--text-light:#748078;
+
+
+
+--shadow-sm:
+0 4px 15px rgba(46,125,50,.08);
+
+
+--shadow:
+0 10px 35px rgba(27,94,32,.10);
+
+
+--shadow-md:
+0 15px 45px rgba(46,125,50,.14);
+
+
+--shadow-lg:
+0 25px 70px rgba(0,0,0,.14);
+
+
+--shadow-xl:
+0 35px 90px rgba(0,0,0,.18);
+
+
+
+
+
+--radius-xs:6px;
+
+--radius-sm:10px;
+
+--radius-md:14px;
+
+--radius:18px;
+
+--radius-lg:26px;
+
+--radius-xl:36px;
+
+--radius-round:999px;
+
+
+
+
+
+--container:1320px;
+
+
+--transition:.35s ease;
+
+
 }
 
+
+
+
+
+
 html.dark-mode{
-    --bg:#121212;
-    --bg2:#181818;
-    --bg3:#222222;
-    --bg-soft:#1A1A1A;
-    --surface:#1C1C1C;
-    --surface-hover:#252525;
-    --border:#303030;
-    --text:#F5F5F5;
-    --text2:#CCCCCC;
-    --text3:#A9A9A9;
-    --text-light:#C8C8C8;
-    --primary-soft:#234A2A;
-    --secondary-soft:#4B3B35;
-    --shadow-sm:0 4px 14px rgba(0,0,0,.35);
-    --shadow:0 12px 40px rgba(0,0,0,.45);
-    --shadow-md:0 16px 50px rgba(0,0,0,.50);
-    --shadow-lg:0 20px 70px rgba(0,0,0,.55);
-    --shadow-xl:0 30px 90px rgba(0,0,0,.65);
+
+
+
+--bg:#101510;
+
+--bg-primary:#101510;
+
+--bg-secondary:#151B15;
+
+--bg-soft:#192119;
+
+--bg-green:#1B2A1B;
+
+
+
+
+--surface:#161C16;
+
+--surface-hover:#202820;
+
+
+
+
+--border:#334033;
+
+--border-light:#293329;
+
+--border-dark:#465646;
+
+
+
+--text:#F3F7F1;
+
+--text-heading:#FFFFFF;
+
+--text2:#C8D1C7;
+
+--text3:#99A599;
+
+--text-light:#B6C0B5;
+
+
+
+--primary:#66BB6A;
+
+--primary-hover:#81C784;
+
+--primary-light:#A5D6A7;
+
+--primary-soft:#1E3A22;
+
+
+
+--secondary:#E08A5A;
+
+--secondary-hover:#F29A6A;
+
+--secondary-light:#F5B08A;
+
+--secondary-soft:#43271B;
+
+
+
+--accent:#E6B94A;
+
+--accent-hover:#FFD166;
+
+--accent-soft:#403514;
+
+
+
+
+--success:#66BB6A;
+
+--warning:#FFCA28;
+
+--danger:#EF5350;
+
+--info:#64B5F6;
+
+
+
+
+--shadow-sm:
+0 5px 18px rgba(0,0,0,.35);
+
+
+--shadow:
+0 12px 40px rgba(0,0,0,.45);
+
+
+--shadow-md:
+0 18px 55px rgba(0,0,0,.50);
+
+
+--shadow-lg:
+0 30px 80px rgba(0,0,0,.60);
+
+
+--shadow-xl:
+0 40px 100px rgba(0,0,0,.70);
+
+
 }
 
 *,
@@ -161,6 +336,7 @@ p{
     font-size:1rem;
     line-height:1.8;
 }
+
 small{
     font-size:.875rem;
     color:var(--text3);
@@ -2260,4 +2436,58 @@ transform:scale(.7);
         scale(.9);
         opacity:0;
     }
+}
+/*==================================================
+   DARK MODE GLOBAL CARD BORDER
+==================================================*/
+
+.dark-mode .card,
+.dark-mode .service-card,
+.dark-mode .product-card,
+.dark-mode .blog-card,
+.dark-mode .pricing-card,
+.dark-mode .testimonial-card,
+.dark-mode .feature-card,
+.dark-mode .contact-card,
+.dark-mode .info-card,
+.dark-mode .team-card,
+.dark-mode .category-card{
+    
+    border:1px solid rgba(255,255,255,.12);
+    background:var(--surface);
+}
+
+
+/* Hover effect */
+
+.dark-mode .card:hover,
+.dark-mode .service-card:hover,
+.dark-mode .product-card:hover,
+.dark-mode .blog-card:hover,
+.dark-mode .pricing-card:hover,
+.dark-mode .testimonial-card:hover,
+.dark-mode .feature-card:hover,
+.dark-mode .contact-card:hover,
+.dark-mode .info-card:hover,
+.dark-mode .team-card:hover,
+.dark-mode .category-card:hover{
+
+    border-color:var(--primary);
+}
+
+
+
+/* Dark mode card image separation */
+
+.dark-mode .card-image{
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+
+
+/* Dark mode card sections */
+
+.dark-mode .card-header,
+.dark-mode .card-footer{
+    border-color:rgba(255,255,255,.10);
 }
