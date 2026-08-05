@@ -1367,7 +1367,7 @@
 
 @media (max-width:1024px){
     .pricing-grid{
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:1fr;
     }
 }
 
@@ -1383,7 +1383,7 @@
     max-width:900px;
     margin:0 auto;
     border-radius:24px;
-    grid-template-columns:1.2fr .8fr;
+  
     min-height:280px;
 }
 .cta-content{

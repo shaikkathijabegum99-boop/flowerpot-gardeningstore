@@ -2527,4 +2527,35 @@ footer ul li a,
     color:#fbbf24;
     fill:#fbbf24;
     stroke:#fbbf24;
+}/*==================================================
+FOOTER RTL FIX
+==================================================*/
+
+[dir="rtl"] .footer-column{
+    text-align:right;
+}
+
+[dir="rtl"] .footer-column h3::after{
+    left:auto;
+    right:0;
+    transform:none;
+}
+
+[dir="rtl"] .footer-column:hover h3::after{
+    right:0;
+}
+
+/* Tablet & Mobile (where heading is centered) */
+@media (max-width:640px){
+
+    [dir="rtl"] .footer-column{
+        text-align:center;
+    }
+
+    [dir="rtl"] .footer-column h3::after{
+        left:50%;
+        right:auto;
+        transform:translateX(-50%);
+    }
+
 }
