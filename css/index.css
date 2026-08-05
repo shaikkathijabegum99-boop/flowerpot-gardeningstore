@@ -770,69 +770,6 @@ color: white;
     line-height:1.7;
 }
 
-.process-section{
-    padding:100px 0;
-    background:var(--bg-soft);
-}
-.process-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-.process-card{
-    position:relative;
-    text-align:center;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:25px;
-    padding:40px 25px;
-    transition:.35s;
-}
-.process-card:hover{
-    transform:translateY(-10px);
-    box-shadow:var(--shadow);
-    border-color:var(--secondary);
-}
-.process-card span{
-    position:absolute;
-    top:15px;
-    right:20px;
-    font-size:55px;
-    font-weight:800;
-    color:
-    color-mix(
-        in srgb,
-        var(--secondary) 25%,
-        transparent
-    );
-}
-.process-card svg{
-    width:45px;
-    height:45px;
-    color:var(--primary);
-    margin-bottom:20px;
-}
-.process-card h3{
-    font-size:22px;
-    color:var(--text);
-    margin-bottom:12px;
-}
-.process-card p{
-    color:var(--text-muted);
-    line-height:1.6;
-}
-
-.dark-mode .feature-card,
-.dark-mode .why-item,
-.dark-mode .process-card{
-    background:var(--surface);
-}
-.dark-mode .feature-icon{
-    background:#203020;
-}
-.dark-mode .collection-content .section-tag{
-    background:#243124;
-}
 
 @media(max-width:1024px){
     .collection-grid,
@@ -2030,112 +1967,7 @@ html{
         font-size:15px;
     }
 }
-.seasonal-section{
-    padding:100px 0;
-    background:var(--bg-soft);
-}
 
-.season-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.season-card{
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:25px;
-    overflow:hidden;
-    transition:.35s ease;
-    position:relative;
-}
-.season-card:hover{
-    transform:translateY(-10px);
-    box-shadow:var(--shadow);
-    border-color:var(--secondary);
-}
-.season-card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    display:block;
-    transition:.5s ease;
-}
-.season-card:hover img{
-    transform:scale(1.08);
-}
-.season-card h3{
-    font-size:24px;
-    font-weight:700;
-    color:var(--text);
-    margin:25px 25px 10px;
-}
-.season-card p{
-    font-size:15px;
-    line-height:1.7;
-    color:var(--text-muted);
-    margin:0 25px 30px;
-}
-
-.season-card::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:260px;
-    background:
-    linear-gradient(
-        transparent,
-        rgba(0,0,0,.25)
-    );
-    opacity:0;
-    transition:.35s ease;
-}
-.season-card:hover::after{
-    opacity:1;
-}
-
-.seasonal-section .section-tag i{
-    width:18px;
-    height:18px;
-    color:var(--secondary);
-}
-
-.dark-mode .season-card{
-    background:var(--surface);
-    border-color:var(--border-dark);
-}
-.dark-mode .season-card p{
-    color:#b8b8b8;
-}
-
-@media(min-width:1280px){
-    .season-card img{
-        height:280px;
-    }
-}
-
-@media(max-width:1024px){
-    .season-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-@media(max-width:640px){
-    .seasonal-section{
-        padding:70px 0;
-    }
-    .season-grid{
-        grid-template-columns:1fr;
-    }
-    .season-card img{
-        height:240px;
-    }
-    .season-card h3{
-        font-size:22px;
-    }
-}
 .bulk-order-section{
     padding:100px 0;
     background:var(--bg);
@@ -3404,4 +3236,267 @@ html{
     .hero-image img{
         height:280px;
     }
+}/*==================================================
+SEASONAL SECTION
+==================================================*/
+
+.seasonal-section{
+    padding:100px 0;
+    background:var(--bg-soft);
+}
+
+.season-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    align-items:stretch;
+}
+
+/*==================================================
+SEASON CARD
+==================================================*/
+
+.season-card{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:24px;
+    overflow:hidden;
+    transition:all .35s ease;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+.season-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--secondary);
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+}
+
+.season-card-image{
+    position:relative;
+    overflow:hidden;
+}
+
+.season-card img{
+    display:block;
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:transform .45s ease;
+}
+
+.season-card:hover img{
+    transform:scale(1.08);
+}
+
+.season-card-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.20),
+        transparent
+    );
+    opacity:0;
+    transition:.35s;
+}
+
+.season-card:hover .season-card-image::after{
+    opacity:1;
+}
+
+/*==================================================
+CONTENT
+==================================================*/
+
+.season-content{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    padding:24px;
+}
+
+.season-content h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:12px;
+    line-height:1.3;
+}
+
+.season-content p{
+    color:var(--text-muted);
+    line-height:1.7;
+    font-size:15px;
+    flex:1;
+    margin-bottom:20px;
+}
+
+.season-content .btn,
+.season-content a{
+    margin-top:auto;
+}
+
+/*==================================================
+DARK MODE
+==================================================*/
+
+.dark-mode .season-card{
+    background:var(--surface);
+    border-color:var(--border-dark);
+}
+
+/*==================================================
+TABLET
+==================================================*/
+
+@media (max-width:1024px){
+
+    .season-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .season-card img{
+        height:240px;
+    }
+
+}
+
+/*==================================================
+MOBILE
+==================================================*/
+
+@media (max-width:640px){
+
+    .seasonal-section{
+        padding:70px 0;
+    }
+
+    .season-grid{
+        grid-template-columns:1fr;
+    }
+
+    .season-card img{
+        height:220px;
+    }
+
+    .season-content{
+        padding:20px;
+    }
+
+    .season-content h3{
+        font-size:20px;
+    }
+
+}/*==================================================
+PROCESS SECTION
+==================================================*/
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    align-items:stretch;
+}
+
+.process-card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    height:100%;
+    min-height:220px;
+
+    padding:40px 25px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:24px;
+
+    transition:all .35s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--secondary);
+    box-shadow:var(--shadow);
+}
+
+.process-card span{
+    position:absolute;
+    top:18px;
+    right:20px;
+    font-size:52px;
+    font-weight:800;
+    line-height:1;
+    color:color-mix(
+        in srgb,
+        var(--secondary) 22%,
+        transparent
+    );
+}
+
+.process-card svg{
+    width:48px;
+    height:48px;
+    color:var(--primary);
+    margin-bottom:20px;
+    flex-shrink:0;
+}
+
+.process-card h3{
+    font-size:22px;
+    color:var(--text);
+    margin-bottom:15px;
+    line-height:1.35;
+    min-height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.process-card p{
+    flex:1;
+    color:var(--text-muted);
+    line-height:1.8;
+    font-size:15px;
+
+    display:flex;
+    align-items:flex-start;
+}
+
+/* Tablet */
+
+@media (max-width:1024px){
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .process-card{
+        min-height:300px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:640px){
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-card{
+        min-height:auto;
+        padding:30px 20px;
+    }
+
+    .process-card h3{
+        min-height:auto;
+    }
+
 }

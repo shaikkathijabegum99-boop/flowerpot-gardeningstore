@@ -2490,4 +2490,83 @@ transform:scale(.7);
 .dark-mode .card-header,
 .dark-mode .card-footer{
     border-color:rgba(255,255,255,.10);
+}/*========================================
+GLOBAL SECTION SPACING - COMPACT
+========================================*/
+
+section{
+    padding-block: 60px;
+}
+
+
+/* Section container */
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding-inline:20px;
+}
+
+
+/* Section headings spacing */
+.section-header{
+    margin-bottom:35px;
+}
+
+.section-title{
+    margin-bottom:12px;
+}
+
+.section-subtitle{
+    margin-bottom:0;
+}
+
+
+/* Reduce common content gaps */
+.grid,
+.flex,
+.cards,
+.services-grid,
+.blog-grid{
+    gap:24px;
+}
+
+
+/* Remove unwanted first/last margins */
+section > *:first-child{
+    margin-top:0;
+}
+
+section > *:last-child{
+    margin-bottom:0;
+}
+
+
+/* Paragraph spacing */
+p{
+    margin-bottom:12px;
+}
+
+
+/* Mobile compact spacing */
+@media(max-width:640px){
+
+    section{
+        padding-block:40px;
+    }
+
+    .container{
+        padding-inline:16px;
+    }
+
+    .section-header{
+        margin-bottom:25px;
+    }
+
+}section{
+    margin-block:0 !important;
+}
+
+section + section{
+    margin-top:0 !important;
 }

@@ -119,3 +119,41 @@ document.body.classList.remove(
 );
 }
 });
+document.querySelectorAll(".add-cart").forEach(function(btn){
+
+    btn.addEventListener("click",function(e){
+
+        e.preventDefault();
+
+        const card = this.closest(".plant-card");
+        const message = card.querySelector(".cart-message");
+
+        message.classList.add("show");
+
+        this.innerHTML = `
+            <i data-lucide="check"></i>
+            Added
+        `;
+
+        if(window.lucide){
+            lucide.createIcons();
+        }
+
+        setTimeout(function(){
+
+            message.classList.remove("show");
+
+            btn.innerHTML = `
+                <i data-lucide="shopping-cart"></i>
+                Add
+            `;
+
+            if(window.lucide){
+                lucide.createIcons();
+            }
+
+        },2000);
+
+    });
+
+});
