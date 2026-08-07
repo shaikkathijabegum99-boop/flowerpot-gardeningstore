@@ -1,4 +1,16 @@
+"use strict";
 
+
+/* FORCE DEFAULT LIGHT MODE */
+
+if(!localStorage.getItem("theme")){
+
+localStorage.setItem(
+"theme",
+"light"
+);
+
+}
 "use strict";
 
 async function loadComponent(id,file){
@@ -35,45 +47,50 @@ function lockBody(){
 function unlockBody(){
     document.body.style.overflow="";
 }
-
 function initTheme(){
-    const root =
-        document.documentElement;
-    const button =
-        document.getElementById(
-            "themeToggle"
-        );
-    const savedTheme =
-        localStorage.getItem(
-            "theme"
-        );
-    if(savedTheme==="dark"){
-        root.classList.add(
-            "dark-mode"
-        );
-    }
-    else{
-        root.classList.remove(
-            "dark-mode"
-        );
-    }
+
+const root = document.documentElement;
+const button = document.getElementById("themeToggle");
+
+
+const savedTheme = localStorage.getItem("theme");
+
+
+if(savedTheme === "dark"){
+
+    root.classList.add("dark-mode");
+
+}
+else{
+
+    root.classList.remove("dark-mode");
+    localStorage.setItem("theme","light");
+
+}
+
+
+updateThemeIcon();
+
+
+if(!button) return;
+
+
+button.onclick = ()=>{
+
+    const enabled =
+    root.classList.toggle("dark-mode");
+
+
+    localStorage.setItem(
+        "theme",
+        enabled ? "dark" : "light"
+    );
+
+
     updateThemeIcon();
-    if(!button) return;
-    button.onclick = ()=>{
-        const enabled =
-            root.classList.toggle(
-                "dark-mode"
-            );
-        localStorage.setItem(
-            "theme",
-            enabled
-            ?
-            "dark"
-            :
-            "light"
-        );
-        updateThemeIcon();
-    };
+
+};
+
 }
 function updateThemeIcon(){
     const button =
@@ -836,36 +853,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 });
 
-const themeBtn = document.getElementById("theme-btn");
-if(themeBtn){
-themeBtn.addEventListener("click",()=>{
-document.documentElement.classList.toggle("dark-mode");
-const isDark =
-document.documentElement.classList.contains("dark-mode");
-localStorage.setItem(
-"theme",
-isDark ? "dark" : "light"
-);
-themeBtn.innerHTML = isDark
-? '<i data-lucide="sun"></i>'
-: '<i data-lucide="moon"></i>';
-lucide.createIcons();
-});
-}
-const savedTheme =
-localStorage.getItem("theme");
-if(savedTheme==="dark"){
-document.documentElement.classList.add(
-"dark-mode"
-);
-const btn =
-document.getElementById("theme-btn");
-if(btn){
-btn.innerHTML =
-'<i data-lucide="sun"></i>';
-}
-}
-lucide.createIcons();
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const heroes = document.querySelectorAll(".animated-hero");
