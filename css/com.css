@@ -2558,4 +2558,142 @@ FOOTER RTL FIX
         transform:translateX(-50%);
     }
 
+}/*=========================================
+MOBILE NAV SUMMARY RTL ARROW FIX
+=========================================*/
+
+
+
+/* Move arrow icon to left */
+[dir="rtl"] .mobile-nav details summary::after{
+    margin-left:0;
+    margin-right:auto;
+    transform:rotate(45deg);
+}
+
+/* Open state arrow */
+[dir="rtl"] .mobile-nav details[open] summary::after{
+    transform:rotate(-135deg);
+}
+
+
+/* Dropdown items RTL */
+[dir="rtl"] .mobile-dropdown{
+    padding-right:1rem;
+    padding-left:0;
+}
+
+[dir="rtl"] .mobile-dropdown a{
+    justify-content:flex-start;
+    text-align:right;
+}
+
+
+/* Mobile nav icons */
+[dir="rtl"] .mobile-nav a svg,
+[dir="rtl"] .mobile-nav summary svg,
+[dir="rtl"] .mobile-nav a i,
+[dir="rtl"] .mobile-nav summary i{
+    margin-left:12px;
+    margin-right:0;
+}/* ==========================================
+   FOOTER RTL FINAL FIX
+========================================== */
+
+html[dir="rtl"] .site-footer{
+    direction:rtl;
+}
+
+
+html[dir="rtl"] .footer-column{
+    text-align:right;
+}
+
+
+html[dir="rtl"] .footer-column h3{
+    text-align:center;
+}
+
+
+html[dir="rtl"] .footer-column h3::after{
+    left:auto !important;
+    right:0 !important;
+    transform:none !important;
+}
+
+
+html[dir="rtl"] .footer-column ul{
+    text-align:right;
+}
+
+
+html[dir="rtl"] .footer-column ul li{
+    text-align:right;
+}
+
+
+html[dir="rtl"] .footer-column ul li a{
+    justify-content:flex-start;
+}
+
+
+html[dir="rtl"] .footer-column ul li a:hover{
+    padding-left:0;
+    padding-right:8px;
+    transform:translateX(-6px);
+}
+
+
+html[dir="rtl"] .footer-column ul li a:hover::after{
+    content:"←";
+    left:auto;
+    right:-14px;
+}
+
+
+/* Contact column */
+
+html[dir="rtl"] .footer-contact li{
+    flex-direction:row-reverse;
+    justify-content:flex-start;
+    text-align:right;
+}
+
+
+html[dir="rtl"] .footer-contact li svg{
+    margin-left:0;
+    margin-right:10px;
+}
+
+
+
+/* Mobile RTL */
+
+@media(max-width:640px){
+
+html[dir="rtl"] .footer-column,
+html[dir="rtl"] .footer-column h3,
+html[dir="rtl"] .footer-column ul,
+html[dir="rtl"] .footer-column ul li{
+    text-align:center;
+}
+
+
+html[dir="rtl"] .footer-column h3::after{
+    left:50% !important;
+    right:auto !important;
+    transform:translateX(-50%) !important;
+}
+
+
+}/* ==========================================
+   RTL FOOTER H3 AFTER CENTER FIX
+========================================== */
+
+
+
+html[dir="rtl"] .footer-column h3::after{
+    left:50% !important;
+    right:auto !important;
+    transform:translateX(-50%) !important;
 }

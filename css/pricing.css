@@ -89,8 +89,8 @@
 }
 .popular-badge{
     position:absolute;
-    top:18px;
-    right:18px;
+   
+  
     background:var(--secondary);
     color:#fff;
     padding:6px 15px;
@@ -1025,4 +1025,79 @@
 
     color:var(--primary);
 
+}/* ==========================================
+   PRICING CARD CENTER ALIGNMENT
+========================================== */
+
+.pricing-card{
+    text-align:center;
+}
+
+.pricing-icon{
+    margin:0 auto 20px;
+}
+
+.pricing-card p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.price{
+    justify-content:center;
+}
+
+.pricing-card ul{
+    text-align:left;
+    display:inline-block;
+}
+
+.pricing-card li{
+    justify-content:flex-start;
+}
+
+.pricing-card .btn{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/* Popular badge center adjustment */
+.popular-badge{
+  
+    transform:translateX(50%);
+}
+
+
+/* Mobile */
+@media(max-width:640px){
+
+    .pricing-card{
+        text-align:center;
+    }
+
+    .pricing-card ul{
+        width:100%;
+        display:block;
+    }
+
+    .pricing-card li{
+        justify-content:flex-start;
+    }
+
+}/* ==========================================
+   RTL - PRICING POPULAR BADGE
+========================================== */
+
+html[dir="rtl"] .popular-badge{
+    right:auto;
+
+    transform:translateX(-50%);
+}
+
+
+/* LTR Default */
+html[dir="ltr"] .popular-badge{
+  
+    left:auto;
+    transform:translateX(50%);
 }

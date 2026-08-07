@@ -42,8 +42,8 @@ align-items:center;
 gap:8px;
 padding:10px 20px;
 border-radius:50px;
-background:var(--primary-light);
-color:var(--primary-dark);
+
+color:var(--primary);
 font-size:14px;
 font-weight:700;
 margin-bottom:24px;
@@ -519,7 +519,7 @@ color:var(--heading-color);
 text-align:left;
 }
 .faq-question span{
-flex:1;
+
 padding-right:20px;
 }
 .faq-question i{
@@ -1944,7 +1944,7 @@ html.dark-mode .blog-detail-hero-image{
     grid-template-columns:repeat(2,1fr);
 }
 .article-gallery{
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(3,1fr);
 }
 .related-grid{
     grid-template-columns:repeat(2,1fr);
@@ -2030,4 +2030,79 @@ html.dark-mode .newsletter-form{
 .newsletter-form .btn{
     padding:0 24px;
 }
+}/*==================================================
+ ARTICLE LIST RTL SUPPORT
+==================================================*/
+
+
+[dir="rtl"] .article-list{
+
+    padding:0;
+
+}
+
+
+
+[dir="rtl"] .article-list li{
+
+    padding-left:0;
+
+    padding-right:32px;
+
+    text-align:right;
+
+}
+
+
+
+[dir="rtl"] .article-list li::before{
+
+    left:auto;
+
+    right:0;
+
+}
+
+
+
+[dir="rtl"] .article-list li:hover{
+
+    transform:translateX(-5px);
+
+}
+
+
+
+/*==================================================
+ DARK MODE RTL ARTICLE LIST
+==================================================*/
+
+
+html.dark-mode[dir="rtl"] .article-list li::before{
+
+    background:var(--primary);
+
+    box-shadow:0 0 0 5px rgba(76,175,80,.15);
+
+}
+
+
+
+/*==================================================
+ MOBILE RTL
+==================================================*/
+
+
+@media(max-width:640px){
+
+
+[dir="rtl"] .article-list li{
+
+    padding-right:28px;
+
+    font-size:15px;
+
+}
+
+
 }

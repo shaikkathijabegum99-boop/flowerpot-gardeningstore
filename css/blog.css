@@ -915,8 +915,7 @@ html.dark-mode .team-social a:hover{
     background:var(--secondary-hover);
     color:#ffffff;
 }
-.blog-meta svg,
-.blog-content a svg{
+.blog-meta svg{
     color:var(--secondary);
 }
 [data-theme="dark"] .blog-content a,

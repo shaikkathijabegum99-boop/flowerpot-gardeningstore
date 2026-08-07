@@ -1415,4 +1415,43 @@ body{
 .icon-btn svg{
     width:14px;
     height:14px;
+}html,
+body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+/* Light Mode */
+
+html.light-mode body{
+    background:
+    linear-gradient(
+        135deg,
+        #f5f8f6 0%,
+        #edf4ef 50%,
+        #e3ece6 100%
+    );
+}
+
+/* Dark Mode */
+
+html.dark-mode body{
+    background:
+    linear-gradient(
+        135deg,
+        #07111a 0%,
+        #101b26 45%,
+        #182330 100%
+    ) !important;
+}
+
+/* Layout */
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
 }

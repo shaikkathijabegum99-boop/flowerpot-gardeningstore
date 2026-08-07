@@ -108,3 +108,35 @@ function initNewsletter() {
         form.reset();
     });
 }
+/*=========================================
+ADD TO CART
+=========================================*/
+
+document.querySelectorAll(".add-cart").forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        this.innerHTML = `
+            <i data-lucide="check"></i>
+            Added
+        `;
+
+        this.disabled = true;
+
+        this.style.background = "#2e7d32";
+
+        lucide.createIcons();
+
+        setTimeout(() => {
+
+            this.innerHTML = "Add To Cart";
+
+            this.disabled = false;
+
+            this.style.background = "";
+
+        }, 2000);
+
+    });
+
+});

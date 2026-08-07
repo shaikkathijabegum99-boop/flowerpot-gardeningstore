@@ -291,4 +291,393 @@ MOBILE
     min-height:90px;
 }
 
+}/*==================================================
+BLOOMNEST BULK BOOKING
+COMPACT SCREEN FIT CSS
+==================================================*/
+
+
+.bulk-booking{
+    padding:120px 0 70px;
+    overflow:hidden;
+}
+
+
+.bulk-booking .container{
+    max-width:1180px;
+    margin:auto;
+}
+
+
+/* SECTION HEADER */
+
+.section-header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:8px 18px;
+    border-radius:50px;
+    background:rgba(27,94,32,.08);
+    color:var(--primary);
+    font-size:.85rem;
+    font-weight:700;
+}
+
+
+.section-tag svg{
+    width:18px;
+    height:18px;
+}
+
+
+.section-header h2{
+    margin:18px 0 10px;
+    font-size:2.5rem;
+}
+
+
+.section-header p{
+    max-width:750px;
+    margin:auto;
+    line-height:1.7;
+    color:var(--text2);
+}
+
+
+
+/* FORM CARD */
+
+.bulk-booking-form{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:var(--shadow);
+}
+
+
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+
+.form-group label{
+    font-size:.9rem;
+    font-weight:700;
+    color:var(--text);
+}
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+    border:1px solid var(--border);
+    background:var(--bg);
+    color:var(--text);
+
+    padding:12px 15px;
+
+    border-radius:12px;
+
+    font-family:'Manrope',sans-serif;
+    font-size:.9rem;
+
+    transition:.3s ease;
+
+}
+
+
+
+.form-group input,
+.form-group select{
+    height:46px;
+}
+
+
+
+.form-group textarea{
+    resize:none;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    outline:none;
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(27,94,32,.12);
+
+}
+
+
+
+.full-width{
+    grid-column:1/-1;
+}
+
+
+
+/* BUTTONS */
+
+.form-actions{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+
+
+.form-actions .btn{
+
+    min-width:160px;
+
+    height:48px;
+
+}
+
+
+
+/* RTL */
+
+[dir="rtl"] .form-group{
+    text-align:right;
+}
+
+[dir="rtl"] .form-actions{
+    flex-direction:row-reverse;
+}
+
+
+
+
+/*==============================
+DESKTOP
+==============================*/
+
+@media(min-width:1281px){
+
+.bulk-booking{
+    padding-top:110px;
+}
+
+
+.bulk-booking-form{
+    padding:40px;
+}
+
+}
+
+
+
+
+/*==============================
+TABLET
+==============================*/
+
+@media(max-width:1024px){
+
+.bulk-booking{
+    padding:100px 0 60px;
+}
+
+
+.section-header h2{
+    font-size:2rem;
+}
+
+
+.form-grid{
+    gap:18px;
+}
+
+
+.bulk-booking-form{
+    padding:28px;
+}
+
+}
+
+
+
+
+
+/*==============================
+MOBILE
+==============================*/
+
+@media(max-width:640px){
+
+
+.bulk-booking{
+
+    padding:90px 0 40px;
+
+}
+
+
+
+.section-header{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.section-header h2{
+
+    font-size:1.7rem;
+
+}
+
+
+
+.section-header p{
+
+    font-size:.9rem;
+
+}
+
+
+
+.bulk-booking-form{
+
+    padding:20px;
+
+    border-radius:18px;
+
+}
+
+
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+    gap:15px;
+
+}
+
+
+
+.full-width{
+
+    grid-column:auto;
+
+}
+
+
+
+.form-group input,
+.form-group select{
+
+    height:44px;
+
+}
+
+
+
+.form-group textarea{
+
+    min-height:90px;
+
+}
+
+
+
+.form-actions{
+
+    flex-direction:column;
+
+}
+
+
+
+.form-actions .btn{
+
+    width:100%;
+
+}
+
+
+}
+
+
+
+
+/*==============================
+SMALL MOBILE 360px
+==============================*/
+
+@media(max-width:360px){
+
+
+.bulk-booking{
+
+padding:80px 0 35px;
+
+}
+
+
+
+.bulk-booking-form{
+
+padding:16px;
+
+}
+
+
+
+.section-tag{
+
+font-size:.75rem;
+
+}
+
+
+
+.section-header h2{
+
+font-size:1.5rem;
+
+}
+
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+font-size:.85rem;
+
+}
+
+
 }
