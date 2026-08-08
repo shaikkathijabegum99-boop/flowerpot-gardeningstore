@@ -1524,6 +1524,6 @@ html.dark-mode[dir="rtl"] .terms-sidebar-card a:hover,
 .card-brand span{
     font-size:1.5rem;
     font-weight:700;
-    color:var(--primary);
+  
     line-height:1;
 }
