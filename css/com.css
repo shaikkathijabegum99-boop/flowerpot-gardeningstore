@@ -662,7 +662,7 @@ margin-bottom:1.4rem;
 .footer-column ul{
 display:flex;
 flex-direction:column;
-gap:.85rem;
+
 }
 .footer-column a{
 font-family:'Manrope',sans-serif;
@@ -1192,9 +1192,7 @@ font-size:.85rem;
     margin:0;
     list-style:none;
 }
-.footer-column ul li{
-    margin-bottom:15px;
-}
+
 .footer-column ul li a{
     text-decoration:none;
     color:var(--text2);
@@ -2696,4 +2694,35 @@ html[dir="rtl"] .footer-column h3::after{
     left:50% !important;
     right:auto !important;
     transform:translateX(-50%) !important;
+}/* ==========================================
+   HOME DROPDOWN ACTIVE STATE
+   Home stays active when Home 1 / Home 2
+   is the current page
+========================================== */
+
+.nav-item.dropdown:has(.dropdown-menu a.active) > .dropdown-toggle{
+    background:transparent !important;
+    color:var(--primary) !important;
+}
+
+.nav-item.dropdown:has(.dropdown-menu a.active) > .dropdown-toggle::after{
+    transform:scaleX(1) !important;
+    background:var(--primary) !important;
+    height:2px;
+}
+
+/* Active Home dropdown item */
+.dropdown-menu a.active{
+    color:var(--primary) !important;
+    background:rgba(27,94,32,.08) !important;
+}
+
+/* Dark mode */
+html.dark-mode .nav-item.dropdown:has(.dropdown-menu a.active) > .dropdown-toggle{
+    color:var(--primary) !important;
+}
+
+html.dark-mode .dropdown-menu a.active{
+    color:var(--primary) !important;
+    background:rgba(27,94,32,.16) !important;
 }

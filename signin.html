@@ -19,7 +19,7 @@ crossorigin>
 rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="stylesheet"
-href="../css/global.css">
+href="./css/global.css">
 <link rel="stylesheet"
 href="css/auth.css">
 </head>
@@ -33,9 +33,9 @@ aria-label="Toggle Dark Mode">
 <i data-lucide="moon"></i>
 </button>
 <button class="icon-btn"
-        id="rtlToggle"
-        aria-label="Toggle RTL">
-    <i data-lucide="arrow-left-right"></i>
+id="rtl-btn"
+aria-label="Toggle RTL">
+<i data-lucide="arrow-left-right"></i>
 </button>
 </div>
 
@@ -152,50 +152,9 @@ Create Account
 </div>
 </div>
 
-<script src="../js/global.js"></script>
+<script src="./js/global.js"></script>
 <script src="js/auth.js"></script>
-<script>
-lucide.createIcons();
-function togglePw(id,btn){
-const input =
-document.getElementById(id);
-const icon =
-btn.querySelector("i");
-if(input.type === "password"){
-input.type="text";
-icon.setAttribute(
-"data-lucide",
-"eye-off"
-);
-}
-else{
-input.type="password";
-icon.setAttribute(
-"data-lucide",
-"eye"
-);
-}
-lucide.createIcons();
-}
-function handleLogin(){
-const email =
-document.getElementById("email");
-const password =
-document.getElementById("password");
-const msg =
-document.getElementById("auth-msg");
-if(!email.value || !password.value){
-msg.textContent =
-"Please enter email and password.";
-msg.className =
-"auth-msg error";
-return;
-}
-msg.textContent="";
-msg.className =
-"auth-msg";
-window.location.href="../dashboard.html";
-}
+
 </script>
 </body>
 </html>

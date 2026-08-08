@@ -1401,7 +1401,7 @@ body{
 .card-switch{
     margin-top:8px;
     padding-top:8px;
-    font-size:10px;
+    font-size:14px;
 }
 
 .card-controls{
@@ -1438,13 +1438,12 @@ html.light-mode body{
 /* Dark Mode */
 
 html.dark-mode body{
-    background:
-    linear-gradient(
-        135deg,
-        #07111a 0%,
-        #101b26 45%,
-        #182330 100%
-    ) !important;
+   background: linear-gradient(
+    135deg,
+    #000000 0%,
+    #080808 45%,
+    #111111 100%
+) !important;
 }
 
 /* Layout */
@@ -1454,4 +1453,138 @@ body{
     justify-content:center;
     align-items:center;
     overflow:hidden;
+}/* Hide browser password reveal icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+
+/* Chrome / Edge password reveal controls */
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+    display: none !important;
+}/* Prevent password field decoration */
+input[type="password"] {
+    -webkit-appearance: none;
+    appearance: none;
+}input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-credentials-auto-fill-button {
+    display: none !important;
+}/* ==========================================
+TERMS & PRIVACY POLICY
+========================================== */
+
+.auth-check{
+display:flex;
+align-items:flex-start;
+gap:10px;
+width:100%;
+margin:8px 0 20px;
+color:var(--text2);
+font-size:.85rem;
+line-height:1.5;
+}
+
+.auth-check input[type="checkbox"]{
+flex:0 0 auto;
+width:17px;
+height:17px;
+margin:2px 0 0;
+accent-color:var(--primary);
+cursor:pointer;
+}
+
+.auth-check span{
+display:block;
+}
+
+.auth-check a{
+color:var(--primary);
+font-weight:700;
+text-decoration:none;
+transition:.25s ease;
+}
+
+.auth-check a:hover{
+color:var(--secondary);
+text-decoration:underline;
+}
+
+.auth-check a:focus-visible{
+outline:2px solid var(--primary);
+outline-offset:3px;
+border-radius:3px;
+}
+
+/* ==========================================
+DARK MODE
+========================================== */
+
+[data-theme="dark"] .auth-check{
+color:var(--text2);
+}
+
+[data-theme="dark"] .auth-check a{
+color:var(--primary);
+}
+
+[data-theme="dark"] .auth-check a:hover{
+color:var(--secondary);
+}
+
+/* ==========================================
+RTL
+========================================== */
+
+html[dir="rtl"] .auth-check{
+direction:rtl;
+text-align:right;
+}
+
+html[dir="rtl"] .auth-check input[type="checkbox"]{
+margin-left:0;
+margin-right:0;
+}
+
+html[dir="rtl"] .auth-check a{
+display:inline-block;
+}
+
+/* ==========================================
+MOBILE
+========================================== */
+
+@media(max-width:640px){
+
+
+.auth-check{
+    gap:8px;
+    font-size:.8rem;
+    margin-bottom:18px;
+}
+
+.auth-check input[type="checkbox"]{
+    width:16px;
+    height:16px;
+}
+
+
+}
+
+@media(max-width:360px){
+
+
+.auth-check{
+    font-size:.75rem;
+    line-height:1.45;
+    gap:7px;
+}
+
+.auth-check input[type="checkbox"]{
+    width:15px;
+    height:15px;
+}
+
+
 }

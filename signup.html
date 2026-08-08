@@ -20,9 +20,9 @@ crossorigin>
 rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest"></script>
 <link rel="stylesheet"
-href="../css/global.css">
+href="./css/global.css">
 <link rel="stylesheet"
-href="css/auth.css">
+href="./css/auth.css">
 </head>
 <body>
 <div class="auth-card">
@@ -139,21 +139,25 @@ onclick="togglePw('confirm',this)">
 </button>
 </div>
 </div>
+
 <label class="auth-check">
-<input
-type="checkbox"
-id="terms">
-<span>
-I agree to the
-<a href="#">
-Terms
-</a>
-&
-<a href="#">
-Privacy Policy
-</a>
-</span>
+    <input
+        type="checkbox"
+        id="terms">
+
+    <span>
+        I agree to the
+        <a href="#">
+            Terms & Conditions
+        </a>
+        &
+        <a href="#">
+            Privacy Policy
+        </a>
+    </span>
 </label>
+
+
 <button
 class="auth-btn"
 onclick="handleSignup()">
@@ -205,81 +209,9 @@ Sign In
 </div>
 </div>
 
-<script src="../js/global.js"></script>
+<script src="./js/global.js"></script>
 <script src="js/auth.js"></script>
-<script>
-lucide.createIcons();
 
-function togglePw(id, btn){
-const input =
-document.getElementById(id);
-const icon =
-btn.querySelector("i");
-if(input.type === "password"){
-input.type = "text";
-icon.setAttribute(
-"data-lucide",
-"eye-off"
-);
-}else{
-input.type = "password";
-icon.setAttribute(
-"data-lucide",
-"eye"
-);
-}
-lucide.createIcons();
-}
-
-function handleSignup(){
-const name =
-document.getElementById("name");
-const email =
-document.getElementById("email");
-const phone =
-document.getElementById("phone");
-const password =
-document.getElementById("password");
-const confirm =
-document.getElementById("confirm");
-const terms =
-document.getElementById("terms");
-const msg =
-document.getElementById("auth-msg");
-msg.textContent = "";
-msg.className = "auth-msg";
-if(
-!name.value ||
-!email.value ||
-!phone.value ||
-!password.value ||
-!confirm.value
-){
-msg.textContent =
-"Please fill in all required fields.";
-msg.classList.add("error");
-return;
-}
-if(password.value !== confirm.value){
-msg.textContent =
-"Passwords do not match.";
-msg.classList.add("error");
-return;
-}
-if(!terms.checked){
-msg.textContent =
-"Please accept the Terms & Privacy Policy.";
-msg.classList.add("error");
-return;
-}
-msg.textContent =
-"Account created successfully! Redirecting...";
-msg.classList.add("success");
-setTimeout(function(){
-window.location.href =
-"signin.html";
-},1500);
-}
 </script>
 </body>
 </html>

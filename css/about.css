@@ -1005,4 +1005,43 @@ html[dir="rtl"] .timeline-item:nth-child(even)::after{
     left:auto;
 }
 
+}/*==================================================
+IPAD MINI
+768px - 834px
+Team Grid: 1 Column + Centered
+==================================================*/
+
+@media (min-width:768px) and (max-width:834px){
+
+    .team-grid{
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:30px;
+    }
+
+    .team-card{
+        width:100%;
+        max-width:420px;
+    }
+
+}
+
+
+/*==================================================
+NEST HUB / 1024px
+Team Grid: 3 Columns
+==================================================*/
+
+@media (min-width:1024px) and (max-width:1024px){
+
+    .team-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:24px;
+    }
+
+    .team-card{
+        width:100%;
+        max-width:none;
+    }
+
 }

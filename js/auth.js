@@ -1,236 +1,525 @@
 
-document.addEventListener("DOMContentLoaded",()=>{
-   
-    if(window.lucide){
+/* =========================================================
+   BLOOMNEST
+   AUTHENTICATION JAVASCRIPT
+   Sign In Page
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =====================================================
+       LUCIDE ICONS
+    ===================================================== */
+
+    if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
-   
-    const themeBtn=document.getElementById("theme-btn");
-    if(themeBtn){
-        themeBtn.addEventListener("click",()=>{
-            const html=document.documentElement;
-            const current=
-            html.getAttribute("data-theme");
-            if(current==="dark"){
-                html.setAttribute(
-                    "data-theme",
+
+
+    /* =====================================================
+       ELEMENTS
+    ===================================================== */
+
+    const themeBtn = document.getElementById("theme-btn");
+    const rtlBtn = document.getElementById("rtl-btn");
+
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+    const rememberCheckbox =
+        document.querySelector(".auth-check input");
+
+    const authMsg = document.getElementById("auth-msg");
+
+    const signInBtn =
+        document.querySelector(".auth-btn");
+
+    const socialButtons =
+        document.querySelectorAll(".social-btn");
+
+
+    /* =====================================================
+       LOAD SAVED SETTINGS
+    ===================================================== */
+
+    const savedTheme =
+        localStorage.getItem("bloomnest-theme");
+
+    const savedDirection =
+        localStorage.getItem("bloomnest-direction");
+
+    const savedEmail =
+        localStorage.getItem("bloomnest-email");
+
+
+    /* =====================================================
+       APPLY SAVED THEME
+    ===================================================== */
+
+    if (savedTheme === "dark") {
+
+        document.documentElement.classList.add("dark-mode");
+        document.documentElement.classList.remove("light-mode");
+
+        updateThemeIcon(true);
+
+    } else {
+
+        document.documentElement.classList.add("light-mode");
+        document.documentElement.classList.remove("dark-mode");
+
+        updateThemeIcon(false);
+    }
+
+
+    /* =====================================================
+       APPLY SAVED RTL
+    ===================================================== */
+
+    if (savedDirection === "rtl") {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "rtl"
+        );
+
+    } else {
+
+        document.documentElement.setAttribute(
+            "dir",
+            "ltr"
+        );
+    }
+
+
+    /* =====================================================
+       REMEMBERED EMAIL
+    ===================================================== */
+
+    if (savedEmail && emailInput) {
+
+        emailInput.value = savedEmail;
+
+        if (rememberCheckbox) {
+            rememberCheckbox.checked = true;
+        }
+    }
+
+
+    /* =====================================================
+       THEME TOGGLE
+    ===================================================== */
+
+    if (themeBtn) {
+
+        themeBtn.addEventListener("click", function () {
+
+            const html =
+                document.documentElement;
+
+            const isDark =
+                html.classList.contains("dark-mode");
+
+            if (isDark) {
+
+                html.classList.remove("dark-mode");
+                html.classList.add("light-mode");
+
+                localStorage.setItem(
+                    "bloomnest-theme",
                     "light"
                 );
-            }else{
-                html.setAttribute(
-                    "data-theme",
+
+                updateThemeIcon(false);
+
+            } else {
+
+                html.classList.remove("light-mode");
+                html.classList.add("dark-mode");
+
+                localStorage.setItem(
+                    "bloomnest-theme",
                     "dark"
                 );
+
+                updateThemeIcon(true);
             }
-            themeBtn.innerHTML =
-            html.getAttribute("data-theme")==="dark"
-            ?
-            '<i data-lucide="sun"></i>'
-            :
-            '<i data-lucide="moon"></i>';
-            lucide.createIcons();
         });
     }
-  
-    const rtlBtn=document.getElementById("rtl-btn");
-    if(rtlBtn){
-        rtlBtn.addEventListener("click",()=>{
-            const html=document.documentElement;
-            const direction=
-            html.getAttribute("dir");
-            if(direction==="rtl"){
+
+
+    /* =====================================================
+       RTL TOGGLE
+    ===================================================== */
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener("click", function () {
+
+            const html =
+                document.documentElement;
+
+            const currentDirection =
+                html.getAttribute("dir");
+
+            if (currentDirection === "rtl") {
+
                 html.setAttribute(
                     "dir",
                     "ltr"
                 );
-                rtlBtn.innerHTML=
-                '<i data-lucide="arrow-left-right"></i>';
-            }else{
+
+                localStorage.setItem(
+                    "bloomnest-direction",
+                    "ltr"
+                );
+
+            } else {
+
                 html.setAttribute(
                     "dir",
                     "rtl"
                 );
-                rtlBtn.innerHTML=
-                '<i data-lucide="arrow-left-right"></i>';
+
+                localStorage.setItem(
+                    "bloomnest-direction",
+                    "rtl"
+                );
             }
-            lucide.createIcons();
+
+            if (typeof lucide !== "undefined") {
+                lucide.createIcons();
+            }
         });
     }
+
+
+
+/* =====================================================
+   BLOOMNEST PASSWORD
+   Eye icon completely disabled
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const password =
+        document.getElementById("password");
+
+    const eye =
+        document.querySelector(".pw-eye");
+
+    /* Always hide the eye icon */
+    if (eye) {
+        eye.style.display = "none";
+        eye.remove();
+    }
+
+    /* Keep password as password type */
+    if (password) {
+        password.type = "password";
+    }
+
 });
 
-function togglePw(id,button){
-    const input=document.getElementById(id);
-    const icon=button.querySelector("i");
-    if(input.type==="password"){
-        input.type="text";
-        button.innerHTML=
-        '<i data-lucide="eye-off"></i>';
-    }
-    else{
-        input.type="password";
-        button.innerHTML=
-        '<i data-lucide="eye"></i>';
-    }
-    lucide.createIcons();
-}
 
-let currentStep=0;
-function nextStep(step){
-    if(!validateStep(step)){
-        return;
-    }
-    document
-    .getElementById("s"+step)
-    ?.classList.remove("on");
-    currentStep=step+1;
-    document
-    .getElementById("s"+currentStep)
-    ?.classList.add("on");
-}
-function prevStep(step){
-    document
-    .getElementById("s"+step)
-    ?.classList.remove("on");
-    currentStep=step-1;
-    document
-    .getElementById("s"+currentStep)
-    ?.classList.add("on");
-}
+    /* =====================================================
+       LOGIN FUNCTION
+       Used by onclick="handleLogin()"
+    ===================================================== */
 
-function validateStep(step){
-    const msg=
-    document.getElementById("auth-msg");
-    if(!msg)
-    return true;
-    msg.className="auth-msg";
-    if(step===0){
-        const fields=[
-            "fname",
-            "lname",
-            "email",
-            "phone"
-        ];
-        for(let id of fields){
-            const el=
-            document.getElementById(id);
-            if(el && !el.value.trim()){
-                showError(
-                "Please complete all details."
-                );
-                el.focus();
-                return false;
+    window.handleLogin = function () {
+
+        clearMessage();
+
+        if (!emailInput || !passwordInput) {
+            return;
+        }
+
+        const email =
+            emailInput.value.trim();
+
+        const password =
+            passwordInput.value.trim();
+
+
+        /* ---------------------------------------------
+           EMPTY EMAIL
+        --------------------------------------------- */
+
+        if (!email) {
+
+            showMessage(
+                "Please enter your email address.",
+                "error"
+            );
+
+            emailInput.focus();
+
+            return;
+        }
+
+
+        /* ---------------------------------------------
+           EMAIL VALIDATION
+        --------------------------------------------- */
+
+        const emailPattern =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailPattern.test(email)) {
+
+            showMessage(
+                "Please enter a valid email address.",
+                "error"
+            );
+
+            emailInput.focus();
+
+            return;
+        }
+
+
+        /* ---------------------------------------------
+           EMPTY PASSWORD
+        --------------------------------------------- */
+
+        if (!password) {
+
+            showMessage(
+                "Please enter your password.",
+                "error"
+            );
+
+            passwordInput.focus();
+
+            return;
+        }
+
+
+        /* ---------------------------------------------
+           PASSWORD LENGTH
+        --------------------------------------------- */
+
+        if (password.length < 6) {
+
+            showMessage(
+                "Password must contain at least 6 characters.",
+                "error"
+            );
+
+            passwordInput.focus();
+
+            return;
+        }
+
+
+        /* ---------------------------------------------
+           REMEMBER EMAIL
+        --------------------------------------------- */
+
+        if (rememberCheckbox &&
+            rememberCheckbox.checked) {
+
+            localStorage.setItem(
+                "bloomnest-email",
+                email
+            );
+
+        } else {
+
+            localStorage.removeItem(
+                "bloomnest-email"
+            );
+        }
+
+
+        /* ---------------------------------------------
+           SUCCESS
+        --------------------------------------------- */
+
+        showMessage(
+            "Sign in successful. Redirecting...",
+            "success"
+        );
+
+
+        /* ---------------------------------------------
+           BUTTON STATE
+        --------------------------------------------- */
+
+        if (signInBtn) {
+
+            signInBtn.disabled = true;
+
+            signInBtn.style.opacity = "0.7";
+
+            signInBtn.style.cursor = "not-allowed";
+
+            signInBtn.innerHTML = `
+                Signing In
+                <i data-lucide="loader-circle"></i>
+            `;
+
+            if (typeof lucide !== "undefined") {
+                lucide.createIcons();
             }
         }
-    }
-    if(step===1){
-        const pass=
-        document.getElementById("password").value;
-        const confirm=
-        document.getElementById("cpw").value;
-        if(pass.length<6){
-            showError(
-            "Password must contain minimum 6 characters."
-            );
-            return false;
-        }
-        if(pass!==confirm){
-            showError(
-            "Passwords do not match."
-            );
-            return false;
-        }
-        if(
-        !document.getElementById("terms").checked
-        ){
-            showError(
-            "Please accept terms and privacy policy."
-            );
-            return false;
-        }
-    }
-    return true;
-}
-function showError(text){
-    const msg=
-    document.getElementById("auth-msg");
-    if(msg){
-        msg.textContent=text;
-        msg.className=
-        "auth-msg error";
-    }
-}
 
-document.addEventListener(
-"input",
-function(e){
-if(e.target.id==="password"){
-const value=e.target.value;
-const fill=
-document.querySelector(".pw-fill");
-const label=
-document.querySelector(".pw-lbl");
-let width="0%";
-let text="Weak";
-if(value.length>=6){
-width="40%";
-text="Medium";
-}
-if(value.length>=10){
-width="80%";
-text="Strong";
-}
-if(value.match(/[A-Z]/) &&
-value.match(/[0-9]/)){
-width="100%";
-text="Excellent";
-}
-if(fill){
-fill.style.width=width;
-}
-if(label){
-label.textContent=text;
-}
-}
+
+        /* ---------------------------------------------
+           REDIRECT
+        --------------------------------------------- */
+
+        setTimeout(function () {
+
+            window.location.href =
+                "../dashboard.html";
+
+        }, 900);
+    };
+
+
+    /* =====================================================
+       ENTER KEY LOGIN
+    ===================================================== */
+
+    if (emailInput) {
+
+        emailInput.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Enter") {
+
+                    event.preventDefault();
+
+                    window.handleLogin();
+                }
+            }
+        );
+    }
+
+
+    if (passwordInput) {
+
+        passwordInput.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (event.key === "Enter") {
+
+                    event.preventDefault();
+
+                    window.handleLogin();
+                }
+            }
+        );
+    }
+
+
+    /* =====================================================
+       SOCIAL LOGIN BUTTONS
+    ===================================================== */
+
+    socialButtons.forEach(function (button) {
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const provider =
+                    button.textContent
+                        .trim();
+
+                showMessage(
+                    provider +
+                    " sign in will be available soon.",
+                    "info"
+                );
+            }
+        );
+    });
+
+
+    /* =====================================================
+       CLEAR MESSAGE WHEN USER TYPES
+    ===================================================== */
+
+    if (emailInput) {
+
+        emailInput.addEventListener(
+            "input",
+            clearMessage
+        );
+    }
+
+    if (passwordInput) {
+
+        passwordInput.addEventListener(
+            "input",
+            clearMessage
+        );
+    }
+
+
+    /* =====================================================
+       FUNCTIONS
+    ===================================================== */
+
+    function showMessage(message, type) {
+
+        if (!authMsg) {
+            return;
+        }
+
+        authMsg.textContent = message;
+
+        authMsg.className =
+            "auth-msg " + type;
+
+        authMsg.style.display = "block";
+    }
+
+
+    function clearMessage() {
+
+        if (!authMsg) {
+            return;
+        }
+
+        authMsg.textContent = "";
+
+        authMsg.className =
+            "auth-msg";
+
+        authMsg.style.display = "none";
+    }
+
+
+    function updateThemeIcon(isDark) {
+
+        if (!themeBtn) {
+            return;
+        }
+
+        const icon =
+            themeBtn.querySelector("i");
+
+        if (!icon) {
+            return;
+        }
+
+        icon.setAttribute(
+            "data-lucide",
+            isDark
+                ? "sun"
+                : "moon"
+        );
+
+        if (typeof lucide !== "undefined") {
+            lucide.createIcons();
+        }
+    }
+
 });
 
-function toggleOcc(el){
-el.classList.toggle("on");
-const input=
-el.querySelector("input");
-if(input){
-input.checked=
-!input.checked;
-}
-}
-
-function handleSignup(){
-const success=
-document.getElementById("success");
-document
-.querySelectorAll(".step")
-.forEach(step=>{
-step.classList.remove("on");
-});
-if(success){
-success.classList.add("show");
-}
-lucide.createIcons();
-}
-
-function handleLogin(){
-const email=
-document.getElementById("email").value;
-const password=
-document.getElementById("password").value;
-const msg=
-document.getElementById("auth-msg");
-if(!email || !password){
-msg.textContent=
-"Please enter email and password.";
-msg.className=
-"auth-msg error";
-return;
-}
-window.location.href=
-"../dashboard.html";
-}
