@@ -523,3 +523,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+function togglePw(inputId, button){
+
+    const input = document.getElementById(inputId);
+
+    if(!input) return;
+
+    if(input.type === "password"){
+
+        input.type = "text";
+
+        button.innerHTML =
+            '<i data-lucide="eye-off"></i>';
+
+        button.setAttribute(
+            "aria-label",
+            "Hide password"
+        );
+
+    }else{
+
+        input.type = "password";
+
+        button.innerHTML =
+            '<i data-lucide="eye"></i>';
+
+        button.setAttribute(
+            "aria-label",
+            "Show password"
+        );
+
+    }
+
+    if(typeof lucide !== "undefined"){
+        lucide.createIcons();
+    }
+
+}
