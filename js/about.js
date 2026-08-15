@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded",()=>{
     initIcons();
     initCounters();
@@ -6,13 +5,11 @@ document.addEventListener("DOMContentLoaded",()=>{
     initNewsletter();
     initImageAnimation();
 });
-
 function initIcons(){
     if(window.lucide){
         lucide.createIcons();
     }
 }
-
 function initCounters(){
 const counters=document.querySelectorAll("[data-counter]");
 if(!counters.length) return;
@@ -55,7 +52,6 @@ requestAnimationFrame(update);
 };
 update();
 }
-
 function initReveal(){
 const elements=document.querySelectorAll(
 `
@@ -91,7 +87,6 @@ elements.forEach(el=>{
 observer.observe(el);
 });
 }
-
 function initNewsletter(){
 const form=document.querySelector(
 ".newsletter-form"
@@ -112,7 +107,6 @@ alert(
 input.value="";
 });
 }
-
 function initImageAnimation(){
 const images=document.querySelectorAll(
 "img"

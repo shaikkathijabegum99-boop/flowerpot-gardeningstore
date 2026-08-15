@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>
+        BloomNest | Flower Pots, Plants & Gardening Supplies
+    </title>
+    <meta
+        name="description"
+        content="Shop BloomNest for plants, flower pots, soil, seeds, fertilizers and gardening tools for every home and garden."
+    >
+    <meta
+        name="keywords"
+        content="BloomNest products, plants, flower pots, soil, seeds, fertilizers, gardening tools, gardening supplies"
+    >
+    <meta
+        name="author"
+        content="BloomNest"
+    >
+    <link
+        rel="icon"
+        href="./images/favicon.png"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/com.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/products.css"
+    >
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
+</head>
+<body>
+<div id="pageLoader">
+    <div class="loader-circle"></div>
+</div>
+<div id="navbar"></div>
+<main>
+<section class="products-hero">
+    <section class="page-header product-hero animated-hero">
+    <div class="hero-animation">
+        <span class="leaf leaf-1"></span>
+        <span class="leaf leaf-2"></span>
+        <span class="leaf leaf-3"></span>
+        <span class="leaf leaf-4"></span>
+        <span class="leaf leaf-5"></span>
+    </div>
+    <div class="container">
+        <div class="products-hero-grid">
+            <div class="products-hero-content">
+                <span class="section-tag">
+                    BloomNest Garden Store
+                </span>
+                <h1>
+                    Find Everything
+                    Your Garden
+                    <em>Needs</em>
+                </h1>
+                <p>
+                    Explore plants, flower pots, soil, seeds,
+                    fertilizers and practical gardening tools
+                    selected for homes, balconies and outdoor
+                    spaces.
+                </p>
+                <div class="products-hero-actions">
+                    <a
+                        href="#productsGrid"
+                        class="btn btn-primary"
+                    >
+                        Shop Products
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                    <a
+                        href="blog.html"
+                        class="btn btn-outline"
+                    >
+                        Gardening Guides
+                    </a>
+                </div>
+            </div>
+            <div class="products-hero-image">
+                <img
+                    src="./images/indexhero.jpg"
+                    alt="BloomNest plants, flower pots and gardening supplies"
+                    loading="eager"
+                >
+                <div class="products-hero-floating">
+                    <span>
+                        Garden Essentials
+                    </span>
+                    <strong>
+                        Plants • Pots • Soil • Seeds
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-category-nav">
+    <div class="container">
+        <div class="product-category-list">
+            <button
+                type="button"
+                class="product-category-link active"
+                data-category="all"
+                aria-label="Show all products"
+            >
+                <span class="category-number">
+                    00
+                </span>
+                <span>
+                    All Products
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="plants"
+                aria-label="Show plants"
+            >
+                <span class="category-number">
+                    01
+                </span>
+                <span>
+                    Plants
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="pots"
+                aria-label="Show flower pots"
+            >
+                <span class="category-number">
+                    02
+                </span>
+                <span>
+                    Flower Pots
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="soil"
+                aria-label="Show soil and compost"
+            >
+                <span class="category-number">
+                    03
+                </span>
+                <span>
+                    Soil & Compost
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="seeds"
+                aria-label="Show seeds"
+            >
+                <span class="category-number">
+                    04
+                </span>
+                <span>
+                    Seeds
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="fertilizers"
+                aria-label="Show fertilizers"
+            >
+                <span class="category-number">
+                    05
+                </span>
+                <span>
+                    Fertilizers
+                </span>
+            </button>
+            <button
+                type="button"
+                class="product-category-link"
+                data-category="tools"
+                aria-label="Show garden tools"
+            >
+                <span class="category-number">
+                    06
+                </span>
+                <span>
+                    Garden Tools
+                </span>
+            </button>
+        </div>
+    </div>
+</section>
+<section class="products-shop">
+    <div class="container">
+        <div class="products-toolbar">
+            <div class="products-result">
+                <span>
+                    Our Collection
+                </span>
+                <strong id="productResultCount">
+                    12 Garden Products
+                </strong>
+            </div>
+            <div class="products-toolbar-actions">
+                <div class="product-search">
+                    <i data-lucide="search"></i>
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search products..."
+                        aria-label="Search products"
+                    >
+                </div>
+                <label class="product-sort">
+                    <span>
+                        Sort
+                    </span>
+                    <select
+                        id="productSort"
+                        aria-label="Sort products"
+                    >
+                        <option value="featured">
+                            Featured
+                        </option>
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+                        <option value="name">
+                            Name
+                        </option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div
+            class="products-grid"
+            id="productsGrid"
+        >
+            <article
+                class="store-product-card"
+                data-category="plants"
+                data-name="Premium Green Plant"
+                data-price="599"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/p1.jpg"
+                        alt="Premium indoor green plant"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge">
+                        Bestseller
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Premium Green Plant"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Plants
+                    </span>
+                    <h2>
+                        Premium Green Plant
+                    </h2>
+                    <p>
+                        Easy-care greenery for living rooms,
+                        bedrooms and workspaces.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹599
+                        </strong>
+                        <a
+                            href="product-details.html#premium-green-plant"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="plants"
+                data-name="Monstera Indoor Plant"
+                data-price="899"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/monstra.jpg"
+                        alt="Monstera indoor plant"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge new">
+                        New
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Monstera Indoor Plant"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Plants
+                    </span>
+                    <h2>
+                        Monstera Indoor Plant
+                    </h2>
+                    <p>
+                        A statement indoor plant for
+                        bright, stylish green corners.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹899
+                        </strong>
+                        <a
+                            href="product-details.html#monstera-indoor-plant"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="pots"
+                data-name="Modern Ceramic Pot"
+                data-price="449"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/ceramic.jpg"
+                        alt="Modern ceramic flower pot"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge">
+                        Popular
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Modern Ceramic Pot"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Flower Pots
+                    </span>
+                    <h2>
+                        Modern Ceramic Pot
+                    </h2>
+                    <p>
+                        Minimal ceramic styling for
+                        modern indoor plant displays.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹449
+                        </strong>
+                        <a
+                            href="product-details.html#modern-ceramic-pot"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="pots"
+                data-name="Terracotta Garden Pot"
+                data-price="299"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/clay.jpg"
+                        alt="Terracotta flower pot"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Terracotta Garden Pot"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Flower Pots
+                    </span>
+                    <h2>
+                        Terracotta Garden Pot
+                    </h2>
+                    <p>
+                        Natural terracotta pot for herbs,
+                        flowers and outdoor gardening.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹299
+                        </strong>
+                        <a
+                            href="product-details.html#terracotta-garden-pot"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="soil"
+                data-name="Organic Potting Mix"
+                data-price="299"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/fertilizer.jpg"
+                        alt="Organic potting soil"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge">
+                        Popular
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Organic Potting Mix"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Soil & Compost
+                    </span>
+                    <h2>
+                        Organic Potting Mix
+                    </h2>
+                    <p>
+                        Balanced growing medium designed
+                        for healthier roots and plants.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹299
+                        </strong>
+                        <a
+                            href="product-details.html#organic-potting-mix"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="seeds"
+                data-name="Seasonal Flower Seeds"
+                data-price="149"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/seeds.jpg"
+                        alt="Seasonal flower seeds"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge new">
+                        Seasonal
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Seasonal Flower Seeds"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Seeds
+                    </span>
+                    <h2>
+                        Seasonal Flower Seeds
+                    </h2>
+                    <p>
+                        Easy-to-grow seasonal seeds for
+                        colorful flowers and garden beds.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹149
+                        </strong>
+                        <a
+                            href="product-details.html#seasonal-flower-seeds"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="fertilizers"
+                data-name="Plant Growth Fertilizer"
+                data-price="349"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/fertilizer1.jpg"
+                        alt="Plant growth fertilizer"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Plant Growth Fertilizer"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Fertilizers
+                    </span>
+                    <h2>
+                        Plant Growth Fertilizer
+                    </h2>
+                    <p>
+                        Everyday plant nutrition for
+                        steady growth and healthy greenery.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹349
+                        </strong>
+                        <a
+                            href="product-details.html#plant-growth-fertilizer"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="tools"
+                data-name="Everyday Garden Tool Set"
+                data-price="799"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/garden tools.jpg"
+                        alt="Everyday garden tool set"
+                        loading="lazy"
+                    >
+                    <span class="store-product-badge">
+                        Value Set
+                    </span>
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Everyday Garden Tool Set"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Garden Tools
+                    </span>
+                    <h2>
+                        Everyday Garden Tool Set
+                    </h2>
+                    <p>
+                        Practical tools for planting,
+                        pruning and everyday plant care.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹799
+                        </strong>
+                        <a
+                            href="product-details.html#everyday-garden-tool-set"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="plants"
+                data-name="Outdoor Garden Plant"
+                data-price="699"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/outdoor.jpg"
+                        alt="Outdoor garden plant"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Outdoor Garden Plant"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Plants
+                    </span>
+                    <h2>
+                        Outdoor Garden Plant
+                    </h2>
+                    <p>
+                        Hardy greenery selected for
+                        balconies, patios and outdoor spaces.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹699
+                        </strong>
+                        <a
+                            href="product-details.html#outdoor-garden-plant"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="pots"
+                data-name="Decorative Planter"
+                data-price="699"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/designer pots.jpg"
+                        alt="Decorative planter"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Decorative Planter"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Flower Pots
+                    </span>
+                    <h2>
+                        Decorative Planter
+                    </h2>
+                    <p>
+                        A versatile planter for indoor
+                        plants and stylish green corners.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹699
+                        </strong>
+                        <a
+                            href="product-details.html#decorative-planter"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="soil"
+                data-name="Garden Compost"
+                data-price="249"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/compost.jpg"
+                        alt="Garden compost"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Garden Compost"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Soil & Compost
+                    </span>
+                    <h2>
+                        Garden Compost
+                    </h2>
+                    <p>
+                        Organic matter for supporting
+                        fertile soil and healthy plant growth.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹249
+                        </strong>
+                        <a
+                            href="product-details.html#garden-compost"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article
+                class="store-product-card"
+                data-category="tools"
+                data-name="Hand Pruning Tool"
+                data-price="399"
+            >
+                <div class="store-product-image">
+                    <img
+                        src="./images/hanging.jpg"
+                        alt="Hand pruning garden tool"
+                        loading="lazy"
+                    >
+                    <button
+                        type="button"
+                        class="product-quick-btn"
+                        aria-label="Quick view Hand Pruning Tool"
+                    >
+                        <i data-lucide="eye"></i>
+                    </button>
+                </div>
+                <div class="store-product-content">
+                    <span class="store-product-category">
+                        Garden Tools
+                    </span>
+                    <h2>
+                        Hand Pruning Tool
+                    </h2>
+                    <p>
+                        Compact pruning support for everyday
+                        plant and garden maintenance.
+                    </p>
+                    <div class="store-product-bottom">
+                        <strong>
+                            ₹399
+                        </strong>
+                        <a
+                            href="product-details.html#hand-pruning-tool"
+                            class="product-view-link"
+                        >
+                            View Product
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div
+            class="products-empty"
+            id="productsEmpty"
+        >
+            <i data-lucide="search-x"></i>
+            <h2>
+                No Products Found
+            </h2>
+            <p>
+                Try another search or browse a different
+                gardening category.
+            </p>
+            <button
+                type="button"
+                class="btn btn-outline"
+                id="clearProductSearch"
+            >
+                Clear Search
+            </button>
+        </div>
+    </div>
+</section>
+<section class="product-help">
+    <div class="container">
+        <div class="product-help-box">
+            <div class="product-help-content">
+                <span class="section-tag">
+                    Need Help Choosing?
+                </span>
+                <h2>
+                    Start With The Right
+                    Gardening
+                    <em>Essentials</em>
+                </h2>
+                <p>
+                    Whether you are creating an indoor plant
+                    corner, refreshing a balcony garden or
+                    starting a new outdoor space, choose the
+                    essentials that match your growing needs.
+                </p>
+                <a
+                    href="blog.html"
+                    class="btn btn-primary"
+                >
+                    Read Gardening Guides
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+            <div class="product-help-list">
+                <a href="blog.html">
+                    <span>
+                        01
+                    </span>
+                    <strong>
+                        Beginner Gardening
+                    </strong>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="blog.html">
+                    <span>
+                        02
+                    </span>
+                    <strong>
+                        Seasonal Planting
+                    </strong>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+                <a href="blog.html">
+                    <span>
+                        03
+                    </span>
+                    <strong>
+                        Plant Care
+                    </strong>
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="products-final-cta">
+    <div class="container">
+        <div class="products-final-cta-box">
+            <div>
+                <span class="section-tag">
+                    Grow Something Beautiful
+                </span>
+                <h2>
+                    Everything For Your
+                    Next
+                    <em>Green Project</em>
+                </h2>
+                <p>
+                    Shop BloomNest for plants, pots and
+                    practical gardening supplies.
+                </p>
+            </div>
+            <div class="products-final-cta-actions">
+                <a
+                    href="#productsGrid"
+                    class="btn btn-primary"
+                >
+                    Start Shopping
+                    <i data-lucide="arrow-up"></i>
+                </a>
+                <a
+                    href="contact.html"
+                    class="btn btn-outline"
+                >
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div id="footer"></div>
+<script src="./js/global.js"></script>
+<script src="./js/products.js"></script>
+<script src="./js/booknow.js"></script>
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    }
+);
+</script>
+</body>
+</html>

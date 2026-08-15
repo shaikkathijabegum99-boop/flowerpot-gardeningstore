@@ -1,18 +1,14 @@
-
 "use strict";
 console.log("🌿 BloomNest Component JS Loaded");
-
 const $ = (selector, scope = document) =>
     scope.querySelector(selector);
 const $$ = (selector, scope = document) =>
     [...scope.querySelectorAll(selector)];
-
 function refreshIcons() {
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
-
 async function loadComponent(id, file) {
     const element = document.getElementById(id);
     if (!element) return;
@@ -31,7 +27,6 @@ async function loadComponent(id, file) {
         );
     }
 }
-
 function getRootPath() {
     const page =
         window.location.pathname
@@ -44,7 +39,6 @@ function getRootPath() {
         ? "./"
         : "../";
 }
-
 function initTheme() {
     const button =
         document.getElementById("themeToggle");
@@ -69,7 +63,6 @@ function initTheme() {
         updateThemeIcon();
     });
 }
-
 function updateThemeIcon() {
     const button =
         document.getElementById("themeToggle");
@@ -81,7 +74,6 @@ function updateThemeIcon() {
         : '<i data-lucide="moon"></i>';
     refreshIcons();
 }
-
 function initRTL() {
     const button =
         document.getElementById("rtlToggle");
@@ -109,7 +101,6 @@ function initRTL() {
         );
     });
 }
-
 function initStickyHeader() {
     const header =
         document.getElementById("siteHeader");
@@ -131,7 +122,6 @@ function initStickyHeader() {
         }
     );
 }
-
 function updateHeaderShadow() {
     const header =
         document.getElementById("siteHeader");
@@ -191,7 +181,6 @@ function initMobileMenu() {
             );
         });
 }
-
 function setActiveNavigation() {
     const currentPage =
         window.location.pathname
@@ -217,7 +206,6 @@ function setActiveNavigation() {
         }
     });
 }
-
 function initDropdowns() {
     if (window.innerWidth <= 1024) return;
     const dropdowns =
@@ -254,7 +242,6 @@ function initDropdowns() {
         );
     });
 }
-
 function closeMobileOnDesktop() {
     if (window.innerWidth <= 1024) return;
     const sidebar =
@@ -265,7 +252,6 @@ function closeMobileOnDesktop() {
     overlay?.classList.remove("active");
     document.body.classList.remove("menu-open");
 }
-
 window.addEventListener(
     "resize",
     () => {
@@ -275,7 +261,6 @@ window.addEventListener(
         passive: true
     }
 );
-
 function initMobileDropdowns() {
     const details =
         document.querySelectorAll(
@@ -295,7 +280,6 @@ function initMobileDropdowns() {
         );
     });
 }
-
 function initNavHover() {
     const items =
         document.querySelectorAll(
@@ -316,7 +300,6 @@ function initNavHover() {
         );
     });
 }
-
 document.addEventListener(
     "click",
     e => {
@@ -354,7 +337,6 @@ function initSearchModal() {
         }
     });
 }
-
 function closeSearchModal() {
     const modal =
         document.getElementById("searchModal");
@@ -362,7 +344,6 @@ function closeSearchModal() {
     modal.classList.remove("active");
     document.body.classList.remove("search-open");
 }
-
 function initEscapeKey() {
     document.addEventListener("keydown", (e) => {
         if (e.key !== "Escape") return;
@@ -376,7 +357,6 @@ function initEscapeKey() {
         closeSearchModal();
     });
 }
-
 function initAnnouncementBar() {
     const wrapper =
         document.querySelector(".announcement-content");
@@ -397,7 +377,6 @@ function initAnnouncementBar() {
             `translateY(-${index * 100}%)`;
     }, 3000);
 }
-
 function initHeaderShadow() {
     const header =
         document.getElementById("siteHeader");
@@ -419,7 +398,6 @@ function initHeaderShadow() {
         }
     );
 }
-
 function initBackToTop() {
     const button =
         document.querySelector(".back-to-top");
@@ -446,7 +424,6 @@ function initBackToTop() {
         });
     });
 }
-
 function initSmoothScroll() {
     document
         .querySelectorAll('a[href^="#"]')
@@ -465,7 +442,6 @@ function initSmoothScroll() {
             });
         });
 }
-
 function initLazyImages() {
     const images =
         document.querySelectorAll("img");
@@ -492,7 +468,6 @@ function initAccessibility() {
             }
         });
 }
-
 async function loadLayout() {
     const navbar =
         document.getElementById("navbar");
@@ -514,12 +489,10 @@ async function loadLayout() {
     }
     refreshIcons();
 }
-
 function refreshComponents() {
     refreshIcons();
     setActiveNavigation();
 }
-
 function initResizeHandler() {
     window.addEventListener(
         "resize",
@@ -550,7 +523,6 @@ function initResizeHandler() {
         }
     );
 }
-
 function hidePageLoader() {
     const loader =
         document.querySelector(".page-loader");
@@ -564,7 +536,6 @@ window.addEventListener(
     "load",
     hidePageLoader
 );
-
 function initRippleEffect() {
     document
         .querySelectorAll(".btn,.icon-btn")
@@ -603,7 +574,6 @@ function initRippleEffect() {
             );
         });
 }
-
 function updatePageTitle() {
     const page =
         window.location.pathname
@@ -613,7 +583,6 @@ function updatePageTitle() {
     document.body.dataset.page =
         page;
 }
-
 function initUtilities() {
     initAccessibility();
     initResizeHandler();
@@ -622,45 +591,29 @@ function initUtilities() {
 }
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("🌿 Initializing BloomNest...");
- 
     await loadLayout();
-
     initTheme();
- 
     initRTL();
-
     initStickyHeader();
     initHeaderShadow();
-
     initMobileMenu();
     initMobileDropdowns();
-  
     initDropdowns();
     initNavHover();
     setActiveNavigation();
- 
     initSearchModal();
-   
     initAnnouncementBar();
- 
     initBackToTop();
     initSmoothScroll();
- 
     initLazyImages();
- 
     initEscapeKey();
-
     initUtilities();
-
-
     refreshIcons();
     console.log("✅ BloomNest Ready");
 });
-
 window.addEventListener("load", () => {
     refreshIcons();
 });
-
 window.BloomNest = {
     refreshIcons,
     refreshComponents,
@@ -672,7 +625,6 @@ window.BloomNest = {
     initSearchModal,
     closeSearchModal
 };
-
 const observer = new MutationObserver(() => {
     refreshIcons();
 });
@@ -680,7 +632,6 @@ observer.observe(document.body, {
     childList: true,
     subtree: true
 });
-
 console.log(
     "%c🌿 BloomNest Component.js Loaded Successfully",
     "color:#2e7d32;font-size:14px;font-weight:bold;"

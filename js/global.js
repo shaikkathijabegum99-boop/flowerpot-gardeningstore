@@ -1,18 +1,11 @@
 "use strict";
-
-
-/* FORCE DEFAULT LIGHT MODE */
-
 if(!localStorage.getItem("theme")){
-
 localStorage.setItem(
 "theme",
 "light"
 );
-
 }
 "use strict";
-
 async function loadComponent(id,file){
     const element =
         document.getElementById(id);
@@ -40,7 +33,6 @@ async function loadComponent(id,file){
         `;
     }
 }
-
 function lockBody(){
     document.body.style.overflow="hidden";
 }
@@ -48,49 +40,27 @@ function unlockBody(){
     document.body.style.overflow="";
 }
 function initTheme(){
-
 const root = document.documentElement;
 const button = document.getElementById("themeToggle");
-
-
 const savedTheme = localStorage.getItem("theme");
-
-
 if(savedTheme === "dark"){
-
     root.classList.add("dark-mode");
-
 }
 else{
-
     root.classList.remove("dark-mode");
     localStorage.setItem("theme","light");
-
 }
-
-
 updateThemeIcon();
-
-
 if(!button) return;
-
-
 button.onclick = ()=>{
-
     const enabled =
     root.classList.toggle("dark-mode");
-
-
     localStorage.setItem(
         "theme",
         enabled ? "dark" : "light"
     );
-
-
     updateThemeIcon();
-
 };
-
 }
 function updateThemeIcon(){
     const button =
@@ -112,7 +82,6 @@ function updateThemeIcon(){
     `<i data-lucide="moon"></i>`;
     refreshIcons();
 }
-
 function initRTL(){
     const button =
         document.getElementById(
@@ -196,7 +165,6 @@ function initStickyHeader(){
         }
     );
 }
-
 function initMobileMenu(){
     const menu =
         document.getElementById(
@@ -254,7 +222,6 @@ function initMobileMenu(){
     window.closeSidebar =
         closeMenu;
 }
-
 function initMobileDropdown(){
     const items =
         document.querySelectorAll(
@@ -278,7 +245,6 @@ function initMobileDropdown(){
         );
     });
 }
-
 function initDropdown(){
     const dropdowns =
         document.querySelectorAll(
@@ -411,7 +377,6 @@ function initEscapeClose(){
         }
     );
 }
-
 function initScrollTop(){
     const button =
         document.getElementById(
@@ -435,7 +400,6 @@ function initScrollTop(){
         });
     };
 }
-
 function initSmoothScroll(){
     document
     .querySelectorAll(
@@ -509,7 +473,6 @@ function initRevealAnimation(){
         el=>observer.observe(el)
     );
 }
-
 function initCounter(){
     const counters =
         document.querySelectorAll(
@@ -661,7 +624,6 @@ function initResizeHandler(){
         resize
     );
 }
-
 function initPageLoader(){
     const loader =
         document.getElementById(
@@ -681,7 +643,6 @@ function initPageLoader(){
         }
     );
 }
-
 function initPerformance(){
     if(
         "scrollRestoration"
@@ -705,7 +666,6 @@ function initPerformance(){
             "async";
     });
 }
-
 function initReducedMotion(){
     const reduce =
         window.matchMedia(
@@ -721,7 +681,6 @@ function initReducedMotion(){
         );
     }
 }
-
 document.addEventListener(
 "DOMContentLoaded",
 async ()=>{
@@ -771,7 +730,6 @@ window.addEventListener(
         "page-loaded"
     );
 });
-
 document.addEventListener(
 "visibilitychange",
 ()=>{
@@ -782,7 +740,6 @@ document.addEventListener(
         document.hidden
     );
 });
-
 window.addEventListener(
 "online",
 ()=>{
@@ -801,7 +758,6 @@ window.addEventListener(
         "offline"
     );
 });
-
 function debounce(
 callback,
 delay=200
@@ -838,7 +794,6 @@ delay=100
         );
     };
 }
-
 window.BloomNest = {
     refreshIcons,
     lockBody,
@@ -852,17 +807,12 @@ document.addEventListener("DOMContentLoaded",()=>{
         lucide.createIcons();
     }
 });
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const heroes = document.querySelectorAll(".animated-hero");
     heroes.forEach((hero) => {
-
         setTimeout(() => {
             hero.classList.add("hero-loaded");
         }, 100);
-
         const animationBox = hero.querySelector(".hero-animation");
         if(animationBox){
             for(let i = 0; i < 8; i++){
@@ -882,7 +832,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-
     document.querySelectorAll(
         ".animated-hero"
     ).forEach(hero => {
@@ -918,5 +867,595 @@ document.addEventListener("DOMContentLoaded", () => {
                 "0px"
             );
         });
+    });
+});
+(function () {
+    "use strict";
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+            initializeTheme();
+            initializeRTL();
+            initializeHeader();
+            initializeMobileMenu();
+            initializeSearch();
+            initializePageLoader();
+            initializeBackToTop();
+            refreshIcons();
+        }
+    );
+    function refreshIcons() {
+        if (
+            window.lucide &&
+            typeof window.lucide.createIcons === "function"
+        ) {
+            window.lucide.createIcons();
+        }
+    }
+    function initializeTheme() {
+        const themeButton =
+            document.getElementById(
+                "themeToggle"
+            );
+        const savedTheme =
+            localStorage.getItem(
+                "bloomnestTheme"
+            );
+        if (savedTheme === "dark") {
+            document.documentElement
+                .setAttribute(
+                    "data-theme",
+                    "dark"
+                );
+            document.documentElement
+                .classList.add(
+                    "dark-mode"
+                );
+        } else {
+            document.documentElement
+                .setAttribute(
+                    "data-theme",
+                    "light"
+                );
+            document.documentElement
+                .classList.remove(
+                    "dark-mode"
+                );
+        }
+        updateThemeIcon();
+        if (themeButton) {
+            themeButton.addEventListener(
+                "click",
+                function () {
+                    const isDark =
+                        document.documentElement
+                            .getAttribute(
+                                "data-theme"
+                            ) === "dark";
+                    const newTheme =
+                        isDark
+                            ? "light"
+                            : "dark";
+                    document.documentElement
+                        .setAttribute(
+                            "data-theme",
+                            newTheme
+                        );
+                    document.documentElement
+                        .classList.toggle(
+                            "dark-mode",
+                            newTheme === "dark"
+                        );
+                    localStorage.setItem(
+                        "bloomnestTheme",
+                        newTheme
+                    );
+                    updateThemeIcon();
+                }
+            );
+        }
+    }
+    function updateThemeIcon() {
+        const button =
+            document.getElementById(
+                "themeToggle"
+            );
+        if (!button) {
+            return;
+        }
+        const isDark =
+            document.documentElement
+                .getAttribute(
+                    "data-theme"
+                ) === "dark";
+        const icon =
+            button.querySelector(
+                "[data-lucide]"
+            );
+        if (icon) {
+            icon.setAttribute(
+                "data-lucide",
+                isDark
+                    ? "sun"
+                    : "moon"
+            );
+        }
+        button.setAttribute(
+            "aria-label",
+            isDark
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+        );
+        refreshIcons();
+    }
+    function initializeRTL() {
+        const rtlButton =
+            document.getElementById(
+                "rtlToggle"
+            );
+        const savedDirection =
+            localStorage.getItem(
+                "bloomnestDirection"
+            );
+        if (
+            savedDirection === "rtl"
+        ) {
+            document.documentElement
+                .setAttribute(
+                    "dir",
+                    "rtl"
+                );
+        } else {
+            document.documentElement
+                .setAttribute(
+                    "dir",
+                    "ltr"
+                );
+        }
+        if (rtlButton) {
+            rtlButton.addEventListener(
+                "click",
+                function () {
+                    const currentDirection =
+                        document.documentElement
+                            .getAttribute(
+                                "dir"
+                            );
+                    const newDirection =
+                        currentDirection === "rtl"
+                            ? "ltr"
+                            : "rtl";
+                    document.documentElement
+                        .setAttribute(
+                            "dir",
+                            newDirection
+                        );
+                    localStorage.setItem(
+                        "bloomnestDirection",
+                        newDirection
+                    );
+                    document.dispatchEvent(
+                        new CustomEvent(
+                            "bloomnestRTLChanged",
+                            {
+                                detail: {
+                                    direction:
+                                        newDirection
+                                }
+                            }
+                        )
+                    );
+                }
+            );
+        }
+    }
+    function initializeHeader() {
+        const header =
+            document.getElementById(
+                "siteHeader"
+            );
+        if (!header) {
+            return;
+        }
+        function updateHeader() {
+            if (
+                window.scrollY > 20
+            ) {
+                header.classList.add(
+                    "sticky"
+                );
+            } else {
+                header.classList.remove(
+                    "sticky"
+                );
+            }
+        }
+        window.addEventListener(
+            "scroll",
+            updateHeader,
+            {
+                passive:true
+            }
+        );
+        updateHeader();
+    }
+    function initializeMobileMenu() {
+        const menuButton =
+            document.getElementById(
+                "menuToggle"
+            );
+        const closeButton =
+            document.getElementById(
+                "closeMenu"
+            );
+        const sidebar =
+            document.getElementById(
+                "mobileSidebar"
+            );
+        const overlay =
+            document.getElementById(
+                "mobileOverlay"
+            );
+        if (
+            !menuButton ||
+            !sidebar
+        ) {
+            return;
+        }
+        function openMenu() {
+            sidebar.classList.add(
+                "active"
+            );
+            if (overlay) {
+                overlay.classList.add(
+                    "active"
+                );
+            }
+            document.body.classList.add(
+                "mobile-menu-open"
+            );
+            menuButton.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+        }
+        function closeMenu() {
+            sidebar.classList.remove(
+                "active"
+            );
+            if (overlay) {
+                overlay.classList.remove(
+                    "active"
+                );
+            }
+            document.body.classList.remove(
+                "mobile-menu-open"
+            );
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+        menuButton.addEventListener(
+            "click",
+            openMenu
+        );
+        if (closeButton) {
+            closeButton.addEventListener(
+                "click",
+                closeMenu
+            );
+        }
+        if (overlay) {
+            overlay.addEventListener(
+                "click",
+                closeMenu
+            );
+        }
+        sidebar
+            .querySelectorAll(
+                "a"
+            )
+            .forEach(
+                function (link) {
+                    link.addEventListener(
+                        "click",
+                        function () {
+                            closeMenu();
+                        }
+                    );
+                }
+            );
+        document.addEventListener(
+            "keydown",
+            function (event) {
+                if (
+                    event.key === "Escape"
+                ) {
+                    closeMenu();
+                }
+            }
+        );
+    }
+    function initializeSearch() {
+        const searchModal =
+            document.getElementById(
+                "searchModal"
+            );
+        if (!searchModal) {
+            return;
+        }
+        const searchInput =
+            searchModal.querySelector(
+                "input"
+            );
+        const searchButton =
+            searchModal.querySelector(
+                "button"
+            );
+        function openSearch() {
+            searchModal.classList.add(
+                "active"
+            );
+            if (searchInput) {
+                setTimeout(
+                    function () {
+                        searchInput.focus();
+                    },
+                    100
+                );
+            }
+        }
+        function closeSearch() {
+            searchModal.classList.remove(
+                "active"
+            );
+        }
+        /*
+         * Open search with Ctrl + K
+         */
+        document.addEventListener(
+            "keydown",
+            function (event) {
+                if (
+                    (event.ctrlKey ||
+                     event.metaKey) &&
+                    event.key.toLowerCase() === "k"
+                ) {
+                    event.preventDefault();
+                    openSearch();
+                }
+                if (
+                    event.key === "Escape" &&
+                    searchModal.classList.contains(
+                        "active"
+                    )
+                ) {
+                    closeSearch();
+                }
+            }
+        );
+        /*
+         * Search submit
+         */
+        if (searchButton) {
+            searchButton.addEventListener(
+                "click",
+                function () {
+                    const query =
+                        searchInput
+                            ? searchInput.value.trim()
+                            : "";
+                    if (!query) {
+                        return;
+                    }
+                    /*
+                     * Change this later to your
+                     * actual products/search page.
+                     */
+                    window.location.href =
+                        "./products.html?search=" +
+                        encodeURIComponent(
+                            query
+                        );
+                }
+            );
+        }
+        /*
+         * Enter key
+         */
+        if (searchInput) {
+            searchInput.addEventListener(
+                "keydown",
+                function (event) {
+                    if (
+                        event.key === "Enter"
+                    ) {
+                        event.preventDefault();
+                        if (searchButton) {
+                            searchButton.click();
+                        }
+                    }
+                }
+            );
+        }
+    }
+    function initializePageLoader() {
+        const loader =
+            document.getElementById(
+                "pageLoader"
+            );
+        if (!loader) {
+            return;
+        }
+        window.addEventListener(
+            "load",
+            function () {
+                setTimeout(
+                    function () {
+                        loader.classList.add(
+                            "hidden"
+                        );
+                        setTimeout(
+                            function () {
+                                loader.remove();
+                            },
+                            500
+                        );
+                    },
+                    300
+                );
+            }
+        );
+    }
+    function initializeBackToTop() {
+        let button =
+            document.getElementById(
+                "backToTop"
+            );
+        /*
+         * Create button if it doesn't
+         * already exist.
+         */
+        if (!button) {
+            button =
+                document.createElement(
+                    "button"
+                );
+            button.id =
+                "backToTop";
+            button.className =
+                "back-to-top";
+            button.type =
+                "button";
+            button.setAttribute(
+                "aria-label",
+                "Back to top"
+            );
+            button.innerHTML =
+                '<i data-lucide="arrow-up"></i>';
+            document.body.appendChild(
+                button
+            );
+            refreshIcons();
+        }
+        function updateBackToTop() {
+            if (
+                window.scrollY > 500
+            ) {
+                button.classList.add(
+                    "show"
+                );
+            } else {
+                button.classList.remove(
+                    "show"
+                );
+            }
+        }
+        window.addEventListener(
+            "scroll",
+            updateBackToTop,
+            {
+                passive:true
+            }
+        );
+        button.addEventListener(
+            "click",
+            function () {
+                window.scrollTo(
+                    {
+                        top:0,
+                        behavior:"smooth"
+                    }
+                );
+            }
+        );
+        updateBackToTop();
+    }
+    document.addEventListener(
+        "click",
+        function (event) {
+            const link =
+                event.target.closest(
+                    'a[href^="#"]'
+                );
+            if (!link) {
+                return;
+            }
+            const href =
+                link.getAttribute(
+                    "href"
+                );
+            if (
+                !href ||
+                href === "#"
+            ) {
+                return;
+            }
+            const target =
+                document.querySelector(
+                    href
+                );
+            if (!target) {
+                return;
+            }
+            event.preventDefault();
+            const header =
+                document.getElementById(
+                    "siteHeader"
+                );
+            const offset =
+                header
+                    ? header.offsetHeight + 15
+                    : 20;
+            const targetPosition =
+                target.getBoundingClientRect()
+                    .top +
+                window.scrollY -
+                offset;
+            window.scrollTo(
+                {
+                    top:
+                        targetPosition,
+                    behavior:"smooth"
+                }
+            );
+        }
+    );
+    if (
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches
+    ) {
+        document.documentElement
+            .classList.add(
+                "reduced-motion"
+            );
+    }
+})();
+document.addEventListener("DOMContentLoaded", function () {
+    const heroSections = document.querySelectorAll(
+        "section[class*='hero']"
+    );
+    if (!heroSections.length) {
+        return;
+    }
+    if (
+        window.matchMedia &&
+        window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches
+    ) {
+        heroSections.forEach(function (hero) {
+            hero.classList.add("hero-animate");
+        });
+        return;
+    }
+    requestAnimationFrame(function () {
+        setTimeout(function () {
+            heroSections.forEach(function (hero) {
+                hero.classList.add("hero-animate");
+            });
+        }, 80);
     });
 });

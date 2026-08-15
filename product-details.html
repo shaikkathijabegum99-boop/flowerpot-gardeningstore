@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Product Details | BloomNest
+    </title>
+    <meta
+        name="description"
+        content="Explore BloomNest product details, pricing, specifications, care information and related gardening essentials."
+    >
+    <meta
+        name="keywords"
+        content="BloomNest products, plants, flower pots, soil, seeds, fertilizers, garden tools, product details"
+    >
+    <meta
+        name="author"
+        content="BloomNest"
+    >
+    <link
+        rel="icon"
+        href="./images/favicon.png"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/com.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/productdetail.css"
+    >
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
+    </script>
+</head>
+<body>
+<div id="pageLoader">
+    <div class="loader-circle"></div>
+</div>
+<div id="navbar"></div>
+<main>
+<section class="product-detail-breadcrumb">
+    <div class="container">
+        <nav
+            class="breadcrumb"
+            aria-label="Breadcrumb"
+        >
+            <a href="index.html">
+                Home
+            </a>
+            <i data-lucide="chevron-right"></i>
+            <a href="products.html">
+                Products
+            </a>
+            <i data-lucide="chevron-right"></i>
+            <strong id="breadcrumbProduct">
+                Product Details
+            </strong>
+        </nav>
+    </div>
+</section>
+<section class="product-detail-main">
+    <div class="container">
+        <div class="product-detail-layout">
+            <div class="product-gallery">
+                <div class="product-main-image">
+                    <img
+                        id="mainProductImage"
+                        src="./images/p1.jpg"
+                        alt="BloomNest product"
+                    >
+                    <span
+                        class="product-detail-badge"
+                        id="productBadge"
+                    >
+                        Bestseller
+                    </span>
+                </div>
+                <div
+                    class="product-thumbnail-list"
+                    id="productThumbnails"
+                    aria-label="Product images"
+                >
+                </div>
+                <div class="product-gallery-trust">
+                    <div>
+                        <span class="trust-icon">
+                            <i data-lucide="leaf"></i>
+                        </span>
+                        <div>
+                            <strong>
+                                Quality Checked
+                            </strong>
+                            <small>
+                                Carefully selected
+                            </small>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="trust-icon">
+                            <i data-lucide="package-check"></i>
+                        </span>
+                        <div>
+                            <strong>
+                                Secure Packing
+                            </strong>
+                            <small>
+                                Packed with care
+                            </small>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="trust-icon">
+                            <i data-lucide="truck"></i>
+                        </span>
+                        <div>
+                            <strong>
+                                Safe Delivery
+                            </strong>
+                            <small>
+                                Delivery support
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-detail-content">
+                <span
+                    class="product-detail-category"
+                    id="productCategory"
+                >
+                </span>
+                <h1 id="productTitle">
+                    Premium Green Plant
+                </h1>
+                <div class="product-rating">
+                    <div class="rating">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <strong id="productRating">
+                        4.8
+                    </strong>
+                    <span id="productReviews">
+                        (126 reviews)
+                    </span>
+                </div>
+                <div class="product-detail-price">
+                    <strong id="productPrice">
+                        ₹599
+                    </strong>
+                    <span id="productOldPrice">
+                        ₹699
+                    </span>
+                    <mark id="productDiscount">
+                        14% OFF
+                    </mark>
+                </div>
+                <p
+                    class="product-detail-description"
+                    id="productDescription"
+                >
+                    Easy-care greenery selected for
+                    homes, offices and beautiful indoor
+                    spaces.
+                </p>
+                <div
+                    class="product-detail-highlights"
+                    id="productHighlights"
+                >
+                </div>
+                <div class="product-availability">
+                    <div>
+                        <i data-lucide="circle-check"></i>
+                        <span>
+                            In Stock
+                        </span>
+                    </div>
+                    <span>
+                        Ready for delivery
+                    </span>
+                </div>
+                <div class="product-purchase">
+                    <div
+                        class="product-quantity"
+                        aria-label="Quantity selector"
+                    >
+                        <button
+                            type="button"
+                            id="quantityMinus"
+                            aria-label="Decrease quantity"
+                        >
+                            <i data-lucide="minus"></i>
+                        </button>
+                        <span id="quantityValue">
+                            1
+                        </span>
+                        <button
+                            type="button"
+                            id="quantityPlus"
+                            aria-label="Increase quantity"
+                        >
+                            <i data-lucide="plus"></i>
+                        </button>
+                    </div>
+                    <button
+                        type="button"
+                        class="btn btn-primary product-add-btn"
+                    >
+                        <i data-lucide="shopping-cart"></i>
+                        Add To Cart
+                    </button>
+                </div>
+                <div class="product-buy-actions">
+                    <button
+                        type="button"
+                        class="btn btn-secondary product-buy-now"
+                    >
+                        Buy Now
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                    <button
+                        type="button"
+                        class="product-wishlist"
+                        aria-label="Add to wishlist"
+                    >
+                        <i data-lucide="heart"></i>
+                    </button>
+                </div>
+                <div class="product-service-info">
+                    <div>
+                        <i data-lucide="truck"></i>
+                        <div>
+                            <strong>
+                                Safe Delivery
+                            </strong>
+                            <span>
+                                Carefully handled
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <i data-lucide="refresh-cw"></i>
+                        <div>
+                            <strong>
+                                Product Support
+                            </strong>
+                            <span>
+                                Gardening guidance
+                            </span>
+                        </div>
+                    </div>
+                    <div>
+                        <i data-lucide="headphones"></i>
+                        <div>
+                            <strong>
+                                Need Help?
+                            </strong>
+                            <span>
+                                Talk to BloomNest
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-information">
+    <div class="container">
+        <div class="product-information-layout">
+            <div class="product-description-block">
+                <span class="section-tag">
+                    Product Details
+                </span>
+                <h2 id="detailHeading">
+                    A Better Choice For Your
+                    <em>Green Space</em>
+                </h2>
+                <p id="detailDescriptionOne">
+                </p>
+                <p id="detailDescriptionTwo">
+                </p>
+                <div class="product-feature-list">
+                    <div>
+                        <i data-lucide="check"></i>
+                        <span>
+                            Carefully selected quality
+                        </span>
+                    </div>
+                    <div>
+                        <i data-lucide="check"></i>
+                        <span>
+                            Suitable for everyday use
+                        </span>
+                    </div>
+                    <div>
+                        <i data-lucide="check"></i>
+                        <span>
+                            Beginner friendly
+                        </span>
+                    </div>
+                    <div>
+                        <i data-lucide="check"></i>
+                        <span>
+                            BloomNest quality checked
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="product-specification-card">
+                <div class="specification-header">
+                    <span class="section-tag">
+                        Specifications
+                    </span>
+                    <h3>
+                        Product Information
+                    </h3>
+                </div>
+                <div
+                    id="productSpecifications"
+                    class="product-specifications-list"
+                >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-care-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">
+                Product Care
+            </span>
+            <h2>
+                Simple Steps For
+                <em>Better Results</em>
+            </h2>
+            <p>
+                Follow the recommended information
+                for better use and long-lasting results.
+            </p>
+        </div>
+        <div
+            class="care-guide-grid"
+            id="careGuide"
+        >
+        </div>
+    </div>
+</section>
+<section class="product-review-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">
+                Customer Reviews
+            </span>
+            <h2>
+                What Our Customers
+                <em>Say</em>
+            </h2>
+            <p>
+                Real feedback from BloomNest customers.
+            </p>
+        </div>
+        <div class="product-review-summary">
+            <div class="review-score">
+                <strong id="reviewAverage">
+                    4.8
+                </strong>
+                <div class="rating">
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                    <i data-lucide="star"></i>
+                </div>
+                <span id="reviewCount">
+                    126 customer reviews
+                </span>
+            </div>
+            <div class="review-summary-message">
+                <strong>
+                    Customers love this product
+                </strong>
+                <p>
+                    Quality, presentation and
+                    everyday usability make this
+                    a popular BloomNest choice.
+                </p>
+            </div>
+        </div>
+        <div class="product-review-grid">
+            <article class="product-review-card">
+                <div class="review-card-top">
+                    <div class="rating">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <span>
+                        5.0
+                    </span>
+                </div>
+                <p>
+                    Beautiful quality and very carefully
+                    packed. It looks exactly as expected.
+                </p>
+                <strong>
+                    Verified Buyer
+                </strong>
+            </article>
+            <article class="product-review-card">
+                <div class="review-card-top">
+                    <div class="rating">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <span>
+                        4.8
+                    </span>
+                </div>
+                <p>
+                    Great value for the price. BloomNest
+                    also made the buying process simple.
+                </p>
+                <strong>
+                    Verified Buyer
+                </strong>
+            </article>
+            <article class="product-review-card">
+                <div class="review-card-top">
+                    <div class="rating">
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                        <i data-lucide="star"></i>
+                    </div>
+                    <span>
+                        4.9
+                    </span>
+                </div>
+                <p>
+                    Exactly what I needed for my home
+                    garden. The quality feels premium.
+                </p>
+                <strong>
+                    Verified Buyer
+                </strong>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="related-products">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">
+                You May Also Like
+            </span>
+            <h2>
+                Complete Your
+                <em>Garden</em>
+            </h2>
+            <p>
+                Explore related BloomNest products
+                that pair well with this item.
+            </p>
+        </div>
+        <div
+            class="related-product-grid"
+            id="relatedProducts"
+        >
+        </div>
+    </div>
+</section>
+<section class="product-faq">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">
+                FAQ
+            </span>
+            <h2>
+                Frequently Asked
+                <em>Questions</em>
+            </h2>
+            <p>
+                Helpful answers before you buy.
+            </p>
+        </div>
+        <div class="product-faq-wrapper">
+            <div class="product-faq-item">
+                <button
+                    type="button"
+                    class="product-faq-question"
+                >
+                    <span>
+                        Is this product suitable for beginners?
+                    </span>
+                    <i data-lucide="plus"></i>
+                </button>
+                <div class="product-faq-answer">
+                    <p>
+                        Yes. BloomNest selects products
+                        with practical everyday use and
+                        easy guidance in mind.
+                    </p>
+                </div>
+            </div>
+            <div class="product-faq-item">
+                <button
+                    type="button"
+                    class="product-faq-question"
+                >
+                    <span>
+                        How should I care for this product?
+                    </span>
+                    <i data-lucide="plus"></i>
+                </button>
+                <div class="product-faq-answer">
+                    <p>
+                        Follow the care information
+                        shown above for the selected
+                        BloomNest product.
+                    </p>
+                </div>
+            </div>
+            <div class="product-faq-item">
+                <button
+                    type="button"
+                    class="product-faq-question"
+                >
+                    <span>
+                        Do you provide delivery support?
+                    </span>
+                    <i data-lucide="plus"></i>
+                </button>
+                <div class="product-faq-answer">
+                    <p>
+                        BloomNest provides delivery support
+                        based on product availability and
+                        delivery location.
+                    </p>
+                </div>
+            </div>
+            <div class="product-faq-item">
+                <button
+                    type="button"
+                    class="product-faq-question"
+                >
+                    <span>
+                        Can I ask for gardening guidance?
+                    </span>
+                    <i data-lucide="plus"></i>
+                </button>
+                <div class="product-faq-answer">
+                    <p>
+                        Yes. You can use the BloomNest
+                        gardening support and consultation
+                        options for product guidance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="product-detail-cta">
+    <div class="container">
+        <div class="product-detail-cta-box">
+            <div class="product-detail-cta-content">
+                <span class="section-tag">
+                    Keep Growing
+                </span>
+                <h2>
+                    Find More For Your
+                    <em>Garden</em>
+                </h2>
+                <p>
+                    Explore plants, flower pots, soil,
+                    seeds, fertilizers and practical
+                    gardening tools from BloomNest.
+                </p>
+                <div class="product-detail-cta-actions">
+                    <a
+                        href="products.html"
+                        class="btn btn-primary"
+                    >
+                        Continue Shopping
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a
+                        href="contact.html"
+                        class="btn btn-outline"
+                    >
+                        Contact BloomNest
+                    </a>
+                </div>
+            </div>
+            <div class="product-detail-cta-image">
+                <img
+                    src="./images/modern.jpg"
+                    alt="BloomNest garden collection"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<div id="footer"></div>
+<script src="./js/global.js"></script>
+<script src="./js/productdetail.js"></script>
+<script src="./js/booknow.js"></script>
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    function(){
+        if(window.lucide){
+            lucide.createIcons();
+        }
+    }
+);
+</script>
+</body>
+</html>

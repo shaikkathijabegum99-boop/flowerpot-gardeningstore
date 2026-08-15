@@ -8,13 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     initNewsletter();
     refreshIcons();
 });
-
 function refreshIcons() {
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 }
-
 function initCounters() {
     const counters = document.querySelectorAll("[data-count]");
     if (!counters.length) return;
@@ -40,7 +38,6 @@ function initCounters() {
     });
     counters.forEach(counter => observer.observe(counter));
 }
-
 function initWishlist() {
     document.querySelectorAll(".wishlist-btn").forEach(button => {
         button.addEventListener("click", () => {
@@ -53,7 +50,6 @@ function initWishlist() {
         });
     });
 }
-
 function initQuickView() {
     document.querySelectorAll(".quick-view").forEach(button => {
         button.addEventListener("click", () => {
@@ -64,7 +60,6 @@ function initQuickView() {
         });
     });
 }
-
 function initCompare() {
     document.querySelectorAll(".compare-btn").forEach(button => {
         button.addEventListener("click", () => {
@@ -76,7 +71,6 @@ function initCompare() {
         });
     });
 }
-
 function initAddToCart() {
     document.querySelectorAll(".add-cart").forEach(button => {
         button.addEventListener("click", () => {
@@ -96,7 +90,6 @@ function initAddToCart() {
         });
     });
 }
-
 function initNewsletter() {
     const form = document.querySelector(".newsletter-form");
     if (!form) return;
@@ -111,32 +104,19 @@ function initNewsletter() {
 /*=========================================
 ADD TO CART
 =========================================*/
-
 document.querySelectorAll(".add-cart").forEach(button => {
-
     button.addEventListener("click", function () {
-
         this.innerHTML = `
             <i data-lucide="check"></i>
             Added
         `;
-
         this.disabled = true;
-
         this.style.background = "#2e7d32";
-
         lucide.createIcons();
-
         setTimeout(() => {
-
             this.innerHTML = "Add To Cart";
-
             this.disabled = false;
-
             this.style.background = "";
-
         }, 2000);
-
     });
-
 });

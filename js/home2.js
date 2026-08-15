@@ -1,6 +1,4 @@
-
 "use strict";
-
 document.addEventListener(
 "DOMContentLoaded",
 ()=>{
@@ -12,7 +10,6 @@ document.addEventListener(
     initNewsletter();
     initSmoothScroll();
 });
-
 function initPremiumReveal(){
 const elements =
 document.querySelectorAll(
@@ -42,7 +39,6 @@ elements.forEach(
 el=>observer.observe(el)
 );
 }
-
 function initCounters(){
 const counters =
 document.querySelectorAll(
@@ -95,7 +91,6 @@ counters.forEach(
 item=>observer.observe(item)
 );
 }
-
 function initWishlist(){
 const buttons =
 document.querySelectorAll(
@@ -134,7 +129,6 @@ button.classList.contains("active")
 });
 });
 }
-
 function initCartButtons(){
 const buttons =
 document.querySelectorAll(
@@ -165,7 +159,6 @@ lucide.createIcons();
 });
 });
 }
-
 function initFAQ(){
 const items =
 document.querySelectorAll(
@@ -186,7 +179,6 @@ item.classList.toggle(
 });
 });
 }
-
 function initNewsletter(){
 const form =
 document.querySelector(
@@ -215,7 +207,6 @@ showHome2Toast(
 input.value="";
 });
 }
-
 function initSmoothScroll(){
 document.querySelectorAll(
 'a[href^="#"]'
@@ -239,7 +230,6 @@ block:"start"
 });
 });
 }
-
 function showHome2Toast(
 message
 ){
@@ -272,7 +262,6 @@ toast.classList.remove(
 2500
 );
 }
-
 const images =
 document.querySelectorAll(
 "img[data-src]"

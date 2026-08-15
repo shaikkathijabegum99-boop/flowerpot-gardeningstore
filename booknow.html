@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        BloomNest | Book Garden Service
+    </title>
+    <meta name="description"
+          content="Book BloomNest plant consultation, garden setup, plant care, product guidance and bulk landscaping services.">
+    <meta name="keywords"
+          content="BloomNest booking, gardening consultation, plant care, garden setup, flower pots, gardening supplies, landscaping">
+    <meta name="author"
+          content="BloomNest">
+    <link rel="icon"
+          href="./images/favicon.png">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+          href="./css/global.css">
+    <link rel="stylesheet"
+          href="./css/com.css">
+    <link rel="stylesheet"
+          href="./css/booknow.css">
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
+    </script>
+</head>
+<body>
+<main class="booknow-page">
+    <section class="booknow-section">
+        <div class="container">
+            <div class="booknow-brand">
+                <a href="./index.html"
+                   class="booknow-logo">
+                    <span class="logo-icon">
+                        <i data-lucide="flower-2"></i>
+                    </span>
+                    <span class="logo-text">
+                        Bloom<span>Nest</span>
+                    </span>
+                </a>
+            </div>
+            <div class="booknow-header">
+                <span class="section-tag">
+                    <i data-lucide="leaf"></i>
+                    BloomNest Garden Services
+                </span>
+                <h1>
+                    Book Your
+                    <em>Garden Service</em>
+                </h1>
+                <p>
+                    Choose the gardening support you need,
+                    share your details and select a convenient
+                    appointment time.
+                </p>
+            </div>
+            <form
+                id="quickBookingForm"
+                class="booknow-form">
+                <div class="booknow-section-title">
+                    <span>
+                        01
+                    </span>
+                    <div>
+                        <h2>
+                            Select Your Service
+                        </h2>
+                        <p>
+                            Choose the service that best matches
+                            your gardening requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-service-grid">
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="plant-consultation"
+                            checked>
+                        <span class="modal-service-icon">
+                            <i data-lucide="sprout"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Plant Consultation
+                            </strong>
+                            <small>
+                                Choose suitable plants for
+                                indoor, balcony or outdoor spaces.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            From ₹499
+                        </span>
+                    </label>
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="pot-planter-guidance">
+                        <span class="modal-service-icon">
+                            <i data-lucide="flower-2"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Pot &amp; Planter Guidance
+                            </strong>
+                            <small>
+                                Find flower pots and planters
+                                that suit your plants.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            From ₹399
+                        </span>
+                    </label>
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="home-garden-setup">
+                        <span class="modal-service-icon">
+                            <i data-lucide="home"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Home Garden Setup
+                            </strong>
+                            <small>
+                                Plan a practical green space
+                                for your home.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            From ₹999
+                        </span>
+                    </label>
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="plant-care">
+                        <span class="modal-service-icon">
+                            <i data-lucide="heart-handshake"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Plant Care Consultation
+                            </strong>
+                            <small>
+                                Get watering, feeding and
+                                practical plant-care guidance.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            From ₹399
+                        </span>
+                    </label>
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="product-guidance">
+                        <span class="modal-service-icon">
+                            <i data-lucide="shopping-bag"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Garden Product Guidance
+                            </strong>
+                            <small>
+                                Help selecting soil, seeds,
+                                fertilizers or gardening tools.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            Free
+                        </span>
+                    </label>
+                    <label class="modal-service-card">
+                        <input
+                            type="radio"
+                            name="modalService"
+                            value="bulk-landscaper">
+                        <span class="modal-service-icon">
+                            <i data-lucide="package-check"></i>
+                        </span>
+                        <span class="modal-service-content">
+                            <strong>
+                                Bulk / Landscaper Order
+                            </strong>
+                            <small>
+                                Discuss larger requirements,
+                                quantities and project needs.
+                            </small>
+                        </span>
+                        <span class="modal-service-price">
+                            Quote
+                        </span>
+                    </label>
+                </div>
+                <div class="booknow-section-title">
+                    <span>
+                        02
+                    </span>
+                    <div>
+                        <h2>
+                            Your Details
+                        </h2>
+                        <p>
+                            Tell us how to contact you and
+                            when you would like the service.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-form-grid">
+                    <div class="modal-field">
+                        <label for="modalName">
+                            Full Name
+                        </label>
+                        <input
+                            id="modalName"
+                            name="name"
+                            type="text"
+                            placeholder="Your full name"
+                            autocomplete="name"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalPhone">
+                            Phone Number
+                        </label>
+                        <input
+                            id="modalPhone"
+                            name="phone"
+                            type="tel"
+                            placeholder="+91 98765 43210"
+                            autocomplete="tel"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalEmail">
+                            Email Address
+                        </label>
+                        <input
+                            id="modalEmail"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalDate">
+                            Preferred Date
+                        </label>
+                        <input
+                            id="modalDate"
+                            name="date"
+                            type="date"
+                            required>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalTime">
+                            Preferred Time
+                        </label>
+                        <select
+                            id="modalTime"
+                            name="time"
+                            required>
+                            <option value="">
+                                Select Time
+                            </option>
+                            <option value="09:00">
+                                9:00 AM
+                            </option>
+                            <option value="10:30">
+                                10:30 AM
+                            </option>
+                            <option value="12:00">
+                                12:00 PM
+                            </option>
+                            <option value="14:00">
+                                2:00 PM
+                            </option>
+                            <option value="15:30">
+                                3:30 PM
+                            </option>
+                            <option value="17:00">
+                                5:00 PM
+                            </option>
+                        </select>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalType">
+                            Consultation Type
+                        </label>
+                        <select
+                            id="modalType"
+                            name="type"
+                            required>
+                            <option value="">
+                                Select Type
+                            </option>
+                            <option value="home">
+                                Home Visit
+                            </option>
+                            <option value="store">
+                                Store Consultation
+                            </option>
+                            <option value="online">
+                                Online Consultation
+                            </option>
+                        </select>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalCategory">
+                            Product Category
+                        </label>
+                        <select
+                            id="modalCategory"
+                            name="category">
+                            <option value="">
+                                Select Category
+                            </option>
+                            <option value="plants">
+                                Plants
+                            </option>
+                            <option value="pots">
+                                Flower Pots
+                            </option>
+                            <option value="soil">
+                                Soil &amp; Compost
+                            </option>
+                            <option value="seeds">
+                                Seeds
+                            </option>
+                            <option value="fertilizers">
+                                Fertilizers
+                            </option>
+                            <option value="tools">
+                                Garden Tools
+                            </option>
+                            <option value="multiple">
+                                Multiple Categories
+                            </option>
+                        </select>
+                    </div>
+                    <div class="modal-field">
+                        <label for="modalQuantity">
+                            Estimated Quantity
+                        </label>
+                        <input
+                            id="modalQuantity"
+                            name="quantity"
+                            type="text"
+                            placeholder="Example: 20 plants">
+                    </div>
+                    <div class="modal-field full">
+                        <label for="modalLocation">
+                            Location
+                        </label>
+                        <input
+                            id="modalLocation"
+                            name="location"
+                            type="text"
+                            placeholder="Home, balcony, garden or project location"
+                            required>
+                    </div>
+                    <div class="modal-field full">
+                        <label for="modalMessage">
+                            Additional Details
+                        </label>
+                        <textarea
+                            id="modalMessage"
+                            name="message"
+                            rows="4"
+                            placeholder="Tell us about your garden, products or project..."></textarea>
+                    </div>
+                </div>
+                <label class="modal-consent">
+                    <input
+                        type="checkbox"
+                        id="modalConsent"
+                        required>
+                    <span>
+                        I agree to be contacted by BloomNest
+                        regarding this booking request.
+                    </span>
+                </label>
+                <div
+                    id="bookingFormMessage"
+                    class="booking-form-message"
+                    aria-live="polite">
+                </div>
+                <button
+                    type="submit"
+                    class="btn btn-primary modal-submit">
+                    Request Booking
+                    <i data-lucide="calendar-check"></i>
+                </button>
+                <p class="modal-note">
+                    Booking requests are subject to availability.
+                    Our team will contact you to confirm the appointment.
+                </p>
+            </form>
+        </div>
+    </section>
+</main>
+<script src="./js/global.js"></script>
+<script src="./js/booknow.js"></script>
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    }
+);
+</script>
+</body>
+</html>
