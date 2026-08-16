@@ -1167,9 +1167,7 @@ a{
     .container-fluid{
         padding-inline:16px;
     }
-    section{
-        padding:60px 0;
-    }
+   
     .section-header{
         margin-bottom:35px;
     }
@@ -1219,9 +1217,7 @@ a{
     .container{
         width:94%;
     }
-    section{
-        padding:50px 0;
-    }
+   
     .section-header{
         margin-bottom:30px;
     }
@@ -2132,7 +2128,7 @@ section[class*="hero"]{
 }
 section[class*="hero"] .section-tag,
 section[class*="hero"] h1,
-section[class*="hero"] h2,
+
 section[class*="hero"] p,
 section[class*="hero"] .hero-buttons,
 section[class*="hero"] .products-hero-actions,

@@ -1935,7 +1935,7 @@ html[dir="rtl"] .product-gallery-trust{
     padding:55px 0 65px !important;
 }
 .product-detail-layout{
-    grid-template-columns:minmax(0, .95fr) minmax(0, .85fr) !important;
+   
     gap:42px !important;
 }
 .product-main-image{

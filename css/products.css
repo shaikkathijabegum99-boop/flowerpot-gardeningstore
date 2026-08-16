@@ -1243,7 +1243,7 @@ html.dark-mode .products-hero-floating{
     gap:0;
 }
 .product-category-link{
-    flex:0 0 auto;
+   
     min-width:140px;
     height:70px;
     white-space:nowrap;
