@@ -1303,4 +1303,54 @@ html[dir="rtl"] .product-badge{
     background:#ffffff;
     border:1px solid #dfe6dc;
     box-shadow:0 18px 45px rgba(16,44,24,.10);
+}html.dark-mode .home1-final-cta{
+    background:var(--bg);
+}
+
+html.dark-mode .home1-final-cta .final-cta-box{
+    background:var(--surface);
+    border:1px solid var(--border);
+    box-shadow:var(--shadow-lg);
+}
+
+html.dark-mode .home1-final-cta .final-cta-content{
+    background:var(--surface);
+}
+
+html.dark-mode .home1-final-cta .final-cta-content .section-tag{
+    background:var(--primary-soft);
+    border-color:var(--border);
+    color:var(--primary);
+}
+
+html.dark-mode .home1-final-cta .final-cta-content h2{
+    color:var(--heading);
+}
+
+html.dark-mode .home1-final-cta .final-cta-content h2 em{
+    color:var(--secondary);
+}
+
+html.dark-mode .home1-final-cta .final-cta-content p{
+    color:var(--text-light);
+}
+
+html.dark-mode .home1-final-cta .final-cta-buttons .btn-outline{
+    background:transparent;
+    border-color:var(--secondary);
+    color:var(--secondary);
+}
+
+html.dark-mode .home1-final-cta .final-cta-buttons .btn-outline:hover{
+    background:var(--primary);
+    border-color:var(--primary);
+    color:#fff;
+}
+
+html.dark-mode .home1-final-cta .final-cta-image{
+    background:var(--bg-soft);
+}
+
+html.dark-mode .home1-final-cta .final-cta-image img{
+    opacity:.92;
 }
